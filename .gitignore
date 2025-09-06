@@ -1,0 +1,41 @@
+# Visual Studio user-specific
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+
+# Build results
+Debug/
+Release/
+x64/
+x86/
+ipch/
+out/
+bin/
+obj/
+*.obj
+*.o
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.log
+*.tlog
+*.lastbuildstate
+*.cache
+*.VC.db
+*.VC.opendb
+*.opendb
+
+# Binaries / libraries
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Misc
+*.tmp
+*.bak
