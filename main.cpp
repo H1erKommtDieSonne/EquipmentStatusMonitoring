@@ -1,24 +1,24 @@
-#include <cassert>  //макрос ассерт на проверку условия
-#include <vector>   //контейцнер для динамич массивов
-#include <algorithm>    //сортировка
-#include <iostream> //ввод в консоль через коут
+#include <cassert>  //РјР°РєСЂРѕСЃ Р°СЃСЃРµСЂС‚ РЅР° РїСЂРѕРІРµСЂРєСѓ СѓСЃР»РѕРІРёСЏ
+#include <vector>   //РєРѕРЅС‚РµР№С†РЅРµСЂ РґР»СЏ РґРёРЅР°РјРёС‡ РјР°СЃСЃРёРІРѕРІ
+#include <algorithm>    //СЃРѕСЂС‚РёСЂРѕРІРєР°
+#include <iostream> //РІРІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ С‡РµСЂРµР· РєРѕСѓС‚
 #include "FaultyDevice.h"
 
 int main() {
-    //создание
-    auto addr = FaultyDevice::ipv4_to_u32("10.0.0.5");  //вызов сттатич метода
-    FaultyDevice d1("Насос#1", addr, ServicePriority::High, "Перегрев");
-    FaultyDevice d2("Клапан#2", FaultyDevice::ipv4_to_u32("10.0.0.6"),
-        ServicePriority::Low, "Протечка");
+    //СЃРѕР·РґР°РЅРёРµ
+    auto addr = FaultyDevice::ipv4_to_u32("10.0.0.5");  //РІС‹Р·РѕРІ СЃС‚С‚Р°С‚РёС‡ РјРµС‚РѕРґР°
+    FaultyDevice d1("РќР°СЃРѕСЃ#1", addr, ServicePriority::High, "РџРµСЂРµРіСЂРµРІ");
+    FaultyDevice d2("РљР»Р°РїР°РЅ#2", FaultyDevice::ipv4_to_u32("10.0.0.6"),
+        ServicePriority::Low, "РџСЂРѕС‚РµС‡РєР°");
 
-    //геттеры и преобразование адреса
+    //РіРµС‚С‚РµСЂС‹ Рё РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ Р°РґСЂРµСЃР°
     assert(FaultyDevice::u32_to_ipv4(d1.address()) == "10.0.0.5");
 
-    //изменение приоритета
+    //РёР·РјРµРЅРµРЅРёРµ РїСЂРёРѕСЂРёС‚РµС‚Р°
     d2.setPriority(ServicePriority::High);
     assert(d2.priority() == ServicePriority::High);
 
-    //сравнение по приоритету
+    //СЃСЂР°РІРЅРµРЅРёРµ РїРѕ РїСЂРёРѕСЂРёС‚РµС‚Сѓ
     FaultyDevice a("A", addr, ServicePriority::High, "X");
     FaultyDevice b("B", addr, ServicePriority::Low, "Y");
     FaultyDevice c("C", addr, ServicePriority::None, "Z");
@@ -27,12 +27,12 @@ int main() {
     assert((b <=> c) == std::strong_ordering::greater);
     assert((a == d2));
 
-    //сортировка заявок по важности
+    //СЃРѕСЂС‚РёСЂРѕРІРєР° Р·Р°СЏРІРѕРє РїРѕ РІР°Р¶РЅРѕСЃС‚Рё
     std::vector<FaultyDevice> v{ b, c, a };
-    std::sort(v.begin(), v.end(), std::greater<>()); //убывание важности
+    std::sort(v.begin(), v.end(), std::greater<>()); //СѓР±С‹РІР°РЅРёРµ РІР°Р¶РЅРѕСЃС‚Рё
     assert(v.front().priority() == ServicePriority::High);
     assert(v.back().priority() == ServicePriority::None);
 
-    std::cout << "ALL TESTS PASSED\n"; //если мы дошли до сюда то тесты пройдены
+    std::cout << "ALL TESTS PASSED\n"; //РµСЃР»Рё РјС‹ РґРѕС€Р»Рё РґРѕ СЃСЋРґР° С‚Рѕ С‚РµСЃС‚С‹ РїСЂРѕР№РґРµРЅС‹
     return 0;
 }

@@ -1,59 +1,59 @@
-#pragma once    //чтобы подключался 1 раз
-#include <string>   //для строк
-#include <compare>  //оператор <=>(универсальный оператор сравнения_) только на с++20
-#include <cstdint>  //для уинтов
-#include <stdexcept>    //для исключений
-#include <sstream>  //для потоков
+#pragma once    //С‡С‚РѕР±С‹ РїРѕРґРєР»СЋС‡Р°Р»СЃСЏ 1 СЂР°Р·
+#include <string>   //РґР»СЏ СЃС‚СЂРѕРє
+#include <compare>  //РѕРїРµСЂР°С‚РѕСЂ <=>(СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ РѕРїРµСЂР°С‚РѕСЂ СЃСЂР°РІРЅРµРЅРёСЏ_) С‚РѕР»СЊРєРѕ РЅР° СЃ++20
+#include <cstdint>  //РґР»СЏ СѓРёРЅС‚РѕРІ
+#include <stdexcept>    //РґР»СЏ РёСЃРєР»СЋС‡РµРЅРёР№
+#include <sstream>  //РґР»СЏ РїРѕС‚РѕРєРѕРІ
 
-///приоритет обслуживания: High > Low > None
-enum class ServicePriority : uint8_t { None = 0, Low = 1, High = 2 };   //типобезопасное перечисление
+///РїСЂРёРѕСЂРёС‚РµС‚ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ: High > Low > None
+enum class ServicePriority : uint8_t { None = 0, Low = 1, High = 2 };   //С‚РёРїРѕР±РµР·РѕРїР°СЃРЅРѕРµ РїРµСЂРµС‡РёСЃР»РµРЅРёРµ
 
-class FaultyDevice { //обьявляю класс
-public:     //для ясности не приват
+class FaultyDevice { //РѕР±СЊСЏРІР»СЏСЋ РєР»Р°СЃСЃ
+public:     //РґР»СЏ СЏСЃРЅРѕСЃС‚Рё РЅРµ РїСЂРёРІР°С‚
     FaultyDevice(std::string name,
         uint32_t address,
         ServicePriority prio,
         std::string fault)
-        : name_(std::move(name)),   //забираем содержимое без копии(ОпТиМиЗаЦиЯ)
-        address_(address),  //сетевой адрес 32 бита
-        priority_(prio),    //ПРИОРИТЕТ
-        fault_(std::move(fault)) {  //описание неисправности
+        : name_(std::move(name)),   //Р·Р°Р±РёСЂР°РµРј СЃРѕРґРµСЂР¶РёРјРѕРµ Р±РµР· РєРѕРїРёРё(РћРїРўРёРњРёР—Р°Р¦РёРЇ)
+        address_(address),  //СЃРµС‚РµРІРѕР№ Р°РґСЂРµСЃ 32 Р±РёС‚Р°
+        priority_(prio),    //РџР РРћР РРўР•Рў
+        fault_(std::move(fault)) {  //РѕРїРёСЃР°РЅРёРµ РЅРµРёСЃРїСЂР°РІРЅРѕСЃС‚Рё
     }
 
-    //геттеры
-    const std::string& name() const noexcept { return name_; }  //не изхменяем обьект и не бросаем исключений
+    //РіРµС‚С‚РµСЂС‹
+    const std::string& name() const noexcept { return name_; }  //РЅРµ РёР·С…РјРµРЅСЏРµРј РѕР±СЊРµРєС‚ Рё РЅРµ Р±СЂРѕСЃР°РµРј РёСЃРєР»СЋС‡РµРЅРёР№
     uint32_t address() const noexcept { return address_; }
     ServicePriority priority() const noexcept { return priority_; }
     const std::string& fault_description() const noexcept { return fault_; }
 
-    //сеттеры
-    void setPriority(ServicePriority newPrio) noexcept { priority_ = newPrio; } //меняем только приоритет
-    void setFault(std::string newFault) { fault_ = std::move(newFault); }   //обновляем текст неисправности
+    //СЃРµС‚С‚РµСЂС‹
+    void setPriority(ServicePriority newPrio) noexcept { priority_ = newPrio; } //РјРµРЅСЏРµРј С‚РѕР»СЊРєРѕ РїСЂРёРѕСЂРёС‚РµС‚
+    void setFault(std::string newFault) { fault_ = std::move(newFault); }   //РѕР±РЅРѕРІР»СЏРµРј С‚РµРєСЃС‚ РЅРµРёСЃРїСЂР°РІРЅРѕСЃС‚Рё
 
-    //сравнение по приоритету
-    //чем выше приоритет тем больше объект
+    //СЃСЂР°РІРЅРµРЅРёРµ РїРѕ РїСЂРёРѕСЂРёС‚РµС‚Сѓ
+    //С‡РµРј РІС‹С€Рµ РїСЂРёРѕСЂРёС‚РµС‚ С‚РµРј Р±РѕР»СЊС€Рµ РѕР±СЉРµРєС‚
     std::strong_ordering operator<=>(const FaultyDevice& rhs) const noexcept {
-        int lhsRank = rank(priority_);  //приоритет в число
+        int lhsRank = rank(priority_);  //РїСЂРёРѕСЂРёС‚РµС‚ РІ С‡РёСЃР»Рѕ
         int rhsRank = rank(rhs.priority_);
         if (lhsRank != rhsRank) return lhsRank <=> rhsRank;
 
-        //при равных приоритетах
+        //РїСЂРё СЂР°РІРЅС‹С… РїСЂРёРѕСЂРёС‚РµС‚Р°С…
         if (name_ != rhs.name_) return name_ <=> rhs.name_;
         return address_ <=> rhs.address_;
     }
 
-    //равенство по приоритету
+    //СЂР°РІРµРЅСЃС‚РІРѕ РїРѕ РїСЂРёРѕСЂРёС‚РµС‚Сѓ
     bool operator==(const FaultyDevice& rhs) const noexcept {
         return priority_ == rhs.priority_;
     }
 
-    //утилиты для IPv4
-    // статические методы 
-    //преобразование из a.b.c.d в 32битное число
+    //СѓС‚РёР»РёС‚С‹ РґР»СЏ IPv4
+    // СЃС‚Р°С‚РёС‡РµСЃРєРёРµ РјРµС‚РѕРґС‹ 
+    //РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РёР· a.b.c.d РІ 32Р±РёС‚РЅРѕРµ С‡РёСЃР»Рѕ
     static uint32_t ipv4_to_u32(const std::string& dotted);
     static std::string u32_to_ipv4(uint32_t value);
 
-private:    //добавляю вес каждому приоритету
+private:    //РґРѕР±Р°РІР»СЏСЋ РІРµСЃ РєР°Р¶РґРѕРјСѓ РїСЂРёРѕСЂРёС‚РµС‚Сѓ
     static constexpr int rank(ServicePriority p) noexcept {
         switch (p) {
         case ServicePriority::High: return 3;
@@ -62,7 +62,7 @@ private:    //добавляю вес каждому приоритету
         }
         return 0;
     }
-    //поля
+    //РїРѕР»СЏ
     std::string name_;
     uint32_t    address_;
     ServicePriority priority_;
