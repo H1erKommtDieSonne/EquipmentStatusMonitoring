@@ -1,17 +1,71 @@
 #include "FaultyDevice.h"
+#include <cctype>
+#include <vector>
+#include <string>
 
-uint32_t FaultyDevice::ipv4_to_u32(const std::string& s) {        //1 статический метод класса строка абвг в число 
-    unsigned a, b, c, d;    //октеты  ipv4
-    char dot1, dot2, dot3;
-    std::istringstream is(s);   //поток ввода для парсинга
-    if (!(is >> a >> dot1 >> b >> dot2 >> c >> dot3 >> d) ||    //проверяем что точки
-        dot1 != '.' || dot2 != '.' || dot3 != '.')
-        throw std::invalid_argument("неверный формат адреса ipv4 : " + s);
+//full replacement after hardtests
 
-    if (a > 255 || b > 255 || c > 255 || d > 255)   //проверяем диапазон
-        throw std::out_of_range("адрес ipv4 не в диапазоне: " + s);
+uint32_t FaultyDevice::ipv4_to_u32(const std::string& s) {
+    //basic check
+    if (s.empty()) {
+        throw std::invalid_argument("empty IPv4 string");
+    }
 
-    //сетевой порядок байтов
+    //onlydots
+    for (unsigned char ch : s) {
+        if (!(std::isdigit(ch) || ch == '.')) {
+            throw std::invalid_argument("invalid char in IPv4: " + s);
+        }
+    }
+
+    //correct division
+    std::vector<std::string> parts;
+    parts.reserve(4);
+    std::size_t pos = 0, dot;
+    for (int i = 0; i < 3; ++i) {
+        dot = s.find('.', pos);
+        if (dot == std::string::npos) {
+            throw std::invalid_argument("IPv4 must have 3 dots: " + s);
+        }
+        if (dot == pos) {
+            throw std::invalid_argument("invalid octet in IPv4: " + s);
+        }
+        parts.emplace_back(s.substr(pos, dot - pos));
+        pos = dot + 1;
+    }
+    //last octet check
+    if (pos >= s.size()) {
+        throw std::invalid_argument("invalid last octet in IPv4: " + s);
+    }
+    parts.emplace_back(s.substr(pos));
+
+    if (parts.size() != 4) {
+        throw std::invalid_argument("IPv4 must have 4 octets: " + s);
+    }
+
+    //diapazon
+    unsigned a, b, c, d;
+    auto parse_octet = [&](const std::string& p) -> unsigned {
+        if (p.empty()) throw std::invalid_argument("empty octet");
+        //only numbers
+        //started nulls
+        unsigned long val = 0;
+        try {
+            val = std::stoul(p, nullptr, 10);
+        }
+        catch (...) {
+            throw std::invalid_argument("bad octet: " + p);
+        }
+        if (val > 255) throw std::out_of_range("octet out of range: " + p);
+        return static_cast<unsigned>(val);
+        };
+
+    a = parse_octet(parts[0]);
+    b = parse_octet(parts[1]);
+    c = parse_octet(parts[2]);
+    d = parse_octet(parts[3]);
+
+    //gluing all
     return (static_cast<uint32_t>(a) << 24) |
         (static_cast<uint32_t>(b) << 16) |
         (static_cast<uint32_t>(c) << 8) |
