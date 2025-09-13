@@ -2,6 +2,7 @@
 #include <cctype>
 #include <vector>
 #include <string>
+#include <algorithm>
 
 //full replacement after hardtests 09 09
 //new commit after 3 bad tests 13 09
@@ -19,7 +20,14 @@ uint32_t FaultyDevice::ipv4_to_u32(const std::string& s) {
             throw std::invalid_argument("invalid char in IPv4: " + s);
         }
     }
-
+    //
+    //
+    //new  code 13 09
+    if (std::count(s.begin(), s.end(), '.') != 3) {
+        throw std::invalid_argument("IPv4 must have 3 dots: " + s);
+    }
+    //
+    //
     //correct division
     std::vector<std::string> parts;
     parts.reserve(4);

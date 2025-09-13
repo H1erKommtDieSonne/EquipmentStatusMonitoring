@@ -149,6 +149,61 @@ int main(int argc, char** argv) {
 
 
 //easy test
+// тут нужно было сделать так pered mainom
+//
+//
+    /////     /////       /////       /////      /////
+static int tests_run = 0;
+static int tests_failed = 0;
+
+#define CHECK_TRUE(expr) do {                    \
+    ++tests_run;                                  \
+    if (!(expr)) {                                \
+        ++tests_failed;                           \
+        std::cerr << "[FAIL] " #expr << "\n";     \
+    }                                             \
+} while(0)
+
+#define CHECK_EQ(a,b) do {                        \
+    ++tests_run;                                  \
+    if (!((a) == (b))) {                          \
+        ++tests_failed;                           \
+        std::cerr << "[FAIL] " #a " == " #b       \
+                  << " (got: " << (a)             \
+                  << ", expected: " << (b) << ")\n"; \
+    }                                             \
+} while(0)
+
+// Проверка, что выражение выбросит исклбючени типа E
+#define CHECK_THROW(expr, E) do {                 \
+    ++tests_run;                                  \
+    bool thrown = false;                          \
+    try { (void)(expr); }                         \
+    catch (const E&) { thrown = true; }           \
+    catch (...) {}                                \
+    if (!thrown) {                                \
+        ++tests_failed;                           \
+        std::cerr << "[FAIL] expected throw " #E  \
+                  << " for " #expr << "\n";       \
+    }                                             \
+} while(0)
+
+// Проверка, что выражение не бросит исключений
+#define CHECK_NO_THROW(expr) do {                 \
+    ++tests_run;                                  \
+    try { (void)(expr); }                         \
+    catch (...) {                                 \
+        ++tests_failed;                           \
+        std::cerr << "[FAIL] unexpected exception: " #expr << "\n"; \
+    }                                             \
+} while(0)
+//     /////        /////         //////         /////        /////   /////
+//
+//
+//
+//
+//
+//
 
 static int tests_run = 0;
 static int tests_failed = 0;
