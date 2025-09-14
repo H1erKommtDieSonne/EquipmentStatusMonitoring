@@ -1,6 +1,7 @@
 #include "FaultyDeviceEx.h"
 #include "HealthyDevice.h"
 #include <memory>
+#include <utility>
 
 std::unique_ptr<Device> FaultyDeviceEx::breakDown(std::string) const {
     
@@ -8,5 +9,7 @@ std::unique_ptr<Device> FaultyDeviceEx::breakDown(std::string) const {
 }
 
 std::unique_ptr<Device> FaultyDeviceEx::repair(uint64_t uptimeAfterRepairSec) const {
-    return std::unique_ptr<Device>(new HealthyDevice(name_, address_, priority_, uptimeAfterRepairSec));
+    return std::unique_ptr<Device>(new HealthyDevice(
+        name_, address_, priority_, uptimeAfterRepairSec
+    ));
 }
