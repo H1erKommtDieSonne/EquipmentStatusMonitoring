@@ -6,11 +6,28 @@
 #include "ServicePriority.h"
 
 /**
- * @brief Неисправное устройство в иерархии Device
- *        Делает минимальные предположения о ServicePriority
+ * @class FaultyDeviceEx
+ * @brief Модель неисправного устройства
+ *
+ * Хранит описание неисправности и обеспечивает
+ *  - корректную инициализацию приоритета
+ *  - признак неисправности
+ *  - переходы состояний @ref breakDown и @ref repair
  */
+
 class FaultyDeviceEx : public Device {
 public:
+
+    /**
+ * @brief Конструктор неисправного устройства
+ * Если в качестве приоритета приходит значение 0
+ * оно автоматически повы1шается до 1
+ * @param name Имя устройства
+ * @param addr IP адрес устройства
+ * @param prio Приоритет обслуживания
+ * @param fault Текстовое описание неисправности
+ */
+
     FaultyDeviceEx(std::string name, Address addr, ServicePriority prio, std::string fault)
         : Device(std::move(name),
             addr,

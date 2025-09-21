@@ -1,11 +1,3 @@
-/**
- * @file FaultyDevice.cpp
- * @brief Реализации методов класса FaultyDevice
- *
- * Содержит реализацию ремонта неисправного устройства (@ref FaultyDevice::repair), 
- * утилиты для конвертации IPv4 из строки в число и обратно (@ref FaultyDevice::ipv4_to_u32 и @ref FaultyDevice::u32_to_ipv4).
- */
-
 #include "FaultyDevice.h"
 #include "HealthyDevice.h"
 #include <memory> 
@@ -16,31 +8,25 @@
 #include <sstream>
 #include <stdexcept>
 
- /**
-  * @brief Ремонт неисправного устройства
-  *
-  * Возвращает новый объект @ref HealthyDevice с тем же именем, адресом
-  * и текущим приоритетом. Время после ремонта задаётся параметром
-  *
-  * @param uptimeAfterRepairSec Новое значение наработки (сек) после ремонта.
-  * @return std::unique_ptr<Device> — исправное устройство.
-  *
-  */
+/**
+ * @brief Ремонт неисправного устройства
+ * Создаёт новый объект @ref HealthyDevice с тем же именем, адресом и приоритетом,
+ * но с переданным значением наработки после ремонта
+ * @param uptimeAfterRepairSec Наработка после ремонта
+ * @return Указатель на новое исправное устройство
+ */
+
 std::unique_ptr<Device> FaultyDevice::repair(uint64_t uptimeAfterRepairSec) const {
     return std::make_unique<HealthyDevice>(name_, address_, priority_, uptimeAfterRepairSec);
 }
 
 /**
- * @brief Преобразование IPv4-строки  в 32битное число
- *
- * @param s Строка
- * @return 32битное представление IPv4
- *
- * @throws std::invalid_argument если строка пустая; содержит неправильныен символы; неверное количество точек; пустой октет или лишняя точка; неверное число октетов 
- * @throws std::out_of_range если какой-либо октет вне диапазона
- *
- *
+ * @brief Преобразовать IPадрес из строкового вида в 32битное число
+ * Принимает строку формата a.b.c.d с ровно тремя точками и десятичными октетами
+ * @param s IPстрока
+ * @return 32-битное представление адреса
  */
+
 uint32_t FaultyDevice::ipv4_to_u32(const std::string& s) {
     if (s.empty()) {
         throw std::invalid_argument("empty IPv4 string");
@@ -116,12 +102,11 @@ uint32_t FaultyDevice::ipv4_to_u32(const std::string& s) {
 }
 
 /**
- * @brief Преобразование 32битного IPv4 в строку
- *
+ * @brief Преобразовать 32битный IPv4 в строку вида a.b.c.d
  * @param v 32битное представление IPv4
- * @return Строка
- *
+ * @return Строка вида a.b.c.d
  */
+
 std::string FaultyDevice::u32_to_ipv4(uint32_t v) {
     std::ostringstream os;
     os << ((v >> 24) & 0xFF) << '.'

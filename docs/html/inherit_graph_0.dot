@@ -1,0 +1,15 @@
+digraph "РРµСЂР°СЂС…РёСЏ РєР»Р°СЃСЃРѕРІ. Р“СЂР°С„РёС‡РµСЃРєРёР№ РІРёРґ."
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="Device",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_device.html",tooltip="Абстрактная база для всех устройств Содержит общие поля (имя, адрес, приоритет) и чисто виртуальные методы для определения состояния и переходов состояний в производных классах"];
+  Node0 -> Node1 [id="edge1_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="FaultyDeviceEx",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_faulty_device_ex.html",tooltip="Модель неисправного устройства"];
+  Node0 -> Node2 [id="edge2_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="HealthyDevice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_healthy_device.html",tooltip="Исправное устройство(наследник Device) Дополнительно хранит наработку в секундах(uptimeSec_) и предоставляет геттер uptime."];
+  Node2 -> Node3 [id="edge3_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ReserveDevice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_reserve_device.html",tooltip="Исправное устройство, находящееся в резерве"];
+}

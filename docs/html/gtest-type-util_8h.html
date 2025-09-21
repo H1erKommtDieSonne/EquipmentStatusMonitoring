@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: Файл fix/include/gtest/internal/gtest-type-util.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">Иерархия устройств</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('gtest-type-util_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл gtest-type-util.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;typeinfo&gt;</code><br />
+<code>#include &quot;<a class="el" href="gtest-port_8h_source.html">gtest/internal/gtest-port.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для gtest-type-util.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="gtest-type-util_8h__incl.png" border="0" usemap="#afix_2include_2gtest_2internal_2gtest-type-util_8h" loading="lazy" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="gtest-type-util_8h__dep__incl.png" border="0" usemap="#afix_2include_2gtest_2internal_2gtest-type-util_8hdep" loading="lazy" alt=""/></div>
+</div>
+</div>
+<p><a href="gtest-type-util_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3ANone_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Fnone" id="r_testing_3A_3Ainternal_3A_3ANone_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Fnone"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_none">testing::internal::None</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3ATemplateSel_3C_20Tmpl_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplate_5Fsel" id="r_testing_3A_3Ainternal_3A_3ATemplateSel_3C_20Tmpl_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplate_5Fsel"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_template_sel">testing::internal::TemplateSel&lt; Tmpl &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3ATemplateSel_3C_20Tmpl_20_3E_3A_3ABind_3C_20T_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplate_5Fsel_5F1_5F1_5Fbind" id="r_testing_3A_3Ainternal_3A_3ATemplateSel_3C_20Tmpl_20_3E_3A_3ABind_3C_20T_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplate_5Fsel_5F1_5F1_5Fbind"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_template_sel_1_1_bind">testing::internal::TemplateSel&lt; Tmpl &gt;::Bind&lt; T &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3ATemplates_3C_20Head_5F_2C_20Tail_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplates" id="r_testing_3A_3Ainternal_3A_3ATemplates_3C_20Head_5F_2C_20Tail_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplates"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_templates">testing::internal::Templates&lt; Head_, Tail_ &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3ATemplates_3C_20Head_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplates_5F3_5F01_5Fhead_5F_5F_5F01_5F4" id="r_testing_3A_3Ainternal_3A_3ATemplates_3C_20Head_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftemplates_5F3_5F01_5Fhead_5F_5F_5F01_5F4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_templates_3_01_head___01_4">testing::internal::Templates&lt; Head_ &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3ATypes_3C_20Head_5F_2C_20Tail_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftypes" id="r_testing_3A_3Ainternal_3A_3ATypes_3C_20Head_5F_2C_20Tail_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftypes"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_types">testing::internal::Types&lt; Head_, Tail_ &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3ATypes_3C_20Head_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftypes_5F3_5F01_5Fhead_5F_5F_5F01_5F4" id="r_testing_3A_3Ainternal_3A_3ATypes_3C_20Head_5F_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Ftypes_5F3_5F01_5Fhead_5F_5F_5F01_5F4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_types_3_01_head___01_4">testing::internal::Types&lt; Head_ &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3AProxyTypeList_3C_20Ts_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Fproxy_5Ftype_5Flist" id="r_testing_3A_3Ainternal_3A_3AProxyTypeList_3C_20Ts_20_3E_5Fstructtesting_5F1_5F1internal_5F1_5F1_5Fproxy_5Ftype_5Flist"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_proxy_type_list">testing::internal::ProxyTypeList&lt; Ts &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3Ais_5Fproxy_5Ftype_5Flist_3C_20typename_20_3E" id="r_testing_3A_3Ainternal_3A_3Ais_5Fproxy_5Ftype_5Flist_3C_20typename_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1is__proxy__type__list.html">testing::internal::is_proxy_type_list&lt; typename &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3Ais_5Fproxy_5Ftype_5Flist_3C_20ProxyTypeList_3C_20Ts_2E_2E_2E_20_3E_20_3E" id="r_testing_3A_3Ainternal_3A_3Ais_5Fproxy_5Ftype_5Flist_3C_20ProxyTypeList_3C_20Ts_2E_2E_2E_20_3E_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1is__proxy__type__list_3_01_proxy_type_list_3_01_ts_8_8_8_01_4_01_4.html">testing::internal::is_proxy_type_list&lt; ProxyTypeList&lt; Ts... &gt; &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3AGenerateTypeList_3C_20T_20_3E" id="r_testing_3A_3Ainternal_3A_3AGenerateTypeList_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1_generate_type_list.html">testing::internal::GenerateTypeList&lt; T &gt;</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:testing" id="r_testing"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html">testing</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal" id="r_testing_3A_3Ainternal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html">testing::internal</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a094923c2da478086c7b15378613e8af7" id="r_a094923c2da478086c7b15378613e8af7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a094923c2da478086c7b15378613e8af7">GTEST_TEMPLATE_</a></td></tr>
+<tr class="memitem:af5c3f5f65da9d9c35399ee49d4632894" id="r_af5c3f5f65da9d9c35399ee49d4632894"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5c3f5f65da9d9c35399ee49d4632894">GTEST_BIND_</a>(TmplSel,  T)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a5e362473e2ee07d95ba239baf4436a71" id="r_a5e362473e2ee07d95ba239baf4436a71"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a5e362473e2ee07d95ba239baf4436a71 template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a5e362473e2ee07d95ba239baf4436a71">testing::Types</a> = <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_proxy_type_list">internal::ProxyTypeList</a>&lt;Ts...&gt;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a5342e843f087081705094beae07b557b" id="r_a5342e843f087081705094beae07b557b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a5342e843f087081705094beae07b557b">testing::internal::CanonicalizeForStdLibVersioning</a> (std::string s)</td></tr>
+<tr class="memitem:a635606b4731f843c86ec8ca51cab83a1" id="r_a635606b4731f843c86ec8ca51cab83a1"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a635606b4731f843c86ec8ca51cab83a1 template"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a635606b4731f843c86ec8ca51cab83a1">testing::internal::GetTypeName</a> ()</td></tr>
+</table>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Классы</h2>
+<a name="structtesting_1_1internal_1_1_none" id="structtesting_1_1internal_1_1_none"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_none">&#9670;&#160;</a></span>testing::internal::None</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::None</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00138">138</a></p>
+</div>
+</div>
+</div>
+<a name="structtesting_1_1internal_1_1_template_sel" id="structtesting_1_1internal_1_1_template_sel"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_template_sel">&#9670;&#160;</a></span>testing::internal::TemplateSel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::TemplateSel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="#a094923c2da478086c7b15378613e8af7">GTEST_TEMPLATE_</a> Tmpl&gt;<br />
+struct testing::internal::TemplateSel&lt; Tmpl &gt;</div>
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00153">153</a></p>
+</div><div class="dynheader">
+Граф наследования:testing::internal::TemplateSel&lt; Tmpl &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtesting_1_1internal_1_1_template_sel__inherit__graph.png" border="0" usemap="#atesting_1_1internal_1_1_template_sel_3_01_tmpl_01_4_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+
+</div>
+</div>
+<a name="structtesting_1_1internal_1_1_template_sel_1_1_bind" id="structtesting_1_1internal_1_1_template_sel_1_1_bind"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_template_sel_1_1_bind">&#9670;&#160;</a></span>testing::internal::TemplateSel::Bind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::TemplateSel::Bind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="#a094923c2da478086c7b15378613e8af7">GTEST_TEMPLATE_</a> Tmpl&gt;<br />
+template&lt;typename T&gt;<br />
+struct testing::internal::TemplateSel&lt; Tmpl &gt;::Bind&lt; T &gt;</div>
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00155">155</a></p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Члены классов</th></tr>
+<tr><td class="fieldtype">
+<a id="aa84b00f0c4cb97a60d7d8eb752d1956d" name="aa84b00f0c4cb97a60d7d8eb752d1956d"></a>typedef Tmpl&lt; T &gt;</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtesting_1_1internal_1_1_templates" id="structtesting_1_1internal_1_1_templates"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_templates">&#9670;&#160;</a></span>testing::internal::Templates</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::Templates</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="#a094923c2da478086c7b15378613e8af7">GTEST_TEMPLATE_</a> Head_, GTEST_TEMPLATE_... Tail_&gt;<br />
+struct testing::internal::Templates&lt; Head_, Tail_ &gt;</div>
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00163">163</a></p>
+</div><div class="dynheader">
+Граф наследования:testing::internal::Templates&lt; Head_, Tail_ &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtesting_1_1internal_1_1_templates__inherit__graph.png" border="0" usemap="#atesting_1_1internal_1_1_templates_3_01_head___00_01_tail___01_4_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Члены классов</th></tr>
+<tr><td class="fieldtype">
+<a id="afd2098f3ace72dca2bfb0b3657f7f937" name="afd2098f3ace72dca2bfb0b3657f7f937"></a>typedef <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_template_sel">TemplateSel</a>&lt; Head_ &gt;</td>
+<td class="fieldname">
+Head <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_template_sel">TemplateSel</a>&lt;Head_&gt;</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a462d57c3c1fc0a1bef26659dbd0c3b3d" name="a462d57c3c1fc0a1bef26659dbd0c3b3d"></a>typedef <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_templates">Templates</a>&lt; Tail_... &gt;</td>
+<td class="fieldname">
+Tail <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_templates">Templates</a>&lt;Tail_...&gt;</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtesting_1_1internal_1_1_templates_3_01_head___01_4" id="structtesting_1_1internal_1_1_templates_3_01_head___01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_templates_3_01_head___01_4">&#9670;&#160;</a></span>testing::internal::Templates&lt; Head_ &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::Templates&lt; Head_ &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="#a094923c2da478086c7b15378613e8af7">GTEST_TEMPLATE_</a> Head_&gt;<br />
+struct testing::internal::Templates&lt; Head_ &gt;</div>
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00169">169</a></p>
+</div><div class="dynheader">
+Граф наследования:testing::internal::Templates&lt; Head_ &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtesting_1_1internal_1_1_templates_3_01_head___01_4__inherit__graph.png" border="0" usemap="#atesting_1_1internal_1_1_templates_3_01_head___01_4_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Члены классов</th></tr>
+<tr><td class="fieldtype">
+<a id="ac6c76b1c4a4da401cc0e50c247cdd568" name="ac6c76b1c4a4da401cc0e50c247cdd568"></a>typedef <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_template_sel">TemplateSel</a>&lt; Head_ &gt;</td>
+<td class="fieldname">
+Head <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_template_sel">TemplateSel</a>&lt;Head_&gt;</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a545ead14971baac1b876f7651c3529b9" name="a545ead14971baac1b876f7651c3529b9"></a>typedef <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_none">None</a></td>
+<td class="fieldname">
+Tail <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_none">None</a></td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtesting_1_1internal_1_1_types" id="structtesting_1_1internal_1_1_types"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_types">&#9670;&#160;</a></span>testing::internal::Types</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::Types</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Head_, typename... Tail_&gt;<br />
+struct testing::internal::Types&lt; Head_, Tail_ &gt;</div>
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00176">176</a></p>
+</div><div class="dynheader">
+Граф наследования:testing::internal::Types&lt; Head_, Tail_ &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtesting_1_1internal_1_1_types__inherit__graph.png" border="0" usemap="#atesting_1_1internal_1_1_types_3_01_head___00_01_tail___01_4_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Члены классов</th></tr>
+<tr><td class="fieldtype">
+<a id="af25c9ea6cd38071ce5154f3869fc0cc0" name="af25c9ea6cd38071ce5154f3869fc0cc0"></a>typedef Head_</td>
+<td class="fieldname">
+Head Head_</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a95f833deba9a29970bb310b80f97239f" name="a95f833deba9a29970bb310b80f97239f"></a>typedef <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_types">Types</a>&lt; Tail_... &gt;</td>
+<td class="fieldname">
+Tail <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_types">Types</a>&lt;Tail_...&gt;</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtesting_1_1internal_1_1_types_3_01_head___01_4" id="structtesting_1_1internal_1_1_types_3_01_head___01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_types_3_01_head___01_4">&#9670;&#160;</a></span>testing::internal::Types&lt; Head_ &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::Types&lt; Head_ &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Head_&gt;<br />
+struct testing::internal::Types&lt; Head_ &gt;</div>
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00182">182</a></p>
+</div><div class="dynheader">
+Граф наследования:testing::internal::Types&lt; Head_ &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtesting_1_1internal_1_1_types_3_01_head___01_4__inherit__graph.png" border="0" usemap="#atesting_1_1internal_1_1_types_3_01_head___01_4_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Члены классов</th></tr>
+<tr><td class="fieldtype">
+<a id="acc643a692020fe60c80cf77fb984c04d" name="acc643a692020fe60c80cf77fb984c04d"></a>typedef Head_</td>
+<td class="fieldname">
+Head Head_</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a744a032ef03e4446a6943b68fd3f94ee" name="a744a032ef03e4446a6943b68fd3f94ee"></a>typedef <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_none">None</a></td>
+<td class="fieldname">
+Tail <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_none">None</a></td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtesting_1_1internal_1_1_proxy_type_list" id="structtesting_1_1internal_1_1_proxy_type_list"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1_proxy_type_list">&#9670;&#160;</a></span>testing::internal::ProxyTypeList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::ProxyTypeList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename... Ts&gt;<br />
+struct testing::internal::ProxyTypeList&lt; Ts &gt;</div>
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00190">190</a></p>
+</div><div class="dynheader">
+Граф наследования:testing::internal::ProxyTypeList&lt; Ts &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtesting_1_1internal_1_1_proxy_type_list__inherit__graph.png" border="0" usemap="#atesting_1_1internal_1_1_proxy_type_list_3_01_ts_01_4_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Члены классов</th></tr>
+<tr><td class="fieldtype">
+<a id="a7a70316d957e6c48becd3130490da997" name="a7a70316d957e6c48becd3130490da997"></a>typedef <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_types">Types</a>&lt; Ts... &gt;</td>
+<td class="fieldname">
+type <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1_types">Types</a>&lt;Ts...&gt;</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Макросы</h2>
+<a id="af5c3f5f65da9d9c35399ee49d4632894" name="af5c3f5f65da9d9c35399ee49d4632894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5c3f5f65da9d9c35399ee49d4632894">&#9670;&#160;</a></span>GTEST_BIND_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_BIND_</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>TmplSel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">TmplSel::template Bind&lt;T&gt;::type</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00160">160</a></p>
+
+<p class="reference">Используется в <a class="el" href="gtest-internal_8h_source.html#l00694">testing::internal::TypeParameterizedTest&lt; Fixture, TestSel, Types &gt;::Register()</a>.</p>
+
+</div>
+</div>
+<a id="a094923c2da478086c7b15378613e8af7" name="a094923c2da478086c7b15378613e8af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a094923c2da478086c7b15378613e8af7">&#9670;&#160;</a></span>GTEST_TEMPLATE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_TEMPLATE_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; \</div>
+<div class="line">  <span class="keyword">class</span></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest-type-util_8h_source.html">gtest-type-util.h</a> строка <a class="el" href="gtest-type-util_8h_source.html#l00140">140</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_b4d3f8626c96dc550d2abab171042708.html">fix</a></li><li class="navelem"><a href="dir_89efffde112328066e4d76293b7b46ef.html">include</a></li><li class="navelem"><a href="dir_38e80c1634d8017c49f8f62013db597d.html">gtest</a></li><li class="navelem"><a href="dir_d4001232aa579aaf07d2b8315376f4ca.html">internal</a></li><li class="navelem"><a href="gtest-type-util_8h.html">gtest-type-util.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

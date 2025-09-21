@@ -1,0 +1,9 @@
+digraph "РРµСЂР°СЂС…РёСЏ РєР»Р°СЃСЃРѕРІ. Р“СЂР°С„РёС‡РµСЃРєРёР№ РІРёРґ."
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="DeviceCollection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_device_collection.html",tooltip="Контейнер владения устройствами Контейнер отвечает за жизненный цикл объектов устройств и предоставляет базовые операции управления коллекцией"];
+}

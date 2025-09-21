@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: Класс testing::TestEventListener</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">Иерархия устройств</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classtesting_1_1_test_event_listener.html','','classtesting_1_1_test_event_listener-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс testing::TestEventListener<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="gtest_8h_source.html">gtest.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:testing::TestEventListener:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtesting_1_1_test_event_listener__inherit__graph.png" border="0" usemap="#atesting_1_1_test_event_listener_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab0d99e45bba25eec37e197e147bb84ea" id="r_ab0d99e45bba25eec37e197e147bb84ea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0d99e45bba25eec37e197e147bb84ea">~TestEventListener</a> ()=default</td></tr>
+<tr class="memitem:a5f6c84f39851e8a603a2d2e10063816b" id="r_a5f6c84f39851e8a603a2d2e10063816b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f6c84f39851e8a603a2d2e10063816b">OnTestProgramStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test)=0</td></tr>
+<tr class="memitem:a60cc09b7907cb329d152eb5e7133bdeb" id="r_a60cc09b7907cb329d152eb5e7133bdeb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60cc09b7907cb329d152eb5e7133bdeb">OnTestIterationStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test, int iteration)=0</td></tr>
+<tr class="memitem:aa6502e534919605be45f26a6daf9a40c" id="r_aa6502e534919605be45f26a6daf9a40c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6502e534919605be45f26a6daf9a40c">OnEnvironmentsSetUpStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test)=0</td></tr>
+<tr class="memitem:aaa1021d75f5dbf3f05c829c1cc520341" id="r_aaa1021d75f5dbf3f05c829c1cc520341"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa1021d75f5dbf3f05c829c1cc520341">OnEnvironmentsSetUpEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test)=0</td></tr>
+<tr class="memitem:a2726cc70dfda861f109355f1d9f09dfe" id="r_a2726cc70dfda861f109355f1d9f09dfe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2726cc70dfda861f109355f1d9f09dfe">OnTestSuiteStart</a> (const <a class="el" href="classtesting_1_1_test_suite.html">TestSuite</a> &amp;)</td></tr>
+<tr class="memitem:ac48628c9f78d3e10bff77c7366e9e780" id="r_ac48628c9f78d3e10bff77c7366e9e780"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac48628c9f78d3e10bff77c7366e9e780">OnTestCaseStart</a> (const <a class="el" href="namespacetesting.html#aa00a8c56249800e8c5215cd3d8b00992">TestCase</a> &amp;)</td></tr>
+<tr class="memitem:ab4f6a0ca16ae75daf385b3b5914e1048" id="r_ab4f6a0ca16ae75daf385b3b5914e1048"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4f6a0ca16ae75daf385b3b5914e1048">OnTestStart</a> (const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;test_info)=0</td></tr>
+<tr class="memitem:a3696d7f4713eff0d096bfebff626fb50" id="r_a3696d7f4713eff0d096bfebff626fb50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3696d7f4713eff0d096bfebff626fb50">OnTestDisabled</a> (const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;)</td></tr>
+<tr class="memitem:a054f8705c883fa120b91473aff38f2ee" id="r_a054f8705c883fa120b91473aff38f2ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a054f8705c883fa120b91473aff38f2ee">OnTestPartResult</a> (const TestPartResult &amp;test_part_result)=0</td></tr>
+<tr class="memitem:abb1c44525ef038500608b5dc2f17099b" id="r_abb1c44525ef038500608b5dc2f17099b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb1c44525ef038500608b5dc2f17099b">OnTestEnd</a> (const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;test_info)=0</td></tr>
+<tr class="memitem:a8962caad5d2522c9160c794074a662ee" id="r_a8962caad5d2522c9160c794074a662ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8962caad5d2522c9160c794074a662ee">OnTestSuiteEnd</a> (const <a class="el" href="classtesting_1_1_test_suite.html">TestSuite</a> &amp;)</td></tr>
+<tr class="memitem:a6cada1572dde8010b94f6dd237ce52f4" id="r_a6cada1572dde8010b94f6dd237ce52f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cada1572dde8010b94f6dd237ce52f4">OnTestCaseEnd</a> (const <a class="el" href="namespacetesting.html#aa00a8c56249800e8c5215cd3d8b00992">TestCase</a> &amp;)</td></tr>
+<tr class="memitem:a468b5e6701bcb86cb2c956caadbba5e4" id="r_a468b5e6701bcb86cb2c956caadbba5e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a468b5e6701bcb86cb2c956caadbba5e4">OnEnvironmentsTearDownStart</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test)=0</td></tr>
+<tr class="memitem:a9ea04fa7f447865ba76df35e12ba2092" id="r_a9ea04fa7f447865ba76df35e12ba2092"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ea04fa7f447865ba76df35e12ba2092">OnEnvironmentsTearDownEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test)=0</td></tr>
+<tr class="memitem:a550fdb3e55726e4cefa09f5697941425" id="r_a550fdb3e55726e4cefa09f5697941425"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a550fdb3e55726e4cefa09f5697941425">OnTestIterationEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test, int iteration)=0</td></tr>
+<tr class="memitem:ad15b6246d94c268e233487a86463ef3d" id="r_ad15b6246d94c268e233487a86463ef3d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad15b6246d94c268e233487a86463ef3d">OnTestProgramEnd</a> (const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;unit_test)=0</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l00925">925</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ab0d99e45bba25eec37e197e147bb84ea" name="ab0d99e45bba25eec37e197e147bb84ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d99e45bba25eec37e197e147bb84ea">&#9670;&#160;</a></span>~TestEventListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual testing::TestEventListener::~TestEventListener </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aaa1021d75f5dbf3f05c829c1cc520341" name="aaa1021d75f5dbf3f05c829c1cc520341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa1021d75f5dbf3f05c829c1cc520341">&#9670;&#160;</a></span>OnEnvironmentsSetUpEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnEnvironmentsSetUpEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a9b4e781c0b38065a55c2fd163724ba69">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="aa6502e534919605be45f26a6daf9a40c" name="aa6502e534919605be45f26a6daf9a40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6502e534919605be45f26a6daf9a40c">&#9670;&#160;</a></span>OnEnvironmentsSetUpStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnEnvironmentsSetUpStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a6e498ae763ac8c1a46bd861e0b7ff3f5">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a9ea04fa7f447865ba76df35e12ba2092" name="a9ea04fa7f447865ba76df35e12ba2092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea04fa7f447865ba76df35e12ba2092">&#9670;&#160;</a></span>OnEnvironmentsTearDownEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnEnvironmentsTearDownEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#ad9984052e82c3ae26395a2d9480326d2">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a468b5e6701bcb86cb2c956caadbba5e4" name="a468b5e6701bcb86cb2c956caadbba5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468b5e6701bcb86cb2c956caadbba5e4">&#9670;&#160;</a></span>OnEnvironmentsTearDownStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnEnvironmentsTearDownStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a320780451eac9178434b7c77d948ecbd">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a6cada1572dde8010b94f6dd237ce52f4" name="a6cada1572dde8010b94f6dd237ce52f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cada1572dde8010b94f6dd237ce52f4">&#9670;&#160;</a></span>OnTestCaseEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestCaseEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacetesting.html#aa00a8c56249800e8c5215cd3d8b00992">TestCase</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#abe05cc74c1081ed51e2c84b73013299e">testing::EmptyTestEventListener</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l00971">971</a></p>
+
+</div>
+</div>
+<a id="ac48628c9f78d3e10bff77c7366e9e780" name="ac48628c9f78d3e10bff77c7366e9e780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48628c9f78d3e10bff77c7366e9e780">&#9670;&#160;</a></span>OnTestCaseStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestCaseStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacetesting.html#aa00a8c56249800e8c5215cd3d8b00992">TestCase</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a7f9a84967fde01000b7a56e9e84b6052">testing::EmptyTestEventListener</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l00949">949</a></p>
+
+</div>
+</div>
+<a id="a3696d7f4713eff0d096bfebff626fb50" name="a3696d7f4713eff0d096bfebff626fb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3696d7f4713eff0d096bfebff626fb50">&#9670;&#160;</a></span>OnTestDisabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestDisabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a200fee280ddf30644aa5b1056edc2563">testing::EmptyTestEventListener</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l00956">956</a></p>
+
+</div>
+</div>
+<a id="abb1c44525ef038500608b5dc2f17099b" name="abb1c44525ef038500608b5dc2f17099b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1c44525ef038500608b5dc2f17099b">&#9670;&#160;</a></span>OnTestEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>test_info</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a709d7077c086c877d214231bc520ef90">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a550fdb3e55726e4cefa09f5697941425" name="a550fdb3e55726e4cefa09f5697941425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550fdb3e55726e4cefa09f5697941425">&#9670;&#160;</a></span>OnTestIterationEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestIterationEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>iteration</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#aae9c5c61e476f0c421402fb1dde434d2">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a60cc09b7907cb329d152eb5e7133bdeb" name="a60cc09b7907cb329d152eb5e7133bdeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60cc09b7907cb329d152eb5e7133bdeb">&#9670;&#160;</a></span>OnTestIterationStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestIterationStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>iteration</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a31edf103561e8b4d747656bc2d927661">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a054f8705c883fa120b91473aff38f2ee" name="a054f8705c883fa120b91473aff38f2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054f8705c883fa120b91473aff38f2ee">&#9670;&#160;</a></span>OnTestPartResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestPartResult </td>
+          <td>(</td>
+          <td class="paramtype">const TestPartResult &amp;</td>          <td class="paramname"><span class="paramname"><em>test_part_result</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#ab95992f0a0b3741d59a24c3a7115fa60">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="ad15b6246d94c268e233487a86463ef3d" name="ad15b6246d94c268e233487a86463ef3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15b6246d94c268e233487a86463ef3d">&#9670;&#160;</a></span>OnTestProgramEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestProgramEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#aaa9d683e8e0c850af67a0b92d785ddb9">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a5f6c84f39851e8a603a2d2e10063816b" name="a5f6c84f39851e8a603a2d2e10063816b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6c84f39851e8a603a2d2e10063816b">&#9670;&#160;</a></span>OnTestProgramStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestProgramStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_unit_test.html">UnitTest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>unit_test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#ac3f5033fcd82080edb45f546ce9854fe">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="ab4f6a0ca16ae75daf385b3b5914e1048" name="ab4f6a0ca16ae75daf385b3b5914e1048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f6a0ca16ae75daf385b3b5914e1048">&#9670;&#160;</a></span>OnTestStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>test_info</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a1d8c7f3f1f92826f668edae1bc5aadf4">testing::EmptyTestEventListener</a>.</p>
+
+</div>
+</div>
+<a id="a8962caad5d2522c9160c794074a662ee" name="a8962caad5d2522c9160c794074a662ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8962caad5d2522c9160c794074a662ee">&#9670;&#160;</a></span>OnTestSuiteEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestSuiteEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_test_suite.html">TestSuite</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#aefdb73682d290791461e186d864db718">testing::EmptyTestEventListener</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l00967">967</a></p>
+
+</div>
+</div>
+<a id="a2726cc70dfda861f109355f1d9f09dfe" name="a2726cc70dfda861f109355f1d9f09dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2726cc70dfda861f109355f1d9f09dfe">&#9670;&#160;</a></span>OnTestSuiteStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void testing::TestEventListener::OnTestSuiteStart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtesting_1_1_test_suite.html">TestSuite</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classtesting_1_1_empty_test_event_listener.html#a1e32e4bd4857822b6b50e6900aa5c651">testing::EmptyTestEventListener</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l00945">945</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>fix/include/gtest/<a class="el" href="gtest_8h_source.html">gtest.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacetesting.html">testing</a></li><li class="navelem"><a href="classtesting_1_1_test_event_listener.html">TestEventListener</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+
+PROJECT_NAME           = "EquipmentStatusMonitoring"
+PROJECT_BRIEF          = "Иерархия устройств"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = Russian
+INPUT                  = . ./README.md
+FILE_PATTERNS          = *.h *.hpp *.cpp *.md
+RECURSIVE              = YES
+INPUT_ENCODING         = UTF-8
+EXCLUDE_PATTERNS       = */build/* */out/* */.git/*
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_PROTECTED      = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+INLINE_SIMPLE_STRUCTS  = YES
+JAVADOC_AUTOBRIEF      = YES
+
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCES_RELATION    = YES
+REFERENCED_BY_RELATION = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+
+
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 2
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = NO
+GROUP_GRAPHS           = YES
+UML_LOOK               = YES
+TEMPLATE_RELATIONS     = YES
+
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_TIMESTAMP         = NO
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+
+
+GENERATE_LATEX         = NO
+
+
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+
+
+USE_MDFILE_AS_MAINPAGE = README.md

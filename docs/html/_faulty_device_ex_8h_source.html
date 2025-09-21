@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: РСЃС…РѕРґРЅС‹Р№ С„Р°Р№Р» FaultyDeviceEx.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">РРµСЂР°СЂС…РёСЏ СѓСЃС‚СЂРѕР№СЃС‚РІ</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','РџРѕРёСЃРє',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_faulty_device_ex_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Р—Р°РіСЂСѓР·РєР°...</div>
+<div class="SRStatus" id="Searching">РџРѕРёСЃРє...</div>
+<div class="SRStatus" id="NoMatches">РќРµ РЅР°Р№РґРµРЅРѕ</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FaultyDeviceEx.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_faulty_device_ex_8h.html">РЎРј. РґРѕРєСѓРјРµРЅС‚Р°С†РёСЋ.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_device_8h.html">Device.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_service_priority_8h.html">ServicePriority.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_faulty_device_ex.html">   18</a></span><span class="keyword">class </span><a class="code hl_function" href="class_faulty_device_ex.html#a59d5b4c2974422130b2af57f2480755b">FaultyDeviceEx</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_device.html#af7badf268877700082eae61ccc89ef16">Device</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_faulty_device_ex.html#a59d5b4c2974422130b2af57f2480755b">   31</a></span>    <a class="code hl_function" href="class_faulty_device_ex.html#a59d5b4c2974422130b2af57f2480755b">FaultyDeviceEx</a>(std::string <a class="code hl_function" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="code hl_typedef" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="code hl_enumeration" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> prio, std::string fault)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        : <a class="code hl_function" href="class_device.html#af7badf268877700082eae61ccc89ef16">Device</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(<a class="code hl_function" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>),</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            addr,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            (prio == static_cast&lt;<a class="code hl_enumeration" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&gt;(0) ? static_cast&lt;<a class="code hl_enumeration" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&gt;(1) : prio)),</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        fault_(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(fault)) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_faulty_device_ex.html#aadd15f55e3e9d3ab946e0da1728285af">   39</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_faulty_device_ex.html#aadd15f55e3e9d3ab946e0da1728285af">isFaulty</a>() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::unique_ptr&lt;Device&gt; <a class="code hl_function" href="class_faulty_device_ex.html#ade4d58a2dca04ba0191fd692592bdb9b">breakDown</a>(std::string) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::unique_ptr&lt;Device&gt; <a class="code hl_function" href="class_faulty_device_ex.html#ad9acc3a42e10ed78e96930482bfa943f">repair</a>(uint64_t uptimeAfterRepairSec) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_faulty_device_ex.html#a0700f225ee117bb6acbc20bdaf3572d1">   45</a></span>    std::string <a class="code hl_function" href="class_faulty_device_ex.html#a0700f225ee117bb6acbc20bdaf3572d1">toString</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        std::ostringstream os;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        os &lt;&lt; <span class="stringliteral">&quot;FaultyDeviceEx{name=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_device.html#a5229ed83545bda7b8f220d77a851fc83">name_</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            &lt;&lt; <span class="stringliteral">&quot;, addr=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_device.html#ad4a2cd6fbccd3a603014ae033f1d9024">address_</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            &lt;&lt; <span class="stringliteral">&quot;, prio=&quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_device.html#a0a135362acd067995fceae6b8f2a0695">priority_</a>)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            &lt;&lt; <span class="stringliteral">&quot;, fault=\&quot;&quot;</span> &lt;&lt; fault_ &lt;&lt; <span class="stringliteral">&quot;\&quot;}&quot;</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> os.str();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_faulty_device_ex.html#aa0afc30cceaae0c8bf5428988fc0b545">   54</a></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="class_faulty_device_ex.html#aa0afc30cceaae0c8bf5428988fc0b545">fault_description</a>() const noexcept { <span class="keywordflow">return</span> fault_; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    std::string fault_;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+</div>
+<div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
+<div class="ttc" id="a_service_priority_8h_html"><div class="ttname"><a href="_service_priority_8h.html">ServicePriority.h</a></div></div>
+<div class="ttc" id="a_service_priority_8h_html_a2aec502bb90b246481f3ed5058af8a17"><div class="ttname"><a href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a></div><div class="ttdeci">ServicePriority</div><div class="ttdoc">Приоритет обслуживания устройства</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_service_priority_8h_source.html#l00009">ServicePriority.h:9</a></div></div>
+<div class="ttc" id="aclass_device_html_a0a135362acd067995fceae6b8f2a0695"><div class="ttname"><a href="class_device.html#a0a135362acd067995fceae6b8f2a0695">Device::priority_</a></div><div class="ttdeci">ServicePriority priority_</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00084">Device.h:84</a></div></div>
+<div class="ttc" id="aclass_device_html_a42ac52c0d933dfd8088237ab2f6a99e4"><div class="ttname"><a href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Device::Address</a></div><div class="ttdeci">uint32_t Address</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00018">Device.h:18</a></div></div>
+<div class="ttc" id="aclass_device_html_a4fb86f0953605583fcc64d8a22b441fd"><div class="ttname"><a href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">Device::name</a></div><div class="ttdeci">const std::string &amp; name() const noexcept</div><div class="ttdoc">Имя устройства.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00041">Device.h:41</a></div></div>
+<div class="ttc" id="aclass_device_html_a5229ed83545bda7b8f220d77a851fc83"><div class="ttname"><a href="class_device.html#a5229ed83545bda7b8f220d77a851fc83">Device::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00082">Device.h:82</a></div></div>
+<div class="ttc" id="aclass_device_html_ad4a2cd6fbccd3a603014ae033f1d9024"><div class="ttname"><a href="class_device.html#ad4a2cd6fbccd3a603014ae033f1d9024">Device::address_</a></div><div class="ttdeci">Address address_</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00083">Device.h:83</a></div></div>
+<div class="ttc" id="aclass_device_html_af7badf268877700082eae61ccc89ef16"><div class="ttname"><a href="class_device.html#af7badf268877700082eae61ccc89ef16">Device::Device</a></div><div class="ttdeci">Device(std::string name, Address addr, ServicePriority prio)</div><div class="ttdoc">Конструктор базового устройства</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00028">Device.h:28</a></div></div>
+<div class="ttc" id="aclass_faulty_device_ex_html_a0700f225ee117bb6acbc20bdaf3572d1"><div class="ttname"><a href="class_faulty_device_ex.html#a0700f225ee117bb6acbc20bdaf3572d1">FaultyDeviceEx::toString</a></div><div class="ttdeci">std::string toString() const override</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00045">FaultyDeviceEx.h:45</a></div></div>
+<div class="ttc" id="aclass_faulty_device_ex_html_a59d5b4c2974422130b2af57f2480755b"><div class="ttname"><a href="class_faulty_device_ex.html#a59d5b4c2974422130b2af57f2480755b">FaultyDeviceEx::FaultyDeviceEx</a></div><div class="ttdeci">FaultyDeviceEx(std::string name, Address addr, ServicePriority prio, std::string fault)</div><div class="ttdoc">Конструктор неисправного устройства Если в качестве приоритета приходит значение 0 оно автоматически повы1шается до 1</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00031">FaultyDeviceEx.h:31</a></div></div>
+<div class="ttc" id="aclass_faulty_device_ex_html_aa0afc30cceaae0c8bf5428988fc0b545"><div class="ttname"><a href="class_faulty_device_ex.html#aa0afc30cceaae0c8bf5428988fc0b545">FaultyDeviceEx::fault_description</a></div><div class="ttdeci">const std::string &amp; fault_description() const noexcept</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00054">FaultyDeviceEx.h:54</a></div></div>
+<div class="ttc" id="aclass_faulty_device_ex_html_aadd15f55e3e9d3ab946e0da1728285af"><div class="ttname"><a href="class_faulty_device_ex.html#aadd15f55e3e9d3ab946e0da1728285af">FaultyDeviceEx::isFaulty</a></div><div class="ttdeci">bool isFaulty() const noexcept override</div><div class="ttdoc">Признак того, что устройство неисправно</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00039">FaultyDeviceEx.h:39</a></div></div>
+<div class="ttc" id="aclass_faulty_device_ex_html_ad9acc3a42e10ed78e96930482bfa943f"><div class="ttname"><a href="class_faulty_device_ex.html#ad9acc3a42e10ed78e96930482bfa943f">FaultyDeviceEx::repair</a></div><div class="ttdeci">std::unique_ptr&lt; Device &gt; repair(uint64_t uptimeAfterRepairSec) const override</div><div class="ttdoc">Ремонт неисправного устройства.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_faulty_device_ex_8cpp_source.html#l00031">FaultyDeviceEx.cpp:31</a></div></div>
+<div class="ttc" id="aclass_faulty_device_ex_html_ade4d58a2dca04ba0191fd692592bdb9b"><div class="ttname"><a href="class_faulty_device_ex.html#ade4d58a2dca04ba0191fd692592bdb9b">FaultyDeviceEx::breakDown</a></div><div class="ttdeci">std::unique_ptr&lt; Device &gt; breakDown(std::string) const override</div><div class="ttdoc">Повторная поломка неисправного устройства.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_faulty_device_ex_8cpp_source.html#l00016">FaultyDeviceEx.cpp:16</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="gtest-internal_8h_source.html#l01269">gtest-internal.h:1269</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="_faulty_device_ex_8h.html">FaultyDeviceEx.h</a></li>
+    <li class="footer">РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: РСЃС…РѕРґРЅС‹Р№ С„Р°Р№Р» HealthyDevice.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">РРµСЂР°СЂС…РёСЏ СѓСЃС‚СЂРѕР№СЃС‚РІ</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','РџРѕРёСЃРє',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_healthy_device_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Р—Р°РіСЂСѓР·РєР°...</div>
+<div class="SRStatus" id="Searching">РџРѕРёСЃРє...</div>
+<div class="SRStatus" id="NoMatches">РќРµ РЅР°Р№РґРµРЅРѕ</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">HealthyDevice.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_healthy_device_8h.html">РЎРј. РґРѕРєСѓРјРµРЅС‚Р°С†РёСЋ.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_device_8h.html">Device.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_healthy_device.html">   17</a></span><span class="keyword">class </span><a class="code hl_function" href="class_healthy_device.html#a58f8cad05ec43dc6c85f56fb2addd222">HealthyDevice</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_device.html#af7badf268877700082eae61ccc89ef16">Device</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_healthy_device.html#a58f8cad05ec43dc6c85f56fb2addd222">   26</a></span>    <a class="code hl_function" href="class_healthy_device.html#a58f8cad05ec43dc6c85f56fb2addd222">HealthyDevice</a>(std::string <a class="code hl_function" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="code hl_typedef" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="code hl_enumeration" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> prio, uint64_t uptimeSec)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        : <a class="code hl_function" href="class_device.html#af7badf268877700082eae61ccc89ef16">Device</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(<a class="code hl_function" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>), addr, prio), <a class="code hl_variable" href="class_healthy_device.html#a71c91cec973d41c00aba564b3d7c2440">uptimeSec_</a>(uptimeSec) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_healthy_device.html#a15f8a87fd812c6369f9ac64c49d5188d">   35</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_healthy_device.html#a15f8a87fd812c6369f9ac64c49d5188d">isFaulty</a>() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_healthy_device.html#a01e6a0696dcaccd7bf05dfb4bcacb727">   41</a></span>    uint64_t <a class="code hl_function" href="class_healthy_device.html#a01e6a0696dcaccd7bf05dfb4bcacb727">uptime</a>() const noexcept { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_healthy_device.html#a71c91cec973d41c00aba564b3d7c2440">uptimeSec_</a>; }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::unique_ptr&lt;Device&gt; <a class="code hl_function" href="class_healthy_device.html#aa41a06ba46cb2451986ae55264ef2bdb">breakDown</a>(std::string fault) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::unique_ptr&lt;Device&gt; <a class="code hl_function" href="class_healthy_device.html#a8aae31cc464d2a277f4c73c2ef8ee7d2">repair</a>(uint64_t uptimeAfterRepairSec) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b">   61</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b">setPriority</a>(<a class="code hl_enumeration" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> p)<span class="keyword"> override </span>{ <a class="code hl_variable" href="class_device.html#a0a135362acd067995fceae6b8f2a0695">priority_</a> = p; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>   </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_healthy_device.html#a8e2dc839a7e93ca0232e53573faf25f0">   64</a></span>    std::string <a class="code hl_function" href="class_healthy_device.html#a8e2dc839a7e93ca0232e53573faf25f0">toString</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::ostringstream os;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        os &lt;&lt; <span class="stringliteral">&quot;HealthyDevice{name=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_device.html#a5229ed83545bda7b8f220d77a851fc83">name_</a></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            &lt;&lt; <span class="stringliteral">&quot;, addr=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_device.html#ad4a2cd6fbccd3a603014ae033f1d9024">address_</a></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            &lt;&lt; <span class="stringliteral">&quot;, prio=&quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_device.html#a0a135362acd067995fceae6b8f2a0695">priority_</a>)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            &lt;&lt; <span class="stringliteral">&quot;, uptimeSec=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_healthy_device.html#a71c91cec973d41c00aba564b3d7c2440">uptimeSec_</a> &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> os.str();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_healthy_device.html#a71c91cec973d41c00aba564b3d7c2440">   74</a></span>    uint64_t <a class="code hl_variable" href="class_healthy_device.html#a71c91cec973d41c00aba564b3d7c2440">uptimeSec_</a>{ 0 };</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
+<div class="ttc" id="a_service_priority_8h_html_a2aec502bb90b246481f3ed5058af8a17"><div class="ttname"><a href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a></div><div class="ttdeci">ServicePriority</div><div class="ttdoc">Приоритет обслуживания устройства</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_service_priority_8h_source.html#l00009">ServicePriority.h:9</a></div></div>
+<div class="ttc" id="aclass_device_html_a0a135362acd067995fceae6b8f2a0695"><div class="ttname"><a href="class_device.html#a0a135362acd067995fceae6b8f2a0695">Device::priority_</a></div><div class="ttdeci">ServicePriority priority_</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00084">Device.h:84</a></div></div>
+<div class="ttc" id="aclass_device_html_a42ac52c0d933dfd8088237ab2f6a99e4"><div class="ttname"><a href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Device::Address</a></div><div class="ttdeci">uint32_t Address</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00018">Device.h:18</a></div></div>
+<div class="ttc" id="aclass_device_html_a4fb86f0953605583fcc64d8a22b441fd"><div class="ttname"><a href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">Device::name</a></div><div class="ttdeci">const std::string &amp; name() const noexcept</div><div class="ttdoc">Имя устройства.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00041">Device.h:41</a></div></div>
+<div class="ttc" id="aclass_device_html_a5229ed83545bda7b8f220d77a851fc83"><div class="ttname"><a href="class_device.html#a5229ed83545bda7b8f220d77a851fc83">Device::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00082">Device.h:82</a></div></div>
+<div class="ttc" id="aclass_device_html_ad4a2cd6fbccd3a603014ae033f1d9024"><div class="ttname"><a href="class_device.html#ad4a2cd6fbccd3a603014ae033f1d9024">Device::address_</a></div><div class="ttdeci">Address address_</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00083">Device.h:83</a></div></div>
+<div class="ttc" id="aclass_device_html_af7badf268877700082eae61ccc89ef16"><div class="ttname"><a href="class_device.html#af7badf268877700082eae61ccc89ef16">Device::Device</a></div><div class="ttdeci">Device(std::string name, Address addr, ServicePriority prio)</div><div class="ttdoc">Конструктор базового устройства</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_device_8h_source.html#l00028">Device.h:28</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_a01e6a0696dcaccd7bf05dfb4bcacb727"><div class="ttname"><a href="class_healthy_device.html#a01e6a0696dcaccd7bf05dfb4bcacb727">HealthyDevice::uptime</a></div><div class="ttdeci">uint64_t uptime() const noexcept</div><div class="ttdoc">Текущая наработка устройства</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00041">HealthyDevice.h:41</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_a15f8a87fd812c6369f9ac64c49d5188d"><div class="ttname"><a href="class_healthy_device.html#a15f8a87fd812c6369f9ac64c49d5188d">HealthyDevice::isFaulty</a></div><div class="ttdeci">bool isFaulty() const noexcept override</div><div class="ttdoc">Признак неисправности.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00035">HealthyDevice.h:35</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_a58f8cad05ec43dc6c85f56fb2addd222"><div class="ttname"><a href="class_healthy_device.html#a58f8cad05ec43dc6c85f56fb2addd222">HealthyDevice::HealthyDevice</a></div><div class="ttdeci">HealthyDevice(std::string name, Address addr, ServicePriority prio, uint64_t uptimeSec)</div><div class="ttdoc">Конструктор исправного устройства.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00026">HealthyDevice.h:26</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_a71c91cec973d41c00aba564b3d7c2440"><div class="ttname"><a href="class_healthy_device.html#a71c91cec973d41c00aba564b3d7c2440">HealthyDevice::uptimeSec_</a></div><div class="ttdeci">uint64_t uptimeSec_</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00074">HealthyDevice.h:74</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_a8aae31cc464d2a277f4c73c2ef8ee7d2"><div class="ttname"><a href="class_healthy_device.html#a8aae31cc464d2a277f4c73c2ef8ee7d2">HealthyDevice::repair</a></div><div class="ttdeci">std::unique_ptr&lt; Device &gt; repair(uint64_t uptimeAfterRepairSec) const override</div><div class="ttdoc">Ремонт (создание нового исправного устройства)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_healthy_device_8cpp_source.html#l00039">HealthyDevice.cpp:39</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_a8e2dc839a7e93ca0232e53573faf25f0"><div class="ttname"><a href="class_healthy_device.html#a8e2dc839a7e93ca0232e53573faf25f0">HealthyDevice::toString</a></div><div class="ttdeci">std::string toString() const override</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00064">HealthyDevice.h:64</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_aa41a06ba46cb2451986ae55264ef2bdb"><div class="ttname"><a href="class_healthy_device.html#aa41a06ba46cb2451986ae55264ef2bdb">HealthyDevice::breakDown</a></div><div class="ttdeci">std::unique_ptr&lt; Device &gt; breakDown(std::string fault) const override</div><div class="ttdoc">Перевести устройство в состояние неисправно</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="_healthy_device_8cpp_source.html#l00015">HealthyDevice.cpp:15</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_adcdb37b206905ad90d3242bc3cf6b23b"><div class="ttname"><a href="class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b">HealthyDevice::setPriority</a></div><div class="ttdeci">void setPriority(ServicePriority p) override</div><div class="ttdoc">Установить приоритет обслуживания</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="#l00061">HealthyDevice.h:61</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> <a href="gtest-internal_8h_source.html#l01269">gtest-internal.h:1269</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="_healthy_device_8h.html">HealthyDevice.h</a></li>
+    <li class="footer">РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

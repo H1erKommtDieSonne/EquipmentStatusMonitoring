@@ -7,27 +7,21 @@
 #include "ServicePriority.h"
 
 /**
- * @file FaultyDevice.h
- * @brief Объявление класса FaultyDevice и перечисления ServicePriority
- *
- */
-/**
  * @class FaultyDevice
  * @brief Модель неисправного устройства
- *
- * хранит имя, IP-адрес, приоритет обслуживания
- * и текстовое описание неисправности. Поддерживает
- * оператор сравнения для сортировки
+ * Используется там, где исторически применялся отдельный тип. Для совместимости
+ * предоставляет метод @ref repair, создающий объект из иерархии @ref Device
  */
+
 class FaultyDevice {
 public:
     /**
-     * @brief Конструктор.
-     * @param name   имя устройства
-     * @param address IPv4-адрес
-     * @param prio  Приоритет обслуживания
-     * @param fault  описание неисправности
-     */
+      * @brief Конструктор
+      * @param name Имя устройства
+      * @param address IPадрес
+      * @param prio Приоритет обслуживания
+      * @param fault описание неисправности
+      */
     FaultyDevice(std::string name,
         uint32_t address,
         ServicePriority prio,
@@ -39,54 +33,64 @@ public:
     }
 
     /// @name Геттеры
-    ///@{
-    /**
-     * @brief Имя
-     * @return Ссылка
-     */
+   ///@{
+   /**
+    * @brief Имя устройства
+    * @return Ссылка на строку с именем
+    */
+
     const std::string& name() const noexcept { return name_; }
 
     /**
-     * @brief IP-адрес
-     * @return 32битное представление адреса
+     * @brief IPадрес устройства
+     * @return 32битное представление IPадреса
      */
+
     uint32_t address() const noexcept { return address_; }
 
     /**
-     * @brief Текущий приоритет
-     * @return Значение @ref ServicePriority.
+     * @brief Текущий приоритет обслуживания
+     * @return Значение @ref ServicePriority
      */
+
     ServicePriority priority() const noexcept { return priority_; }
 
     /**
-     * @brief Описание неисправности
-     * @return Ссылка на строку с описанием
-     */
+    * @brief Описание неисправности
+    * @return Ссылка на строку с описанием
+    */
+
     const std::string& fault_description() const noexcept { return fault_; }
+    
     ///@}
 
     /// @name Сеттеры
     ///@{
     /**
-     * @brief Установить приоритет
+     * @brief Установить приоритет обслуживания
      * @param newPrio Новое значение приоритета
      */
+
     void setPriority(ServicePriority newPrio) noexcept { priority_ = newPrio; }
 
     /**
-     * @brief Обновить описание неисправности
-     * @param newFault Новый текст
-     */
+    * @brief Обновить описание неисправности
+    * @param newFault Новый текст описания
+    */
+
     void setFault(std::string newFault) { fault_ = std::move(newFault); }
+    
     ///@}
 
     /**
-     * @brief Сравнение устройств для сортировки
+     * @brief Сравнение для сортировки
      *
-     *
-     * @param rhs другое устройство
-     * @return std::strong_ordering
+     * Сортирует по убыванию приоритета, затем по имени,
+     * затем по адресу
+     * @param rhs Другое устройство
+     * @return Результат сравнения
      */
+
     std::strong_ordering operator<=>(const FaultyDevice& rhs) const noexcept {
         int lhsRank = rank(priority_);
         int rhsRank = rank(rhs.priority_);
@@ -97,39 +101,53 @@ public:
     }
 
     /**
-     * @brief Проверка равенства по приоритету.
+     * @brief Равенство по приоритету
+     * @param rhs Другое устройство
+     * @return true, если приоритеты равны
      */
+
     bool operator==(const FaultyDevice& rhs) const noexcept {
         return priority_ == rhs.priority_;
     }
 
     /// @name IPv4 утилиты
-    ///@{
-    /**
-     * @brief Преобразование IPv4-строки
-     * @param dotted Строка IPv4.
-     * @return 32битное представление адреса
-     * @throws std::invalid_argument Если строка  имеет неверный формат
-     * @throws std::out_of_range     Если какой-то октет вне диапазона
-     */
+   ///@{
+   /**
+    * @brief Преобразование IPстроки в число
+    * @param Строка IPv4
+    * @return 32битное представление адреса
+    */
+    
     static uint32_t ipv4_to_u32(const std::string& dotted);
 
     /**
-     * @brief Преобразование u32 IPv4 в строку
-     * @param value 32битное представление IPv4
-     */
+   * @brief Преобразование 32битного IPv4 в строковый вид
+   * @param value 32битное представление IPv4
+   * @return Строка в десятичном формате
+   */
+
     static std::string u32_to_ipv4(uint32_t value);
+    
     ///@}
 
-    //
+   /**
+    * @brief Фикс — перевод исторической модели в объект иерархии @ref Device
+    * Создаёт и возвращает новый @ref HealthyDevice с тем же именем, адресом
+    * и приоритетом, но с заданной наработкой после ремонта.
+    * @param uptimeAfterRepairSec Наработка после ремонта
+    * @return Указатель на новый объект из иерархии @ref Device
+    */
+
     std::unique_ptr<Device> repair(uint64_t uptimeAfterRepairSec) const;
 
 private:
+    
     /**
-     * @brief Числовой ранг приоритета
+     * @brief Числовое значение приоритета для сортировки
      * @param p Приоритет
      * @return 1 для None, 2 для Low, 3 для High
      */
+
     static constexpr int rank(ServicePriority p) noexcept {
         switch (p) {
         case ServicePriority::High: return 3;
@@ -140,8 +158,8 @@ private:
     }
 
 
-    std::string     name_;     ///< Имя
-    uint32_t        address_;  ///< IP-адрес как 32битное число
-    ServicePriority priority_; ///< Приоритет
-    std::string     fault_;    ///< Текст неисправности.
+    std::string     name_; ///< Имя устройства
+    uint32_t        address_; ///< IPадрес как число
+    ServicePriority priority_; ///< Приоритет обслуживания
+    std::string     fault_; ///< Описание неисправности   
 };

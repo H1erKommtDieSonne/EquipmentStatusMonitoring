@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: Файл tests/GoogleTest/GoogleTest/GoogleTest.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">Иерархия устройств</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_google_test_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл GoogleTest.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="gtest_8h_source.html">gtest/gtest.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
+<code>#include &quot;<a class="el" href="_faulty_device_8h_source.html">FaultyDevice.h</a>&quot;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для GoogleTest.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_google_test_8cpp__incl.png" border="0" usemap="#atests_2_google_test_2_google_test_2_google_test_8cpp" loading="lazy" alt=""/></div>
+</div>
+</div>
+<p><a href="_google_test_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a75662c86ab6bfd84813c5c216fd5f3be" id="r_a75662c86ab6bfd84813c5c216fd5f3be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75662c86ab6bfd84813c5c216fd5f3be">CHECK_TRUE</a>(expr)</td></tr>
+<tr class="memitem:abc966756c9622b65c37a842ea9159f44" id="r_abc966756c9622b65c37a842ea9159f44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc966756c9622b65c37a842ea9159f44">CHECK_EQ</a>(a,  b)</td></tr>
+<tr class="memitem:ad805401103bea64ef0eb0b65a1c85173" id="r_ad805401103bea64ef0eb0b65a1c85173"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad805401103bea64ef0eb0b65a1c85173">CHECK_THROW</a>(expr,  E)</td></tr>
+<tr class="memitem:a161757cc417462693de995d6c7d17f0b" id="r_a161757cc417462693de995d6c7d17f0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a161757cc417462693de995d6c7d17f0b">CHECK_NO_THROW</a>(expr)</td></tr>
+<tr class="memitem:a75662c86ab6bfd84813c5c216fd5f3be" id="r_a75662c86ab6bfd84813c5c216fd5f3be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75662c86ab6bfd84813c5c216fd5f3be">CHECK_TRUE</a>(expr)</td></tr>
+<tr class="memitem:abc966756c9622b65c37a842ea9159f44" id="r_abc966756c9622b65c37a842ea9159f44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc966756c9622b65c37a842ea9159f44">CHECK_EQ</a>(a,  b)</td></tr>
+<tr class="memitem:ad805401103bea64ef0eb0b65a1c85173" id="r_ad805401103bea64ef0eb0b65a1c85173"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad805401103bea64ef0eb0b65a1c85173">CHECK_THROW</a>(expr,  E)</td></tr>
+<tr class="memitem:a161757cc417462693de995d6c7d17f0b" id="r_a161757cc417462693de995d6c7d17f0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a161757cc417462693de995d6c7d17f0b">CHECK_NO_THROW</a>(expr)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a06a3b929c433b72db3446095f9584882" id="r_a06a3b929c433b72db3446095f9584882"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06a3b929c433b72db3446095f9584882">TEST</a> (FaultyDevice_Ip, RoundTripBasic)</td></tr>
+<tr class="memitem:a3ca785db1ade562cd6de934ef35affd0" id="r_a3ca785db1ade562cd6de934ef35affd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ca785db1ade562cd6de934ef35affd0">TEST</a> (FaultyDevice_Ip, RoundTripEdges)</td></tr>
+<tr class="memitem:a906d55b732ebe434a966e7b0616fe7a6" id="r_a906d55b732ebe434a966e7b0616fe7a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a906d55b732ebe434a966e7b0616fe7a6">TEST</a> (FaultyDevice_Ip, RoundTripSamples)</td></tr>
+<tr class="memitem:a2163045350540414c00c4c77cadfd501" id="r_a2163045350540414c00c4c77cadfd501"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2163045350540414c00c4c77cadfd501">TEST</a> (FaultyDevice_Ip, InvalidFormat)</td></tr>
+<tr class="memitem:a54ef086e14d1721abfd1b1f4c0f41157" id="r_a54ef086e14d1721abfd1b1f4c0f41157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54ef086e14d1721abfd1b1f4c0f41157">TEST</a> (FaultyDevice_Ip, OutOfRangeOctet)</td></tr>
+<tr class="memitem:ac39af766a217b494e212de3bb92e6036" id="r_ac39af766a217b494e212de3bb92e6036"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac39af766a217b494e212de3bb92e6036">TEST</a> (FaultyDevice_Order, PriorityAndTies)</td></tr>
+<tr class="memitem:a5d3c08a51002f8ee1b7025ef87345dbb" id="r_a5d3c08a51002f8ee1b7025ef87345dbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d3c08a51002f8ee1b7025ef87345dbb">TEST</a> (FaultyDevice_Order, SortByPriorityDesc)</td></tr>
+<tr class="memitem:a23d2645188ab8ddede0f3838efa6a09c" id="r_a23d2645188ab8ddede0f3838efa6a09c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23d2645188ab8ddede0f3838efa6a09c">TEST</a> (FaultyDevice_Address, StoredAndUnique)</td></tr>
+<tr class="memitem:acbe45519ab6e71c9efaad2ba7e59bc44" id="r_acbe45519ab6e71c9efaad2ba7e59bc44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbe45519ab6e71c9efaad2ba7e59bc44">TEST</a> (FaultyDevice_Mutators, PriorityAndFault)</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memitem:ac8324799c6be8ea69723b20d44b04b28" id="r_ac8324799c6be8ea69723b20d44b04b28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8324799c6be8ea69723b20d44b04b28">if</a> (!(expr))</td></tr>
+<tr class="memitem:ab83bce8a61bef5972194179d88d811d0" id="r_ab83bce8a61bef5972194179d88d811d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab83bce8a61bef5972194179d88d811d0">while</a> (0)++<a class="el" href="#a79c625977a832af63b3460f74aa7fc22">tests_run</a></td></tr>
+<tr class="memitem:aba14c5dd29ff7bd1a1db6061e73cea72" id="r_aba14c5dd29ff7bd1a1db6061e73cea72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba14c5dd29ff7bd1a1db6061e73cea72">if</a> (!((a)==(b)))</td></tr>
+<tr class="memitem:a28a8fe75570400143ae311dbe1154e4e" id="r_a28a8fe75570400143ae311dbe1154e4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28a8fe75570400143ae311dbe1154e4e">catch</a> (const E &amp;)</td></tr>
+<tr class="memitem:a1204fa6444ae7174767e202a6d39b815" id="r_a1204fa6444ae7174767e202a6d39b815"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1204fa6444ae7174767e202a6d39b815">catch</a> (...)</td></tr>
+<tr class="memitem:a9de62fc2f29e1fc5e4113a4e0b6f5b83" id="r_a9de62fc2f29e1fc5e4113a4e0b6f5b83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9de62fc2f29e1fc5e4113a4e0b6f5b83">if</a> (!<a class="el" href="#a4b45fe53b07e2543209a85a267e51d60">thrown</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a79c625977a832af63b3460f74aa7fc22" id="r_a79c625977a832af63b3460f74aa7fc22"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79c625977a832af63b3460f74aa7fc22">tests_run</a> = 0</td></tr>
+<tr class="memdesc:a79c625977a832af63b3460f74aa7fc22"><td class="mdescLeft">&#160;</td><td class="mdescRight">/ / / /  <br /></td></tr>
+<tr class="memitem:ac8ba26a731e3d913501b4ee8814545a2" id="r_ac8ba26a731e3d913501b4ee8814545a2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8ba26a731e3d913501b4ee8814545a2">tests_failed</a> = 0</td></tr>
+<tr class="memitem:a4b45fe53b07e2543209a85a267e51d60" id="r_a4b45fe53b07e2543209a85a267e51d60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b45fe53b07e2543209a85a267e51d60">thrown</a> = false</td></tr>
+<tr class="memitem:abe4cc9788f52e49485473dc699537388" id="r_abe4cc9788f52e49485473dc699537388"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe4cc9788f52e49485473dc699537388">try</a> { (void)(expr)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Макросы</h2>
+<a id="abc966756c9622b65c37a842ea9159f44" name="abc966756c9622b65c37a842ea9159f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc966756c9622b65c37a842ea9159f44">&#9670;&#160;</a></span>CHECK_EQ <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                        \</div>
+<div class="line">    ++<a class="code hl_variable" href="#a79c625977a832af63b3460f74aa7fc22">tests_run</a>;                                  \</div>
+<div class="line">    if (!((a) == (b))) {                          \</div>
+<div class="line">        ++<a class="code hl_variable" href="#ac8ba26a731e3d913501b4ee8814545a2">tests_failed</a>;                           \</div>
+<div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;[FAIL] &quot;</span> #a <span class="stringliteral">&quot; == &quot;</span> #b       \</div>
+<div class="line">                  &lt;&lt; <span class="stringliteral">&quot; (got: &quot;</span> &lt;&lt; (a)             \</div>
+<div class="line">                  &lt;&lt; <span class="stringliteral">&quot;, expected: &quot;</span> &lt;&lt; (b) &lt;&lt; <span class="stringliteral">&quot;)\n&quot;</span>; \</div>
+<div class="line">    }                                             \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="a_google_test_8cpp_html_a79c625977a832af63b3460f74aa7fc22"><div class="ttname"><a href="#a79c625977a832af63b3460f74aa7fc22">tests_run</a></div><div class="ttdeci">static int tests_run</div><div class="ttdoc">/ / / /</div><div class="ttdef"><b>Определения</b> <a href="_google_test_8cpp_source.html#l00156">GoogleTest.cpp:156</a></div></div>
+<div class="ttc" id="a_google_test_8cpp_html_ac8ba26a731e3d913501b4ee8814545a2"><div class="ttname"><a href="#ac8ba26a731e3d913501b4ee8814545a2">tests_failed</a></div><div class="ttdeci">static int tests_failed</div><div class="ttdef"><b>Определения</b> <a href="_google_test_8cpp_source.html#l00157">GoogleTest.cpp:157</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00167">167</a></p>
+
+</div>
+</div>
+<a id="abc966756c9622b65c37a842ea9159f44" name="abc966756c9622b65c37a842ea9159f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc966756c9622b65c37a842ea9159f44">&#9670;&#160;</a></span>CHECK_EQ <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00167">167</a></p>
+
+</div>
+</div>
+<a id="a161757cc417462693de995d6c7d17f0b" name="a161757cc417462693de995d6c7d17f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161757cc417462693de995d6c7d17f0b">&#9670;&#160;</a></span>CHECK_NO_THROW <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_NO_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                 \</div>
+<div class="line">    ++<a class="code hl_variable" href="#a79c625977a832af63b3460f74aa7fc22">tests_run</a>;                                  \</div>
+<div class="line">    <span class="keywordflow">try</span> { (void)(expr); }                         \</div>
+<div class="line">    catch (...) {                                 \</div>
+<div class="line">        ++<a class="code hl_variable" href="#ac8ba26a731e3d913501b4ee8814545a2">tests_failed</a>;                           \</div>
+<div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;[FAIL] unexpected exception: &quot;</span> #expr &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; \</div>
+<div class="line">    }                                             \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00192">192</a></p>
+
+</div>
+</div>
+<a id="a161757cc417462693de995d6c7d17f0b" name="a161757cc417462693de995d6c7d17f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161757cc417462693de995d6c7d17f0b">&#9670;&#160;</a></span>CHECK_NO_THROW <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_NO_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00192">192</a></p>
+
+</div>
+</div>
+<a id="ad805401103bea64ef0eb0b65a1c85173" name="ad805401103bea64ef0eb0b65a1c85173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad805401103bea64ef0eb0b65a1c85173">&#9670;&#160;</a></span>CHECK_THROW <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>E</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                 \</div>
+<div class="line">    ++<a class="code hl_variable" href="#a79c625977a832af63b3460f74aa7fc22">tests_run</a>;                                  \</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_variable" href="#a4b45fe53b07e2543209a85a267e51d60">thrown</a> = <span class="keyword">false</span>;                          \</div>
+<div class="line">    <span class="keywordflow">try</span> { (void)(expr); }                         \</div>
+<div class="line">    catch (<span class="keyword">const</span> E&amp;) { <a class="code hl_variable" href="#a4b45fe53b07e2543209a85a267e51d60">thrown</a> = <span class="keyword">true</span>; }           \</div>
+<div class="line">    catch (...) {}                                \</div>
+<div class="line">    if (!<a class="code hl_variable" href="#a4b45fe53b07e2543209a85a267e51d60">thrown</a>) {                                \</div>
+<div class="line">        ++<a class="code hl_variable" href="#ac8ba26a731e3d913501b4ee8814545a2">tests_failed</a>;                           \</div>
+<div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;[FAIL] expected throw &quot;</span> #E  \</div>
+<div class="line">                  &lt;&lt; <span class="stringliteral">&quot; for &quot;</span> #expr &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;       \</div>
+<div class="line">    }                                             \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="a_google_test_8cpp_html_a4b45fe53b07e2543209a85a267e51d60"><div class="ttname"><a href="#a4b45fe53b07e2543209a85a267e51d60">thrown</a></div><div class="ttdeci">bool thrown</div><div class="ttdef"><b>Определения</b> <a href="_google_test_8cpp_source.html#l00232">GoogleTest.cpp:232</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00178">178</a></p>
+
+</div>
+</div>
+<a id="ad805401103bea64ef0eb0b65a1c85173" name="ad805401103bea64ef0eb0b65a1c85173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad805401103bea64ef0eb0b65a1c85173">&#9670;&#160;</a></span>CHECK_THROW <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>E</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00178">178</a></p>
+
+</div>
+</div>
+<a id="a75662c86ab6bfd84813c5c216fd5f3be" name="a75662c86ab6bfd84813c5c216fd5f3be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75662c86ab6bfd84813c5c216fd5f3be">&#9670;&#160;</a></span>CHECK_TRUE <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_TRUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                    \</div>
+<div class="line">    ++<a class="code hl_variable" href="#a79c625977a832af63b3460f74aa7fc22">tests_run</a>;                                  \</div>
+<div class="line">    if (!(expr)) {                                \</div>
+<div class="line">        ++<a class="code hl_variable" href="#ac8ba26a731e3d913501b4ee8814545a2">tests_failed</a>;                           \</div>
+<div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;[FAIL] &quot;</span> #expr &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;     \</div>
+<div class="line">    }                                             \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00159">159</a></p>
+
+</div>
+</div>
+<a id="a75662c86ab6bfd84813c5c216fd5f3be" name="a75662c86ab6bfd84813c5c216fd5f3be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75662c86ab6bfd84813c5c216fd5f3be">&#9670;&#160;</a></span>CHECK_TRUE <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_TRUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00159">159</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="a1204fa6444ae7174767e202a6d39b815" name="a1204fa6444ae7174767e202a6d39b815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1204fa6444ae7174767e202a6d39b815">&#9670;&#160;</a></span>catch() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">catch </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00235">235</a></p>
+
+</div>
+</div>
+<a id="a28a8fe75570400143ae311dbe1154e4e" name="a28a8fe75570400143ae311dbe1154e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a8fe75570400143ae311dbe1154e4e">&#9670;&#160;</a></span>catch() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">catch </td>
+          <td>(</td>
+          <td class="paramtype">const E &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00234">234</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_google_test_8cpp_source.html#l00232">thrown</a>.</p>
+
+</div>
+</div>
+<a id="aba14c5dd29ff7bd1a1db6061e73cea72" name="aba14c5dd29ff7bd1a1db6061e73cea72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba14c5dd29ff7bd1a1db6061e73cea72">&#9670;&#160;</a></span>if() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!</td>          <td class="paramname"><span class="paramname"><em></em></span>(a)==(b)</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00221">221</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_google_test_8cpp_source.html#l00157">tests_failed</a>.</p>
+
+</div>
+</div>
+<a id="ac8324799c6be8ea69723b20d44b04b28" name="ac8324799c6be8ea69723b20d44b04b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8324799c6be8ea69723b20d44b04b28">&#9670;&#160;</a></span>if() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!</td>          <td class="paramname"><span class="paramname"><em></em></span>expr</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00213">213</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_google_test_8cpp_source.html#l00157">tests_failed</a>.</p>
+
+</div>
+</div>
+<a id="a9de62fc2f29e1fc5e4113a4e0b6f5b83" name="a9de62fc2f29e1fc5e4113a4e0b6f5b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de62fc2f29e1fc5e4113a4e0b6f5b83">&#9670;&#160;</a></span>if() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!</td>          <td class="paramname"><span class="paramname"><em>thrown</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00236">236</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_google_test_8cpp_source.html#l00157">tests_failed</a> и <a class="el" href="_google_test_8cpp_source.html#l00232">thrown</a>.</p>
+
+</div>
+</div>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00110">110</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="namespacetesting.html#a2201e3fba11205a7edc2418fae82523e">testing::InitGoogleTest()</a> и <a class="el" href="gtest_8h_source.html#l02334">RUN_ALL_TESTS()</a>.</p>
+
+</div>
+</div>
+<a id="a23d2645188ab8ddede0f3838efa6a09c" name="a23d2645188ab8ddede0f3838efa6a09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d2645188ab8ddede0f3838efa6a09c">&#9670;&#160;</a></span>TEST() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Address</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StoredAndUnique</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00076">76</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="gtest_8h_source.html#l01823">EXPECT_TRUE</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00011">Low</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+
+</div>
+</div>
+<a id="a2163045350540414c00c4c77cadfd501" name="a2163045350540414c00c4c77cadfd501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2163045350540414c00c4c77cadfd501">&#9670;&#160;</a></span>TEST() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Ip</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InvalidFormat</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00031">31</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01791">EXPECT_THROW</a> и <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>.</p>
+
+</div>
+</div>
+<a id="a54ef086e14d1721abfd1b1f4c0f41157" name="a54ef086e14d1721abfd1b1f4c0f41157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ef086e14d1721abfd1b1f4c0f41157">&#9670;&#160;</a></span>TEST() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Ip</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutOfRangeOctet</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00044">44</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01791">EXPECT_THROW</a> и <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>.</p>
+
+</div>
+</div>
+<a id="a06a3b929c433b72db3446095f9584882" name="a06a3b929c433b72db3446095f9584882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a3b929c433b72db3446095f9584882">&#9670;&#160;</a></span>TEST() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Ip</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoundTripBasic</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00009">9</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+
+</div>
+</div>
+<a id="a3ca785db1ade562cd6de934ef35affd0" name="a3ca785db1ade562cd6de934ef35affd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca785db1ade562cd6de934ef35affd0">&#9670;&#160;</a></span>TEST() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Ip</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoundTripEdges</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00017">17</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+
+</div>
+</div>
+<a id="a906d55b732ebe434a966e7b0616fe7a6" name="a906d55b732ebe434a966e7b0616fe7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906d55b732ebe434a966e7b0616fe7a6">&#9670;&#160;</a></span>TEST() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Ip</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoundTripSamples</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00022">22</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+
+</div>
+</div>
+<a id="acbe45519ab6e71c9efaad2ba7e59bc44" name="acbe45519ab6e71c9efaad2ba7e59bc44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe45519ab6e71c9efaad2ba7e59bc44">&#9670;&#160;</a></span>TEST() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Mutators</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PriorityAndFault</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00100">100</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="gtest_8h_source.html#l01793">EXPECT_NO_THROW</a>, <a class="el" href="_faulty_device_8h_source.html#l00063">FaultyDevice::fault_description()</a>, <a class="el" href="_service_priority_8h_source.html#l00012">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00010">None</a>, <a class="el" href="_faulty_device_8h_source.html#l00056">FaultyDevice::priority()</a>, <a class="el" href="_faulty_device_8h_source.html#l00081">FaultyDevice::setFault()</a> и <a class="el" href="_faulty_device_8h_source.html#l00074">FaultyDevice::setPriority()</a>.</p>
+
+</div>
+</div>
+<a id="ac39af766a217b494e212de3bb92e6036" name="ac39af766a217b494e212de3bb92e6036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac39af766a217b494e212de3bb92e6036">&#9670;&#160;</a></span>TEST() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Order</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PriorityAndTies</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00050">50</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01894">EXPECT_GT</a>, <a class="el" href="gtest_8h_source.html#l01823">EXPECT_TRUE</a>, <a class="el" href="_service_priority_8h_source.html#l00012">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00011">Low</a> и <a class="el" href="_service_priority_8h_source.html#l00010">None</a>.</p>
+
+</div>
+</div>
+<a id="a5d3c08a51002f8ee1b7025ef87345dbb" name="a5d3c08a51002f8ee1b7025ef87345dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3c08a51002f8ee1b7025ef87345dbb">&#9670;&#160;</a></span>TEST() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Order</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SortByPriorityDesc</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00063">63</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="_service_priority_8h_source.html#l00012">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00011">Low</a> и <a class="el" href="_service_priority_8h_source.html#l00010">None</a>.</p>
+
+</div>
+</div>
+<a id="ab83bce8a61bef5972194179d88d811d0" name="ab83bce8a61bef5972194179d88d811d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83bce8a61bef5972194179d88d811d0">&#9670;&#160;</a></span>while()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">while </td>
+          <td>(</td>
+          <td class="paramtype">0</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00251">251</a></p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Переменные</h2>
+<a id="ac8ba26a731e3d913501b4ee8814545a2" name="ac8ba26a731e3d913501b4ee8814545a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ba26a731e3d913501b4ee8814545a2">&#9670;&#160;</a></span>tests_failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tests_failed = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00157">157</a></p>
+
+<p class="reference">Используется в <a class="el" href="_google_test_8cpp_source.html#l00221">if()</a>, <a class="el" href="_google_test_8cpp_source.html#l00213">if()</a> и <a class="el" href="_google_test_8cpp_source.html#l00236">if()</a>.</p>
+
+</div>
+</div>
+<a id="a79c625977a832af63b3460f74aa7fc22" name="a79c625977a832af63b3460f74aa7fc22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c625977a832af63b3460f74aa7fc22">&#9670;&#160;</a></span>tests_run</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tests_run = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>/ / / / </p>
+<p>// / / / /</p>
+<p>// </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00156">156</a></p>
+
+</div>
+</div>
+<a id="a4b45fe53b07e2543209a85a267e51d60" name="a4b45fe53b07e2543209a85a267e51d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b45fe53b07e2543209a85a267e51d60">&#9670;&#160;</a></span>thrown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool thrown = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00232">232</a></p>
+
+<p class="reference">Используется в <a class="el" href="_google_test_8cpp_source.html#l00234">catch()</a> и <a class="el" href="_google_test_8cpp_source.html#l00236">if()</a>.</p>
+
+</div>
+</div>
+<a id="abe4cc9788f52e49485473dc699537388" name="abe4cc9788f52e49485473dc699537388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4cc9788f52e49485473dc699537388">&#9670;&#160;</a></span>try</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">try { (void)(expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_google_test_8cpp_source.html">GoogleTest.cpp</a> строка <a class="el" href="_google_test_8cpp_source.html#l00233">233</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a href="dir_7c98fd4157616f704a3ca7e382f9caed.html">GoogleTest</a></li><li class="navelem"><a href="dir_37966b36a961810fd0ed3f748a807b11.html">GoogleTest</a></li><li class="navelem"><a href="_google_test_8cpp.html">GoogleTest.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

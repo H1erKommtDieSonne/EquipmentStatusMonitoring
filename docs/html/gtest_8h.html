@@ -1,0 +1,2251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: Файл fix/include/gtest/gtest.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">Иерархия устройств</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('gtest_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл gtest.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="gtest-assertion-result_8h_source.html">gtest/gtest-assertion-result.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-death-test_8h_source.html">gtest/gtest-death-test.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-matchers_8h_source.html">gtest/gtest-matchers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-message_8h_source.html">gtest/gtest-message.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-param-test_8h_source.html">gtest/gtest-param-test.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-printers_8h_source.html">gtest/gtest-printers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-test-part_8h_source.html">gtest/gtest-test-part.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-typed-test_8h_source.html">gtest/gtest-typed-test.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest__pred__impl_8h_source.html">gtest/gtest_pred_impl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest__prod_8h_source.html">gtest/gtest_prod.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-internal_8h_source.html">gtest/internal/gtest-internal.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gtest-string_8h_source.html">gtest/internal/gtest-string.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для gtest.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="gtest_8h__incl.png" border="0" usemap="#afix_2include_2gtest_2gtest_8h" loading="lazy" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="gtest_8h__dep__incl.png" border="0" usemap="#afix_2include_2gtest_2gtest_8hdep" loading="lazy" alt=""/></div>
+</div>
+</div>
+<p><a href="gtest_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3AGTestNonCopyable" id="r_testing_3A_3Ainternal_3A_3AGTestNonCopyable"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_g_test_non_copyable.html">testing::internal::GTestNonCopyable</a></td></tr>
+<tr class="memitem:testing_3A_3ATest" id="r_testing_3A_3ATest"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test.html">testing::Test</a></td></tr>
+<tr class="memitem:testing_3A_3ATestProperty" id="r_testing_3A_3ATestProperty"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_property.html">testing::TestProperty</a></td></tr>
+<tr class="memitem:testing_3A_3ATestResult" id="r_testing_3A_3ATestResult"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_result.html">testing::TestResult</a></td></tr>
+<tr class="memitem:testing_3A_3ATestInfo" id="r_testing_3A_3ATestInfo"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_info.html">testing::TestInfo</a></td></tr>
+<tr class="memitem:testing_3A_3ATestSuite" id="r_testing_3A_3ATestSuite"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_suite.html">testing::TestSuite</a></td></tr>
+<tr class="memitem:testing_3A_3AEnvironment" id="r_testing_3A_3AEnvironment"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_environment.html">testing::Environment</a></td></tr>
+<tr class="memitem:testing_3A_3ATestEventListener" id="r_testing_3A_3ATestEventListener"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_event_listener.html">testing::TestEventListener</a></td></tr>
+<tr class="memitem:testing_3A_3AEmptyTestEventListener" id="r_testing_3A_3AEmptyTestEventListener"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_empty_test_event_listener.html">testing::EmptyTestEventListener</a></td></tr>
+<tr class="memitem:testing_3A_3ATestEventListeners" id="r_testing_3A_3ATestEventListeners"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_event_listeners.html">testing::TestEventListeners</a></td></tr>
+<tr class="memitem:testing_3A_3AUnitTest" id="r_testing_3A_3AUnitTest"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_unit_test.html">testing::UnitTest</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3Afaketype_5Fstructtesting_5F1_5F1internal_5F1_5F1faketype" id="r_testing_3A_3Ainternal_3A_3Afaketype_5Fstructtesting_5F1_5F1internal_5F1_5F1faketype"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1faketype">testing::internal::faketype</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3AEqHelper" id="r_testing_3A_3Ainternal_3A_3AEqHelper"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_eq_helper.html">testing::internal::EqHelper</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal_3A_3AAssertHelper" id="r_testing_3A_3Ainternal_3A_3AAssertHelper"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_assert_helper.html">testing::internal::AssertHelper</a></td></tr>
+<tr class="memitem:testing_3A_3AWithParamInterface_3C_20T_20_3E" id="r_testing_3A_3AWithParamInterface_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_with_param_interface.html">testing::WithParamInterface&lt; T &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3ATestWithParam_3C_20T_20_3E" id="r_testing_3A_3ATestWithParam_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_test_with_param.html">testing::TestWithParam&lt; T &gt;</a></td></tr>
+<tr class="memitem:testing_3A_3AScopedTrace" id="r_testing_3A_3AScopedTrace"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1_scoped_trace.html">testing::ScopedTrace</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:testing" id="r_testing"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html">testing</a></td></tr>
+<tr class="memitem:testing_3A_3Ainternal" id="r_testing_3A_3Ainternal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html">testing::internal</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a4a5b6fbde5dd05e05dd6846ac5e5c18e" id="r_a4a5b6fbde5dd05e05dd6846ac5e5c18e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a5b6fbde5dd05e05dd6846ac5e5c18e">GTEST_IMPL_CMP_HELPER_</a>(op_name,  op)</td></tr>
+<tr class="memitem:a3c0bbb980d533108ecc23c3534527d3c" id="r_a3c0bbb980d533108ecc23c3534527d3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c0bbb980d533108ecc23c3534527d3c">GTEST_SKIP</a>()</td></tr>
+<tr class="memitem:adc16b5b0a740c39084ea5c9e960e3063" id="r_adc16b5b0a740c39084ea5c9e960e3063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc16b5b0a740c39084ea5c9e960e3063">ADD_FAILURE</a>()</td></tr>
+<tr class="memitem:a448d7e5105b640e892fd8153fbee0b7f" id="r_a448d7e5105b640e892fd8153fbee0b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448d7e5105b640e892fd8153fbee0b7f">ADD_FAILURE_AT</a>(file,  line)</td></tr>
+<tr class="memitem:a636231436707c30d6778f79ae96f5dc6" id="r_a636231436707c30d6778f79ae96f5dc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a636231436707c30d6778f79ae96f5dc6">GTEST_FAIL</a>()</td></tr>
+<tr class="memitem:acf5a3e2510baccc1a0eccb72da510d98" id="r_acf5a3e2510baccc1a0eccb72da510d98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf5a3e2510baccc1a0eccb72da510d98">GTEST_FAIL_AT</a>(file,  line)</td></tr>
+<tr class="memitem:a3e26a8d27caa386ed0ea7ce9d5b7c4ed" id="r_a3e26a8d27caa386ed0ea7ce9d5b7c4ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e26a8d27caa386ed0ea7ce9d5b7c4ed">FAIL</a>()</td></tr>
+<tr class="memitem:af702dfada315c8f49cbfcea3f23fba3a" id="r_af702dfada315c8f49cbfcea3f23fba3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af702dfada315c8f49cbfcea3f23fba3a">FAIL_AT</a>(file,  line)</td></tr>
+<tr class="memitem:a2690441c38202728f4159ac2462d9720" id="r_a2690441c38202728f4159ac2462d9720"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2690441c38202728f4159ac2462d9720">GTEST_SUCCEED</a>()</td></tr>
+<tr class="memitem:a75adcdf89f69b0b615e395daafc315af" id="r_a75adcdf89f69b0b615e395daafc315af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75adcdf89f69b0b615e395daafc315af">SUCCEED</a>()</td></tr>
+<tr class="memitem:a789842b4475eed948e6fd18390d5a859" id="r_a789842b4475eed948e6fd18390d5a859"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a789842b4475eed948e6fd18390d5a859">EXPECT_THROW</a>(statement,  expected_exception)</td></tr>
+<tr class="memitem:a2743a1438137ad857aa3f9fec3ff67ec" id="r_a2743a1438137ad857aa3f9fec3ff67ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2743a1438137ad857aa3f9fec3ff67ec">EXPECT_NO_THROW</a>(statement)</td></tr>
+<tr class="memitem:a9be43f44d148e8a8d6a89c864bf4e461" id="r_a9be43f44d148e8a8d6a89c864bf4e461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9be43f44d148e8a8d6a89c864bf4e461">EXPECT_ANY_THROW</a>(statement)</td></tr>
+<tr class="memitem:aedb1eddae6c2a2430b0e7b7e03b4f052" id="r_aedb1eddae6c2a2430b0e7b7e03b4f052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb1eddae6c2a2430b0e7b7e03b4f052">ASSERT_THROW</a>(statement,  expected_exception)</td></tr>
+<tr class="memitem:a895c34d9b192cdc2ba46d2680623485d" id="r_a895c34d9b192cdc2ba46d2680623485d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a895c34d9b192cdc2ba46d2680623485d">ASSERT_NO_THROW</a>(statement)</td></tr>
+<tr class="memitem:affadeef9379fe5aabf6f28d9eab9d3c0" id="r_affadeef9379fe5aabf6f28d9eab9d3c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affadeef9379fe5aabf6f28d9eab9d3c0">ASSERT_ANY_THROW</a>(statement)</td></tr>
+<tr class="memitem:a10545796173bc03e63a438f189b34a31" id="r_a10545796173bc03e63a438f189b34a31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10545796173bc03e63a438f189b34a31">GTEST_EXPECT_TRUE</a>(condition)</td></tr>
+<tr class="memitem:a412ef25a5c611f754e0797697a846cf6" id="r_a412ef25a5c611f754e0797697a846cf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a412ef25a5c611f754e0797697a846cf6">GTEST_EXPECT_FALSE</a>(condition)</td></tr>
+<tr class="memitem:a4369db8b15686534c6d823bf7970dd85" id="r_a4369db8b15686534c6d823bf7970dd85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4369db8b15686534c6d823bf7970dd85">GTEST_ASSERT_TRUE</a>(condition)</td></tr>
+<tr class="memitem:a7f4304b67d0bc9d4477c867f04a0060a" id="r_a7f4304b67d0bc9d4477c867f04a0060a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f4304b67d0bc9d4477c867f04a0060a">GTEST_ASSERT_FALSE</a>(condition)</td></tr>
+<tr class="memitem:ac33e7cdfb5d44a7a0f0ab552eb5c3c6a" id="r_ac33e7cdfb5d44a7a0f0ab552eb5c3c6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac33e7cdfb5d44a7a0f0ab552eb5c3c6a">EXPECT_TRUE</a>(condition)</td></tr>
+<tr class="memitem:aeb6c7ae89f440c90c1a1815951c836da" id="r_aeb6c7ae89f440c90c1a1815951c836da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb6c7ae89f440c90c1a1815951c836da">EXPECT_FALSE</a>(condition)</td></tr>
+<tr class="memitem:ae9244bfbda562e8b798789b001993fa5" id="r_ae9244bfbda562e8b798789b001993fa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9244bfbda562e8b798789b001993fa5">ASSERT_TRUE</a>(condition)</td></tr>
+<tr class="memitem:a8197fa52f3538588d20d8af4834c9003" id="r_a8197fa52f3538588d20d8af4834c9003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8197fa52f3538588d20d8af4834c9003">ASSERT_FALSE</a>(condition)</td></tr>
+<tr class="memitem:a4159019abda84f5366acdb7604ff220a" id="r_a4159019abda84f5366acdb7604ff220a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4159019abda84f5366acdb7604ff220a">EXPECT_EQ</a>(val1,  val2)</td></tr>
+<tr class="memitem:a6ae7443947f25abc58bfcfcfc56b0d75" id="r_a6ae7443947f25abc58bfcfcfc56b0d75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ae7443947f25abc58bfcfcfc56b0d75">EXPECT_NE</a>(val1,  val2)</td></tr>
+<tr class="memitem:ae0f265632323b4a07b585dcfde10f60a" id="r_ae0f265632323b4a07b585dcfde10f60a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0f265632323b4a07b585dcfde10f60a">EXPECT_LE</a>(val1,  val2)</td></tr>
+<tr class="memitem:af28c06b2b5e8dee151896f299f6610cf" id="r_af28c06b2b5e8dee151896f299f6610cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af28c06b2b5e8dee151896f299f6610cf">EXPECT_LT</a>(val1,  val2)</td></tr>
+<tr class="memitem:ab7a0ff4bfa4d9b27baa118d8b0756ca0" id="r_ab7a0ff4bfa4d9b27baa118d8b0756ca0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7a0ff4bfa4d9b27baa118d8b0756ca0">EXPECT_GE</a>(val1,  val2)</td></tr>
+<tr class="memitem:aa8bc8320813e1abb0016129b636e3b27" id="r_aa8bc8320813e1abb0016129b636e3b27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8bc8320813e1abb0016129b636e3b27">EXPECT_GT</a>(val1,  val2)</td></tr>
+<tr class="memitem:a8a7a47387090810cdfe78933d348182d" id="r_a8a7a47387090810cdfe78933d348182d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a7a47387090810cdfe78933d348182d">GTEST_ASSERT_EQ</a>(val1,  val2)</td></tr>
+<tr class="memitem:a6fa9bb2b6731eba8f481e40e9e4931b3" id="r_a6fa9bb2b6731eba8f481e40e9e4931b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fa9bb2b6731eba8f481e40e9e4931b3">GTEST_ASSERT_NE</a>(val1,  val2)</td></tr>
+<tr class="memitem:abef04dcd4a0259d378de7b3b3ffb6730" id="r_abef04dcd4a0259d378de7b3b3ffb6730"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abef04dcd4a0259d378de7b3b3ffb6730">GTEST_ASSERT_LE</a>(val1,  val2)</td></tr>
+<tr class="memitem:a5a75667e637febd18e5f7d4f3abf55e8" id="r_a5a75667e637febd18e5f7d4f3abf55e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a75667e637febd18e5f7d4f3abf55e8">GTEST_ASSERT_LT</a>(val1,  val2)</td></tr>
+<tr class="memitem:a55373d99c079ff1b894e2eb5bcd15c5a" id="r_a55373d99c079ff1b894e2eb5bcd15c5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55373d99c079ff1b894e2eb5bcd15c5a">GTEST_ASSERT_GE</a>(val1,  val2)</td></tr>
+<tr class="memitem:a088b9056fd1c1f316b41c22f64deb33a" id="r_a088b9056fd1c1f316b41c22f64deb33a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a088b9056fd1c1f316b41c22f64deb33a">GTEST_ASSERT_GT</a>(val1,  val2)</td></tr>
+<tr class="memitem:a1a6db8b1338ee7040329322b77779086" id="r_a1a6db8b1338ee7040329322b77779086"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a6db8b1338ee7040329322b77779086">ASSERT_EQ</a>(val1,  val2)</td></tr>
+<tr class="memitem:aa866c8dece57912e6f51495ed3e8d8d5" id="r_aa866c8dece57912e6f51495ed3e8d8d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa866c8dece57912e6f51495ed3e8d8d5">ASSERT_NE</a>(val1,  val2)</td></tr>
+<tr class="memitem:a775643748feff0b490aae651d041e971" id="r_a775643748feff0b490aae651d041e971"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a775643748feff0b490aae651d041e971">ASSERT_LE</a>(val1,  val2)</td></tr>
+<tr class="memitem:affc4f9cae4c3aabfe60fced83737b42c" id="r_affc4f9cae4c3aabfe60fced83737b42c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affc4f9cae4c3aabfe60fced83737b42c">ASSERT_LT</a>(val1,  val2)</td></tr>
+<tr class="memitem:af4ff5dc71479fcb374b6bc2ed195bcc4" id="r_af4ff5dc71479fcb374b6bc2ed195bcc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4ff5dc71479fcb374b6bc2ed195bcc4">ASSERT_GE</a>(val1,  val2)</td></tr>
+<tr class="memitem:a16a882d4eafc9f8643867aea40879140" id="r_a16a882d4eafc9f8643867aea40879140"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16a882d4eafc9f8643867aea40879140">ASSERT_GT</a>(val1,  val2)</td></tr>
+<tr class="memitem:ad20f7b94ac5081e16f0005b94e95f0c6" id="r_ad20f7b94ac5081e16f0005b94e95f0c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20f7b94ac5081e16f0005b94e95f0c6">EXPECT_STREQ</a>(s1,  s2)</td></tr>
+<tr class="memitem:aee7e9c42f55549dbc0dfc42391eb9775" id="r_aee7e9c42f55549dbc0dfc42391eb9775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee7e9c42f55549dbc0dfc42391eb9775">EXPECT_STRNE</a>(s1,  s2)</td></tr>
+<tr class="memitem:a740cab7e3eec5c178a64b4f558bde66e" id="r_a740cab7e3eec5c178a64b4f558bde66e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a740cab7e3eec5c178a64b4f558bde66e">EXPECT_STRCASEEQ</a>(s1,  s2)</td></tr>
+<tr class="memitem:a07d0b5cbd3b5f7c8b6f44c609046ff07" id="r_a07d0b5cbd3b5f7c8b6f44c609046ff07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d0b5cbd3b5f7c8b6f44c609046ff07">EXPECT_STRCASENE</a>(s1,  s2)</td></tr>
+<tr class="memitem:a74f4189ea570bab9a65d47104659ef9c" id="r_a74f4189ea570bab9a65d47104659ef9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f4189ea570bab9a65d47104659ef9c">ASSERT_STREQ</a>(s1,  s2)</td></tr>
+<tr class="memitem:a3d679660ac1b2f9f6e6c7608452af923" id="r_a3d679660ac1b2f9f6e6c7608452af923"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d679660ac1b2f9f6e6c7608452af923">ASSERT_STRNE</a>(s1,  s2)</td></tr>
+<tr class="memitem:a58847dd696200a3268361401dfcd0fa0" id="r_a58847dd696200a3268361401dfcd0fa0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58847dd696200a3268361401dfcd0fa0">ASSERT_STRCASEEQ</a>(s1,  s2)</td></tr>
+<tr class="memitem:ac3d2c3836b103068a050f32585b2aaad" id="r_ac3d2c3836b103068a050f32585b2aaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3d2c3836b103068a050f32585b2aaad">ASSERT_STRCASENE</a>(s1,  s2)</td></tr>
+<tr class="memitem:a981e552322fb084042d02d6dfa9860ca" id="r_a981e552322fb084042d02d6dfa9860ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a981e552322fb084042d02d6dfa9860ca">EXPECT_FLOAT_EQ</a>(val1,  val2)</td></tr>
+<tr class="memitem:ab4852f9430cf656690256ea7fe6323b8" id="r_ab4852f9430cf656690256ea7fe6323b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4852f9430cf656690256ea7fe6323b8">EXPECT_DOUBLE_EQ</a>(val1,  val2)</td></tr>
+<tr class="memitem:a4663ffbf844baa54bdb29f9148fd0f96" id="r_a4663ffbf844baa54bdb29f9148fd0f96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4663ffbf844baa54bdb29f9148fd0f96">ASSERT_FLOAT_EQ</a>(val1,  val2)</td></tr>
+<tr class="memitem:a6617da62e5ae5490995a3bfca1f331a9" id="r_a6617da62e5ae5490995a3bfca1f331a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6617da62e5ae5490995a3bfca1f331a9">ASSERT_DOUBLE_EQ</a>(val1,  val2)</td></tr>
+<tr class="memitem:a88cd7978af0e7dbd42cd606dfabdcc6f" id="r_a88cd7978af0e7dbd42cd606dfabdcc6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88cd7978af0e7dbd42cd606dfabdcc6f">EXPECT_NEAR</a>(val1,  val2,  abs_error)</td></tr>
+<tr class="memitem:a73cce6b752d204f91a36bef2f8e663b3" id="r_a73cce6b752d204f91a36bef2f8e663b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73cce6b752d204f91a36bef2f8e663b3">ASSERT_NEAR</a>(val1,  val2,  abs_error)</td></tr>
+<tr class="memitem:a5034fda3490aad5a93942ac83f4cea49" id="r_a5034fda3490aad5a93942ac83f4cea49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5034fda3490aad5a93942ac83f4cea49">ASSERT_NO_FATAL_FAILURE</a>(statement)</td></tr>
+<tr class="memitem:a067c02ccaf3171d6e1781cd0f8cdcf74" id="r_a067c02ccaf3171d6e1781cd0f8cdcf74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a067c02ccaf3171d6e1781cd0f8cdcf74">EXPECT_NO_FATAL_FAILURE</a>(statement)</td></tr>
+<tr class="memitem:a4dac08f15adc8cb1ee0e5c1bfb0f440d" id="r_a4dac08f15adc8cb1ee0e5c1bfb0f440d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dac08f15adc8cb1ee0e5c1bfb0f440d">SCOPED_TRACE</a>(message)</td></tr>
+<tr class="memitem:a216a746d9241b1f42fdd4449698a4d8d" id="r_a216a746d9241b1f42fdd4449698a4d8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a216a746d9241b1f42fdd4449698a4d8d">GTEST_TEST</a>(test_suite_name,  test_name)</td></tr>
+<tr class="memitem:ab5540a6d621853916be8240ff51819cf" id="r_ab5540a6d621853916be8240ff51819cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5540a6d621853916be8240ff51819cf">TEST</a>(test_suite_name,  test_name)</td></tr>
+<tr class="memitem:a18e528c80ec01a7f95e32a7b98108e63" id="r_a18e528c80ec01a7f95e32a7b98108e63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18e528c80ec01a7f95e32a7b98108e63">GTEST_TEST_F</a>(test_fixture,  test_name)</td></tr>
+<tr class="memitem:a0ee66d464d1a06c20c1929cae09d8758" id="r_a0ee66d464d1a06c20c1929cae09d8758"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ee66d464d1a06c20c1929cae09d8758">TEST_F</a>(test_fixture,  test_name)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:aa00a8c56249800e8c5215cd3d8b00992" id="r_aa00a8c56249800e8c5215cd3d8b00992"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#aa00a8c56249800e8c5215cd3d8b00992">testing::TestCase</a> = <a class="el" href="classtesting_1_1_test_suite.html">TestSuite</a></td></tr>
+<tr class="memitem:a992de1d091ce660f451d1e8b3ce30fd6" id="r_a992de1d091ce660f451d1e8b3ce30fd6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacetesting_1_1internal.html#a7ce008e15981976a761d359578f2dc19">internal::TimeInMillis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a992de1d091ce660f451d1e8b3ce30fd6">testing::TimeInMillis</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a24e05abb3e66df18265d029b85a8ee7a" id="r_a24e05abb3e66df18265d029b85a8ee7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24e05abb3e66df18265d029b85a8ee7a">GTEST_DISABLE_MSC_WARNINGS_PUSH_</a> (4251) <a class="el" href="gtest-port_8h.html#a14eb0e9c6e0df765d1fbfd2db6966d14">GTEST_DECLARE_bool_</a>(also_run_disabled_tests)</td></tr>
+<tr class="memitem:a25fe4ea2fa2de9858abfaa1383892f90" id="r_a25fe4ea2fa2de9858abfaa1383892f90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25fe4ea2fa2de9858abfaa1383892f90">GTEST_DECLARE_bool_</a> (break_on_failure)</td></tr>
+<tr class="memitem:a6268f547a89a044ff6158fbfa0cab5cc" id="r_a6268f547a89a044ff6158fbfa0cab5cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6268f547a89a044ff6158fbfa0cab5cc">GTEST_DECLARE_bool_</a> (catch_exceptions)</td></tr>
+<tr class="memitem:ade7e561db85a5c2b87e9f0f66d4a4363" id="r_ade7e561db85a5c2b87e9f0f66d4a4363"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade7e561db85a5c2b87e9f0f66d4a4363">GTEST_DECLARE_string_</a> (color)</td></tr>
+<tr class="memitem:acb9394afee34da321e10114aa1c66f2f" id="r_acb9394afee34da321e10114aa1c66f2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb9394afee34da321e10114aa1c66f2f">GTEST_DECLARE_bool_</a> (fail_fast)</td></tr>
+<tr class="memitem:a4c624a5efd425b1d1ec252507716c9e4" id="r_a4c624a5efd425b1d1ec252507716c9e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c624a5efd425b1d1ec252507716c9e4">GTEST_DECLARE_string_</a> (filter)</td></tr>
+<tr class="memitem:aaa9247edd07c35aef6d970a558482b6a" id="r_aaa9247edd07c35aef6d970a558482b6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa9247edd07c35aef6d970a558482b6a">GTEST_DECLARE_bool_</a> (install_failure_signal_handler)</td></tr>
+<tr class="memitem:a503777cea079ba5720eaa67cc4bcf352" id="r_a503777cea079ba5720eaa67cc4bcf352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a503777cea079ba5720eaa67cc4bcf352">GTEST_DECLARE_bool_</a> (list_tests)</td></tr>
+<tr class="memitem:a0ad617a0f81de7dfb35c740f80d5812c" id="r_a0ad617a0f81de7dfb35c740f80d5812c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ad617a0f81de7dfb35c740f80d5812c">GTEST_DECLARE_string_</a> (output)</td></tr>
+<tr class="memitem:a7544eee2a69642d7c4bcad3048f34a61" id="r_a7544eee2a69642d7c4bcad3048f34a61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7544eee2a69642d7c4bcad3048f34a61">GTEST_DECLARE_bool_</a> (brief)</td></tr>
+<tr class="memitem:ab8901f732d0e87e196184b5abac68bc9" id="r_ab8901f732d0e87e196184b5abac68bc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8901f732d0e87e196184b5abac68bc9">GTEST_DECLARE_bool_</a> (print_time)</td></tr>
+<tr class="memitem:ad4e384f417913ba365e281fcd561b6cc" id="r_ad4e384f417913ba365e281fcd561b6cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4e384f417913ba365e281fcd561b6cc">GTEST_DECLARE_bool_</a> (print_utf8)</td></tr>
+<tr class="memitem:af66db99ad0d7a1453366804a03d887d6" id="r_af66db99ad0d7a1453366804a03d887d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af66db99ad0d7a1453366804a03d887d6">GTEST_DECLARE_int32_</a> (random_seed)</td></tr>
+<tr class="memitem:a797265979cd4ed202c63419b29d26b9a" id="r_a797265979cd4ed202c63419b29d26b9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a797265979cd4ed202c63419b29d26b9a">GTEST_DECLARE_int32_</a> (repeat)</td></tr>
+<tr class="memitem:a9552988db4b0632698bf5af74e0da869" id="r_a9552988db4b0632698bf5af74e0da869"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9552988db4b0632698bf5af74e0da869">GTEST_DECLARE_bool_</a> (recreate_environments_when_repeating)</td></tr>
+<tr class="memitem:a2835c1783d75ac51afa600506ff5fff3" id="r_a2835c1783d75ac51afa600506ff5fff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2835c1783d75ac51afa600506ff5fff3">GTEST_DECLARE_bool_</a> (show_internal_stack_frames)</td></tr>
+<tr class="memitem:adba569244bbc9a07221d1abc81ea01dc" id="r_adba569244bbc9a07221d1abc81ea01dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adba569244bbc9a07221d1abc81ea01dc">GTEST_DECLARE_bool_</a> (shuffle)</td></tr>
+<tr class="memitem:a718dcc037ef803268c49c7db88f776f8" id="r_a718dcc037ef803268c49c7db88f776f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a718dcc037ef803268c49c7db88f776f8">GTEST_DECLARE_int32_</a> (stack_trace_depth)</td></tr>
+<tr class="memitem:a2174553b8afb7450fbebf56c4cf64439" id="r_a2174553b8afb7450fbebf56c4cf64439"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2174553b8afb7450fbebf56c4cf64439">GTEST_DECLARE_bool_</a> (throw_on_failure)</td></tr>
+<tr class="memitem:a88a6f5699cc1ed3b8b24db866dff7d20" id="r_a88a6f5699cc1ed3b8b24db866dff7d20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88a6f5699cc1ed3b8b24db866dff7d20">GTEST_DECLARE_string_</a> (stream_result_to)</td></tr>
+<tr class="memitem:a9bd0caf5d16512de38b39599c13ee634" id="r_a9bd0caf5d16512de38b39599c13ee634"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classtesting_1_1internal_1_1_unit_test_impl.html">UnitTestImpl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a9bd0caf5d16512de38b39599c13ee634">testing::internal::GetUnitTestImpl</a> ()</td></tr>
+<tr class="memitem:a85f6ff0e40f9a5f10af66a73cf1364fa" id="r_a85f6ff0e40f9a5f10af66a73cf1364fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a85f6ff0e40f9a5f10af66a73cf1364fa">testing::internal::ReportFailureInUnknownLocation</a> (TestPartResult::Type result_type, const std::string &amp;message)</td></tr>
+<tr class="memitem:af4e3dd7984d2fbd8df81e8ffb57c5cdf" id="r_af4e3dd7984d2fbd8df81e8ffb57c5cdf"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#af4e3dd7984d2fbd8df81e8ffb57c5cdf">testing::internal::GetIgnoredParameterizedTestSuites</a> ()</td></tr>
+<tr class="memitem:a224caeebdb6586b728d204367fea1087" id="r_a224caeebdb6586b728d204367fea1087"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_environment.html">Environment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a224caeebdb6586b728d204367fea1087">testing::AddGlobalTestEnvironment</a> (<a class="el" href="classtesting_1_1_environment.html">Environment</a> *env)</td></tr>
+<tr class="memitem:aee3f6f99df893f576f705f66c0559482" id="r_aee3f6f99df893f576f705f66c0559482"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#aee3f6f99df893f576f705f66c0559482">testing::InitGoogleTest</a> (int *argc, char **argv)</td></tr>
+<tr class="memitem:a6e9d83553f1d10818d698d45689d8adb" id="r_a6e9d83553f1d10818d698d45689d8adb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a6e9d83553f1d10818d698d45689d8adb">testing::InitGoogleTest</a> (int *argc, wchar_t **argv)</td></tr>
+<tr class="memitem:a2201e3fba11205a7edc2418fae82523e" id="r_a2201e3fba11205a7edc2418fae82523e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a2201e3fba11205a7edc2418fae82523e">testing::InitGoogleTest</a> ()</td></tr>
+<tr class="memitem:a1def8ec9393360a1b34a20528703e7f7" id="r_a1def8ec9393360a1b34a20528703e7f7"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
+<tr class="memitem:a1def8ec9393360a1b34a20528703e7f7 template"><td class="memItemLeft" align="right" valign="top">AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a1def8ec9393360a1b34a20528703e7f7">testing::internal::CmpHelperEQFailure</a> (const char *lhs_expression, const char *rhs_expression, const T1 &amp;lhs, const T2 &amp;rhs)</td></tr>
+<tr class="memitem:a5e3e473798de3189e9343132bcfd4fea" id="r_a5e3e473798de3189e9343132bcfd4fea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a5e3e473798de3189e9343132bcfd4fea">testing::internal::operator==</a> (<a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1faketype">faketype</a>, <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1faketype">faketype</a>)</td></tr>
+<tr class="memitem:afa44fdec84edfc155ef63e4f0d4287cc" id="r_afa44fdec84edfc155ef63e4f0d4287cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#afa44fdec84edfc155ef63e4f0d4287cc">testing::internal::operator!=</a> (<a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1faketype">faketype</a>, <a class="el" href="namespacetesting_1_1internal.html#structtesting_1_1internal_1_1faketype">faketype</a>)</td></tr>
+<tr class="memitem:a4638c74d9b32e971f9b321af6fafc2f1" id="r_a4638c74d9b32e971f9b321af6fafc2f1"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
+<tr class="memitem:a4638c74d9b32e971f9b321af6fafc2f1 template"><td class="memItemLeft" align="right" valign="top">AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a4638c74d9b32e971f9b321af6fafc2f1">testing::internal::CmpHelperEQ</a> (const char *lhs_expression, const char *rhs_expression, const T1 &amp;lhs, const T2 &amp;rhs)</td></tr>
+<tr class="memitem:a894ffccd936d78fd555f490020c27f0a" id="r_a894ffccd936d78fd555f490020c27f0a"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
+<tr class="memitem:a894ffccd936d78fd555f490020c27f0a template"><td class="memItemLeft" align="right" valign="top">AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a894ffccd936d78fd555f490020c27f0a">testing::internal::CmpHelperOpFailure</a> (const char *expr1, const char *expr2, const T1 &amp;val1, const T2 &amp;val2, const char *op)</td></tr>
+<tr class="memitem:a93eb9d61cac7faf1faff6301ae5f4a46" id="r_a93eb9d61cac7faf1faff6301ae5f4a46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a93eb9d61cac7faf1faff6301ae5f4a46">testing::internal::CmpHelperSTREQ</a> (const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</td></tr>
+<tr class="memitem:a00c3d012df6173622ef558a131bfb95d" id="r_a00c3d012df6173622ef558a131bfb95d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a00c3d012df6173622ef558a131bfb95d">testing::internal::CmpHelperSTRCASEEQ</a> (const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</td></tr>
+<tr class="memitem:a6b485231a046ff760844a0321c04870b" id="r_a6b485231a046ff760844a0321c04870b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a6b485231a046ff760844a0321c04870b">testing::internal::CmpHelperSTRNE</a> (const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</td></tr>
+<tr class="memitem:a5f74b933606b0a742cd5a8ad2d7087e0" id="r_a5f74b933606b0a742cd5a8ad2d7087e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a5f74b933606b0a742cd5a8ad2d7087e0">testing::internal::CmpHelperSTRCASENE</a> (const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</td></tr>
+<tr class="memitem:ad40d557f9c157790160d6e4f2b0d9bab" id="r_ad40d557f9c157790160d6e4f2b0d9bab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#ad40d557f9c157790160d6e4f2b0d9bab">testing::internal::CmpHelperSTREQ</a> (const char *s1_expression, const char *s2_expression, const wchar_t *s1, const wchar_t *s2)</td></tr>
+<tr class="memitem:a6e700804399b6694d8d6157e3a141b17" id="r_a6e700804399b6694d8d6157e3a141b17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a6e700804399b6694d8d6157e3a141b17">testing::internal::CmpHelperSTRNE</a> (const char *s1_expression, const char *s2_expression, const wchar_t *s1, const wchar_t *s2)</td></tr>
+<tr class="memitem:a5c90a86562b2470213c07742e0eeb0fe" id="r_a5c90a86562b2470213c07742e0eeb0fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a5c90a86562b2470213c07742e0eeb0fe">testing::IsSubstring</a> (const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)</td></tr>
+<tr class="memitem:a08ce65847491b27a38cbac3ac15e3035" id="r_a08ce65847491b27a38cbac3ac15e3035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a08ce65847491b27a38cbac3ac15e3035">testing::IsSubstring</a> (const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)</td></tr>
+<tr class="memitem:ab553b649b06ef2339cbd90f8dfa119f0" id="r_ab553b649b06ef2339cbd90f8dfa119f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ab553b649b06ef2339cbd90f8dfa119f0">testing::IsNotSubstring</a> (const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)</td></tr>
+<tr class="memitem:a28868925c50d541c8568a540b6457e54" id="r_a28868925c50d541c8568a540b6457e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a28868925c50d541c8568a540b6457e54">testing::IsNotSubstring</a> (const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)</td></tr>
+<tr class="memitem:a32718fab95b2833ab5ffc9cfc9f5c8b0" id="r_a32718fab95b2833ab5ffc9cfc9f5c8b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a32718fab95b2833ab5ffc9cfc9f5c8b0">testing::IsSubstring</a> (const char *needle_expr, const char *haystack_expr, const ::std::string &amp;needle, const ::std::string &amp;haystack)</td></tr>
+<tr class="memitem:a645d822e47dc64b9923e78c880807f12" id="r_a645d822e47dc64b9923e78c880807f12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a645d822e47dc64b9923e78c880807f12">testing::IsNotSubstring</a> (const char *needle_expr, const char *haystack_expr, const ::std::string &amp;needle, const ::std::string &amp;haystack)</td></tr>
+<tr class="memitem:a98ce463e5dbe0c6120fa817e1f8f2944" id="r_a98ce463e5dbe0c6120fa817e1f8f2944"><td class="memTemplParams" colspan="2">template&lt;typename RawType&gt; </td></tr>
+<tr class="memitem:a98ce463e5dbe0c6120fa817e1f8f2944 template"><td class="memItemLeft" align="right" valign="top">AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#a98ce463e5dbe0c6120fa817e1f8f2944">testing::internal::CmpHelperFloatingPointEQ</a> (const char *lhs_expression, const char *rhs_expression, RawType lhs_value, RawType rhs_value)</td></tr>
+<tr class="memitem:aea60207c4cedc8946a70ada62e38da8f" id="r_aea60207c4cedc8946a70ada62e38da8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting_1_1internal.html#aea60207c4cedc8946a70ada62e38da8f">testing::internal::DoubleNearPredFormat</a> (const char *expr1, const char *expr2, const char *abs_error_expr, double val1, double val2, double abs_error)</td></tr>
+<tr class="memitem:a69106491c2e7f50e50da0ce5e8ae4374" id="r_a69106491c2e7f50e50da0ce5e8ae4374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a69106491c2e7f50e50da0ce5e8ae4374">testing::FloatLE</a> (const char *expr1, const char *expr2, float val1, float val2)</td></tr>
+<tr class="memitem:a84c020b981d0eb4eabfb0feda155aaaf" id="r_a84c020b981d0eb4eabfb0feda155aaaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> AssertionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a84c020b981d0eb4eabfb0feda155aaaf">testing::DoubleLE</a> (const char *expr1, const char *expr2, double val1, double val2)</td></tr>
+<tr class="memitem:a8318a0c014ef26fc3d5b8b3492198ff7" id="r_a8318a0c014ef26fc3d5b8b3492198ff7"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
+<tr class="memitem:a8318a0c014ef26fc3d5b8b3492198ff7 template"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8318a0c014ef26fc3d5b8b3492198ff7">testing::StaticAssertTypeEq</a> () noexcept</td></tr>
+<tr class="memitem:abcf5181cecc3c07915dceb3de46ab07f" id="r_abcf5181cecc3c07915dceb3de46ab07f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#abcf5181cecc3c07915dceb3de46ab07f">testing::TempDir</a> ()</td></tr>
+<tr class="memitem:a8b496b373fb858ecbe52634e414e8d41" id="r_a8b496b373fb858ecbe52634e414e8d41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="gtest-port_8h.html#aa73be6f0ba4a7456180a94904ce17790">GTEST_API_</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8b496b373fb858ecbe52634e414e8d41">testing::SrcDir</a> ()</td></tr>
+<tr class="memitem:a8b90d759c019a155800afdd4b8d623c3" id="r_a8b90d759c019a155800afdd4b8d623c3"><td class="memTemplParams" colspan="2">template&lt;int &amp;... ExplicitParameterBarrier, typename Factory&gt; </td></tr>
+<tr class="memitem:a8b90d759c019a155800afdd4b8d623c3 template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1_test_info.html">TestInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#a8b90d759c019a155800afdd4b8d623c3">testing::RegisterTest</a> (const char *test_suite_name, const char *test_name, const char *type_param, const char *value_param, const char *file, int line, Factory factory)</td></tr>
+<tr class="memitem:a931592c964dcb83eb3e8d95e1eee9404" id="r_a931592c964dcb83eb3e8d95e1eee9404"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a931592c964dcb83eb3e8d95e1eee9404">RUN_ALL_TESTS</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ae605f2ccac04616bb7812ca72e517082" id="r_ae605f2ccac04616bb7812ca72e517082"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ae605f2ccac04616bb7812ca72e517082">testing::kMaxStackTraceDepth</a> = 100</td></tr>
+<tr class="memitem:ac6abbe17a1f3283b1c26c3520e3bacc7" id="r_ac6abbe17a1f3283b1c26c3520e3bacc7"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ac6abbe17a1f3283b1c26c3520e3bacc7 template"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetesting.html#ac6abbe17a1f3283b1c26c3520e3bacc7">testing::WithParamInterface&lt; T &gt;::parameter_</a> = nullptr</td></tr>
+</table>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Классы</h2>
+<a name="structtesting_1_1internal_1_1faketype" id="structtesting_1_1internal_1_1faketype"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structtesting_1_1internal_1_1faketype">&#9670;&#160;</a></span>testing::internal::faketype</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct testing::internal::faketype</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01385">1385</a></p>
+</div>
+</div>
+</div>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Макросы</h2>
+<a id="adc16b5b0a740c39084ea5c9e960e3063" name="adc16b5b0a740c39084ea5c9e960e3063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc16b5b0a740c39084ea5c9e960e3063">&#9670;&#160;</a></span>ADD_FAILURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADD_FAILURE</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a>(<span class="stringliteral">&quot;Failed&quot;</span>)</div>
+<div class="ttc" id="agtest-internal_8h_html_a6cb7482cfa03661a91c698eb5895f642"><div class="ttname"><a href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a></div><div class="ttdeci">#define GTEST_NONFATAL_FAILURE_(message)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01295">gtest-internal.h:1295</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01750">1750</a></p>
+
+</div>
+</div>
+<a id="a448d7e5105b640e892fd8153fbee0b7f" name="a448d7e5105b640e892fd8153fbee0b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448d7e5105b640e892fd8153fbee0b7f">&#9670;&#160;</a></span>ADD_FAILURE_AT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADD_FAILURE_AT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>line</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#a8d70025c45a47a493780746dfd66d565">GTEST_MESSAGE_AT_</a>(file, line, <span class="stringliteral">&quot;Failed&quot;</span>, \</div>
+<div class="line">                    ::testing::TestPartResult::kNonFatalFailure)</div>
+<div class="ttc" id="agtest-internal_8h_html_a8d70025c45a47a493780746dfd66d565"><div class="ttname"><a href="gtest-internal_8h.html#a8d70025c45a47a493780746dfd66d565">GTEST_MESSAGE_AT_</a></div><div class="ttdeci">#define GTEST_MESSAGE_AT_(file, line, message, result_type)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01285">gtest-internal.h:1285</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01754">1754</a></p>
+
+</div>
+</div>
+<a id="affadeef9379fe5aabf6f28d9eab9d3c0" name="affadeef9379fe5aabf6f28d9eab9d3c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affadeef9379fe5aabf6f28d9eab9d3c0">&#9670;&#160;</a></span>ASSERT_ANY_THROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_ANY_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#af48bbd26d54d4afc5e4cef39b1c76ba3">GTEST_TEST_ANY_THROW_</a>(statement, <a class="code hl_define" href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a>)</div>
+<div class="ttc" id="agtest-internal_8h_html_a0f9a4c3ea82cc7bf4478eaffdc168358"><div class="ttname"><a href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a></div><div class="ttdeci">#define GTEST_FATAL_FAILURE_(message)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01292">gtest-internal.h:1292</a></div></div>
+<div class="ttc" id="agtest-internal_8h_html_af48bbd26d54d4afc5e4cef39b1c76ba3"><div class="ttname"><a href="gtest-internal_8h.html#af48bbd26d54d4afc5e4cef39b1c76ba3">GTEST_TEST_ANY_THROW_</a></div><div class="ttdeci">#define GTEST_TEST_ANY_THROW_(statement, fail)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01426">gtest-internal.h:1426</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01801">1801</a></p>
+
+</div>
+</div>
+<a id="a6617da62e5ae5490995a3bfca1f331a9" name="a6617da62e5ae5490995a3bfca1f331a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6617da62e5ae5490995a3bfca1f331a9">&#9670;&#160;</a></span>ASSERT_DOUBLE_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_DOUBLE_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a98ce463e5dbe0c6120fa817e1f8f2944">::testing::internal::CmpHelperFloatingPointEQ&lt;double&gt;</a>, \</div>
+<div class="line">                      val1, val2)</div>
+<div class="ttc" id="agtest__pred__impl_8h_html_ac452685a1a98ea3d96eb956a062ee210"><div class="ttname"><a href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a></div><div class="ttdeci">#define ASSERT_PRED_FORMAT2(pred_format, v1, v2)</div><div class="ttdef"><b>Определения</b> <a href="gtest__pred__impl_8h_source.html#l00147">gtest_pred_impl.h:147</a></div></div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_a98ce463e5dbe0c6120fa817e1f8f2944"><div class="ttname"><a href="namespacetesting_1_1internal.html#a98ce463e5dbe0c6120fa817e1f8f2944">testing::internal::CmpHelperFloatingPointEQ</a></div><div class="ttdeci">AssertionResult CmpHelperFloatingPointEQ(const char *lhs_expression, const char *rhs_expression, RawType lhs_value, RawType rhs_value)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01582">gtest.h:1582</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01997">1997</a></p>
+
+</div>
+</div>
+<a id="a1a6db8b1338ee7040329322b77779086" name="a1a6db8b1338ee7040329322b77779086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6db8b1338ee7040329322b77779086">&#9670;&#160;</a></span>ASSERT_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a8a7a47387090810cdfe78933d348182d">GTEST_ASSERT_EQ</a>(val1, val2)</div>
+<div class="ttc" id="agtest_8h_html_a8a7a47387090810cdfe78933d348182d"><div class="ttname"><a href="#a8a7a47387090810cdfe78933d348182d">GTEST_ASSERT_EQ</a></div><div class="ttdeci">#define GTEST_ASSERT_EQ(val1, val2)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01897">gtest.h:1897</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01914">1914</a></p>
+
+</div>
+</div>
+<a id="a8197fa52f3538588d20d8af4834c9003" name="a8197fa52f3538588d20d8af4834c9003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8197fa52f3538588d20d8af4834c9003">&#9670;&#160;</a></span>ASSERT_FALSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_FALSE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a7f4304b67d0bc9d4477c867f04a0060a">GTEST_ASSERT_FALSE</a>(condition)</div>
+<div class="ttc" id="agtest_8h_html_a7f4304b67d0bc9d4477c867f04a0060a"><div class="ttname"><a href="#a7f4304b67d0bc9d4477c867f04a0060a">GTEST_ASSERT_FALSE</a></div><div class="ttdeci">#define GTEST_ASSERT_FALSE(condition)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01815">gtest.h:1815</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01835">1835</a></p>
+
+</div>
+</div>
+<a id="a4663ffbf844baa54bdb29f9148fd0f96" name="a4663ffbf844baa54bdb29f9148fd0f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4663ffbf844baa54bdb29f9148fd0f96">&#9670;&#160;</a></span>ASSERT_FLOAT_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_FLOAT_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a98ce463e5dbe0c6120fa817e1f8f2944">::testing::internal::CmpHelperFloatingPointEQ&lt;float&gt;</a>, \</div>
+<div class="line">                      val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01993">1993</a></p>
+
+</div>
+</div>
+<a id="af4ff5dc71479fcb374b6bc2ed195bcc4" name="af4ff5dc71479fcb374b6bc2ed195bcc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ff5dc71479fcb374b6bc2ed195bcc4">&#9670;&#160;</a></span>ASSERT_GE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_GE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a55373d99c079ff1b894e2eb5bcd15c5a">GTEST_ASSERT_GE</a>(val1, val2)</div>
+<div class="ttc" id="agtest_8h_html_a55373d99c079ff1b894e2eb5bcd15c5a"><div class="ttname"><a href="#a55373d99c079ff1b894e2eb5bcd15c5a">GTEST_ASSERT_GE</a></div><div class="ttdeci">#define GTEST_ASSERT_GE(val1, val2)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01905">gtest.h:1905</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01930">1930</a></p>
+
+</div>
+</div>
+<a id="a16a882d4eafc9f8643867aea40879140" name="a16a882d4eafc9f8643867aea40879140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a882d4eafc9f8643867aea40879140">&#9670;&#160;</a></span>ASSERT_GT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_GT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a088b9056fd1c1f316b41c22f64deb33a">GTEST_ASSERT_GT</a>(val1, val2)</div>
+<div class="ttc" id="agtest_8h_html_a088b9056fd1c1f316b41c22f64deb33a"><div class="ttname"><a href="#a088b9056fd1c1f316b41c22f64deb33a">GTEST_ASSERT_GT</a></div><div class="ttdeci">#define GTEST_ASSERT_GT(val1, val2)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01907">gtest.h:1907</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01934">1934</a></p>
+
+</div>
+</div>
+<a id="a775643748feff0b490aae651d041e971" name="a775643748feff0b490aae651d041e971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775643748feff0b490aae651d041e971">&#9670;&#160;</a></span>ASSERT_LE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_LE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#abef04dcd4a0259d378de7b3b3ffb6730">GTEST_ASSERT_LE</a>(val1, val2)</div>
+<div class="ttc" id="agtest_8h_html_abef04dcd4a0259d378de7b3b3ffb6730"><div class="ttname"><a href="#abef04dcd4a0259d378de7b3b3ffb6730">GTEST_ASSERT_LE</a></div><div class="ttdeci">#define GTEST_ASSERT_LE(val1, val2)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01901">gtest.h:1901</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01922">1922</a></p>
+
+</div>
+</div>
+<a id="affc4f9cae4c3aabfe60fced83737b42c" name="affc4f9cae4c3aabfe60fced83737b42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc4f9cae4c3aabfe60fced83737b42c">&#9670;&#160;</a></span>ASSERT_LT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_LT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a5a75667e637febd18e5f7d4f3abf55e8">GTEST_ASSERT_LT</a>(val1, val2)</div>
+<div class="ttc" id="agtest_8h_html_a5a75667e637febd18e5f7d4f3abf55e8"><div class="ttname"><a href="#a5a75667e637febd18e5f7d4f3abf55e8">GTEST_ASSERT_LT</a></div><div class="ttdeci">#define GTEST_ASSERT_LT(val1, val2)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01903">gtest.h:1903</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01926">1926</a></p>
+
+</div>
+</div>
+<a id="aa866c8dece57912e6f51495ed3e8d8d5" name="aa866c8dece57912e6f51495ed3e8d8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa866c8dece57912e6f51495ed3e8d8d5">&#9670;&#160;</a></span>ASSERT_NE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_NE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a6fa9bb2b6731eba8f481e40e9e4931b3">GTEST_ASSERT_NE</a>(val1, val2)</div>
+<div class="ttc" id="agtest_8h_html_a6fa9bb2b6731eba8f481e40e9e4931b3"><div class="ttname"><a href="#a6fa9bb2b6731eba8f481e40e9e4931b3">GTEST_ASSERT_NE</a></div><div class="ttdeci">#define GTEST_ASSERT_NE(val1, val2)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01899">gtest.h:1899</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01918">1918</a></p>
+
+</div>
+</div>
+<a id="a73cce6b752d204f91a36bef2f8e663b3" name="a73cce6b752d204f91a36bef2f8e663b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73cce6b752d204f91a36bef2f8e663b3">&#9670;&#160;</a></span>ASSERT_NEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_NEAR</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>abs_error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#a494e3b8dc22f4765f7e041f16c930e3d">ASSERT_PRED_FORMAT3</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#aea60207c4cedc8946a70ada62e38da8f">::testing::internal::DoubleNearPredFormat</a>, val1, val2, \</div>
+<div class="line">                      abs_error)</div>
+<div class="ttc" id="agtest__pred__impl_8h_html_a494e3b8dc22f4765f7e041f16c930e3d"><div class="ttname"><a href="gtest__pred__impl_8h.html#a494e3b8dc22f4765f7e041f16c930e3d">ASSERT_PRED_FORMAT3</a></div><div class="ttdeci">#define ASSERT_PRED_FORMAT3(pred_format, v1, v2, v3)</div><div class="ttdef"><b>Определения</b> <a href="gtest__pred__impl_8h_source.html#l00186">gtest_pred_impl.h:186</a></div></div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_aea60207c4cedc8946a70ada62e38da8f"><div class="ttname"><a href="namespacetesting_1_1internal.html#aea60207c4cedc8946a70ada62e38da8f">testing::internal::DoubleNearPredFormat</a></div><div class="ttdeci">GTEST_API_ AssertionResult DoubleNearPredFormat(const char *expr1, const char *expr2, const char *abs_error_expr, double val1, double val2, double abs_error)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02005">2005</a></p>
+
+</div>
+</div>
+<a id="a5034fda3490aad5a93942ac83f4cea49" name="a5034fda3490aad5a93942ac83f4cea49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5034fda3490aad5a93942ac83f4cea49">&#9670;&#160;</a></span>ASSERT_NO_FATAL_FAILURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_NO_FATAL_FAILURE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#a1b37a3c446836d33040f3266a6236081">GTEST_TEST_NO_FATAL_FAILURE_</a>(statement, <a class="code hl_define" href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a>)</div>
+<div class="ttc" id="agtest-internal_8h_html_a1b37a3c446836d33040f3266a6236081"><div class="ttname"><a href="gtest-internal_8h.html#a1b37a3c446836d33040f3266a6236081">GTEST_TEST_NO_FATAL_FAILURE_</a></div><div class="ttdeci">#define GTEST_TEST_NO_FATAL_FAILURE_(statement, fail)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01457">gtest-internal.h:1457</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02056">2056</a></p>
+
+</div>
+</div>
+<a id="a895c34d9b192cdc2ba46d2680623485d" name="a895c34d9b192cdc2ba46d2680623485d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895c34d9b192cdc2ba46d2680623485d">&#9670;&#160;</a></span>ASSERT_NO_THROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_NO_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#a9a109d026b5a904646437d7570e13581">GTEST_TEST_NO_THROW_</a>(statement, <a class="code hl_define" href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a>)</div>
+<div class="ttc" id="agtest-internal_8h_html_a9a109d026b5a904646437d7570e13581"><div class="ttname"><a href="gtest-internal_8h.html#a9a109d026b5a904646437d7570e13581">GTEST_TEST_NO_THROW_</a></div><div class="ttdeci">#define GTEST_TEST_NO_THROW_(statement, fail)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01408">gtest-internal.h:1408</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01799">1799</a></p>
+
+</div>
+</div>
+<a id="a58847dd696200a3268361401dfcd0fa0" name="a58847dd696200a3268361401dfcd0fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58847dd696200a3268361401dfcd0fa0">&#9670;&#160;</a></span>ASSERT_STRCASEEQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_STRCASEEQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a00c3d012df6173622ef558a131bfb95d">::testing::internal::CmpHelperSTRCASEEQ</a>, s1, s2)</div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_a00c3d012df6173622ef558a131bfb95d"><div class="ttname"><a href="namespacetesting_1_1internal.html#a00c3d012df6173622ef558a131bfb95d">testing::internal::CmpHelperSTRCASEEQ</a></div><div class="ttdeci">GTEST_API_ AssertionResult CmpHelperSTRCASEEQ(const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01966">1966</a></p>
+
+</div>
+</div>
+<a id="ac3d2c3836b103068a050f32585b2aaad" name="ac3d2c3836b103068a050f32585b2aaad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d2c3836b103068a050f32585b2aaad">&#9670;&#160;</a></span>ASSERT_STRCASENE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_STRCASENE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a5f74b933606b0a742cd5a8ad2d7087e0">::testing::internal::CmpHelperSTRCASENE</a>, s1, s2)</div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_a5f74b933606b0a742cd5a8ad2d7087e0"><div class="ttname"><a href="namespacetesting_1_1internal.html#a5f74b933606b0a742cd5a8ad2d7087e0">testing::internal::CmpHelperSTRCASENE</a></div><div class="ttdeci">GTEST_API_ AssertionResult CmpHelperSTRCASENE(const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01968">1968</a></p>
+
+</div>
+</div>
+<a id="a74f4189ea570bab9a65d47104659ef9c" name="a74f4189ea570bab9a65d47104659ef9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f4189ea570bab9a65d47104659ef9c">&#9670;&#160;</a></span>ASSERT_STREQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_STREQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a93eb9d61cac7faf1faff6301ae5f4a46">::testing::internal::CmpHelperSTREQ</a>, s1, s2)</div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_a93eb9d61cac7faf1faff6301ae5f4a46"><div class="ttname"><a href="namespacetesting_1_1internal.html#a93eb9d61cac7faf1faff6301ae5f4a46">testing::internal::CmpHelperSTREQ</a></div><div class="ttdeci">GTEST_API_ AssertionResult CmpHelperSTREQ(const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01962">1962</a></p>
+
+</div>
+</div>
+<a id="a3d679660ac1b2f9f6e6c7608452af923" name="a3d679660ac1b2f9f6e6c7608452af923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d679660ac1b2f9f6e6c7608452af923">&#9670;&#160;</a></span>ASSERT_STRNE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_STRNE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a6b485231a046ff760844a0321c04870b">::testing::internal::CmpHelperSTRNE</a>, s1, s2)</div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_a6b485231a046ff760844a0321c04870b"><div class="ttname"><a href="namespacetesting_1_1internal.html#a6b485231a046ff760844a0321c04870b">testing::internal::CmpHelperSTRNE</a></div><div class="ttdeci">GTEST_API_ AssertionResult CmpHelperSTRNE(const char *s1_expression, const char *s2_expression, const char *s1, const char *s2)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01964">1964</a></p>
+
+</div>
+</div>
+<a id="aedb1eddae6c2a2430b0e7b7e03b4f052" name="aedb1eddae6c2a2430b0e7b7e03b4f052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb1eddae6c2a2430b0e7b7e03b4f052">&#9670;&#160;</a></span>ASSERT_THROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expected_exception</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#a3f71db93eaf30b0cfca9612b9ac32106">GTEST_TEST_THROW_</a>(statement, expected_exception, <a class="code hl_define" href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a>)</div>
+<div class="ttc" id="agtest-internal_8h_html_a3f71db93eaf30b0cfca9612b9ac32106"><div class="ttname"><a href="gtest-internal_8h.html#a3f71db93eaf30b0cfca9612b9ac32106">GTEST_TEST_THROW_</a></div><div class="ttdeci">#define GTEST_TEST_THROW_(statement, expected_exception, fail)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01364">gtest-internal.h:1364</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01797">1797</a></p>
+
+</div>
+</div>
+<a id="ae9244bfbda562e8b798789b001993fa5" name="ae9244bfbda562e8b798789b001993fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9244bfbda562e8b798789b001993fa5">&#9670;&#160;</a></span>ASSERT_TRUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_TRUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a4369db8b15686534c6d823bf7970dd85">GTEST_ASSERT_TRUE</a>(condition)</div>
+<div class="ttc" id="agtest_8h_html_a4369db8b15686534c6d823bf7970dd85"><div class="ttname"><a href="#a4369db8b15686534c6d823bf7970dd85">GTEST_ASSERT_TRUE</a></div><div class="ttdeci">#define GTEST_ASSERT_TRUE(condition)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01813">gtest.h:1813</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01831">1831</a></p>
+
+</div>
+</div>
+<a id="a9be43f44d148e8a8d6a89c864bf4e461" name="a9be43f44d148e8a8d6a89c864bf4e461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be43f44d148e8a8d6a89c864bf4e461">&#9670;&#160;</a></span>EXPECT_ANY_THROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_ANY_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#af48bbd26d54d4afc5e4cef39b1c76ba3">GTEST_TEST_ANY_THROW_</a>(statement, <a class="code hl_define" href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01795">1795</a></p>
+
+</div>
+</div>
+<a id="ab4852f9430cf656690256ea7fe6323b8" name="ab4852f9430cf656690256ea7fe6323b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4852f9430cf656690256ea7fe6323b8">&#9670;&#160;</a></span>EXPECT_DOUBLE_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_DOUBLE_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a98ce463e5dbe0c6120fa817e1f8f2944">::testing::internal::CmpHelperFloatingPointEQ&lt;double&gt;</a>, \</div>
+<div class="line">                      val1, val2)</div>
+<div class="ttc" id="agtest__pred__impl_8h_html_af0141918615a5e2d5247e9cda8324dae"><div class="ttname"><a href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a></div><div class="ttdeci">#define EXPECT_PRED_FORMAT2(pred_format, v1, v2)</div><div class="ttdef"><b>Определения</b> <a href="gtest__pred__impl_8h_source.html#l00143">gtest_pred_impl.h:143</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01989">1989</a></p>
+
+</div>
+</div>
+<a id="a4159019abda84f5366acdb7604ff220a" name="a4159019abda84f5366acdb7604ff220a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4159019abda84f5366acdb7604ff220a">&#9670;&#160;</a></span>EXPECT_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(<a class="code hl_function" href="classtesting_1_1internal_1_1_eq_helper.html#aa5ee2dafddce2496d73ba13fd34bb981">::testing::internal::EqHelper::Compare</a>, val1, val2)</div>
+<div class="ttc" id="aclasstesting_1_1internal_1_1_eq_helper_html_aa5ee2dafddce2496d73ba13fd34bb981"><div class="ttname"><a href="classtesting_1_1internal_1_1_eq_helper.html#aa5ee2dafddce2496d73ba13fd34bb981">testing::internal::EqHelper::Compare</a></div><div class="ttdeci">static AssertionResult Compare(const char *lhs_expression, const char *rhs_expression, const T1 &amp;lhs, const T2 &amp;rhs)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01410">gtest.h:1410</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01884">1884</a></p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00076">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00009">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00017">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00022">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00100">TEST()</a> и <a class="el" href="main_8cpp_source.html#l00063">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="aeb6c7ae89f440c90c1a1815951c836da" name="aeb6c7ae89f440c90c1a1815951c836da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6c7ae89f440c90c1a1815951c836da">&#9670;&#160;</a></span>EXPECT_FALSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_FALSE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a412ef25a5c611f754e0797697a846cf6">GTEST_EXPECT_FALSE</a>(condition)</div>
+<div class="ttc" id="agtest_8h_html_a412ef25a5c611f754e0797697a846cf6"><div class="ttname"><a href="#a412ef25a5c611f754e0797697a846cf6">GTEST_EXPECT_FALSE</a></div><div class="ttdeci">#define GTEST_EXPECT_FALSE(condition)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01810">gtest.h:1810</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01827">1827</a></p>
+
+</div>
+</div>
+<a id="a981e552322fb084042d02d6dfa9860ca" name="a981e552322fb084042d02d6dfa9860ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a981e552322fb084042d02d6dfa9860ca">&#9670;&#160;</a></span>EXPECT_FLOAT_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_FLOAT_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a98ce463e5dbe0c6120fa817e1f8f2944">::testing::internal::CmpHelperFloatingPointEQ&lt;float&gt;</a>, \</div>
+<div class="line">                      val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01985">1985</a></p>
+
+</div>
+</div>
+<a id="ab7a0ff4bfa4d9b27baa118d8b0756ca0" name="ab7a0ff4bfa4d9b27baa118d8b0756ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a0ff4bfa4d9b27baa118d8b0756ca0">&#9670;&#160;</a></span>EXPECT_GE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_GE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(::testing::internal::CmpHelperGE, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01892">1892</a></p>
+
+</div>
+</div>
+<a id="aa8bc8320813e1abb0016129b636e3b27" name="aa8bc8320813e1abb0016129b636e3b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8bc8320813e1abb0016129b636e3b27">&#9670;&#160;</a></span>EXPECT_GT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_GT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(::testing::internal::CmpHelperGT, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01894">1894</a></p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00050">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="ae0f265632323b4a07b585dcfde10f60a" name="ae0f265632323b4a07b585dcfde10f60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f265632323b4a07b585dcfde10f60a">&#9670;&#160;</a></span>EXPECT_LE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_LE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(::testing::internal::CmpHelperLE, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01888">1888</a></p>
+
+</div>
+</div>
+<a id="af28c06b2b5e8dee151896f299f6610cf" name="af28c06b2b5e8dee151896f299f6610cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28c06b2b5e8dee151896f299f6610cf">&#9670;&#160;</a></span>EXPECT_LT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_LT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(::testing::internal::CmpHelperLT, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01890">1890</a></p>
+
+</div>
+</div>
+<a id="a6ae7443947f25abc58bfcfcfc56b0d75" name="a6ae7443947f25abc58bfcfcfc56b0d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae7443947f25abc58bfcfcfc56b0d75">&#9670;&#160;</a></span>EXPECT_NE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_NE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(::testing::internal::CmpHelperNE, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01886">1886</a></p>
+
+</div>
+</div>
+<a id="a88cd7978af0e7dbd42cd606dfabdcc6f" name="a88cd7978af0e7dbd42cd606dfabdcc6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88cd7978af0e7dbd42cd606dfabdcc6f">&#9670;&#160;</a></span>EXPECT_NEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_NEAR</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>abs_error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#a7285708fa5d37d6d8ed5b5e59da08bae">EXPECT_PRED_FORMAT3</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#aea60207c4cedc8946a70ada62e38da8f">::testing::internal::DoubleNearPredFormat</a>, val1, val2, \</div>
+<div class="line">                      abs_error)</div>
+<div class="ttc" id="agtest__pred__impl_8h_html_a7285708fa5d37d6d8ed5b5e59da08bae"><div class="ttname"><a href="gtest__pred__impl_8h.html#a7285708fa5d37d6d8ed5b5e59da08bae">EXPECT_PRED_FORMAT3</a></div><div class="ttdeci">#define EXPECT_PRED_FORMAT3(pred_format, v1, v2, v3)</div><div class="ttdef"><b>Определения</b> <a href="gtest__pred__impl_8h_source.html#l00182">gtest_pred_impl.h:182</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02001">2001</a></p>
+
+</div>
+</div>
+<a id="a067c02ccaf3171d6e1781cd0f8cdcf74" name="a067c02ccaf3171d6e1781cd0f8cdcf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067c02ccaf3171d6e1781cd0f8cdcf74">&#9670;&#160;</a></span>EXPECT_NO_FATAL_FAILURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_NO_FATAL_FAILURE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#a1b37a3c446836d33040f3266a6236081">GTEST_TEST_NO_FATAL_FAILURE_</a>(statement, <a class="code hl_define" href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02058">2058</a></p>
+
+</div>
+</div>
+<a id="a2743a1438137ad857aa3f9fec3ff67ec" name="a2743a1438137ad857aa3f9fec3ff67ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2743a1438137ad857aa3f9fec3ff67ec">&#9670;&#160;</a></span>EXPECT_NO_THROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_NO_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#a9a109d026b5a904646437d7570e13581">GTEST_TEST_NO_THROW_</a>(statement, <a class="code hl_define" href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01793">1793</a></p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00100">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="a740cab7e3eec5c178a64b4f558bde66e" name="a740cab7e3eec5c178a64b4f558bde66e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a740cab7e3eec5c178a64b4f558bde66e">&#9670;&#160;</a></span>EXPECT_STRCASEEQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_STRCASEEQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a00c3d012df6173622ef558a131bfb95d">::testing::internal::CmpHelperSTRCASEEQ</a>, s1, s2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01957">1957</a></p>
+
+</div>
+</div>
+<a id="a07d0b5cbd3b5f7c8b6f44c609046ff07" name="a07d0b5cbd3b5f7c8b6f44c609046ff07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d0b5cbd3b5f7c8b6f44c609046ff07">&#9670;&#160;</a></span>EXPECT_STRCASENE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_STRCASENE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a5f74b933606b0a742cd5a8ad2d7087e0">::testing::internal::CmpHelperSTRCASENE</a>, s1, s2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01959">1959</a></p>
+
+</div>
+</div>
+<a id="ad20f7b94ac5081e16f0005b94e95f0c6" name="ad20f7b94ac5081e16f0005b94e95f0c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20f7b94ac5081e16f0005b94e95f0c6">&#9670;&#160;</a></span>EXPECT_STREQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_STREQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a93eb9d61cac7faf1faff6301ae5f4a46">::testing::internal::CmpHelperSTREQ</a>, s1, s2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01953">1953</a></p>
+
+</div>
+</div>
+<a id="aee7e9c42f55549dbc0dfc42391eb9775" name="aee7e9c42f55549dbc0dfc42391eb9775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7e9c42f55549dbc0dfc42391eb9775">&#9670;&#160;</a></span>EXPECT_STRNE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_STRNE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#af0141918615a5e2d5247e9cda8324dae">EXPECT_PRED_FORMAT2</a>(<a class="code hl_function" href="namespacetesting_1_1internal.html#a6b485231a046ff760844a0321c04870b">::testing::internal::CmpHelperSTRNE</a>, s1, s2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01955">1955</a></p>
+
+</div>
+</div>
+<a id="a789842b4475eed948e6fd18390d5a859" name="a789842b4475eed948e6fd18390d5a859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789842b4475eed948e6fd18390d5a859">&#9670;&#160;</a></span>EXPECT_THROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_THROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>statement</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expected_exception</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#a3f71db93eaf30b0cfca9612b9ac32106">GTEST_TEST_THROW_</a>(statement, expected_exception, <a class="code hl_define" href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01791">1791</a></p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00031">TEST()</a> и <a class="el" href="main_8cpp_source.html#l00044">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="ac33e7cdfb5d44a7a0f0ab552eb5c3c6a" name="ac33e7cdfb5d44a7a0f0ab552eb5c3c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33e7cdfb5d44a7a0f0ab552eb5c3c6a">&#9670;&#160;</a></span>EXPECT_TRUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPECT_TRUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a10545796173bc03e63a438f189b34a31">GTEST_EXPECT_TRUE</a>(condition)</div>
+<div class="ttc" id="agtest_8h_html_a10545796173bc03e63a438f189b34a31"><div class="ttname"><a href="#a10545796173bc03e63a438f189b34a31">GTEST_EXPECT_TRUE</a></div><div class="ttdeci">#define GTEST_EXPECT_TRUE(condition)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01807">gtest.h:1807</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01823">1823</a></p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00076">TEST()</a> и <a class="el" href="main_8cpp_source.html#l00050">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="a3e26a8d27caa386ed0ea7ce9d5b7c4ed" name="a3e26a8d27caa386ed0ea7ce9d5b7c4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e26a8d27caa386ed0ea7ce9d5b7c4ed">&#9670;&#160;</a></span>FAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAIL</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a636231436707c30d6778f79ae96f5dc6">GTEST_FAIL</a>()</div>
+<div class="ttc" id="agtest_8h_html_a636231436707c30d6778f79ae96f5dc6"><div class="ttname"><a href="#a636231436707c30d6778f79ae96f5dc6">GTEST_FAIL</a></div><div class="ttdeci">#define GTEST_FAIL()</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01759">gtest.h:1759</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01769">1769</a></p>
+
+</div>
+</div>
+<a id="af702dfada315c8f49cbfcea3f23fba3a" name="af702dfada315c8f49cbfcea3f23fba3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af702dfada315c8f49cbfcea3f23fba3a">&#9670;&#160;</a></span>FAIL_AT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAIL_AT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>line</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#acf5a3e2510baccc1a0eccb72da510d98">GTEST_FAIL_AT</a>(file, line)</div>
+<div class="ttc" id="agtest_8h_html_acf5a3e2510baccc1a0eccb72da510d98"><div class="ttname"><a href="#acf5a3e2510baccc1a0eccb72da510d98">GTEST_FAIL_AT</a></div><div class="ttdeci">#define GTEST_FAIL_AT(file, line)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01762">gtest.h:1762</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01770">1770</a></p>
+
+</div>
+</div>
+<a id="a8a7a47387090810cdfe78933d348182d" name="a8a7a47387090810cdfe78933d348182d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7a47387090810cdfe78933d348182d">&#9670;&#160;</a></span>GTEST_ASSERT_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(<a class="code hl_function" href="classtesting_1_1internal_1_1_eq_helper.html#aa5ee2dafddce2496d73ba13fd34bb981">::testing::internal::EqHelper::Compare</a>, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01897">1897</a></p>
+
+</div>
+</div>
+<a id="a7f4304b67d0bc9d4477c867f04a0060a" name="a7f4304b67d0bc9d4477c867f04a0060a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4304b67d0bc9d4477c867f04a0060a">&#9670;&#160;</a></span>GTEST_ASSERT_FALSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_FALSE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#ae8912365e1d00a7a2bd248268c64aa1a">GTEST_TEST_BOOLEAN_</a>(!(condition), #condition, <span class="keyword">true</span>, <span class="keyword">false</span>, \</div>
+<div class="line">                      <a class="code hl_define" href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a>)</div>
+<div class="ttc" id="agtest-internal_8h_html_ae8912365e1d00a7a2bd248268c64aa1a"><div class="ttname"><a href="gtest-internal_8h.html#ae8912365e1d00a7a2bd248268c64aa1a">GTEST_TEST_BOOLEAN_</a></div><div class="ttdeci">#define GTEST_TEST_BOOLEAN_(expression, text, actual, expected, fail)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01447">gtest-internal.h:1447</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01815">1815</a></p>
+
+</div>
+</div>
+<a id="a55373d99c079ff1b894e2eb5bcd15c5a" name="a55373d99c079ff1b894e2eb5bcd15c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55373d99c079ff1b894e2eb5bcd15c5a">&#9670;&#160;</a></span>GTEST_ASSERT_GE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_GE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(::testing::internal::CmpHelperGE, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01905">1905</a></p>
+
+</div>
+</div>
+<a id="a088b9056fd1c1f316b41c22f64deb33a" name="a088b9056fd1c1f316b41c22f64deb33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088b9056fd1c1f316b41c22f64deb33a">&#9670;&#160;</a></span>GTEST_ASSERT_GT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_GT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(::testing::internal::CmpHelperGT, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01907">1907</a></p>
+
+</div>
+</div>
+<a id="abef04dcd4a0259d378de7b3b3ffb6730" name="abef04dcd4a0259d378de7b3b3ffb6730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef04dcd4a0259d378de7b3b3ffb6730">&#9670;&#160;</a></span>GTEST_ASSERT_LE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_LE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(::testing::internal::CmpHelperLE, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01901">1901</a></p>
+
+</div>
+</div>
+<a id="a5a75667e637febd18e5f7d4f3abf55e8" name="a5a75667e637febd18e5f7d4f3abf55e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a75667e637febd18e5f7d4f3abf55e8">&#9670;&#160;</a></span>GTEST_ASSERT_LT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_LT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(::testing::internal::CmpHelperLT, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01903">1903</a></p>
+
+</div>
+</div>
+<a id="a6fa9bb2b6731eba8f481e40e9e4931b3" name="a6fa9bb2b6731eba8f481e40e9e4931b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa9bb2b6731eba8f481e40e9e4931b3">&#9670;&#160;</a></span>GTEST_ASSERT_NE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_NE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>val2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest__pred__impl_8h.html#ac452685a1a98ea3d96eb956a062ee210">ASSERT_PRED_FORMAT2</a>(::testing::internal::CmpHelperNE, val1, val2)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01899">1899</a></p>
+
+</div>
+</div>
+<a id="a4369db8b15686534c6d823bf7970dd85" name="a4369db8b15686534c6d823bf7970dd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4369db8b15686534c6d823bf7970dd85">&#9670;&#160;</a></span>GTEST_ASSERT_TRUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_ASSERT_TRUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#ae8912365e1d00a7a2bd248268c64aa1a">GTEST_TEST_BOOLEAN_</a>(condition, #condition, <span class="keyword">false</span>, <span class="keyword">true</span>, <a class="code hl_define" href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01813">1813</a></p>
+
+</div>
+</div>
+<a id="a412ef25a5c611f754e0797697a846cf6" name="a412ef25a5c611f754e0797697a846cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412ef25a5c611f754e0797697a846cf6">&#9670;&#160;</a></span>GTEST_EXPECT_FALSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_EXPECT_FALSE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#ae8912365e1d00a7a2bd248268c64aa1a">GTEST_TEST_BOOLEAN_</a>(!(condition), #condition, <span class="keyword">true</span>, <span class="keyword">false</span>, \</div>
+<div class="line">                      <a class="code hl_define" href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01810">1810</a></p>
+
+</div>
+</div>
+<a id="a10545796173bc03e63a438f189b34a31" name="a10545796173bc03e63a438f189b34a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10545796173bc03e63a438f189b34a31">&#9670;&#160;</a></span>GTEST_EXPECT_TRUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_EXPECT_TRUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>condition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#ae8912365e1d00a7a2bd248268c64aa1a">GTEST_TEST_BOOLEAN_</a>(condition, #condition, <span class="keyword">false</span>, <span class="keyword">true</span>, \</div>
+<div class="line">                      <a class="code hl_define" href="gtest-internal_8h.html#a6cb7482cfa03661a91c698eb5895f642">GTEST_NONFATAL_FAILURE_</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01807">1807</a></p>
+
+</div>
+</div>
+<a id="a636231436707c30d6778f79ae96f5dc6" name="a636231436707c30d6778f79ae96f5dc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636231436707c30d6778f79ae96f5dc6">&#9670;&#160;</a></span>GTEST_FAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_FAIL</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="gtest-internal_8h.html#a0f9a4c3ea82cc7bf4478eaffdc168358">GTEST_FATAL_FAILURE_</a>(<span class="stringliteral">&quot;Failed&quot;</span>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01759">1759</a></p>
+
+</div>
+</div>
+<a id="acf5a3e2510baccc1a0eccb72da510d98" name="acf5a3e2510baccc1a0eccb72da510d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5a3e2510baccc1a0eccb72da510d98">&#9670;&#160;</a></span>GTEST_FAIL_AT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_FAIL_AT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>line</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <span class="keywordflow">return</span> <a class="code hl_define" href="gtest-internal_8h.html#a8d70025c45a47a493780746dfd66d565">GTEST_MESSAGE_AT_</a>(file, line, <span class="stringliteral">&quot;Failed&quot;</span>, \</div>
+<div class="line">                           ::testing::TestPartResult::kFatalFailure)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01762">1762</a></p>
+
+</div>
+</div>
+<a id="a4a5b6fbde5dd05e05dd6846ac5e5c18e" name="a4a5b6fbde5dd05e05dd6846ac5e5c18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5b6fbde5dd05e05dd6846ac5e5c18e">&#9670;&#160;</a></span>GTEST_IMPL_CMP_HELPER_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_IMPL_CMP_HELPER_</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>op_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>op</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;                                      \</div>
+<div class="line">  AssertionResult CmpHelper##op_name(<span class="keyword">const</span> <span class="keywordtype">char</span>* expr1, <span class="keyword">const</span> <span class="keywordtype">char</span>* expr2, \</div>
+<div class="line">                                     <span class="keyword">const</span> T1&amp; val1, <span class="keyword">const</span> T2&amp; val2) {     \</div>
+<div class="line">    if (val1 op val2) {                                                    \</div>
+<div class="line">      <span class="keywordflow">return</span> AssertionSuccess();                                           \</div>
+<div class="line">    } <span class="keywordflow">else</span> {                                                               \</div>
+<div class="line">      <span class="keywordflow">return</span> CmpHelperOpFailure(expr1, expr2, val1, val2, #op);            \</div>
+<div class="line">    }                                                                      \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01458">1458</a></p>
+
+</div>
+</div>
+<a id="a3c0bbb980d533108ecc23c3534527d3c" name="a3c0bbb980d533108ecc23c3534527d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0bbb980d533108ecc23c3534527d3c">&#9670;&#160;</a></span>GTEST_SKIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_SKIP</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="gtest-internal_8h.html#ab75ed7a6cd9e466944ce680c1c07ab47">GTEST_SKIP_</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="ttc" id="agtest-internal_8h_html_ab75ed7a6cd9e466944ce680c1c07ab47"><div class="ttname"><a href="gtest-internal_8h.html#ab75ed7a6cd9e466944ce680c1c07ab47">GTEST_SKIP_</a></div><div class="ttdeci">#define GTEST_SKIP_(message)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01301">gtest-internal.h:1301</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01730">1730</a></p>
+
+</div>
+</div>
+<a id="a2690441c38202728f4159ac2462d9720" name="a2690441c38202728f4159ac2462d9720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2690441c38202728f4159ac2462d9720">&#9670;&#160;</a></span>GTEST_SUCCEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_SUCCEED</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="gtest-internal_8h.html#abe012b550eb3807e8c49f7e161bd1567">GTEST_SUCCESS_</a>(<span class="stringliteral">&quot;Succeeded&quot;</span>)</div>
+<div class="ttc" id="agtest-internal_8h_html_abe012b550eb3807e8c49f7e161bd1567"><div class="ttname"><a href="gtest-internal_8h.html#abe012b550eb3807e8c49f7e161bd1567">GTEST_SUCCESS_</a></div><div class="ttdeci">#define GTEST_SUCCESS_(message)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01298">gtest-internal.h:1298</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01774">1774</a></p>
+
+</div>
+</div>
+<a id="a216a746d9241b1f42fdd4449698a4d8d" name="a216a746d9241b1f42fdd4449698a4d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216a746d9241b1f42fdd4449698a4d8d">&#9670;&#160;</a></span>GTEST_TEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_TEST</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_suite_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#ab43103f7842de04474e362689f782a46">GTEST_TEST_</a>(test_suite_name, test_name, <a class="code hl_class" href="classtesting_1_1_test.html">::testing::Test</a>, \</div>
+<div class="line">              <a class="code hl_function" href="namespacetesting_1_1internal.html#a1e85cf16bb95b60f879d48ba1fbfc1c9">::testing::internal::GetTestTypeId</a>())</div>
+<div class="ttc" id="aclasstesting_1_1_test_html"><div class="ttname"><a href="classtesting_1_1_test.html">testing::Test</a></div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l00242">gtest.h:242</a></div></div>
+<div class="ttc" id="agtest-internal_8h_html_ab43103f7842de04474e362689f782a46"><div class="ttname"><a href="gtest-internal_8h.html#ab43103f7842de04474e362689f782a46">GTEST_TEST_</a></div><div class="ttdeci">#define GTEST_TEST_(test_suite_name, test_name, parent_class, parent_id)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l01478">gtest-internal.h:1478</a></div></div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_a1e85cf16bb95b60f879d48ba1fbfc1c9"><div class="ttname"><a href="namespacetesting_1_1internal.html#a1e85cf16bb95b60f879d48ba1fbfc1c9">testing::internal::GetTestTypeId</a></div><div class="ttdeci">GTEST_API_ TypeId GetTestTypeId()</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02185">2185</a></p>
+
+</div>
+</div>
+<a id="a18e528c80ec01a7f95e32a7b98108e63" name="a18e528c80ec01a7f95e32a7b98108e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e528c80ec01a7f95e32a7b98108e63">&#9670;&#160;</a></span>GTEST_TEST_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GTEST_TEST_F</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_fixture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="gtest-internal_8h.html#ab43103f7842de04474e362689f782a46">GTEST_TEST_</a>(test_fixture, test_name, test_fixture, \</div>
+<div class="line">              <a class="code hl_function" href="namespacetesting_1_1internal.html#a6b108e56fdc68ea937ffb3759fb55ab0">::testing::internal::GetTypeId&lt;test_fixture&gt;</a>())</div>
+<div class="ttc" id="anamespacetesting_1_1internal_html_a6b108e56fdc68ea937ffb3759fb55ab0"><div class="ttname"><a href="namespacetesting_1_1internal.html#a6b108e56fdc68ea937ffb3759fb55ab0">testing::internal::GetTypeId</a></div><div class="ttdeci">TypeId GetTypeId()</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l00410">gtest-internal.h:410</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02220">2220</a></p>
+
+</div>
+</div>
+<a id="a4dac08f15adc8cb1ee0e5c1bfb0f440d" name="a4dac08f15adc8cb1ee0e5c1bfb0f440d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dac08f15adc8cb1ee0e5c1bfb0f440d">&#9670;&#160;</a></span>SCOPED_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCOPED_TRACE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  const ::testing::ScopedTrace <a class="code hl_define" href="gtest-internal_8h.html#ae3c336cbe1ae2bd1b1d019333e4428a0">GTEST_CONCAT_TOKEN_</a>(gtest_trace_, __LINE__)( \</div>
+<div class="line">      __FILE__, __LINE__, (message))</div>
+<div class="ttc" id="agtest-internal_8h_html_ae3c336cbe1ae2bd1b1d019333e4428a0"><div class="ttname"><a href="gtest-internal_8h.html#ae3c336cbe1ae2bd1b1d019333e4428a0">GTEST_CONCAT_TOKEN_</a></div><div class="ttdeci">#define GTEST_CONCAT_TOKEN_(foo, bar)</div><div class="ttdef"><b>Определения</b> <a href="gtest-internal_8h_source.html#l00082">gtest-internal.h:82</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02120">2120</a></p>
+
+</div>
+</div>
+<a id="a75adcdf89f69b0b615e395daafc315af" name="a75adcdf89f69b0b615e395daafc315af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75adcdf89f69b0b615e395daafc315af">&#9670;&#160;</a></span>SUCCEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUCCEED</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a2690441c38202728f4159ac2462d9720">GTEST_SUCCEED</a>()</div>
+<div class="ttc" id="agtest_8h_html_a2690441c38202728f4159ac2462d9720"><div class="ttname"><a href="#a2690441c38202728f4159ac2462d9720">GTEST_SUCCEED</a></div><div class="ttdeci">#define GTEST_SUCCEED()</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l01774">gtest.h:1774</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l01779">1779</a></p>
+
+</div>
+</div>
+<a id="ab5540a6d621853916be8240ff51819cf" name="ab5540a6d621853916be8240ff51819cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5540a6d621853916be8240ff51819cf">&#9670;&#160;</a></span>TEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEST</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_suite_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a216a746d9241b1f42fdd4449698a4d8d">GTEST_TEST</a>(test_suite_name, test_name)</div>
+<div class="ttc" id="agtest_8h_html_a216a746d9241b1f42fdd4449698a4d8d"><div class="ttname"><a href="#a216a746d9241b1f42fdd4449698a4d8d">GTEST_TEST</a></div><div class="ttdeci">#define GTEST_TEST(test_suite_name, test_name)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l02185">gtest.h:2185</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02192">2192</a></p>
+
+</div>
+</div>
+<a id="a0ee66d464d1a06c20c1929cae09d8758" name="a0ee66d464d1a06c20c1929cae09d8758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee66d464d1a06c20c1929cae09d8758">&#9670;&#160;</a></span>TEST_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEST_F</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_fixture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>test_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a18e528c80ec01a7f95e32a7b98108e63">GTEST_TEST_F</a>(test_fixture, test_name)</div>
+<div class="ttc" id="agtest_8h_html_a18e528c80ec01a7f95e32a7b98108e63"><div class="ttname"><a href="#a18e528c80ec01a7f95e32a7b98108e63">GTEST_TEST_F</a></div><div class="ttdeci">#define GTEST_TEST_F(test_fixture, test_name)</div><div class="ttdef"><b>Определения</b> <a href="gtest_8h_source.html#l02220">gtest.h:2220</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02224">2224</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="a25fe4ea2fa2de9858abfaa1383892f90" name="a25fe4ea2fa2de9858abfaa1383892f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25fe4ea2fa2de9858abfaa1383892f90">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[1/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">break_on_failure</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="a7544eee2a69642d7c4bcad3048f34a61" name="a7544eee2a69642d7c4bcad3048f34a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7544eee2a69642d7c4bcad3048f34a61">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[2/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">brief</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="a6268f547a89a044ff6158fbfa0cab5cc" name="a6268f547a89a044ff6158fbfa0cab5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6268f547a89a044ff6158fbfa0cab5cc">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[3/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">catch_exceptions</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="acb9394afee34da321e10114aa1c66f2f" name="acb9394afee34da321e10114aa1c66f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb9394afee34da321e10114aa1c66f2f">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[4/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">fail_fast</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="aaa9247edd07c35aef6d970a558482b6a" name="aaa9247edd07c35aef6d970a558482b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9247edd07c35aef6d970a558482b6a">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">install_failure_signal_handler</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="a503777cea079ba5720eaa67cc4bcf352" name="a503777cea079ba5720eaa67cc4bcf352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503777cea079ba5720eaa67cc4bcf352">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[6/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">list_tests</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="ab8901f732d0e87e196184b5abac68bc9" name="ab8901f732d0e87e196184b5abac68bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8901f732d0e87e196184b5abac68bc9">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[7/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">print_time</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="ad4e384f417913ba365e281fcd561b6cc" name="ad4e384f417913ba365e281fcd561b6cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e384f417913ba365e281fcd561b6cc">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[8/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">print_utf8</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="a9552988db4b0632698bf5af74e0da869" name="a9552988db4b0632698bf5af74e0da869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9552988db4b0632698bf5af74e0da869">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">recreate_environments_when_repeating</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="a2835c1783d75ac51afa600506ff5fff3" name="a2835c1783d75ac51afa600506ff5fff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2835c1783d75ac51afa600506ff5fff3">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[10/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">show_internal_stack_frames</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="adba569244bbc9a07221d1abc81ea01dc" name="adba569244bbc9a07221d1abc81ea01dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba569244bbc9a07221d1abc81ea01dc">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[11/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">shuffle</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="a2174553b8afb7450fbebf56c4cf64439" name="a2174553b8afb7450fbebf56c4cf64439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2174553b8afb7450fbebf56c4cf64439">&#9670;&#160;</a></span>GTEST_DECLARE_bool_() <span class="overload">[12/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_bool_ </td>
+          <td>(</td>
+          <td class="paramtype">throw_on_failure</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02292">GTEST_DECLARE_bool_</a>.</p>
+
+</div>
+</div>
+<a id="af66db99ad0d7a1453366804a03d887d6" name="af66db99ad0d7a1453366804a03d887d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66db99ad0d7a1453366804a03d887d6">&#9670;&#160;</a></span>GTEST_DECLARE_int32_() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_int32_ </td>
+          <td>(</td>
+          <td class="paramtype">random_seed</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02297">GTEST_DECLARE_int32_</a>.</p>
+
+</div>
+</div>
+<a id="a797265979cd4ed202c63419b29d26b9a" name="a797265979cd4ed202c63419b29d26b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797265979cd4ed202c63419b29d26b9a">&#9670;&#160;</a></span>GTEST_DECLARE_int32_() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_int32_ </td>
+          <td>(</td>
+          <td class="paramtype">repeat</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02297">GTEST_DECLARE_int32_</a>.</p>
+
+</div>
+</div>
+<a id="a718dcc037ef803268c49c7db88f776f8" name="a718dcc037ef803268c49c7db88f776f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a718dcc037ef803268c49c7db88f776f8">&#9670;&#160;</a></span>GTEST_DECLARE_int32_() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_int32_ </td>
+          <td>(</td>
+          <td class="paramtype">stack_trace_depth</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02297">GTEST_DECLARE_int32_</a>.</p>
+
+</div>
+</div>
+<a id="ade7e561db85a5c2b87e9f0f66d4a4363" name="ade7e561db85a5c2b87e9f0f66d4a4363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7e561db85a5c2b87e9f0f66d4a4363">&#9670;&#160;</a></span>GTEST_DECLARE_string_() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_string_ </td>
+          <td>(</td>
+          <td class="paramtype">color</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02302">GTEST_DECLARE_string_</a>.</p>
+
+</div>
+</div>
+<a id="a4c624a5efd425b1d1ec252507716c9e4" name="a4c624a5efd425b1d1ec252507716c9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c624a5efd425b1d1ec252507716c9e4">&#9670;&#160;</a></span>GTEST_DECLARE_string_() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_string_ </td>
+          <td>(</td>
+          <td class="paramtype">filter</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02302">GTEST_DECLARE_string_</a>.</p>
+
+</div>
+</div>
+<a id="a0ad617a0f81de7dfb35c740f80d5812c" name="a0ad617a0f81de7dfb35c740f80d5812c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad617a0f81de7dfb35c740f80d5812c">&#9670;&#160;</a></span>GTEST_DECLARE_string_() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_string_ </td>
+          <td>(</td>
+          <td class="paramtype">output</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02302">GTEST_DECLARE_string_</a>.</p>
+
+</div>
+</div>
+<a id="a88a6f5699cc1ed3b8b24db866dff7d20" name="a88a6f5699cc1ed3b8b24db866dff7d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a6f5699cc1ed3b8b24db866dff7d20">&#9670;&#160;</a></span>GTEST_DECLARE_string_() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DECLARE_string_ </td>
+          <td>(</td>
+          <td class="paramtype">stream_result_to</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02302">GTEST_DECLARE_string_</a>.</p>
+
+</div>
+</div>
+<a id="a24e05abb3e66df18265d029b85a8ee7a" name="a24e05abb3e66df18265d029b85a8ee7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e05abb3e66df18265d029b85a8ee7a">&#9670;&#160;</a></span>GTEST_DISABLE_MSC_WARNINGS_PUSH_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GTEST_DISABLE_MSC_WARNINGS_PUSH_ </td>
+          <td>(</td>
+          <td class="paramtype">4251</td>          <td class="paramname"><span class="paramname"><em>GTEST_MAYBE_5046_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="gtest-assertion-result_8h_source.html">gtest-assertion-result.h</a> строка <a class="el" href="gtest-assertion-result_8h_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a id="a931592c964dcb83eb3e8d95e1eee9404" name="a931592c964dcb83eb3e8d95e1eee9404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931592c964dcb83eb3e8d95e1eee9404">&#9670;&#160;</a></span>RUN_ALL_TESTS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RUN_ALL_TESTS </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="gtest_8h_source.html">gtest.h</a> строка <a class="el" href="gtest_8h_source.html#l02334">2334</a></p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00110">main()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_b4d3f8626c96dc550d2abab171042708.html">fix</a></li><li class="navelem"><a href="dir_89efffde112328066e4d76293b7b46ef.html">include</a></li><li class="navelem"><a href="dir_38e80c1634d8017c49f8f62013db597d.html">gtest</a></li><li class="navelem"><a href="gtest_8h.html">gtest.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

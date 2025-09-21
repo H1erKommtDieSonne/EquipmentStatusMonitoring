@@ -1,9 +1,11 @@
-//
-
 #include "ReserveDevice.h"
 #include <sstream>
 
- //
+/**
+ * @brief представление резервного устройства
+ * @return Строка с описанием состояния резервного устройства
+ */
+
 std::string ReserveDevice::toString() const {
     std::ostringstream os;
     os << "ReserveDevice{name=" << name_

@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: РљР»Р°СЃСЃ Device</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">РРµСЂР°СЂС…РёСЏ СѓСЃС‚СЂРѕР№СЃС‚РІ</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','РџРѕРёСЃРє',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_device.html','','class_device-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Р—Р°РіСЂСѓР·РєР°...</div>
+<div class="SRStatus" id="Searching">РџРѕРёСЃРє...</div>
+<div class="SRStatus" id="NoMatches">РќРµ РЅР°Р№РґРµРЅРѕ</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">РљР»Р°СЃСЃ Device<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Абстрактная база для всех устройств Содержит общие поля (имя, адрес, приоритет) и чисто виртуальные методы для определения состояния и переходов состояний в производных классах  
+ <a href="#details">РџРѕРґСЂРѕР±РЅРµРµ...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_device_8h_source.html">Device.h</a>&gt;</code></p>
+<div class="dynheader">
+Р“СЂР°С„ РЅР°СЃР»РµРґРѕРІР°РЅРёСЏ:Device:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_device__inherit__graph.png" border="0" usemap="#a_device_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+РћС‚РєСЂС‹С‚С‹Рµ С‚РёРїС‹</h2></td></tr>
+<tr class="memitem:a42ac52c0d933dfd8088237ab2f6a99e4" id="r_a42ac52c0d933dfd8088237ab2f6a99e4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> = uint32_t</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+РћС‚РєСЂС‹С‚С‹Рµ С‡Р»РµРЅС‹</h2></td></tr>
+<tr class="memitem:af7badf268877700082eae61ccc89ef16" id="r_af7badf268877700082eae61ccc89ef16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7badf268877700082eae61ccc89ef16">Device</a> (std::string <a class="el" href="#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> prio)</td></tr>
+<tr class="memdesc:af7badf268877700082eae61ccc89ef16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор базового устройства  <br /></td></tr>
+<tr class="memitem:a6fef4f7180512c7517c9696cd95e503a" id="r_a6fef4f7180512c7517c9696cd95e503a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fef4f7180512c7517c9696cd95e503a">~Device</a> ()=default</td></tr>
+<tr class="memitem:a5b07f51b3ff02aca1d62dd343fad895a" id="r_a5b07f51b3ff02aca1d62dd343fad895a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b07f51b3ff02aca1d62dd343fad895a">setPriority</a> (<a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> p)</td></tr>
+<tr class="memdesc:a5b07f51b3ff02aca1d62dd343fad895a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить приоритет обслуживания  <br /></td></tr>
+<tr class="memitem:a4248c8fb651061680b0a3625d0ab938c" id="r_a4248c8fb651061680b0a3625d0ab938c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4248c8fb651061680b0a3625d0ab938c">isFaulty</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a4248c8fb651061680b0a3625d0ab938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак того, что устройство неисправно  <br /></td></tr>
+<tr class="memitem:a09afb0ca70768075316f836d86694d80" id="r_a09afb0ca70768075316f836d86694d80"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown</a> (std::string fault) const =0</td></tr>
+<tr class="memitem:a066cb3b8f9944129b2e9d3826dc9481a" id="r_a066cb3b8f9944129b2e9d3826dc9481a"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair</a> (uint64_t uptimeAfterRepairSec) const =0</td></tr>
+<tr class="memitem:a8c80a5f0c068a595639a06a4aa76bc51" id="r_a8c80a5f0c068a595639a06a4aa76bc51"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c80a5f0c068a595639a06a4aa76bc51">toString</a> () const</td></tr>
+<tr class="memitem:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf" id="r_ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7ee8c2ffdaa8f564fbfd9fdd164b6cf">requiresService</a> () const noexcept</td></tr>
+<tr class="memdesc:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Требуется ли обслуживание По умолчанию считает что обслуживание требуется для любого приоритета, отличного от нулевого.  <br /></td></tr>
+<tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Доступ к свойствам</div></td></tr>
+<tr class="memitem:a4fb86f0953605583fcc64d8a22b441fd" id="r_a4fb86f0953605583fcc64d8a22b441fd"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fb86f0953605583fcc64d8a22b441fd">name</a> () const noexcept</td></tr>
+<tr class="memdesc:a4fb86f0953605583fcc64d8a22b441fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя устройства.  <br /></td></tr>
+<tr class="memitem:a2759d53349562eae5db62db65be0d3de" id="r_a2759d53349562eae5db62db65be0d3de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2759d53349562eae5db62db65be0d3de">address</a> () const noexcept</td></tr>
+<tr class="memitem:a800f235ab9c35a46c73b3ed9c795f72f" id="r_a800f235ab9c35a46c73b3ed9c795f72f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800f235ab9c35a46c73b3ed9c795f72f">priority</a> () const noexcept</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Р—Р°С‰РёС‰РµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ</h2></td></tr>
+<tr class="memitem:a5229ed83545bda7b8f220d77a851fc83" id="r_a5229ed83545bda7b8f220d77a851fc83"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5229ed83545bda7b8f220d77a851fc83">name_</a></td></tr>
+<tr class="memitem:ad4a2cd6fbccd3a603014ae033f1d9024" id="r_ad4a2cd6fbccd3a603014ae033f1d9024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4a2cd6fbccd3a603014ae033f1d9024">address_</a></td></tr>
+<tr class="memitem:a0a135362acd067995fceae6b8f2a0695" id="r_a0a135362acd067995fceae6b8f2a0695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a135362acd067995fceae6b8f2a0695">priority_</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ</h2>
+<div class="textblock"><p>Абстрактная база для всех устройств Содержит общие поля (имя, адрес, приоритет) и чисто виртуальные методы для определения состояния и переходов состояний в производных классах </p>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00016">16</a></p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">РћРїСЂРµРґРµР»РµРЅРёСЏ С‚РёРїРѕРІ</h2>
+<a id="a42ac52c0d933dfd8088237ab2f6a99e4" name="a42ac52c0d933dfd8088237ab2f6a99e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ac52c0d933dfd8088237ab2f6a99e4">&#9670;&#160;</a></span>Address</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Device::Address</a> = uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ(С‹)</h2>
+<a id="af7badf268877700082eae61ccc89ef16" name="af7badf268877700082eae61ccc89ef16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7badf268877700082eae61ccc89ef16">&#9670;&#160;</a></span>Device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Device::Device </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a></td>          <td class="paramname"><span class="paramname"><em>addr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>prio</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор базового устройства </p>
+<dl class="params"><dt>РђСЂРіСѓРјРµРЅС‚С‹</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя устройства </td></tr>
+    <tr><td class="paramname">addr</td><td>IPадрес устройства </td></tr>
+    <tr><td class="paramname">prio</td><td>Приоритет обслуживания </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00028">28</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00083">address_</a>, <a class="el" href="_device_8h_source.html#l00041">name()</a>, <a class="el" href="_device_8h_source.html#l00082">name_</a> Рё <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00031">FaultyDeviceEx::FaultyDeviceEx()</a>, <a class="el" href="_healthy_device_8h_source.html#l00026">HealthyDevice::HealthyDevice()</a> Рё <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
+
+</div>
+</div>
+<a id="a6fef4f7180512c7517c9696cd95e503a" name="a6fef4f7180512c7517c9696cd95e503a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fef4f7180512c7517c9696cd95e503a">&#9670;&#160;</a></span>~Device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Device::~Device </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">РњРµС‚РѕРґС‹</h2>
+<a id="a2759d53349562eae5db62db65be0d3de" name="a2759d53349562eae5db62db65be0d3de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2759d53349562eae5db62db65be0d3de">&#9670;&#160;</a></span>address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> Device::address </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00042">42</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00083">address_</a>.</p>
+
+</div>
+</div>
+<a id="a09afb0ca70768075316f836d86694d80" name="a09afb0ca70768075316f836d86694d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09afb0ca70768075316f836d86694d80">&#9670;&#160;</a></span>breakDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt; Device::breakDown </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>fault</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Р—Р°РјРµС‰Р°РµС‚СЃСЏ РІ <a class="el" href="class_faulty_device_ex.html#ade4d58a2dca04ba0191fd692592bdb9b">FaultyDeviceEx</a> Рё <a class="el" href="class_healthy_device.html#aa41a06ba46cb2451986ae55264ef2bdb">HealthyDevice</a>.</p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a> Рё <a class="el" href="_device_8h_source.html#l00028">Device()</a>.</p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a>.</p>
+
+</div>
+</div>
+<a id="a4248c8fb651061680b0a3625d0ab938c" name="a4248c8fb651061680b0a3625d0ab938c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4248c8fb651061680b0a3625d0ab938c">&#9670;&#160;</a></span>isFaulty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Device::isFaulty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак того, что устройство неисправно </p>
+<dl class="section return"><dt>Р’РѕР·РІСЂР°С‰Р°РµС‚</dt><dd>true, если устройство неисправно, иначе false </dd></dl>
+
+<p>Р—Р°РјРµС‰Р°РµС‚СЃСЏ РІ <a class="el" href="class_faulty_device_ex.html#aadd15f55e3e9d3ab946e0da1728285af">FaultyDeviceEx</a> Рё <a class="el" href="class_healthy_device.html#a15f8a87fd812c6369f9ac64c49d5188d">HealthyDevice</a>.</p>
+
+</div>
+</div>
+<a id="a4fb86f0953605583fcc64d8a22b441fd" name="a4fb86f0953605583fcc64d8a22b441fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb86f0953605583fcc64d8a22b441fd">&#9670;&#160;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; Device::name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя устройства. </p>
+<dl class="section return"><dt>Р’РѕР·РІСЂР°С‰Р°РµС‚</dt><dd>Ссылка на строку с именем </dd></dl>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00041">41</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00082">name_</a>.</p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00031">FaultyDeviceEx::FaultyDeviceEx()</a>, <a class="el" href="_healthy_device_8h_source.html#l00026">HealthyDevice::HealthyDevice()</a> Рё <a class="el" href="_reserve_device_8h_source.html#l00024">ReserveDevice::ReserveDevice()</a>.</p>
+
+</div>
+</div>
+<a id="a800f235ab9c35a46c73b3ed9c795f72f" name="a800f235ab9c35a46c73b3ed9c795f72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800f235ab9c35a46c73b3ed9c795f72f">&#9670;&#160;</a></span>priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> Device::priority </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00043">43</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+
+</div>
+</div>
+<a id="a066cb3b8f9944129b2e9d3826dc9481a" name="a066cb3b8f9944129b2e9d3826dc9481a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066cb3b8f9944129b2e9d3826dc9481a">&#9670;&#160;</a></span>repair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt; Device::repair </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>uptimeAfterRepairSec</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Р—Р°РјРµС‰Р°РµС‚СЃСЏ РІ <a class="el" href="class_faulty_device_ex.html#ad9acc3a42e10ed78e96930482bfa943f">FaultyDeviceEx</a> Рё <a class="el" href="class_healthy_device.html#a8aae31cc464d2a277f4c73c2ef8ee7d2">HealthyDevice</a>.</p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a> Рё <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>.</p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
+
+</div>
+</div>
+<a id="ab7ee8c2ffdaa8f564fbfd9fdd164b6cf" name="ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7ee8c2ffdaa8f564fbfd9fdd164b6cf">&#9670;&#160;</a></span>requiresService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Device::requiresService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Требуется ли обслуживание По умолчанию считает что обслуживание требуется для любого приоритета, отличного от нулевого. </p>
+<dl class="section return"><dt>Р’РѕР·РІСЂР°С‰Р°РµС‚</dt><dd>true, если приоритет не равен нулю </dd></dl>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00079">79</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00084">priority_</a> Рё <a class="el" href="_device_8h_source.html#l00079">requiresService()</a>.</p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="_device_8h_source.html#l00079">requiresService()</a>.</p>
+
+</div>
+</div>
+<a id="a5b07f51b3ff02aca1d62dd343fad895a" name="a5b07f51b3ff02aca1d62dd343fad895a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b07f51b3ff02aca1d62dd343fad895a">&#9670;&#160;</a></span>setPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Device::setPriority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить приоритет обслуживания </p>
+<dl class="params"><dt>РђСЂРіСѓРјРµРЅС‚С‹</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Новое значение приоритета </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Р—Р°РјРµС‚РєРё</dt><dd>Поведение и ограничения могут уточняться в производных классах </dd></dl>
+
+<p>РџРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РІ <a class="el" href="class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b">HealthyDevice</a>.</p>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00054">54</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+
+</div>
+</div>
+<a id="a8c80a5f0c068a595639a06a4aa76bc51" name="a8c80a5f0c068a595639a06a4aa76bc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c80a5f0c068a595639a06a4aa76bc51">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Device::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>РџРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РІ <a class="el" href="class_faulty_device_ex.html#a0700f225ee117bb6acbc20bdaf3572d1">FaultyDeviceEx</a>, <a class="el" href="class_healthy_device.html#a8e2dc839a7e93ca0232e53573faf25f0">HealthyDevice</a> Рё <a class="el" href="class_reserve_device.html#a950ee1ac91783b0de30010ee51a0b862">ReserveDevice</a>.</p>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8cpp_source.html">Device.cpp</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8cpp_source.html#l00005">5</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00083">address_</a>, <a class="el" href="_device_8h_source.html#l00082">name_</a> Рё <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Р”Р°РЅРЅС‹Рµ РєР»Р°СЃСЃР°</h2>
+<a id="ad4a2cd6fbccd3a603014ae033f1d9024" name="ad4a2cd6fbccd3a603014ae033f1d9024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a2cd6fbccd3a603014ae033f1d9024">&#9670;&#160;</a></span>address_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> Device::address_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00083">83</a></p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="_device_8h_source.html#l00042">address()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00015">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00031">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00039">HealthyDevice::repair()</a>, <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00045">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00064">HealthyDevice::toString()</a> Рё <a class="el" href="_reserve_device_8cpp_source.html#l00009">ReserveDevice::toString()</a>.</p>
+
+</div>
+</div>
+<a id="a5229ed83545bda7b8f220d77a851fc83" name="a5229ed83545bda7b8f220d77a851fc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5229ed83545bda7b8f220d77a851fc83">&#9670;&#160;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Device::name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00082">82</a></p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="_healthy_device_8cpp_source.html#l00015">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_device_8h_source.html#l00041">name()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00031">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00039">HealthyDevice::repair()</a>, <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00045">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00064">HealthyDevice::toString()</a> Рё <a class="el" href="_reserve_device_8cpp_source.html#l00009">ReserveDevice::toString()</a>.</p>
+
+</div>
+</div>
+<a id="a0a135362acd067995fceae6b8f2a0695" name="a0a135362acd067995fceae6b8f2a0695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a135362acd067995fceae6b8f2a0695">&#9670;&#160;</a></span>priority_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> Device::priority_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_device_8h_source.html">Device.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_device_8h_source.html#l00084">84</a></p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="_healthy_device_8cpp_source.html#l00015">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_device_8h_source.html#l00043">priority()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00031">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00039">HealthyDevice::repair()</a>, <a class="el" href="_device_8h_source.html#l00079">requiresService()</a>, <a class="el" href="_device_8h_source.html#l00054">setPriority()</a>, <a class="el" href="_healthy_device_8h_source.html#l00061">HealthyDevice::setPriority()</a>, <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00045">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00064">HealthyDevice::toString()</a> Рё <a class="el" href="_reserve_device_8cpp_source.html#l00009">ReserveDevice::toString()</a>.</p>
+
+</div>
+</div>
+<hr/>РћР±СЉСЏРІР»РµРЅРёСЏ Рё РѕРїРёСЃР°РЅРёСЏ С‡Р»РµРЅРѕРІ РєР»Р°СЃСЃРѕРІ РЅР°С…РѕРґСЏС‚СЃСЏ РІ С„Р°Р№Р»Р°С…:<ul>
+<li><a class="el" href="_device_8h_source.html">Device.h</a></li>
+<li><a class="el" href="_device_8cpp_source.html">Device.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_device.html">Device</a></li>
+    <li class="footer">РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

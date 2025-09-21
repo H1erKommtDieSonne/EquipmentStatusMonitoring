@@ -1,0 +1,4 @@
+var classtesting_1_1internal_1_1_universal_terse_printer_3_01std_1_1reference__wrapper_3_01_t_01_4_01_4 =
+[
+    [ "Print", "classtesting_1_1internal_1_1_universal_terse_printer_3_01std_1_1reference__wrapper_3_01_t_01_4_01_4.html#a0710fc05707697e123a8ecbd6dfed1f0", null ]
+];

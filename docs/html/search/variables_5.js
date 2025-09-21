@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['kbitcount_0',['kBitCount',['../classtesting_1_1internal_1_1_floating_point.html#ab819d2e8f93e9e482373999f0f8d71b9',1,'testing::internal::FloatingPoint']]],
+  ['kelidedframesmarker_1',['kElidedFramesMarker',['../classtesting_1_1internal_1_1_os_stack_trace_getter_interface.html#a685bc0c5df3fe58bc49444319a67ead2',1,'testing::internal::OsStackTraceGetterInterface']]],
+  ['kexponentbitcount_2',['kExponentBitCount',['../classtesting_1_1internal_1_1_floating_point.html#a1973d843c00781053d3073daa8a40119',1,'testing::internal::FloatingPoint']]],
+  ['kexponentbitmask_3',['kExponentBitMask',['../classtesting_1_1internal_1_1_floating_point.html#a66065dfc4d5f41100f686159637af23b',1,'testing::internal::FloatingPoint']]],
+  ['kfractionbitcount_4',['kFractionBitCount',['../classtesting_1_1internal_1_1_floating_point.html#a0b756a6d2a4f5f5b41ca79651c06c043',1,'testing::internal::FloatingPoint']]],
+  ['kfractionbitmask_5',['kFractionBitMask',['../classtesting_1_1internal_1_1_floating_point.html#a0ac75d4ffd24f14bca452abe8a718da1',1,'testing::internal::FloatingPoint']]],
+  ['kinternalrundeathtestflag_6',['kInternalRunDeathTestFlag',['../namespacetesting_1_1internal.html#a8572303d929880adf30db00952e1c45d',1,'testing::internal']]],
+  ['kmaxbiggestint_7',['kMaxBiggestInt',['../namespacetesting_1_1internal.html#a756613c601d58a38308fe85e5243de9e',1,'testing::internal']]],
+  ['kmaxrandomseed_8',['kMaxRandomSeed',['../namespacetesting_1_1internal.html#a41bd421ace53d23dbe85d9618c3afaee',1,'testing::internal']]],
+  ['kmaxrange_9',['kMaxRange',['../classtesting_1_1internal_1_1_random.html#ade731c423ee745216a09cfb2aa9086d7',1,'testing::internal::Random']]],
+  ['kmaxstacktracedepth_10',['kMaxStackTraceDepth',['../namespacetesting.html#ae605f2ccac04616bb7812ca72e517082',1,'testing']]],
+  ['kmaxulps_11',['kMaxUlps',['../classtesting_1_1internal_1_1_floating_point.html#adeb0569a334b30329f1edf732f21c5ea',1,'testing::internal::FloatingPoint']]],
+  ['kprotobufonelinermaxlength_12',['kProtobufOneLinerMaxLength',['../structtesting_1_1internal_1_1_protobuf_printer.html#a3635cec91980f5908c4e2078af7d181c',1,'testing::internal::ProtobufPrinter']]],
+  ['ksignbitmask_13',['kSignBitMask',['../classtesting_1_1internal_1_1_floating_point.html#aca98b5ea6f2222a66a82e52421682efa',1,'testing::internal::FloatingPoint']]],
+  ['kstacktracemarker_14',['kStackTraceMarker',['../namespacetesting_1_1internal.html#a999c7ef9ff01b6d2d76669372c444aa3',1,'testing::internal']]],
+  ['ktesttypeidingoogletest_15',['kTestTypeIdInGoogleTest',['../namespacetesting_1_1internal.html#ac120a034e353314c12edd11538aee309',1,'testing::internal']]]
+];

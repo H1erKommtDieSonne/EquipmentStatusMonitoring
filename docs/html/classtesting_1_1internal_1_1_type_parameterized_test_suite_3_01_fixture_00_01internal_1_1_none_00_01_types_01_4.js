@@ -1,0 +1,4 @@
+var classtesting_1_1internal_1_1_type_parameterized_test_suite_3_01_fixture_00_01internal_1_1_none_00_01_types_01_4 =
+[
+    [ "Register", "classtesting_1_1internal_1_1_type_parameterized_test_suite_3_01_fixture_00_01internal_1_1_none_00_01_types_01_4.html#a571b8fbf0784caec7a04cfc9f79a3665", null ]
+];
