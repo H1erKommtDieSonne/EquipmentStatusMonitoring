@@ -2,21 +2,15 @@
 #include <string>
 #include <compare>
 #include <cstdint>
-#include <memory>     // ← добавлено для std::unique_ptr
+#include <memory>
 #include "Device.h"
+#include "ServicePriority.h"
 
 /**
  * @file FaultyDevice.h
  * @brief Объявление класса FaultyDevice и перечисления ServicePriority
  *
  */
-
- /**
-  * @enum ServicePriority
-  * @brief Приоритет обслуживания устройства
-  */
-enum class ServicePriority : uint8_t { None = 0, Low = 1, High = 2 };
-
 /**
  * @class FaultyDevice
  * @brief Модель неисправного устройства

@@ -139,6 +139,7 @@
     <ClInclude Include="FaultyDeviceEx.h" />
     <ClInclude Include="HealthyDevice.h" />
     <ClInclude Include="ReserveDevice.h" />
+    <ClInclude Include="ServicePriority.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

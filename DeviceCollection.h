@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <functional>
 #include <optional>
+#include "ServicePriority.h"
 
 //
 

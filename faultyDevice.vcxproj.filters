@@ -53,5 +53,8 @@
     <ClInclude Include="FaultyDeviceEx.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="ServicePriority.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

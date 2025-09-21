@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include <memory>
+#include "ServicePriority.h"
 
 /**
  * @brief Неисправное устройство в иерархии Device
