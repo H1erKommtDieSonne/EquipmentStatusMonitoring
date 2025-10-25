@@ -6,61 +6,33 @@
 
 /**
 * @class HealthyDevice
-* @brief Исправное устройство(наследник @ref Device)
-* Дополнительно хранит наработку в секундах(@ref uptimeSec_) и
-* предоставляет геттер @ref uptime.
-* Поддерживает переходы:
-*-@ref breakDown — перевод в неисправно
-*-@ref repair — ремонт(создание нового исправного устройства)
+* @brief Исправное устройство (наследник @ref Device).
 */
-
 class HealthyDevice : public Device {
 public:
-    /**
-  * @brief Конструктор исправного устройства.
-  * @param name Имя устройства
-  * @param addr IPадрес
-  * @param prio Приоритет обслуживания
-  * @param uptimeSec Наработка в секундах
-  */
+    /// @brief Конструктор: (name, addr, prio, uptimeSec).
     HealthyDevice(std::string name, Address addr, ServicePriority prio, uint64_t uptimeSec)
         : Device(std::move(name), addr, prio), uptimeSec_(uptimeSec) {
     }
 
-    /**
-  * @brief Признак неисправности.
-  * @return Всегда false для исправного устройства
-  */
+    /// @brief Полиморфное копирование.
+    std::unique_ptr<Device> clone() const override {
+        return std::unique_ptr<Device>(new HealthyDevice(*this));
+    }
 
+    /// @brief Исправное устройство — не неисправно.
     bool isFaulty() const noexcept override { return false; }
 
-    /**
-     * @brief Текущая наработка устройства
-     * @return Наработка в секундах
-     */
+    /// @brief Наработка (секунды).
     uint64_t uptime() const noexcept { return uptimeSec_; }
 
-    /**
-  * @brief Перевести устройство в состояние неисправно
-  * @param fault описание причины поломки
-  * @return Указатель на новое устройство в состоянии неисправно
-  */
     std::unique_ptr<Device> breakDown(std::string fault) const override;
-
-    /**
-    * @brief Ремонт (создание нового исправного устройства)
-    * @param uptimeAfterRepairSec Наработка после ремонта
-    * @return Указатель на новое исправное устройство
-    */
     std::unique_ptr<Device> repair(uint64_t uptimeAfterRepairSec) const override;
 
-    /**
-    * @brief Установить приоритет обслуживания
-    * @param p Новое значение приоритета
-    */
+    /// @brief Установить приоритет.
     void setPriority(ServicePriority p) override { priority_ = p; }
 
-   
+    /// @brief Строка для логов.
     std::string toString() const override {
         std::ostringstream os;
         os << "HealthyDevice{name=" << name_

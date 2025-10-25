@@ -103,6 +103,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>storage;migrations;sqlite</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +119,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>storage;migrations;sqlite</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +133,8 @@
     <ClCompile Include="HealthyDevice.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ReserveDevice.cpp" />
+    <ClCompile Include="sqlite\shell.c" />
+    <ClCompile Include="sqlite\sqlite3.c" />
     <ClCompile Include="storage\DeviceRepository.cpp" />
     <ClCompile Include="storage\SqliteStorage.cpp" />
   </ItemGroup>
@@ -142,6 +146,8 @@
     <ClInclude Include="HealthyDevice.h" />
     <ClInclude Include="ReserveDevice.h" />
     <ClInclude Include="ServicePriority.h" />
+    <ClInclude Include="sqlite\sqlite3.h" />
+    <ClInclude Include="sqlite\sqlite3ext.h" />
     <ClInclude Include="storage\Repositories.h" />
     <ClInclude Include="storage\SqliteStorage.h" />
   </ItemGroup>

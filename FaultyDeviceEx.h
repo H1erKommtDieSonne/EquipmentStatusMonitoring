@@ -7,38 +7,23 @@
 
 /**
  * @class FaultyDeviceEx
- * @brief Модель неисправного устройства
- *
- * Хранит описание неисправности и обеспечивает
- *  - корректную инициализацию приоритета
- *  - признак неисправности
- *  - переходы состояний @ref breakDown и @ref repair
+ * @brief Неисправное устройство.
  */
-
 class FaultyDeviceEx : public Device {
 public:
-
-    /**
- * @brief Конструктор неисправного устройства
- * Если в качестве приоритета приходит значение 0
- * оно автоматически повы1шается до 1
- * @param name Имя устройства
- * @param addr IP адрес устройства
- * @param prio Приоритет обслуживания
- * @param fault Текстовое описание неисправности
- */
-
     FaultyDeviceEx(std::string name, Address addr, ServicePriority prio, std::string fault)
         : Device(std::move(name),
             addr,
-            
             (prio == static_cast<ServicePriority>(0) ? static_cast<ServicePriority>(1) : prio)),
         fault_(std::move(fault)) {
     }
 
-    bool isFaulty() const noexcept override { return true; }
+    /// @brief Полиморфное копирование.
+    std::unique_ptr<Device> clone() const override {
+        return std::unique_ptr<Device>(new FaultyDeviceEx(*this));
+    }
 
-    
+    bool isFaulty() const noexcept override { return true; }
     std::unique_ptr<Device> breakDown(std::string) const override;
     std::unique_ptr<Device> repair(uint64_t uptimeAfterRepairSec) const override;
 
@@ -51,6 +36,7 @@ public:
         return os.str();
     }
 
+    /// @brief Описание неисправности.
     const std::string& fault_description() const noexcept { return fault_; }
 
 private:

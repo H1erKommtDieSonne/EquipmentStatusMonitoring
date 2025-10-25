@@ -1,7 +1,20 @@
 #pragma once
 #include <string>
 #include <stdexcept>
+
+/** @cond SQLITE_INCLUDE */
+#if __has_include(<sqlite3.h>)
+  // Системный путь (vcpkg/SDK)
 #include <sqlite3.h>
+#elif __has_include("sqlite3.h")
+  // Локальная копия (third_party/sqlite/sqlite3.h) попадает через Additional Include Dirs
+#include "sqlite3.h"
+#elif __has_include("../third_party/sqlite/sqlite3.h")
+#include "../third_party/sqlite/sqlite3.h"
+#else
+#error "sqlite3.h not found. Add it to third_party/sqlite or install via vcpkg."
+#endif
+/** @endcond */
 
 /**
  * @class SqliteStorage

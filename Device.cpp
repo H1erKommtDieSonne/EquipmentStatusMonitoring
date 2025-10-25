@@ -1,7 +1,6 @@
 #include "Device.h"
 #include <sstream>
 
-
 std::string Device::toString() const {
     std::ostringstream os;
     os << "Device{name=" << name_
