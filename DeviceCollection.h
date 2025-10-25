@@ -23,7 +23,6 @@ public:
      * @brief Добавить устройство во владение контейнера
      * @param d Указатель владения на объект @ref Device
      */
-
     void add(std::unique_ptr<Device> d) { items_.push_back(std::move(d)); }
 
     /**
@@ -35,7 +34,6 @@ public:
      * @param args Аргументы конструктора
      * @return Ссылка на только что добавленный объект
      */
-
     template <class T, class... Args>
     T& emplace(Args&&... args) {
         static_assert(std::is_base_of_v<Device, T>, "T must derive from Device");
@@ -49,14 +47,12 @@ public:
      * @brief Количество устройств в коллекции
      * @return Число элементов
      */
-
     std::size_t size() const noexcept { return items_.size(); }
 
     /**
      * @brief Проверка на пустоту
      * @return true, если коллекция пуста
      */
-
     bool empty() const noexcept { return items_.empty(); }
 
     /**
@@ -64,7 +60,6 @@ public:
      * @param addr Адрес для поиска
      * @return Указатель на устройство
      */
-
     Device* findByAddress(Address addr) noexcept {
         for (auto& p : items_) if (p->address() == addr) return p.get();
         return nullptr;
@@ -75,7 +70,6 @@ public:
      * @param addr Адрес для поиска
      * @return Константный Указатель на устройство
      */
-
     const Device* findByAddress(Address addr) const noexcept {
         for (auto& p : items_) if (p->address() == addr) return p.get();
         return nullptr;
@@ -89,7 +83,6 @@ public:
      * @param d указатель на новое устройство
      * @return true, если была именно замена; false, если выполнено добавление
      */
-
     bool replace(Address addr, std::unique_ptr<Device> d) {
         for (auto& p : items_) {
             if (p->address() == addr) { p = std::move(d); return true; }
@@ -103,7 +96,6 @@ public:
      * @param addr Адрес для удаления
      * @return Количество удалённых элементов.
      */
-
     std::size_t eraseByAddress(Address addr) {
         auto old = items_.size();
         items_.erase(std::remove_if(items_.begin(), items_.end(),
@@ -117,7 +109,6 @@ public:
      * @tparam F Функтор вида void(const Device&)
      * @param f Фунция, применяемая к каждому элементу
      */
-
     template <class F>
     void forEach(F&& f) const {
         for (const auto& p : items_) f(*p);
@@ -128,7 +119,6 @@ public:
     * Критерий сортировки по убыванию приоритета обслуживания, при равном приоритете по возрастанию адреса
     * @return Вектор сырых константных указателей на элементы коллекции, жизненный цикл управляется контейнером, указывать срок жизни не нужно
     */
-
     std::vector<const Device*> faultySorted() const {
         std::vector<const Device*> out;
         out.reserve(items_.size());
@@ -156,7 +146,6 @@ public:
      * @brief Прямой доступ к внутреннему вектору (только чтение)
      * @return Константная ссылка на хранилище
      */
-
     const Storage& raw() const noexcept { return items_; }
 
 private:

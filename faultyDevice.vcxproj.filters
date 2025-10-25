@@ -33,6 +33,12 @@
     <ClCompile Include="FaultyDeviceEx.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="storage\SqliteStorage.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="storage\DeviceRepository.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FaultyDevice.h">
@@ -56,5 +62,15 @@
     <ClInclude Include="ServicePriority.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="storage\SqliteStorage.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="storage\Repositories.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="migrations\001_init.sql" />
   </ItemGroup>
 </Project>
