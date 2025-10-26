@@ -5,45 +5,33 @@
  */
 
  // SqliteStorage Ч уже с устойчивым include внутри файла
-#if __has_include("storage/SqliteStorage.h")
-#include "storage/SqliteStorage.h"
-#elif __has_include("../storage/SqliteStorage.h")
-#include "../storage/SqliteStorage.h"
-#else
+
 #include "SqliteStorage.h"
-#endif
 
-// Device.h и ServicePriority.h могут лежать уровнем выше Ч поддержим оба случа€
-#if __has_include("Device.h")
-#include "Device.h"
-#elif __has_include("../Device.h")
+
+
 #include "../Device.h"
-#else
-#error "Device.h not found in include paths."
-#endif
 
-#if __has_include("ServicePriority.h")
-#include "ServicePriority.h"
-#elif __has_include("../ServicePriority.h")
+
+
 #include "../ServicePriority.h"
-#endif
 
+#include <optional>
 #include <vector>
 
 /**
  * @class DeviceRepository
- * @brief CRUD-операции дл€ таблицы devices.
+ * @brief CRUD-операции дл€ таблицы devices
  */
 class DeviceRepository {
 public:
-    /// @brief  онструктор.
     explicit DeviceRepository(SqliteStorage& s) : st_(s) {}
 
     /// @brief ¬ставка/обновление устройства.
     void upsert(const Device& d);
 
     /// @brief «агрузка всех адресов устройств.
-    std::vector<Device::Address> listAddresses();
+    std::vector<Device::Address> listAddresses() const;  // ? было без const
 
 private:
     SqliteStorage& st_;

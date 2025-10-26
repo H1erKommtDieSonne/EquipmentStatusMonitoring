@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 3.22)
+project(esm LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_library(SQLITE3_LIBRARY sqlite3)
+
+
+add_library(esm STATIC
+  esm/Engine.cpp
+  storage/SqliteStorage.cpp
+  storage/DeviceRepository.cpp
+  storage/WorkerRepository.cpp
+  
+  Device.cpp
+  HealthyDevice.cpp
+  ReserveDevice.cpp
+  FaultyDeviceEx.cpp
+  faultyDevice.cpp
+)
+
+find_package(pybind11 CONFIG REQUIRED)
+
+pybind11_add_module(esm_py bindings/py_esm.cpp)
+target_link_libraries(esm_py PRIVATE esm)
+target_compile_definitions(esm_py PRIVATE ESM_ENABLE_PYBIND)
+target_include_directories(esm_py PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+
+target_include_directories(esm PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_definitions(esm PRIVATE ESM_BUILD=1)
+
+if(SQLITE3_LIBRARY)
+  target_link_libraries(esm PRIVATE ${SQLITE3_LIBRARY})
+else()
+  target_link_libraries(esm PRIVATE sqlite3)
+endif()
+
+#tests
+enable_testing()
+add_executable(esm_tests
+  tests/tests_devices.cpp
+)
+target_link_libraries(esm_tests PRIVATE esm)
+add_test(NAME esm_tests COMMAND esm_tests)

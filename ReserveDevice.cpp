@@ -3,7 +3,6 @@
 
 /**
  * @brief ѕредставление резервного устройства.
- * @return —трока с описанием состо€ни€ резервного устройства.
  */
 std::string ReserveDevice::toString() const {
     std::ostringstream os;

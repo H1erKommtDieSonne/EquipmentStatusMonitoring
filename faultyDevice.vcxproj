@@ -103,7 +103,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>storage;migrations;sqlite</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>storage;migrations;sqlite;esm;bindings</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,7 +119,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>storage;migrations;sqlite</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>storage;migrations;sqlite;esm;bindings</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bindings\py_esm.cpp" />
     <ClCompile Include="Device.cpp" />
+    <ClCompile Include="esm\Engine.cpp" />
     <ClCompile Include="faultyDevice.cpp" />
     <ClCompile Include="FaultyDeviceEx.cpp" />
     <ClCompile Include="HealthyDevice.cpp" />
@@ -137,10 +139,13 @@
     <ClCompile Include="sqlite\sqlite3.c" />
     <ClCompile Include="storage\DeviceRepository.cpp" />
     <ClCompile Include="storage\SqliteStorage.cpp" />
+    <ClCompile Include="storage\WorkerRepository.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Device.h" />
     <ClInclude Include="DeviceCollection.h" />
+    <ClInclude Include="esm\Engine.h" />
+    <ClInclude Include="esm\export.h" />
     <ClInclude Include="FaultyDevice.h" />
     <ClInclude Include="FaultyDeviceEx.h" />
     <ClInclude Include="HealthyDevice.h" />
@@ -150,12 +155,14 @@
     <ClInclude Include="sqlite\sqlite3ext.h" />
     <ClInclude Include="storage\Repositories.h" />
     <ClInclude Include="storage\SqliteStorage.h" />
+    <ClInclude Include="storage\WorkerRepository.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="migrations\001_init.sql">
+    <None Include="migrations\001_create_tables.sql">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
     </None>
+    <None Include="migrations\002_create_workers.sql" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
