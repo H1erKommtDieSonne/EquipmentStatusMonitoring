@@ -1,6 +1,6 @@
 /**
  * @file DeviceRepository.cpp
- * @brief Реализация методов DeviceRepository (SQLite).
+ * @brief Реализация методов Repositories
  */
 #include "Repositories.h"
 
@@ -30,11 +30,8 @@ void DeviceRepository::upsert(const Device& d) {
         throw std::runtime_error("prepare upsert device failed");
     }
 
-    // Адрес 64битный
     sqlite3_bind_int64(stmt, 1, static_cast<sqlite3_int64>(d.address()));
-    // Имя как строка
     sqlite3_bind_text(stmt, 2, d.name().c_str(), -1, SQLITE_TRANSIENT);
-    // Приоритет и флаги
     sqlite3_bind_int(stmt, 3, static_cast<int>(d.priority()));
     sqlite3_bind_int(stmt, 4, d.isFaulty() ? 1 : 0);
 

@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file ServicePriority.h
- * @brief Приоритет обслуживания устройств.
+ * @brief Приоритет обслуживания устройств
  */
 
 #include <cstdint>
@@ -10,9 +10,9 @@
 
  /**
   * @enum ServicePriority
-  * @brief Приоритеты обслуживания (больше — важнее).
+  * @brief Приоритеты обслуживания
   *
-  * Порядок важности: High > Low > None.
+  * Порядок важности High > Low > None
   */
 enum class ServicePriority : std::uint8_t {
     None = 0,  ///< Обслуживание не требуется
@@ -21,8 +21,8 @@ enum class ServicePriority : std::uint8_t {
 };
 
 /**
- * @brief Численный порядок для сравнения и сортировки.
- * @return 3 для High, 2 для Low, 1 для None.
+ * @brief Численный порядок для сравнения и сортировки
+ * @return 3 для High, 2 для Low, 1 для None
  */
 constexpr int priority_order(ServicePriority p) noexcept {
     switch (p) {
@@ -34,7 +34,7 @@ constexpr int priority_order(ServicePriority p) noexcept {
 }
 
 /**
- * @brief Человекочитаемая строка для приоритета.
+ * @brief Человекочитаемая строка для приоритета
  */
 inline std::string to_string(ServicePriority p) {
     switch (p) {
@@ -46,8 +46,7 @@ inline std::string to_string(ServicePriority p) {
 }
 
 /**
- * @brief Сравнение приоритетов: High > Low > None.
- * @details Фиксирует инвариант «бОльшая важность — больше по операторам сравнения».
+ * @brief Сравнение приоритетов: High > Low > None
  */
 inline std::strong_ordering operator<=>(ServicePriority lhs, ServicePriority rhs) noexcept {
     const int a = priority_order(lhs);

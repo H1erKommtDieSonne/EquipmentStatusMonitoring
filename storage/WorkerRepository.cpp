@@ -1,11 +1,11 @@
 /**
  * @file WorkerRepository.cpp
- * @brief Реализация методов WorkerRepository.
+ * @brief Реализация методов WorkerRepository
  */
 #include "WorkerRepository.h"
 
 extern "C" {
-#include <sqlite3.h>   // <-- #include начинается с новой строки
+#include <sqlite3.h>
 }
 
 #include <stdexcept>

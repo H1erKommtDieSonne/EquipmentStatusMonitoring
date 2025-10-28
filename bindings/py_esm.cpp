@@ -1,7 +1,6 @@
 #ifndef ESM_ENABLE_PYBIND
 #else
 
-//Биндинг включён
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 

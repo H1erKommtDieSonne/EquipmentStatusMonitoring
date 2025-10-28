@@ -2,7 +2,7 @@
 #include <sstream>
 
 /**
- * @brief ѕредставление резервного устройства.
+ * @brief ѕредставление резервного устройства
  */
 std::string ReserveDevice::toString() const {
     std::ostringstream os;

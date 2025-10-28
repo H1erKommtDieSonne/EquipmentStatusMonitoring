@@ -1,6 +1,6 @@
 /**
  * @file Engine.cpp
- * @brief Реализация фасада ESM.
+ * @brief Реализация фасада ESM
  */
 
 #include "Engine.h"
@@ -43,7 +43,6 @@ void Engine::migrate() {
     );
     storage_.exec("CREATE INDEX IF NOT EXISTS idx_jobs_device  ON jobs(device_address);");
     storage_.exec("CREATE INDEX IF NOT EXISTS idx_jobs_status  ON jobs(status);");
-    // SqliteStorage::exec уже валидирует rc и кидает исключение при ошибке. :contentReference[oaicite:7]{index=7}
 }
 
 std::int64_t Engine::add_worker(const std::string& name, int max_jobs, const std::string& skill) {
@@ -58,16 +57,16 @@ std::vector<WorkerFlat> Engine::list_workers() const {
 }
 
 void Engine::upsert_device(const Device& d) {
-    dev_repo_.upsert(d);  // используем готовый репозиторий. :contentReference[oaicite:8]{index=8}
+    dev_repo_.upsert(d);
 }
 
 std::vector<DeviceRow> Engine::list_devices() const {
-    // Возьмём все адреса, а затем подтянем поля (чтобы не писать ещё один репозиторий):
+
     auto addrs = dev_repo_.listAddresses();
     std::vector<DeviceRow> out;
     out.reserve(addrs.size());
 
-    sqlite3* db = storage_.handle();                                        // :contentReference[oaicite:9]{index=9}
+    sqlite3* db = storage_.handle(); 
     sqlite3_stmt* stmt = nullptr;
     const char* SQL =
         "SELECT address,name,priority,is_faulty,is_reserve "
@@ -96,12 +95,12 @@ std::int64_t Engine::breakdown(std::uint32_t address, const std::string& fault) 
     sqlite3* db = storage_.handle();
     sqlite3_stmt* stmt = nullptr;
 
-    // 1) Создать/обновить запись об устройстве как неисправной (если нет — вставим заглушку).
+    //  Создать/обновить запись об устройстве как неисправной
     storage_.exec("BEGIN IMMEDIATE;");
     {
         const char* UPSERT =
             "INSERT INTO devices(address,name,priority,is_faulty,is_reserve) "
-            "VALUES(?1,'Unknown',2,1,0) "  // приоритет по умолчанию Low(=1) или High(=2) — на твоё усмотрение
+            "VALUES(?1,'Unknown',2,1,0) "
             "ON CONFLICT(address) DO UPDATE SET is_faulty=1, updated_at=strftime('%s','now');";
         if (sqlite3_prepare_v2(db, UPSERT, -1, &stmt, nullptr) != SQLITE_OK)
             throw std::runtime_error(std::string("prepare devices upsert failed: ") + sqlite3_errmsg(db));
@@ -112,7 +111,7 @@ std::int64_t Engine::breakdown(std::uint32_t address, const std::string& fault) 
         }
         sqlite3_finalize(stmt);
     }
-    // 2) Создать job(Open)
+    //  Создать job
     std::int64_t job_id = 0;
     {
         const char* INS = "INSERT INTO jobs(device_address,fault,status) VALUES(?1,?2,0);";
@@ -155,7 +154,7 @@ void Engine::finish_repair(std::int64_t job_id, std::uint64_t uptime_after_sec) 
     sqlite3_stmt* stmt = nullptr;
 
     storage_.exec("BEGIN IMMEDIATE;");
-    // 1) узнать адрес устройства по job_id
+    // узнать адрес устройства по job_id
     std::uint32_t address = 0;
     {
         const char* SEL = "SELECT device_address FROM jobs WHERE id=?1;";
@@ -168,7 +167,7 @@ void Engine::finish_repair(std::int64_t job_id, std::uint64_t uptime_after_sec) 
         address = static_cast<std::uint32_t>(sqlite3_column_int64(stmt, 0));
         sqlite3_finalize(stmt);
     }
-    // 2) job -> Done
+    // Работу в выполненную
     {
         const char* UPD = "UPDATE jobs SET status=2, finished_at=strftime('%s','now') WHERE id=?1;";
         if (sqlite3_prepare_v2(db, UPD, -1, &stmt, nullptr) != SQLITE_OK) {
@@ -179,7 +178,7 @@ void Engine::finish_repair(std::int64_t job_id, std::uint64_t uptime_after_sec) 
         if (sqlite3_step(stmt) != SQLITE_DONE) { std::string msg = sqlite3_errmsg(db); sqlite3_finalize(stmt); storage_.rollback(); throw std::runtime_error("finish job failed: " + msg); }
         sqlite3_finalize(stmt);
     }
-    // 3) отметим device как исправный (is_faulty=0) + upsert HealthyDevice для согласованности
+    //отметим device как исправный
     {
         const char* DEV =
             "UPDATE devices SET is_faulty=0, updated_at=strftime('%s','now') WHERE address=?1;";
@@ -193,7 +192,6 @@ void Engine::finish_repair(std::int64_t job_id, std::uint64_t uptime_after_sec) 
     }
     storage_.commit();
 
-    // На уровне домена можно обновить «наработку» (это уже другой слой — здесь просто отметили факт ремонта).
     (void)uptime_after_sec;
 }
 

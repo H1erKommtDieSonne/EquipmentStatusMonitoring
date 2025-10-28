@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file export.h
- * @brief Макрос экспорта символов для сборки DLL/SO.
+ * @brief Макрос экспорта символов для сборки DLL/SO
  */
 #if defined(_WIN32)
 	#if defined(ESM_BUILD_DLL)

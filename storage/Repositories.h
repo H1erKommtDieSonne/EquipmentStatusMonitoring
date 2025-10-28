@@ -1,10 +1,9 @@
 #pragma once
 /**
  * @file Repositories.h
- * @brief Интерфейсы репозиториев поверх SqliteStorage.
+ * @brief Интерфейсы репозиториев поверх SqliteStorage
  */
 
- // SqliteStorage — уже с устойчивым include внутри файла
 
 #include "SqliteStorage.h"
 
@@ -27,11 +26,11 @@ class DeviceRepository {
 public:
     explicit DeviceRepository(SqliteStorage& s) : st_(s) {}
 
-    /// @brief Вставка/обновление устройства.
+    /// @brief Вставка/обновление устройства
     void upsert(const Device& d);
 
-    /// @brief Загрузка всех адресов устройств.
-    std::vector<Device::Address> listAddresses() const;  // ? было без const
+    /// @brief Загрузка всех адресов устройств
+    std::vector<Device::Address> listAddresses() const;
 
 private:
     SqliteStorage& st_;

@@ -65,15 +65,14 @@ struct JobRow {
 /**
  * @class Engine
  * @brief Единая точка входа: миграции, операции и выборки для Python/UI
- *
  * Внутри содержит SqliteStorage и использует репозитории
  */
 class ESM_API Engine {
 public:
-    /// @brief Открыть/создать БД по пути.
+    /// @brief Открыть/создать БД по пути
     explicit Engine(const std::string& db_path);
 
-    /// @brief Применить встроенные миграции (создать таблицы).
+    /// @brief Применить встроенные миграции (создать таблицы)
     void migrate();
 
     //Workers
@@ -81,17 +80,17 @@ public:
     std::vector<WorkerFlat> list_workers() const;
 
     // Devices
-    /// @brief upsert любого устройства из иерархии Device.
+    /// @brief upsert любого устройства из иерархии Device
     void upsert_device(const Device& d);
-    /// @brief Плоская выборка устройств (для таблицы в UI).
+    /// @brief Плоская выборка устройств
     std::vector<DeviceRow> list_devices() const;
 
     //Jobs
-    /// @brief Зафиксировать поломку: создаёт job(Open) и ставит is_faulty=1.
+    /// @brief Зафиксировать поломку
     std::int64_t breakdown(std::uint32_t address, const std::string& fault);
-    /// @brief Начать ремонт: переводит job(Open)->InProgress, назначает работника.
+    /// @brief Начать ремонт
     void start_repair(std::int64_t job_id, std::int64_t worker_id);
-    /// @brief Завершить ремонт: job->Done, is_faulty=0, upsert HealthyDevice с новой наработкой.
+    /// @brief Завершить ремонт
     void finish_repair(std::int64_t job_id, std::uint64_t uptime_after_sec);
 
     /// @brief Выборка задач.

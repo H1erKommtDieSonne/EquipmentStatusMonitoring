@@ -1,5 +1,5 @@
 /**
- * @file tests_devices.cpp
+ * @file main.cpp
  * @brief Набор тестов
  */
 
@@ -163,7 +163,7 @@ TEST(FaultyDevice_Compare, StrictWeakOrderingConsistentWithSort) {
 
 //SQLite
 
-/// \brief Создать таблицы `devices` и `workers`.
+/// \brief Создать таблицы devices и workers
 static void create_schema(SqliteStorage& st) {
     st.exec(
         "CREATE TABLE IF NOT EXISTS devices("

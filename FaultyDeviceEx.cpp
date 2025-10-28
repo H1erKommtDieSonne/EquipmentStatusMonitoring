@@ -4,14 +4,14 @@
 #include <utility>
 
 /**
- * @brief Повторная поломка: копия самого себя.
+ * @brief Повторная поломка: копия самого себя
  */
 std::unique_ptr<Device> FaultyDeviceEx::breakDown(std::string) const {
     return std::unique_ptr<Device>(new FaultyDeviceEx(*this));
 }
 
 /**
- * @brief Ремонт -> новое HealthyDevice.
+ * @brief Ремонт это новое HealthyDevice
  */
 std::unique_ptr<Device> FaultyDeviceEx::repair(uint64_t uptimeAfterRepairSec) const {
     return std::unique_ptr<Device>(new HealthyDevice(

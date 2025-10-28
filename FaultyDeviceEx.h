@@ -7,7 +7,7 @@
 
 /**
  * @class FaultyDeviceEx
- * @brief Неисправное устройство.
+ * @brief Неисправное устройство
  */
 class FaultyDeviceEx : public Device {
 public:
@@ -18,7 +18,7 @@ public:
         fault_(std::move(fault)) {
     }
 
-    /// @brief Полиморфное копирование.
+    /// @brief Полиморфное копирование
     std::unique_ptr<Device> clone() const override {
         return std::unique_ptr<Device>(new FaultyDeviceEx(*this));
     }
@@ -36,7 +36,7 @@ public:
         return os.str();
     }
 
-    /// @brief Описание неисправности.
+    /// @brief Описание неисправности
     const std::string& fault_description() const noexcept { return fault_; }
 
 private:

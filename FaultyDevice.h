@@ -103,7 +103,7 @@ public:
     /**
      * @brief Равенство по приоритету
      * @param rhs Другое устройство
-     * @return true, если приоритеты равны
+     * @return true если приоритеты равны
      */
 
     bool operator==(const FaultyDevice& rhs) const noexcept {
