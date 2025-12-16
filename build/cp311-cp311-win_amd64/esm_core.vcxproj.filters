@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\esm\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\storage\SqliteStorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\storage\DeviceRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\storage\WorkerRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\sqlite\sqlite3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\Device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\HealthyDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\ReserveDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\FaultyDeviceEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\faultyDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\vsproj\sorokoumov\EquipmentStatusMonitoring\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3E2AB535-7D7C-3A11-A01D-3CFD1A612AA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

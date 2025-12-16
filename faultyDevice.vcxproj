@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bindings\bindings.cpp" />
     <ClCompile Include="bindings\py_esm.cpp" />
     <ClCompile Include="Device.cpp" />
     <ClCompile Include="esm\Engine.cpp" />
@@ -168,6 +169,7 @@
     </None>
     <None Include="migrations\002_create_workers.sql" />
     <None Include="packages.config" />
+    <None Include="pyproject.toml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

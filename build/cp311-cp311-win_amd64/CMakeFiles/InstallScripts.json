@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/cmake_install.cmake",
+		"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/bindings/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

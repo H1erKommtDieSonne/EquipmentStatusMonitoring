@@ -60,6 +60,9 @@
     <ClCompile Include="bindings\py_esm.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="bindings\bindings.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FaultyDevice.h">
@@ -109,5 +112,6 @@
     <None Include="packages.config" />
     <None Include="migrations\001_create_tables.sql" />
     <None Include="migrations\002_create_workers.sql" />
+    <None Include="pyproject.toml" />
   </ItemGroup>
 </Project>
