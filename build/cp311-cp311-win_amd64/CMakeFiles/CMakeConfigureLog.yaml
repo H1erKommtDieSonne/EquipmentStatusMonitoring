@@ -55,7 +55,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "message-v1"
     backtrace:
@@ -72,7 +72,7 @@ events:
       The output was:
       0
       ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
-      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 15.12.2025 22:45:05.
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 16.12.2025 21:37:35.
       
       ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
       PrepareForBuild:
@@ -110,7 +110,7 @@ events:
           ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
           ╨Ю╤И╨╕╨▒╨╛╨║: 0
       
-      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.67
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.87
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -186,7 +186,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "find-v1"
     backtrace:
@@ -309,7 +309,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "find-v1"
     backtrace:
@@ -374,7 +374,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "find-v1"
     backtrace:
@@ -495,7 +495,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "find-v1"
     backtrace:
@@ -560,7 +560,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "find-v1"
     backtrace:
@@ -608,7 +608,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "message-v1"
     backtrace:
@@ -625,7 +625,7 @@ events:
       The output was:
       0
       ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
-      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 15.12.2025 22:45:05.
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 16.12.2025 21:37:36.
       
       ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
       PrepareForBuild:
@@ -663,7 +663,7 @@ events:
           ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
           ╨Ю╤И╨╕╨▒╨╛╨║: 0
       
-      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.68
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.73
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -795,7 +795,7 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpyp_8qa48\\wheel\\platlib"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\8FEE~1\\AppData\\Local\\Temp\\tmpc_xng7ne\\wheel\\platlib"
   -
     kind: "find-v1"
     backtrace:
@@ -849,9 +849,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/sbin/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/sbin/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/"
     searched_directories:
       - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Lib/site-packages/bin/rc.com"
       - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Lib/site-packages/bin/rc.exe"
@@ -943,15 +943,15 @@ events:
       - "C:/Program Files/CMake/rc.com"
       - "C:/Program Files/CMake/rc.exe"
       - "C:/Program Files/CMake/rc"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin/rc.com"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin/rc.exe"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin/rc"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/sbin/rc.com"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/sbin/rc.exe"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/sbin/rc"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/rc.com"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/rc.exe"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/rc"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin/rc.com"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin/rc.exe"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin/rc"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/sbin/rc.com"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/sbin/rc.exe"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/sbin/rc"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/rc.com"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/rc.exe"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/rc"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
@@ -975,12 +975,12 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -990,8 +990,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-2eyxeh"
-      binary: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-2eyxeh"
+      source: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-z9v4sd"
+      binary: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-z9v4sd"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1000,48 +1000,48 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-2eyxeh'
+        Change Dir: 'D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-z9v4sd'
         
-        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e2224.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_bdcb6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
-        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 15.12.2025 22:45:06.
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 16.12.2025 21:37:37.
         
-        ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\cmTC_e2224.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\cmTC_bdcb6.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         PrepareForBuild:
           ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\Debug\\".
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\".
         InitializeBuildStatus:
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\unsuccessfulbuild".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e2224.dir\\Debug\\\\" /Fd"cmTC_e2224.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_bdcb6.dir\\Debug\\\\" /Fd"cmTC_bdcb6.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.44.35221 ╨┤╨╗╤П x64
           (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
-          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e2224.dir\\Debug\\\\" /Fd"cmTC_e2224.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_bdcb6.dir\\Debug\\\\" /Fd"cmTC_bdcb6.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\Debug\\cmTC_e2224.exe" /INCREMENTAL /ILK:"cmTC_e2224.dir\\Debug\\cmTC_e2224.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-2eyxeh/Debug/cmTC_e2224.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-2eyxeh/Debug/cmTC_e2224.lib" /MACHINE:X64  /machine:x64 cmTC_e2224.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_e2224.vcxproj -> D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\Debug\\cmTC_e2224.exe
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\Debug\\cmTC_bdcb6.exe" /INCREMENTAL /ILK:"cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-z9v4sd/Debug/cmTC_bdcb6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-z9v4sd/Debug/cmTC_bdcb6.lib" /MACHINE:X64  /machine:x64 cmTC_bdcb6.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_bdcb6.vcxproj -> D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\Debug\\cmTC_bdcb6.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\Debug\\cmTC_e2224.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\cmTC_e2224.write.1u.tlog" "cmTC_e2224.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\Debug\\cmTC_bdcb6.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\cmTC_bdcb6.write.1u.tlog" "cmTC_bdcb6.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
           ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
-          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\Debug\\cmTC_e2224.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\cmTC_e2224.write.1u.tlog" "cmTC_e2224.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\Debug\\cmTC_e2224.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\cmTC_e2224.write.1u.tlog" "cmTC_e2224.dir\\Debug\\vcpkg.applocal.log"
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\Debug\\cmTC_bdcb6.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\cmTC_bdcb6.write.1u.tlog" "cmTC_bdcb6.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\Debug\\cmTC_bdcb6.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\cmTC_bdcb6.write.1u.tlog" "cmTC_bdcb6.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          ╨д╨░╨╣╨╗ "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_e2224.dir\\Debug\\cmTC_e2224.tlog\\cmTC_e2224.lastbuildstate".
-        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-2eyxeh\\cmTC_e2224.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+          ╨д╨░╨╣╨╗ "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_bdcb6.dir\\Debug\\cmTC_bdcb6.tlog\\cmTC_bdcb6.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-z9v4sd\\cmTC_bdcb6.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         
         ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
             ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
             ╨Ю╤И╨╕╨▒╨╛╨║: 0
         
-        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.70
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.74
         
       exitCode: 0
   -
@@ -1081,8 +1081,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-tye793"
-      binary: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-tye793"
+      source: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-ux0bwa"
+      binary: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-ux0bwa"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1092,48 +1092,48 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-tye793'
+        Change Dir: 'D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-ux0bwa'
         
-        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_eb22a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_41daf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
-        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 15.12.2025 22:45:07.
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 16.12.2025 21:37:38.
         
-        ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\cmTC_eb22a.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\cmTC_41daf.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         PrepareForBuild:
           ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\Debug\\".
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\".
         InitializeBuildStatus:
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\unsuccessfulbuild".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_eb22a.dir\\Debug\\\\" /Fd"cmTC_eb22a.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_41daf.dir\\Debug\\\\" /Fd"cmTC_41daf.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.44.35221 ╨┤╨╗╤П x64
           (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
-          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_eb22a.dir\\Debug\\\\" /Fd"cmTC_eb22a.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_41daf.dir\\Debug\\\\" /Fd"cmTC_41daf.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\Debug\\cmTC_eb22a.exe" /INCREMENTAL /ILK:"cmTC_eb22a.dir\\Debug\\cmTC_eb22a.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-tye793/Debug/cmTC_eb22a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-tye793/Debug/cmTC_eb22a.lib" /MACHINE:X64  /machine:x64 cmTC_eb22a.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_eb22a.vcxproj -> D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\Debug\\cmTC_eb22a.exe
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\Debug\\cmTC_41daf.exe" /INCREMENTAL /ILK:"cmTC_41daf.dir\\Debug\\cmTC_41daf.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-ux0bwa/Debug/cmTC_41daf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-ux0bwa/Debug/cmTC_41daf.lib" /MACHINE:X64  /machine:x64 cmTC_41daf.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_41daf.vcxproj -> D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\Debug\\cmTC_41daf.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\Debug\\cmTC_eb22a.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\cmTC_eb22a.write.1u.tlog" "cmTC_eb22a.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\Debug\\cmTC_41daf.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\cmTC_41daf.write.1u.tlog" "cmTC_41daf.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
           ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
-          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\Debug\\cmTC_eb22a.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\cmTC_eb22a.write.1u.tlog" "cmTC_eb22a.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\Debug\\cmTC_eb22a.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\cmTC_eb22a.write.1u.tlog" "cmTC_eb22a.dir\\Debug\\vcpkg.applocal.log"
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\Debug\\cmTC_41daf.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\cmTC_41daf.write.1u.tlog" "cmTC_41daf.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\Debug\\cmTC_41daf.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\cmTC_41daf.write.1u.tlog" "cmTC_41daf.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          ╨д╨░╨╣╨╗ "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_eb22a.dir\\Debug\\cmTC_eb22a.tlog\\cmTC_eb22a.lastbuildstate".
-        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-tye793\\cmTC_eb22a.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+          ╨д╨░╨╣╨╗ "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_41daf.dir\\Debug\\cmTC_41daf.tlog\\cmTC_41daf.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-ux0bwa\\cmTC_41daf.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         
         ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
             ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
             ╨Ю╤И╨╕╨▒╨╛╨║: 0
         
-        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.70
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.74
         
       exitCode: 0
   -
@@ -1220,12 +1220,12 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
   -
     kind: "find-v1"
     backtrace:
@@ -1313,14 +1313,14 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin"
         - "C:/Program Files/CMake/bin"
         - "/bin"
   -
@@ -1371,14 +1371,14 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin"
         - "C:/Program Files/CMake/bin"
         - "/bin"
   -
@@ -1457,12 +1457,12 @@ events:
       - "C:/Program Files/CMake/lib/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/lib/bin/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/lib/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin/bin/"
-      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/lib/bin/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/lib/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin/bin/"
+      - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin/"
       - "/bin/bin/"
       - "/bin/"
     searched_directories:
@@ -1503,14 +1503,14 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib/bin"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib/bin"
         - "C:/Program Files/CMake/bin"
         - "/bin"
   -
@@ -1527,8 +1527,8 @@ events:
     checks:
       - "Performing Test HAS_MSVC_GL_LTCG"
     directories:
-      source: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-a13e5w"
-      binary: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-a13e5w"
+      source: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-5ymkc1"
+      binary: "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-5ymkc1"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1537,56 +1537,56 @@ events:
       variable: "HAS_MSVC_GL_LTCG"
       cached: true
       stdout: |
-        Change Dir: 'D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-a13e5w'
+        Change Dir: 'D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-5ymkc1'
         
-        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0ba38.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b4c45.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
-        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 15.12.2025 22:45:08.
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 16.12.2025 21:37:39.
         
-        ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\cmTC_0ba38.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        ╨Я╤А╨╛╨╡╨║╤В "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\cmTC_b4c45.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         PrepareForBuild:
           ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\Debug\\".
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\".
         InitializeBuildStatus:
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\unsuccessfulbuild".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_0ba38.dir\\Debug\\\\" /Fd"cmTC_0ba38.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\src.cxx"
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_b4c45.dir\\Debug\\\\" /Fd"cmTC_b4c45.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\src.cxx"
           ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.44.35221 ╨┤╨╗╤П x64
           (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
-          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_0ba38.dir\\Debug\\\\" /Fd"cmTC_0ba38.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\src.cxx"
+          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++20 /Fo"cmTC_b4c45.dir\\Debug\\\\" /Fd"cmTC_b4c45.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\src.cxx"
           src.cxx
         Link:
-          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\Debug\\cmTC_0ba38.exe" /INCREMENTAL /ILK:"cmTC_0ba38.dir\\Debug\\cmTC_0ba38.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-a13e5w/Debug/cmTC_0ba38.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-a13e5w/Debug/cmTC_0ba38.lib" /MACHINE:X64  /machine:x64 cmTC_0ba38.dir\\Debug\\src.obj
-        LINK : warning LNK4075: ╨╜╨╡ ╤Г╤З╨╕╤В╤Л╨▓╨░╨╡╤В╤Б╤П "/INCREMENTAL" ╨╕╨╖-╨╖╨░ ╤Б╨┐╨╡╤Ж╨╕╤Д╨╕╨║╨░╤Ж╨╕╨╕ "/LTCG" [D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\cmTC_0ba38.vcxproj]
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\Debug\\cmTC_b4c45.exe" /INCREMENTAL /ILK:"cmTC_b4c45.dir\\Debug\\cmTC_b4c45.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-5ymkc1/Debug/cmTC_b4c45.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/vsproj/sorokoumov/EquipmentStatusMonitoring/build/cp311-cp311-win_amd64/CMakeFiles/CMakeScratch/TryCompile-5ymkc1/Debug/cmTC_b4c45.lib" /MACHINE:X64  /machine:x64 cmTC_b4c45.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ╨╜╨╡ ╤Г╤З╨╕╤В╤Л╨▓╨░╨╡╤В╤Б╤П "/INCREMENTAL" ╨╕╨╖-╨╖╨░ ╤Б╨┐╨╡╤Ж╨╕╤Д╨╕╨║╨░╤Ж╨╕╨╕ "/LTCG" [D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\cmTC_b4c45.vcxproj]
           ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨╛╨┤╨░
           ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨╛╨┤╨░ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨╛
-          cmTC_0ba38.vcxproj -> D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\Debug\\cmTC_0ba38.exe
+          cmTC_b4c45.vcxproj -> D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\Debug\\cmTC_b4c45.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\Debug\\cmTC_0ba38.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\cmTC_0ba38.write.1u.tlog" "cmTC_0ba38.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\Debug\\cmTC_b4c45.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\cmTC_b4c45.write.1u.tlog" "cmTC_b4c45.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
           ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
-          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\Debug\\cmTC_0ba38.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\cmTC_0ba38.write.1u.tlog" "cmTC_0ba38.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\Debug\\cmTC_0ba38.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\cmTC_0ba38.write.1u.tlog" "cmTC_0ba38.dir\\Debug\\vcpkg.applocal.log"
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\Debug\\cmTC_b4c45.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\cmTC_b4c45.write.1u.tlog" "cmTC_b4c45.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\Debug\\cmTC_b4c45.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\cmTC_b4c45.write.1u.tlog" "cmTC_b4c45.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          ╨д╨░╨╣╨╗ "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_0ba38.dir\\Debug\\cmTC_0ba38.tlog\\cmTC_0ba38.lastbuildstate".
-        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\cmTC_0ba38.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+          ╨д╨░╨╣╨╗ "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_b4c45.dir\\Debug\\cmTC_b4c45.tlog\\cmTC_b4c45.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\cmTC_b4c45.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         
         ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
         
-        "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\cmTC_0ba38.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+        "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\cmTC_b4c45.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
         (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
-          LINK : warning LNK4075: ╨╜╨╡ ╤Г╤З╨╕╤В╤Л╨▓╨░╨╡╤В╤Б╤П "/INCREMENTAL" ╨╕╨╖-╨╖╨░ ╤Б╨┐╨╡╤Ж╨╕╤Д╨╕╨║╨░╤Ж╨╕╨╕ "/LTCG" [D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-a13e5w\\cmTC_0ba38.vcxproj]
+          LINK : warning LNK4075: ╨╜╨╡ ╤Г╤З╨╕╤В╤Л╨▓╨░╨╡╤В╤Б╤П "/INCREMENTAL" ╨╕╨╖-╨╖╨░ ╤Б╨┐╨╡╤Ж╨╕╤Д╨╕╨║╨░╤Ж╨╕╨╕ "/LTCG" [D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64\\CMakeFiles\\CMakeScratch\\TryCompile-5ymkc1\\cmTC_b4c45.vcxproj]
         
             ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 1
             ╨Ю╤И╨╕╨▒╨╛╨║: 0
         
-        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.72
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.73
         
       exitCode: 0
   -
@@ -1682,10 +1682,10 @@ events:
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
         - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
         - "D:\\python\\PyCharm 2025.2.1.1\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+      CMAKE_INSTALL_PREFIX: "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+        - "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
 ...

@@ -1,5 +1,5 @@
 """
-@brief Юнит-тесты для Boost.Python биндингов esm_py.
+@brief Юнит-тесты
 """
 
 import os
@@ -11,12 +11,12 @@ import esm_py
 
 class BindingsTests(unittest.TestCase):
     """
-    @brief Проверяет базовые сценарии работы :class:`esm_py.Engine` и типов.
+    @brief Проверяет базовые сценарии работы
     """
 
     def setUp(self) -> None:
         """
-        @brief Создать временную БД и применить миграции.
+        @brief Создать временную БД
         """
         fd, path = tempfile.mkstemp(prefix="esm_test_", suffix=".db")
         os.close(fd)
@@ -27,7 +27,7 @@ class BindingsTests(unittest.TestCase):
 
     def tearDown(self) -> None:
         """
-        @brief Удалить временный файл БД.
+        @brief Удалить временный файл БД
         """
         try:
             os.remove(self.db_path)
@@ -36,7 +36,7 @@ class BindingsTests(unittest.TestCase):
 
     def test_add_worker_and_list(self) -> None:
         """
-        @brief Проверка добавления и выборки работников.
+        @brief Проверка добавления и выборки работников
         """
         worker_id = self.engine.add_worker("Alice", 2, "electrician")
         self.assertIsInstance(worker_id, int)
@@ -51,7 +51,7 @@ class BindingsTests(unittest.TestCase):
 
     def test_upsert_device_and_breakdown(self) -> None:
         """
-        @brief Проверка добавления устройства и создания задачи.
+        @brief Проверка добавления устройства и создания задачи
         """
         addr = esm_py.ipv4_to_u32("10.0.0.1")
         dev = esm_py.HealthyDevice(

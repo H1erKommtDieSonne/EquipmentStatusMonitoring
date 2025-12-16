@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bindings/RelWithDebInfo/equipment_status_monitoring.cp311-win_amd64.pyd"
+			"path" : "bindings/Release/equipment_status_monitoring.cp311-win_amd64.pyd"
 		},
 		{
-			"path" : "bindings/RelWithDebInfo/equipment_status_monitoring.pdb"
+			"path" : "bindings/Release/equipment_status_monitoring.pdb"
 		}
 	],
 	"backtrace" : 4,
@@ -65,6 +65,12 @@
 			},
 			{
 				"command" : 5,
+				"file" : 2,
+				"line" : 324,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
 				"file" : 3,
 				"line" : 18,
 				"parent" : 0
@@ -90,12 +96,6 @@
 			{
 				"command" : 5,
 				"file" : 2,
-				"line" : 324,
-				"parent" : 1
-			},
-			{
-				"command" : 5,
-				"file" : 2,
 				"line" : 338,
 				"parent" : 1
 			},
@@ -115,19 +115,19 @@
 	"compileDependencies" : 
 	[
 		{
-			"backtrace" : 7,
+			"backtrace" : 8,
 			"id" : "Python::Module::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 8,
+			"backtrace" : 9,
 			"id" : "pybind11::headers::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 10,
 			"id" : "pybind11::module::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 10,
+			"backtrace" : 6,
 			"id" : "pybind11::lto::@1a45702be1b1dbd02bc1"
 		},
 		{
@@ -135,7 +135,7 @@
 			"id" : "pybind11::windows_extras::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 6,
+			"backtrace" : 7,
 			"id" : "esm_core::@6890427a1f51a3e7e1df"
 		}
 	],
@@ -145,7 +145,11 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /O2 /Ob1 /DNDEBUG -std:c++20 -MD"
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/GL"
 				},
 				{
 					"backtrace" : 11,
@@ -159,7 +163,7 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"define" : "Py_NO_LINK_LIB"
 				},
 				{
@@ -173,20 +177,20 @@
 					"path" : "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/bindings/.."
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "D:/vsproj/sorokoumov/EquipmentStatusMonitoring"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "D:/vsproj/sorokoumov/EquipmentStatusMonitoring/sqlite"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"isSystem" : true,
 					"path" : "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Include"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Lib/site-packages/pybind11/include"
 				}
@@ -196,9 +200,9 @@
 			{
 				"backtraces" : 
 				[
-					8,
-					8,
-					8
+					9,
+					9,
+					9
 				],
 				"standard" : "20"
 			},
@@ -211,11 +215,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+			"backtrace" : 7,
+			"id" : "esm_core::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 6,
-			"id" : "esm_core::@6890427a1f51a3e7e1df"
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "equipment_status_monitoring::@1a45702be1b1dbd02bc1",
@@ -230,7 +234,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib"
+			"path" : "C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib"
 		}
 	},
 	"link" : 
@@ -238,16 +242,21 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "..\\RelWithDebInfo\\esm_core.lib",
-				"role" : "libraries"
+				"fragment" : "-LTCG",
+				"role" : "flags"
 			},
 			{
 				"backtrace" : 7,
+				"fragment" : "..\\Release\\esm_core.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
 				"fragment" : "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\libs\\python311.lib",
 				"role" : "libraries"
 			},
@@ -261,19 +270,19 @@
 	"linkLibraries" : 
 	[
 		{
-			"backtrace" : 7,
+			"backtrace" : 8,
 			"id" : "Python::Module::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 8,
+			"backtrace" : 9,
 			"id" : "pybind11::headers::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 10,
 			"id" : "pybind11::module::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 10,
+			"backtrace" : 6,
 			"id" : "pybind11::lto::@1a45702be1b1dbd02bc1"
 		},
 		{
@@ -281,7 +290,7 @@
 			"id" : "pybind11::windows_extras::@1a45702be1b1dbd02bc1"
 		},
 		{
-			"backtrace" : 6,
+			"backtrace" : 7,
 			"id" : "esm_core::@6890427a1f51a3e7e1df"
 		}
 	],

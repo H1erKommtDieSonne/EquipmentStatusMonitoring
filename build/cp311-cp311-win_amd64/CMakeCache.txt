@@ -79,7 +79,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=D:/vsproj/sorokoumov/EquipmentStatusMoni
 CMAKE_FIND_ROOT_PATH_MODE_PACKAGE:PATH=BOTH
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib
+CMAKE_INSTALL_PREFIX:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe
@@ -222,15 +222,15 @@ SKBUILD:STRING=2
 
 SKBUILD_CORE_VERSION:STRING=0.11.6
 
-SKBUILD_DATA_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/data
+SKBUILD_DATA_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/data
 
-SKBUILD_HEADERS_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/headers
+SKBUILD_HEADERS_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/headers
 
-SKBUILD_METADATA_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/metadata
+SKBUILD_METADATA_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/metadata
 
-SKBUILD_NULL_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/null
+SKBUILD_NULL_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/null
 
-SKBUILD_PLATLIB_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/platlib
+SKBUILD_PLATLIB_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/platlib
 
 SKBUILD_PROJECT_NAME:STRING=equipment_status_monitoring
 
@@ -242,7 +242,7 @@ SKBUILD_SABI_COMPONENT:STRING=
 
 SKBUILD_SABI_VERSION:STRING=
 
-SKBUILD_SCRIPTS_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpyp_8qa48/wheel/scripts
+SKBUILD_SCRIPTS_DIR:PATH=C:/Users/8FEE~1/AppData/Local/Temp/tmpc_xng7ne/wheel/scripts
 
 SKBUILD_SOABI:STRING=cp311-win_amd64
 

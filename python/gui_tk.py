@@ -1,92 +1,93 @@
 """
-@brief GUI-приложение на Tkinter для работы с ESM через модуль esm_py
+@brief GUI-приложение на Tkinter
 
 @details
-    Приложение позволяет:
-      * открыть/создать SQLite-базу;
-      * применять миграции через Engine.migrate();
-      * добавлять/просматривать работников;
-      * добавлять/просматривать устройства;
-      * создавать заявки (breakdown) и смотреть список задач.
+    Приложение позволяет
+      * открыть/создать SQLite-базу
+      * применять миграции
+      * добавлять/просматривать работников
+      * добавлять/просматривать устройства
+      * создавать заявки и смотреть список задач
 """
 
 from __future__ import annotations
 
+import ipaddress
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-import esm_py
+import equipment_status_monitoring as esm
 
 
+# IPv4 helpers
+def ipv4_to_u32(ipv4: str) -> int:
+    if hasattr(esm, "ipv4_to_u32"):
+        return int(esm.ipv4_to_u32(ipv4))
+    return int(ipaddress.IPv4Address(ipv4))
 
 
+def u32_to_ipv4(value: int) -> str:
+    if hasattr(esm, "u32_to_ipv4"):
+        return str(esm.u32_to_ipv4(int(value)))
+    return str(ipaddress.IPv4Address(int(value)))
+
+
+#Priority mappings
 PRIORITY_OPTIONS = [
-    ("Нет", "none", getattr(esm_py.ServicePriority, 'None')),
-    ("Низкий", "low", getattr(esm_py.ServicePriority, 'Low')),
-    ("Высокий", "high", getattr(esm_py.ServicePriority, 'High')),
+    ("Нет", "none", getattr(esm.ServicePriority, "None")),
+    ("Низкий", "low", getattr(esm.ServicePriority, "Low")),
+    ("Высокий", "high", getattr(esm.ServicePriority, "High")),
 ]
 
-
 PRIORITY_CODE_TO_ENUM = {code: enum for (_label, code, enum) in PRIORITY_OPTIONS}
-
-
 PRIORITY_ENUM_TO_LABEL = {enum: label for (label, _code, enum) in PRIORITY_OPTIONS}
 
 
 class App(tk.Tk):
     """
-    @brief Главное окно приложения мониторинга оборудования.
-
-    @details
-        Содержит:
-          * поле выбора БД и кнопку миграции;
-          * панель устройств;
-          * панель работников;
-          * панель задач.
+    @brief Главное окно приложения мониторинга оборудования
     """
 
     def __init__(self) -> None:
-        """@brief Инициализирует окно и внутренние переменные."""
         super().__init__()
         self.title("Equipment Status Monitoring")
         self.geometry("1100x700")
 
-        #: @brief Текущий фасад ESM (Engine) или None.
-        self.engine: esm_py.Engine | None = None
+        self.engine: esm.Engine | None = None
 
-        # --- Переменные формы БД ---
+        #DB
         self.db_path_var = tk.StringVar(value="esm.db")
 
-        # --- Переменные формы устройств ---
+        #Devices
         self.dev_name_var = tk.StringVar()
         self.dev_ipv4_var = tk.StringVar()
-        self.dev_priority_code_var = tk.StringVar(value="high")
         self.dev_is_faulty_var = tk.BooleanVar(value=False)
         self.dev_is_reserve_var = tk.BooleanVar(value=False)
         self.dev_uptime_var = tk.StringVar()
         self.dev_standby_var = tk.StringVar()
         self.dev_fault_var = tk.StringVar()
 
-        # --- Переменные формы работников ---
+
+        self.dev_priority_code_var = tk.StringVar(value="high")
+
+        #Workers
         self.worker_name_var = tk.StringVar()
         self.worker_max_jobs_var = tk.StringVar(value="1")
         self.worker_skill_var = tk.StringVar()
 
-        # --- Переменные формы задач ---
+        #Jobs
         self.breakdown_ipv4_var = tk.StringVar()
         self.breakdown_fault_var = tk.StringVar()
 
         self._build_ui()
 
-
-
     def _build_ui(self) -> None:
-        """@brief Построить все виджеты главного окна."""
         self.columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
 
         root = ttk.Frame(self, padding=8)
         root.grid(row=0, column=0, sticky="nsew")
+
         for col in range(2):
             root.columnconfigure(col, weight=1)
         root.rowconfigure(2, weight=1)
@@ -97,7 +98,6 @@ class App(tk.Tk):
         self._build_jobs_frame(root)
 
     def _build_db_frame(self, parent: ttk.Frame) -> None:
-        """@brief Создать панель выбора файла БД."""
         frame = ttk.LabelFrame(parent, text="База данных")
         frame.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(0, 8))
         frame.columnconfigure(1, weight=1)
@@ -106,12 +106,11 @@ class App(tk.Tk):
         ttk.Entry(frame, textvariable=self.db_path_var).grid(
             row=0, column=1, sticky="ew", padx=4
         )
-        ttk.Button(
-            frame, text="Открыть / мигрировать", command=self.on_open_db
-        ).grid(row=0, column=2, padx=4)
+        ttk.Button(frame, text="Открыть / мигрировать", command=self.on_open_db).grid(
+            row=0, column=2, padx=4
+        )
 
     def _build_devices_frame(self, parent: ttk.Frame) -> None:
-        """@brief Создать панель работы с устройствами."""
         frame = ttk.LabelFrame(parent, text="Устройства")
         frame.grid(row=1, column=0, sticky="nsew", padx=(0, 4))
         frame.columnconfigure(0, weight=1)
@@ -122,85 +121,64 @@ class App(tk.Tk):
         for i in range(4):
             form.columnconfigure(i, weight=1)
 
-        # --- строка 0 ---
         ttk.Label(form, text="Имя:").grid(row=0, column=0, sticky="w")
-        ttk.Entry(form, textvariable=self.dev_name_var).grid(
-            row=0, column=1, sticky="ew"
-        )
+        ttk.Entry(form, textvariable=self.dev_name_var).grid(row=0, column=1, sticky="ew")
 
         ttk.Label(form, text="IPv4:").grid(row=0, column=2, sticky="w")
-        ttk.Entry(form, textvariable=self.dev_ipv4_var).grid(
-            row=0, column=3, sticky="ew"
-        )
+        ttk.Entry(form, textvariable=self.dev_ipv4_var).grid(row=0, column=3, sticky="ew")
 
-        # --- строка 1 ---
         ttk.Label(form, text="Приоритет:").grid(row=1, column=0, sticky="w")
 
         priority_labels = [label for (label, _code, _enum) in PRIORITY_OPTIONS]
         priority_codes = [code for (_label, code, _enum) in PRIORITY_OPTIONS]
-        # отображение кода -> label, нам нужен список label для комбобокса
-        # а код мы потом будем искать по индексу
-        ttk.Combobox(
-            form,
-            values=priority_labels,
-            state="readonly",
-            width=10,
-            textvariable=tk.StringVar(),  # создаём временный Var для UI
-        ).grid(row=1, column=1, sticky="w")
 
-        # но проще всё-таки вручную синхронизировать выбор:
         self.priority_combobox = ttk.Combobox(
             form,
             values=priority_labels,
             state="readonly",
-            width=10,
+            width=12,
         )
         self.priority_combobox.grid(row=1, column=1, sticky="w")
-        # по умолчанию выберем "Высокий"
-        try:
-            idx_default = priority_codes.index("high")
-        except ValueError:
-            idx_default = 0
-        self.priority_combobox.current(idx_default)
+        # default: "Высокий"
+        self.priority_combobox.current(priority_codes.index("high"))
 
-        ttk.Checkbutton(
-            form, text="Неисправное", variable=self.dev_is_faulty_var
-        ).grid(row=1, column=2, sticky="w")
-        ttk.Checkbutton(
-            form, text="Резервное", variable=self.dev_is_reserve_var
-        ).grid(row=1, column=3, sticky="w")
+        def _on_priority_change(_evt=None):
+            label = self.priority_combobox.get()
+            for lbl, code, _enum in PRIORITY_OPTIONS:
+                if lbl == label:
+                    self.dev_priority_code_var.set(code)
+                    return
 
-        # --- строка 2 ---
-        ttk.Label(form, text="Uptime, сек:").grid(row=2, column=0, sticky="w")
-        ttk.Entry(form, textvariable=self.dev_uptime_var).grid(
-            row=2, column=1, sticky="ew"
+        self.priority_combobox.bind("<<ComboboxSelected>>", _on_priority_change)
+        _on_priority_change()
+
+        ttk.Checkbutton(form, text="Неисправное", variable=self.dev_is_faulty_var).grid(
+            row=1, column=2, sticky="w"
         )
+        ttk.Checkbutton(form, text="Резервное", variable=self.dev_is_reserve_var).grid(
+            row=1, column=3, sticky="w"
+        )
+
+        ttk.Label(form, text="Uptime, сек:").grid(row=2, column=0, sticky="w")
+        ttk.Entry(form, textvariable=self.dev_uptime_var).grid(row=2, column=1, sticky="ew")
 
         ttk.Label(form, text="Ожидание, сек:").grid(row=2, column=2, sticky="w")
-        ttk.Entry(form, textvariable=self.dev_standby_var).grid(
-            row=2, column=3, sticky="ew"
-        )
+        ttk.Entry(form, textvariable=self.dev_standby_var).grid(row=2, column=3, sticky="ew")
 
-        # --- строка 3 ---
         ttk.Label(form, text="Неисправность:").grid(row=3, column=0, sticky="w")
         ttk.Entry(form, textvariable=self.dev_fault_var).grid(
             row=3, column=1, columnspan=3, sticky="ew"
         )
 
-        # --- строка 4: кнопки ---
-        ttk.Button(
-            form, text="Upsert устройства", command=self.on_upsert_device
-        ).grid(row=4, column=0, columnspan=2, sticky="w", pady=(4, 0))
-
-        ttk.Button(
-            form, text="Обновить список", command=self.refresh_devices
-        ).grid(row=4, column=2, columnspan=2, sticky="e", pady=(4, 0))
-
-        # --- таблица устройств ---
-        columns = ("ipv4", "name", "priority", "faulty", "reserve")
-        self.devices_tree = ttk.Treeview(
-            frame, columns=columns, show="headings", height=10
+        ttk.Button(form, text="Upsert устройства", command=self.on_upsert_device).grid(
+            row=4, column=0, columnspan=2, sticky="w", pady=(4, 0)
         )
+        ttk.Button(form, text="Обновить список", command=self.refresh_devices).grid(
+            row=4, column=2, columnspan=2, sticky="e", pady=(4, 0)
+        )
+
+        columns = ("ipv4", "name", "priority", "faulty", "reserve")
+        self.devices_tree = ttk.Treeview(frame, columns=columns, show="headings", height=10)
         self.devices_tree.heading("ipv4", text="IPv4")
         self.devices_tree.heading("name", text="Имя")
         self.devices_tree.heading("priority", text="Приоритет")
@@ -214,7 +192,6 @@ class App(tk.Tk):
         self.devices_tree.grid(row=1, column=0, sticky="nsew")
 
     def _build_workers_frame(self, parent: ttk.Frame) -> None:
-        """@brief Создать панель работы с работниками."""
         frame = ttk.LabelFrame(parent, text="Работники")
         frame.grid(row=1, column=1, sticky="nsew", padx=(4, 0))
         frame.columnconfigure(0, weight=1)
@@ -225,9 +202,7 @@ class App(tk.Tk):
         form.columnconfigure(1, weight=1)
 
         ttk.Label(form, text="Имя:").grid(row=0, column=0, sticky="w")
-        ttk.Entry(form, textvariable=self.worker_name_var).grid(
-            row=0, column=1, sticky="ew"
-        )
+        ttk.Entry(form, textvariable=self.worker_name_var).grid(row=0, column=1, sticky="ew")
 
         ttk.Label(form, text="Макс. задач:").grid(row=1, column=0, sticky="w")
         ttk.Entry(form, textvariable=self.worker_max_jobs_var, width=6).grid(
@@ -235,33 +210,25 @@ class App(tk.Tk):
         )
 
         ttk.Label(form, text="Навык:").grid(row=2, column=0, sticky="w")
-        ttk.Entry(form, textvariable=self.worker_skill_var).grid(
-            row=2, column=1, sticky="ew"
+        ttk.Entry(form, textvariable=self.worker_skill_var).grid(row=2, column=1, sticky="ew")
+
+        ttk.Button(form, text="Добавить работника", command=self.on_add_worker).grid(
+            row=3, column=0, sticky="w", pady=(4, 0)
         )
-
-        ttk.Button(
-            form, text="Добавить работника", command=self.on_add_worker
-        ).grid(row=3, column=0, sticky="w", pady=(4, 0))
-
-        ttk.Button(
-            form, text="Обновить список", command=self.refresh_workers
-        ).grid(row=3, column=1, sticky="e", pady=(4, 0))
+        ttk.Button(form, text="Обновить список", command=self.refresh_workers).grid(
+            row=3, column=1, sticky="e", pady=(4, 0)
+        )
 
         columns = ("id", "name", "max_jobs", "skill")
-        self.workers_tree = ttk.Treeview(
-            frame, columns=columns, show="headings", height=10
-        )
-
+        self.workers_tree = ttk.Treeview(frame, columns=columns, show="headings", height=10)
         titles = ("ID", "Имя", "Макс. задач", "Навык")
         widths = (50, 150, 90, 140)
         for col, title, width in zip(columns, titles, widths):
             self.workers_tree.heading(col, text=title)
             self.workers_tree.column(col, width=width, anchor="center")
-
         self.workers_tree.grid(row=1, column=0, sticky="nsew")
 
     def _build_jobs_frame(self, parent: ttk.Frame) -> None:
-        """@brief Создать панель задач (jobs)."""
         frame = ttk.LabelFrame(parent, text="Задачи")
         frame.grid(row=2, column=0, columnspan=2, sticky="nsew", pady=(8, 0))
         frame.columnconfigure(0, weight=1)
@@ -277,56 +244,42 @@ class App(tk.Tk):
         )
 
         ttk.Label(form, text="Описание:").grid(row=0, column=2, sticky="w")
-        ttk.Entry(form, textvariable=self.breakdown_fault_var).grid(
-            row=0, column=3, sticky="ew"
-        )
+        ttk.Entry(form, textvariable=self.breakdown_fault_var).grid(row=0, column=3, sticky="ew")
 
         ttk.Button(form, text="Создать задачу", command=self.on_breakdown).grid(
             row=0, column=4, padx=4
         )
-        ttk.Button(
-            form, text="Обновить список задач", command=self.refresh_jobs
-        ).grid(row=0, column=5, padx=4)
-
-        columns = ("id", "device", "worker", "status", "fault")
-        self.jobs_tree = ttk.Treeview(
-            frame, columns=columns, show="headings", height=10
+        ttk.Button(form, text="Обновить список задач", command=self.refresh_jobs).grid(
+            row=0, column=5, padx=4
         )
 
+        columns = ("id", "device", "worker", "status", "fault")
+        self.jobs_tree = ttk.Treeview(frame, columns=columns, show="headings", height=10)
+
         titles = ("ID", "Устройство", "Работник", "Статус", "Неисправность")
-        widths = (50, 120, 80, 90, 260)
+        widths = (50, 140, 80, 90, 360)
         for col, title, width in zip(columns, titles, widths):
             self.jobs_tree.heading(col, text=title)
             self.jobs_tree.column(col, width=width, anchor="center")
 
         self.jobs_tree.grid(row=1, column=0, sticky="nsew")
 
-
-
-    def _require_engine(self) -> esm_py.Engine | None:
-        """
-        @brief Убедиться, что Engine инициализирован.
-
-        @return Объект Engine или None, если нужно прервать действие.
-        """
+    def _require_engine(self) -> esm.Engine | None:
         if self.engine is None:
             messagebox.showerror("Ошибка", "Сначала откройте базу данных.")
             return None
         return self.engine
 
-
-
     def on_open_db(self) -> None:
-        """@brief Открыть/создать БД и выполнить миграции."""
         db_path = self.db_path_var.get().strip()
         if not db_path:
             messagebox.showerror("Ошибка", "Путь к файлу БД не может быть пустым.")
             return
 
         try:
-            self.engine = esm_py.Engine(db_path)
+            self.engine = esm.Engine(db_path)
             self.engine.migrate()
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc:
             messagebox.showerror("Ошибка", f"Не удалось открыть БД: {exc}")
             self.engine = None
             return
@@ -337,7 +290,6 @@ class App(tk.Tk):
         messagebox.showinfo("Готово", "База данных открыта и миграции применены.")
 
     def on_upsert_device(self) -> None:
-        """@brief Добавить или обновить устройство."""
         engine = self._require_engine()
         if engine is None:
             return
@@ -349,8 +301,8 @@ class App(tk.Tk):
             return
 
         try:
-            address = esm_py.ipv4_to_u32(ipv4)
-        except Exception as exc:  # noqa: BLE001
+            address = ipv4_to_u32(ipv4)
+        except Exception as exc:
             messagebox.showerror("Ошибка", f"Неверный IPv4: {exc}")
             return
 
@@ -361,14 +313,9 @@ class App(tk.Tk):
             messagebox.showerror("Ошибка", "Uptime и ожидание должны быть целыми.")
             return
 
-        # определяем выбранный приоритет
-        label_selected = self.priority_combobox.get()
-        # ищем по label соответствующий enum
-        priority_enum = getattr(esm_py.ServicePriority, 'None')
-        for label, _code, enum_val in PRIORITY_OPTIONS:
-            if label == label_selected:
-                priority_enum = enum_val
-                break
+        priority_enum = PRIORITY_CODE_TO_ENUM.get(
+            self.dev_priority_code_var.get(), getattr(esm.ServicePriority, "None")
+        )
 
         is_faulty = bool(self.dev_is_faulty_var.get())
         is_reserve = bool(self.dev_is_reserve_var.get())
@@ -376,27 +323,22 @@ class App(tk.Tk):
 
         try:
             if is_faulty:
-                device = esm_py.FaultyDeviceEx(
+                device = esm.FaultyDeviceEx(
                     name, address, priority_enum, fault_text or "Unknown fault"
                 )
             elif is_reserve:
-                device = esm_py.ReserveDevice(
-                    name, address, priority_enum, uptime, standby
-                )
+                device = esm.ReserveDevice(name, address, priority_enum, uptime, standby)
             else:
-                device = esm_py.HealthyDevice(
-                    name, address, priority_enum, uptime
-                )
+                device = esm.HealthyDevice(name, address, priority_enum, uptime)
 
             engine.upsert_device(device)
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc:
             messagebox.showerror("Ошибка", f"Не удалось сохранить устройство: {exc}")
             return
 
         self.refresh_devices()
 
     def on_add_worker(self) -> None:
-        """@brief Добавить нового работника."""
         engine = self._require_engine()
         if engine is None:
             return
@@ -416,14 +358,13 @@ class App(tk.Tk):
 
         try:
             engine.add_worker(name, max_jobs, skill)
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc:
             messagebox.showerror("Ошибка", f"Не удалось добавить работника: {exc}")
             return
 
         self.refresh_workers()
 
     def on_breakdown(self) -> None:
-        """@brief Зафиксировать поломку и создать задачу."""
         engine = self._require_engine()
         if engine is None:
             return
@@ -435,24 +376,21 @@ class App(tk.Tk):
             return
 
         try:
-            address = esm_py.ipv4_to_u32(ipv4)
-        except Exception as exc:  # noqa: BLE001
+            address = ipv4_to_u32(ipv4)
+        except Exception as exc:
             messagebox.showerror("Ошибка", f"Неверный IPv4: {exc}")
             return
 
         try:
             job_id = engine.breakdown(address, fault)
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc:
             messagebox.showerror("Ошибка", f"Не удалось создать задачу: {exc}")
             return
 
         self.refresh_jobs()
         messagebox.showinfo("Создана задача", f"ID новой задачи: {job_id}")
 
-
-
     def refresh_workers(self) -> None:
-        """@brief Перечитать и отобразить список работников."""
         engine = self.engine
         if engine is None:
             return
@@ -466,14 +404,9 @@ class App(tk.Tk):
             return
 
         for w in workers:
-            self.workers_tree.insert(
-                "",
-                "end",
-                values=(w.id, w.name, w.max_jobs, w.skill),
-            )
+            self.workers_tree.insert("", "end", values=(w.id, w.name, w.max_jobs, w.skill))
 
     def refresh_devices(self) -> None:
-        """@brief Перечитать и отобразить список устройств."""
         engine = self.engine
         if engine is None:
             return
@@ -487,7 +420,7 @@ class App(tk.Tk):
             return
 
         for d in devices:
-            ipv4 = esm_py.u32_to_ipv4(d.address)
+            ipv4 = u32_to_ipv4(int(d.address))
             label = PRIORITY_ENUM_TO_LABEL.get(d.priority, "Нет")
             self.devices_tree.insert(
                 "",
@@ -502,7 +435,6 @@ class App(tk.Tk):
             )
 
     def refresh_jobs(self) -> None:
-        """@brief Перечитать и отобразить список задач."""
         engine = self.engine
         if engine is None:
             return
@@ -516,19 +448,22 @@ class App(tk.Tk):
             return
 
         for j in jobs:
-            worker = j.worker_id if j.worker_id is not None else ""
-            self.jobs_tree.insert(
-                "",
-                "end",
-                values=(j.id, j.device_address, worker, j.status, j.fault),
-            )
+            device_val = j.device_address
+            try:
+                device_shown = u32_to_ipv4(int(device_val))
+            except Exception:
+                device_shown = str(device_val)
+
+            worker = j.worker_id if getattr(j, "worker_id", None) is not None else ""
+            status = j.status
+            self.jobs_tree.insert("", "end", values=(j.id, device_shown, worker, status, j.fault))
 
 
 def main() -> None:
-    """@brief Точка входа в GUI-приложение."""
     app = App()
     app.mainloop()
 
 
 if __name__ == "__main__":
     main()
+
