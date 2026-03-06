@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file Engine.h
- * @brief Публичный фасад библиотеки ESM: БД, операции и выборки для UI
+ * @brief РџСѓР±Р»РёС‡РЅС‹Р№ С„Р°СЃР°Рґ Р±РёР±Р»РёРѕС‚РµРєРё ESM: Р‘Р”, РѕРїРµСЂР°С†РёРё Рё РІС‹Р±РѕСЂРєРё РґР»СЏ UI
  */
 
 #include "export.h"
@@ -20,12 +20,12 @@
 #include <optional>
 
  /**
-  * @brief Статус задания
+  * @brief РЎС‚Р°С‚СѓСЃ Р·Р°РґР°РЅРёСЏ
   */
 enum class JobStatus : std::uint8_t { Open = 0, InProgress = 1, Done = 2, Canceled = 3 };
 
 /**
- * @brief  запись оборудование для  UI
+ * @brief  Р·Р°РїРёСЃСЊ РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ РґР»СЏ  UI
  */
 struct DeviceRow {
     std::uint32_t   address{0};
@@ -38,7 +38,7 @@ struct DeviceRow {
 };
 
 /**
- * @brief  запись работник для UI
+ * @brief  Р·Р°РїРёСЃСЊ СЂР°Р±РѕС‚РЅРёРє РґР»СЏ UI
  * 
  */
 struct WorkerFlat {
@@ -49,7 +49,7 @@ struct WorkerFlat {
 };
 
 /**
- * @brief запись задача ремонта
+ * @brief Р·Р°РїРёСЃСЊ Р·Р°РґР°С‡Р° СЂРµРјРѕРЅС‚Р°
  */
 struct JobRow {
     std::int64_t   id;
@@ -64,15 +64,15 @@ struct JobRow {
 
 /**
  * @class Engine
- * @brief Единая точка входа: миграции, операции и выборки для Python/UI
- * Внутри содержит SqliteStorage и использует репозитории
+ * @brief Р•РґРёРЅР°СЏ С‚РѕС‡РєР° РІС…РѕРґР°: РјРёРіСЂР°С†РёРё, РѕРїРµСЂР°С†РёРё Рё РІС‹Р±РѕСЂРєРё РґР»СЏ Python/UI
+ * Р’РЅСѓС‚СЂРё СЃРѕРґРµСЂР¶РёС‚ SqliteStorage Рё РёСЃРїРѕР»СЊР·СѓРµС‚ СЂРµРїРѕР·РёС‚РѕСЂРёРё
  */
 class ESM_API Engine {
 public:
-    /// @brief Открыть/создать БД по пути
+    /// @brief РћС‚РєСЂС‹С‚СЊ/СЃРѕР·РґР°С‚СЊ Р‘Р” РїРѕ РїСѓС‚Рё
     explicit Engine(const std::string& db_path);
 
-    /// @brief Применить встроенные миграции (создать таблицы)
+    /// @brief РџСЂРёРјРµРЅРёС‚СЊ РІСЃС‚СЂРѕРµРЅРЅС‹Рµ РјРёРіСЂР°С†РёРё (СЃРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†С‹)
     void migrate();
 
     //Workers
@@ -80,20 +80,20 @@ public:
     std::vector<WorkerFlat> list_workers() const;
 
     // Devices
-    /// @brief upsert любого устройства из иерархии Device
+    /// @brief upsert Р»СЋР±РѕРіРѕ СѓСЃС‚СЂРѕР№СЃС‚РІР° РёР· РёРµСЂР°СЂС…РёРё Device
     void upsert_device(const Device& d);
-    /// @brief Плоская выборка устройств
+    /// @brief РџР»РѕСЃРєР°СЏ РІС‹Р±РѕСЂРєР° СѓСЃС‚СЂРѕР№СЃС‚РІ
     std::vector<DeviceRow> list_devices() const;
 
     //Jobs
-    /// @brief Зафиксировать поломку
+    /// @brief Р—Р°С„РёРєСЃРёСЂРѕРІР°С‚СЊ РїРѕР»РѕРјРєСѓ
     std::int64_t breakdown(std::uint32_t address, const std::string& fault);
-    /// @brief Начать ремонт
+    /// @brief РќР°С‡Р°С‚СЊ СЂРµРјРѕРЅС‚
     void start_repair(std::int64_t job_id, std::int64_t worker_id);
-    /// @brief Завершить ремонт
+    /// @brief Р—Р°РІРµСЂС€РёС‚СЊ СЂРµРјРѕРЅС‚
     void finish_repair(std::int64_t job_id, std::uint64_t uptime_after_sec);
 
-    /// @brief Выборка задач.
+    /// @brief Р’С‹Р±РѕСЂРєР° Р·Р°РґР°С‡.
     std::vector<JobRow> list_jobs(std::optional<JobStatus> status = std::nullopt) const;
 
 private:

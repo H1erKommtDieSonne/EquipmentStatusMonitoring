@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dummy_5f_0',['dummy_',['../classtesting_1_1internal_1_1_type_id_helper.html#a372268b1520d965d0bdf01ebad3d270e',1,'testing::internal::TypeIdHelper']]]
+  ['breakdown_5ffault_5fvar_0',['breakdown_fault_var',['../classgui__tk_1_1_app.html#a74a5bd8222ceb7c426745d6d9d6924df',1,'gui_tk::App']]],
+  ['breakdown_5fipv4_5fvar_1',['breakdown_ipv4_var',['../classgui__tk_1_1_app.html#a90a6d9ca81a11942a0fd0a4c33861c00',1,'gui_tk::App']]]
 ];

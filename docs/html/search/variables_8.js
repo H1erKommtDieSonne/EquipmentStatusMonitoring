@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_5f_0',['name_',['../class_device.html#a5229ed83545bda7b8f220d77a851fc83',1,'Device']]]
+  ['max_5fjobs_0',['max_jobs',['../_engine_8h.html#adbec72506f898cc4015b391c090d18ca',1,'WorkerFlat::max_jobs'],['../_worker_repository_8h.html#a8ec81b968c86ae03a3adfe64c0c29865',1,'WorkerRow::max_jobs']]]
 ];

@@ -93,7 +93,7 @@ $(function(){initNavTree('class_reserve_device.html','','class_reserve_device-me
 </div><!--header-->
 <div class="contents">
 
-<p>Исправное устройство, находящееся в резерве  
+<p>РСЃРїСЂР°РІРЅРѕРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ, РЅР°С…РѕРґСЏС‰РµРµСЃСЏ РІ СЂРµР·РµСЂРІРµ  
  <a href="#details">РџРѕРґСЂРѕР±РЅРµРµ...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a>&gt;</code></p>
@@ -105,34 +105,41 @@ $(function(){initNavTree('class_reserve_device.html','','class_reserve_device-me
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 РћС‚РєСЂС‹С‚С‹Рµ С‡Р»РµРЅС‹</h2></td></tr>
-<tr class="memitem:ab269ac3dc9c7f5049a16d8876425acbc" id="r_ab269ac3dc9c7f5049a16d8876425acbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab269ac3dc9c7f5049a16d8876425acbc">ReserveDevice</a> (std::string <a class="el" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> prio, uint64_t uptimeSec, uint64_t standbyWaitSec)</td></tr>
-<tr class="memdesc:ab269ac3dc9c7f5049a16d8876425acbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор резервного устройства  <br /></td></tr>
+<tr class="memitem:ab269ac3dc9c7f5049a16d8876425acbc" id="r_ab269ac3dc9c7f5049a16d8876425acbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab269ac3dc9c7f5049a16d8876425acbc">ReserveDevice</a> (std::string <a class="el" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> prio, uint64_t uptimeSec, uint64_t standbyWaitSec)</td></tr>
+<tr class="memitem:a64b0d3f5d28af310492f5b067b9e58e1" id="r_a64b0d3f5d28af310492f5b067b9e58e1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64b0d3f5d28af310492f5b067b9e58e1">clone</a> () const override</td></tr>
+<tr class="memdesc:a64b0d3f5d28af310492f5b067b9e58e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">РџРѕР»РёРјРѕСЂС„РЅРѕРµ РєРѕРїРёСЂРѕРІР°РЅРёРµ  <br /></td></tr>
+<tr class="memitem:ac527333e4a683aa55d1941ef244f6c98" id="r_ac527333e4a683aa55d1941ef244f6c98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac527333e4a683aa55d1941ef244f6c98">isReserve</a> () const noexcept override</td></tr>
+<tr class="memdesc:ac527333e4a683aa55d1941ef244f6c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Р РµР·РµСЂРІРЅРѕРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ  <br /></td></tr>
 <tr class="memitem:a5f89844eec159d18b1248c144476aaf4" id="r_a5f89844eec159d18b1248c144476aaf4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f89844eec159d18b1248c144476aaf4">standbyWait</a> () const noexcept</td></tr>
+<tr class="memdesc:a5f89844eec159d18b1248c144476aaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Р’СЂРµРјСЏ РѕР¶РёРґР°РЅРёСЏ РІРІРѕРґР° РІ СЂР°Р±РѕС‚Сѓ  <br /></td></tr>
 <tr class="memitem:a950ee1ac91783b0de30010ee51a0b862" id="r_a950ee1ac91783b0de30010ee51a0b862"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a950ee1ac91783b0de30010ee51a0b862">toString</a> () const override</td></tr>
-<tr class="memdesc:a950ee1ac91783b0de30010ee51a0b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">представление резервного устройства  <br /></td></tr>
+<tr class="memdesc:a950ee1ac91783b0de30010ee51a0b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представление резервного устройства  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_healthy_device"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_healthy_device')"><span class="dynarrow"><span class="arrowhead closed"></span></span>РћС‚РєСЂС‹С‚С‹Рµ С‡Р»РµРЅС‹ СѓРЅР°СЃР»РµРґРѕРІР°РЅРЅС‹Рµ РѕС‚ <a class="el" href="class_healthy_device.html">HealthyDevice</a></td></tr>
-<tr class="memitem:a58f8cad05ec43dc6c85f56fb2addd222 inherit pub_methods_class_healthy_device" id="r_a58f8cad05ec43dc6c85f56fb2addd222"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#a58f8cad05ec43dc6c85f56fb2addd222">HealthyDevice</a> (std::string <a class="el" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> prio, uint64_t uptimeSec)</td></tr>
-<tr class="memdesc:a58f8cad05ec43dc6c85f56fb2addd222 inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор исправного устройства.  <br /></td></tr>
+<tr class="memitem:a58f8cad05ec43dc6c85f56fb2addd222 inherit pub_methods_class_healthy_device" id="r_a58f8cad05ec43dc6c85f56fb2addd222"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#a58f8cad05ec43dc6c85f56fb2addd222">HealthyDevice</a> (std::string <a class="el" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> prio, uint64_t uptimeSec)</td></tr>
+<tr class="memdesc:a58f8cad05ec43dc6c85f56fb2addd222 inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ  <br /></td></tr>
 <tr class="memitem:a15f8a87fd812c6369f9ac64c49d5188d inherit pub_methods_class_healthy_device" id="r_a15f8a87fd812c6369f9ac64c49d5188d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#a15f8a87fd812c6369f9ac64c49d5188d">isFaulty</a> () const noexcept override</td></tr>
-<tr class="memdesc:a15f8a87fd812c6369f9ac64c49d5188d inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак неисправности.  <br /></td></tr>
+<tr class="memdesc:a15f8a87fd812c6369f9ac64c49d5188d inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РџСЂРёР·РЅР°Рє РЅРµРёСЃРїСЂР°РІРЅРѕСЃС‚Рё СѓСЃС‚СЂРѕР№СЃС‚РІР°  <br /></td></tr>
 <tr class="memitem:a01e6a0696dcaccd7bf05dfb4bcacb727 inherit pub_methods_class_healthy_device" id="r_a01e6a0696dcaccd7bf05dfb4bcacb727"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#a01e6a0696dcaccd7bf05dfb4bcacb727">uptime</a> () const noexcept</td></tr>
-<tr class="memdesc:a01e6a0696dcaccd7bf05dfb4bcacb727 inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая наработка устройства  <br /></td></tr>
+<tr class="memdesc:a01e6a0696dcaccd7bf05dfb4bcacb727 inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РќР°СЂР°Р±РѕС‚РєР°  <br /></td></tr>
 <tr class="memitem:aa41a06ba46cb2451986ae55264ef2bdb inherit pub_methods_class_healthy_device" id="r_aa41a06ba46cb2451986ae55264ef2bdb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#aa41a06ba46cb2451986ae55264ef2bdb">breakDown</a> (std::string fault) const override</td></tr>
-<tr class="memdesc:aa41a06ba46cb2451986ae55264ef2bdb inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевести устройство в состояние неисправно  <br /></td></tr>
+<tr class="memdesc:aa41a06ba46cb2451986ae55264ef2bdb inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РџРµСЂРµРІРµСЃС‚Рё СѓСЃС‚СЂРѕР№СЃС‚РІРѕ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ РЅРµРёСЃРїСЂР°РІРЅРѕ  <br /></td></tr>
 <tr class="memitem:a8aae31cc464d2a277f4c73c2ef8ee7d2 inherit pub_methods_class_healthy_device" id="r_a8aae31cc464d2a277f4c73c2ef8ee7d2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#a8aae31cc464d2a277f4c73c2ef8ee7d2">repair</a> (uint64_t uptimeAfterRepairSec) const override</td></tr>
-<tr class="memdesc:a8aae31cc464d2a277f4c73c2ef8ee7d2 inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ремонт (создание нового исправного устройства)  <br /></td></tr>
-<tr class="memitem:adcdb37b206905ad90d3242bc3cf6b23b inherit pub_methods_class_healthy_device" id="r_adcdb37b206905ad90d3242bc3cf6b23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b">setPriority</a> (<a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> p) override</td></tr>
-<tr class="memdesc:adcdb37b206905ad90d3242bc3cf6b23b inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить приоритет обслуживания  <br /></td></tr>
+<tr class="memdesc:a8aae31cc464d2a277f4c73c2ef8ee7d2 inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Р РµРјРѕРЅС‚ СѓСЃС‚СЂРѕР№СЃС‚РІР° (СЃРѕР·РґР°С‚СЊ РЅРѕРІРѕРµ РёСЃРїСЂР°РІРЅРѕРµ)  <br /></td></tr>
+<tr class="memitem:adcdb37b206905ad90d3242bc3cf6b23b inherit pub_methods_class_healthy_device" id="r_adcdb37b206905ad90d3242bc3cf6b23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b">setPriority</a> (<a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> p) override</td></tr>
+<tr class="memdesc:adcdb37b206905ad90d3242bc3cf6b23b inherit pub_methods_class_healthy_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РїСЂРёРѕСЂРёС‚РµС‚  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_device"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_device')"><span class="dynarrow"><span class="arrowhead closed"></span></span>РћС‚РєСЂС‹С‚С‹Рµ С‡Р»РµРЅС‹ СѓРЅР°СЃР»РµРґРѕРІР°РЅРЅС‹Рµ РѕС‚ <a class="el" href="class_device.html">Device</a></td></tr>
-<tr class="memitem:af7badf268877700082eae61ccc89ef16 inherit pub_methods_class_device" id="r_af7badf268877700082eae61ccc89ef16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#af7badf268877700082eae61ccc89ef16">Device</a> (std::string <a class="el" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> prio)</td></tr>
-<tr class="memdesc:af7badf268877700082eae61ccc89ef16 inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор базового устройства  <br /></td></tr>
+<tr class="memitem:af7badf268877700082eae61ccc89ef16 inherit pub_methods_class_device" id="r_af7badf268877700082eae61ccc89ef16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#af7badf268877700082eae61ccc89ef16">Device</a> (std::string <a class="el" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> prio)</td></tr>
+<tr class="memdesc:af7badf268877700082eae61ccc89ef16 inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±Р°Р·РѕРІРѕРіРѕ СѓСЃС‚СЂРѕР№СЃС‚РІР°  <br /></td></tr>
 <tr class="memitem:a6fef4f7180512c7517c9696cd95e503a inherit pub_methods_class_device" id="r_a6fef4f7180512c7517c9696cd95e503a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a6fef4f7180512c7517c9696cd95e503a">~Device</a> ()=default</td></tr>
+<tr class="memdesc:a6fef4f7180512c7517c9696cd95e503a inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Р’РёСЂС‚СѓР°Р»СЊРЅС‹Р№ РґРµСЃС‚СЂСѓРєС‚РѕСЂ  <br /></td></tr>
 <tr class="memitem:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf inherit pub_methods_class_device" id="r_ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ab7ee8c2ffdaa8f564fbfd9fdd164b6cf">requiresService</a> () const noexcept</td></tr>
-<tr class="memdesc:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Требуется ли обслуживание По умолчанию считает что обслуживание требуется для любого приоритета, отличного от нулевого.  <br /></td></tr>
+<tr class="memdesc:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РўСЂРµР±СѓРµС‚СЃСЏ Р»Рё РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ  <br /></td></tr>
 <tr class="memitem:a4fb86f0953605583fcc64d8a22b441fd inherit pub_methods_class_device" id="r_a4fb86f0953605583fcc64d8a22b441fd"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">name</a> () const noexcept</td></tr>
-<tr class="memdesc:a4fb86f0953605583fcc64d8a22b441fd inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя устройства.  <br /></td></tr>
+<tr class="memdesc:a4fb86f0953605583fcc64d8a22b441fd inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РРјСЏ СѓСЃС‚СЂРѕР№СЃС‚РІР°  <br /></td></tr>
 <tr class="memitem:a2759d53349562eae5db62db65be0d3de inherit pub_methods_class_device" id="r_a2759d53349562eae5db62db65be0d3de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a2759d53349562eae5db62db65be0d3de">address</a> () const noexcept</td></tr>
-<tr class="memitem:a800f235ab9c35a46c73b3ed9c795f72f inherit pub_methods_class_device" id="r_a800f235ab9c35a46c73b3ed9c795f72f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a800f235ab9c35a46c73b3ed9c795f72f">priority</a> () const noexcept</td></tr>
+<tr class="memdesc:a2759d53349562eae5db62db65be0d3de inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РђРґСЂРµСЃ  <br /></td></tr>
+<tr class="memitem:a800f235ab9c35a46c73b3ed9c795f72f inherit pub_methods_class_device" id="r_a800f235ab9c35a46c73b3ed9c795f72f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a800f235ab9c35a46c73b3ed9c795f72f">priority</a> () const noexcept</td></tr>
+<tr class="memdesc:a800f235ab9c35a46c73b3ed9c795f72f inherit pub_methods_class_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">РўРµРєСѓС‰РёР№ РїСЂРёРѕСЂРёС‚РµС‚  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ СѓРЅР°СЃР»РµРґРѕРІР°РЅРЅС‹Рµ С‡Р»РµРЅС‹</h2></td></tr>
@@ -143,13 +150,12 @@ $(function(){initNavTree('class_reserve_device.html','','class_reserve_device-me
 <tr class="inherit_header pro_attribs_class_device"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_device')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Р—Р°С‰РёС‰РµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ СѓРЅР°СЃР»РµРґРѕРІР°РЅРЅС‹Рµ РѕС‚ <a class="el" href="class_device.html">Device</a></td></tr>
 <tr class="memitem:a5229ed83545bda7b8f220d77a851fc83 inherit pro_attribs_class_device" id="r_a5229ed83545bda7b8f220d77a851fc83"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a5229ed83545bda7b8f220d77a851fc83">name_</a></td></tr>
 <tr class="memitem:ad4a2cd6fbccd3a603014ae033f1d9024 inherit pro_attribs_class_device" id="r_ad4a2cd6fbccd3a603014ae033f1d9024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_device.html#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ad4a2cd6fbccd3a603014ae033f1d9024">address_</a></td></tr>
-<tr class="memitem:a0a135362acd067995fceae6b8f2a0695 inherit pro_attribs_class_device" id="r_a0a135362acd067995fceae6b8f2a0695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a0a135362acd067995fceae6b8f2a0695">priority_</a></td></tr>
+<tr class="memitem:a0a135362acd067995fceae6b8f2a0695 inherit pro_attribs_class_device" id="r_a0a135362acd067995fceae6b8f2a0695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a0a135362acd067995fceae6b8f2a0695">priority_</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ</h2>
-<div class="textblock"><p>Исправное устройство, находящееся в резерве </p>
-<p>Наследует <a class="el" href="class_healthy_device.html">HealthyDevice</a> и добавляет поле времени ожидания ввода в работу standbyWaitSec_ </p>
+<div class="textblock"><p>РСЃРїСЂР°РІРЅРѕРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ, РЅР°С…РѕРґСЏС‰РµРµСЃСЏ РІ СЂРµР·РµСЂРІРµ </p>
 
-<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00014">14</a></p>
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00010">10</a></p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ(С‹)</h2>
 <a id="ab269ac3dc9c7f5049a16d8876425acbc" name="ab269ac3dc9c7f5049a16d8876425acbc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab269ac3dc9c7f5049a16d8876425acbc">&#9670;&#160;</a></span>ReserveDevice()</h2>
@@ -173,7 +179,7 @@ $(function(){initNavTree('class_reserve_device.html','','class_reserve_device-me
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>prio</em></span>, </td>
+          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>prio</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -193,25 +199,79 @@ $(function(){initNavTree('class_reserve_device.html','','class_reserve_device-me
 </table>
 </div><div class="memdoc">
 
-<p>Конструктор резервного устройства </p>
-<dl class="params"><dt>РђСЂРіСѓРјРµРЅС‚С‹</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Имя устройства </td></tr>
-    <tr><td class="paramname">addr</td><td>IPадрес устройства </td></tr>
-    <tr><td class="paramname">prio</td><td>Приоритет обслуживания </td></tr>
-    <tr><td class="paramname">uptimeSec</td><td>Наработка устройства в секундах </td></tr>
-    <tr><td class="paramname">standbyWaitSec</td><td>Время ожидания ввода в работу </td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00012">12</a></p>
 
-<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00024">24</a></p>
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_healthy_device_8h_source.html#l00014">HealthyDevice::HealthyDevice()</a> Рё <a class="el" href="_device_8h_source.html#l00047">Device::name()</a>.</p>
 
-<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_healthy_device_8h_source.html#l00026">HealthyDevice::HealthyDevice()</a> Рё <a class="el" href="_device_8h_source.html#l00041">Device::name()</a>.</p>
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="_reserve_device_8h_source.html#l00022">clone()</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">РњРµС‚РѕРґС‹</h2>
+<a id="a64b0d3f5d28af310492f5b067b9e58e1" name="a64b0d3f5d28af310492f5b067b9e58e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b0d3f5d28af310492f5b067b9e58e1">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt; ReserveDevice::clone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>РџРѕР»РёРјРѕСЂС„РЅРѕРµ РєРѕРїРёСЂРѕРІР°РЅРёРµ </p>
+
+<p>РџРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚ РјРµС‚РѕРґ РїСЂРµРґРєР° <a class="el" href="class_healthy_device.html#a277b92626a88dfcd72564d0da9676f93">HealthyDevice</a>.</p>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00022">22</a></p>
+
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_reserve_device_8h_source.html#l00012">ReserveDevice()</a>.</p>
+
+</div>
+</div>
+<a id="ac527333e4a683aa55d1941ef244f6c98" name="ac527333e4a683aa55d1941ef244f6c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac527333e4a683aa55d1941ef244f6c98">&#9670;&#160;</a></span>isReserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReserveDevice::isReserve </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Р РµР·РµСЂРІРЅРѕРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ </p>
+
+<p>РџРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚ РјРµС‚РѕРґ РїСЂРµРґРєР° <a class="el" href="class_device.html#a30033f9b2b3ae28b5bc96f2213333071">Device</a>.</p>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00027">27</a></p>
+
+</div>
+</div>
 <a id="a5f89844eec159d18b1248c144476aaf4" name="a5f89844eec159d18b1248c144476aaf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f89844eec159d18b1248c144476aaf4">&#9670;&#160;</a></span>standbyWait()</h2>
 
@@ -235,7 +295,11 @@ $(function(){initNavTree('class_reserve_device.html','','class_reserve_device-me
 </table>
 </div><div class="memdoc">
 
-<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00034">34</a></p>
+<p>Р’СЂРµРјСЏ РѕР¶РёРґР°РЅРёСЏ РІРІРѕРґР° РІ СЂР°Р±РѕС‚Сѓ </p>
+
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8h_source.html#l00030">30</a></p>
+
+<p class="reference">РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> Рё <a class="el" href="_reserve_device_8cpp_source.html#l00007">toString()</a>.</p>
 
 </div>
 </div>
@@ -262,14 +326,13 @@ $(function(){initNavTree('class_reserve_device.html','','class_reserve_device-me
 </table>
 </div><div class="memdoc">
 
-<p>представление резервного устройства </p>
-<dl class="section return"><dt>Р’РѕР·РІСЂР°С‰Р°РµС‚</dt><dd>Строка с описанием состояния резервного устройства </dd></dl>
+<p>Представление резервного устройства </p>
 
 <p>РџРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚ РјРµС‚РѕРґ РїСЂРµРґРєР° <a class="el" href="class_healthy_device.html#a8e2dc839a7e93ca0232e53573faf25f0">HealthyDevice</a>.</p>
 
-<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8cpp_source.html">ReserveDevice.cpp</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8cpp_source.html#l00009">9</a></p>
+<p class="definition">РЎРј. РѕРїСЂРµРґРµР»РµРЅРёРµ РІ С„Р°Р№Р»Рµ <a class="el" href="_reserve_device_8cpp_source.html">ReserveDevice.cpp</a> СЃС‚СЂРѕРєР° <a class="el" href="_reserve_device_8cpp_source.html#l00007">7</a></p>
 
-<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00083">Device::address_</a>, <a class="el" href="_device_8h_source.html#l00082">Device::name_</a>, <a class="el" href="_device_8h_source.html#l00084">Device::priority_</a> Рё <a class="el" href="_healthy_device_8h_source.html#l00074">HealthyDevice::uptimeSec_</a>.</p>
+<p class="reference">РџРµСЂРµРєСЂРµСЃС‚РЅС‹Рµ СЃСЃС‹Р»РєРё <a class="el" href="_device_8h_source.html#l00085">Device::address_</a>, <a class="el" href="_device_8h_source.html#l00084">Device::name_</a>, <a class="el" href="_device_8h_source.html#l00086">Device::priority_</a>, <a class="el" href="_reserve_device_8h_source.html#l00030">standbyWait()</a> Рё <a class="el" href="_healthy_device_8h_source.html#l00027">HealthyDevice::uptime()</a>.</p>
 
 </div>
 </div>

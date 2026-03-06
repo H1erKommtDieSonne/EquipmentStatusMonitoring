@@ -10,44 +10,44 @@
 
 /**
  * @class SqliteStorage
- * @brief обёртка соединения с SQLite
- * Обеспечивает открытие/закрытие БД, транзакции и выполнение SQL
+ * @brief РѕР±С‘СЂС‚РєР° СЃРѕРµРґРёРЅРµРЅРёСЏ СЃ SQLite
+ * РћР±РµСЃРїРµС‡РёРІР°РµС‚ РѕС‚РєСЂС‹С‚РёРµ/Р·Р°РєСЂС‹С‚РёРµ Р‘Р”, С‚СЂР°РЅР·Р°РєС†РёРё Рё РІС‹РїРѕР»РЅРµРЅРёРµ SQL
  */
 class SqliteStorage {
 public:
     /**
-     * @brief Открыть/создать БД по пути @p path
-     * @param path Путь к файлу БД
+     * @brief РћС‚РєСЂС‹С‚СЊ/СЃРѕР·РґР°С‚СЊ Р‘Р” РїРѕ РїСѓС‚Рё @p path
+     * @param path РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ Р‘Р”
      */
     explicit SqliteStorage(const std::string& path);
 
-    /// @brief Деструктор, закрывает соединение
+    /// @brief Р”РµСЃС‚СЂСѓРєС‚РѕСЂ, Р·Р°РєСЂС‹РІР°РµС‚ СЃРѕРµРґРёРЅРµРЅРёРµ
     ~SqliteStorage();
 
     SqliteStorage(const SqliteStorage&) = delete;
     SqliteStorage& operator=(const SqliteStorage&) = delete;
 
-    /// @brief Доступ к сырому указателю sqlite3*
+    /// @brief Р”РѕСЃС‚СѓРї Рє СЃС‹СЂРѕРјСѓ СѓРєР°Р·Р°С‚РµР»СЋ sqlite3*
     sqlite3* handle() const noexcept { return db_; }
 
     /**
-     * @brief Выполнить SQL без выборки результатов
-     * @param sql Текст SQL-запроса
+     * @brief Р’С‹РїРѕР»РЅРёС‚СЊ SQL Р±РµР· РІС‹Р±РѕСЂРєРё СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+     * @param sql РўРµРєСЃС‚ SQL-Р·Р°РїСЂРѕСЃР°
      */
     void exec(const char* sql);
 
-    /// @brief Начать транзакцию
+    /// @brief РќР°С‡Р°С‚СЊ С‚СЂР°РЅР·Р°РєС†РёСЋ
     void begin();
 
-    /// @brief Зафиксировать транзакцию
+    /// @brief Р—Р°С„РёРєСЃРёСЂРѕРІР°С‚СЊ С‚СЂР°РЅР·Р°РєС†РёСЋ
     void commit();
 
-    /// @brief Откатить транзакцию
+    /// @brief РћС‚РєР°С‚РёС‚СЊ С‚СЂР°РЅР·Р°РєС†РёСЋ
     void rollback();
 
     /**
-     * @brief Применить SQL-миграцию из файла
-     * @param sqlPath Путь к .sql файлу
+     * @brief РџСЂРёРјРµРЅРёС‚СЊ SQL-РјРёРіСЂР°С†РёСЋ РёР· С„Р°Р№Р»Р°
+     * @param sqlPath РџСѓС‚СЊ Рє .sql С„Р°Р№Р»Сѓ
      */
     void applyMigrationFile(const std::string& sqlPath);
 

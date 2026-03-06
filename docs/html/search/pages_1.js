@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['be_20defined_3a_0',['The following macros can be defined:',['../D:/vsproj/sorokoumov/EquipmentStatusMonitoring/fix/include/gtest/internal/custom/README.md#autotoc_md2',1,'']]]
+  ['c_20уровень_0',['C++ уровень',['../md_docs_2pages_2architecture.html#autotoc_md1',1,'']]]
 ];

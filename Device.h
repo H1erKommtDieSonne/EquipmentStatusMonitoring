@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file Device.h
- * @brief Абстрактная база для всех устройств
+ * @brief РђР±СЃС‚СЂР°РєС‚РЅР°СЏ Р±Р°Р·Р° РґР»СЏ РІСЃРµС… СѓСЃС‚СЂРѕР№СЃС‚РІ
  */
 
 #include <cstdint>
@@ -13,9 +13,9 @@ enum class ServicePriority : uint8_t;
 
 /**
 * @class Device
-* @brief Абстрактная база для всех устройств
-* Содержит общие поля и чисто виртуальные методы для
-* определения состояния и переходов состояний в производных классах
+* @brief РђР±СЃС‚СЂР°РєС‚РЅР°СЏ Р±Р°Р·Р° РґР»СЏ РІСЃРµС… СѓСЃС‚СЂРѕР№СЃС‚РІ
+* РЎРѕРґРµСЂР¶РёС‚ РѕР±С‰РёРµ РїРѕР»СЏ Рё С‡РёСЃС‚Рѕ РІРёСЂС‚СѓР°Р»СЊРЅС‹Рµ РјРµС‚РѕРґС‹ РґР»СЏ
+* РѕРїСЂРµРґРµР»РµРЅРёСЏ СЃРѕСЃС‚РѕСЏРЅРёСЏ Рё РїРµСЂРµС…РѕРґРѕРІ СЃРѕСЃС‚РѕСЏРЅРёР№ РІ РїСЂРѕРёР·РІРѕРґРЅС‹С… РєР»Р°СЃСЃР°С…
 */
 class Device {
 public:
@@ -23,60 +23,60 @@ public:
     using Address = uint32_t;
 
     /**
-     * @brief Конструктор базового устройства
-     * @param name Имя устройства
-     * @param addr IPадрес устройства
-     * @param prio Приоритет обслуживания
+     * @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±Р°Р·РѕРІРѕРіРѕ СѓСЃС‚СЂРѕР№СЃС‚РІР°
+     * @param name РРјСЏ СѓСЃС‚СЂРѕР№СЃС‚РІР°
+     * @param addr IPР°РґСЂРµСЃ СѓСЃС‚СЂРѕР№СЃС‚РІР°
+     * @param prio РџСЂРёРѕСЂРёС‚РµС‚ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ
      */
     Device(std::string name, Address addr, ServicePriority prio)
         : name_(std::move(name)), address_(addr), priority_(prio) {
     }
 
-    /// @brief Виртуальный деструктор
+    /// @brief Р’РёСЂС‚СѓР°Р»СЊРЅС‹Р№ РґРµСЃС‚СЂСѓРєС‚РѕСЂ
     virtual ~Device() = default;
 
     /**
-     * @brief Полиморфное копирование
-     * @return Указатель на копию конкретного объекта-потомка.
+     * @brief РџРѕР»РёРјРѕСЂС„РЅРѕРµ РєРѕРїРёСЂРѕРІР°РЅРёРµ
+     * @return РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РєРѕРїРёСЋ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ РѕР±СЉРµРєС‚Р°-РїРѕС‚РѕРјРєР°.
      */
     virtual std::unique_ptr<Device> clone() const = 0;
 
-    /// @name Доступ к свойствам
+    /// @name Р”РѕСЃС‚СѓРї Рє СЃРІРѕР№СЃС‚РІР°Рј
     ///@{
-    /// @brief Имя устройства
+    /// @brief РРјСЏ СѓСЃС‚СЂРѕР№СЃС‚РІР°
     const std::string& name() const noexcept { return name_; }
-    /// @brief Адрес
+    /// @brief РђРґСЂРµСЃ
     Address            address() const noexcept { return address_; }
-    /// @brief Текущий приоритет
+    /// @brief РўРµРєСѓС‰РёР№ РїСЂРёРѕСЂРёС‚РµС‚
     ServicePriority    priority() const noexcept { return priority_; }
     ///@}
 
     /**
-     * @brief Установить приоритет обслуживания
+     * @brief РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РїСЂРёРѕСЂРёС‚РµС‚ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ
      */
     virtual void setPriority(ServicePriority p) { priority_ = p; }
 
     /**
-     * @brief Признак резервного устройства
-     * @details По умолчанию не резерв
+     * @brief РџСЂРёР·РЅР°Рє СЂРµР·РµСЂРІРЅРѕРіРѕ СѓСЃС‚СЂРѕР№СЃС‚РІР°
+     * @details РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РЅРµ СЂРµР·РµСЂРІ
      */
     virtual bool isReserve() const noexcept { return false; }
 
-    /// @brief Признак неисправности устройства
+    /// @brief РџСЂРёР·РЅР°Рє РЅРµРёСЃРїСЂР°РІРЅРѕСЃС‚Рё СѓСЃС‚СЂРѕР№СЃС‚РІР°
     virtual bool isFaulty() const noexcept = 0;
 
-    /// @brief Перевести устройство в состояние неисправно
+    /// @brief РџРµСЂРµРІРµСЃС‚Рё СѓСЃС‚СЂРѕР№СЃС‚РІРѕ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ РЅРµРёСЃРїСЂР°РІРЅРѕ
     virtual std::unique_ptr<Device> breakDown(std::string fault) const = 0;
 
-    /// @brief Ремонт устройства (создать новое исправное)
+    /// @brief Р РµРјРѕРЅС‚ СѓСЃС‚СЂРѕР№СЃС‚РІР° (СЃРѕР·РґР°С‚СЊ РЅРѕРІРѕРµ РёСЃРїСЂР°РІРЅРѕРµ)
     virtual std::unique_ptr<Device> repair(uint64_t uptimeAfterRepairSec) const = 0;
 
     
     virtual std::string toString() const;
 
     /**
-     * @brief Требуется ли обслуживание
-     * @return true если приоритет не равен нулю
+     * @brief РўСЂРµР±СѓРµС‚СЃСЏ Р»Рё РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ
+     * @return true РµСЃР»Рё РїСЂРёРѕСЂРёС‚РµС‚ РЅРµ СЂР°РІРµРЅ РЅСѓР»СЋ
      */
     bool requiresService() const noexcept { return priority_ != static_cast<ServicePriority>(0); }
 

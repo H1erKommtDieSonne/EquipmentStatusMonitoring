@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file DeviceCollection.h
- * @brief Полиморфная коллекция устройств без слайсинга.
+ * @brief РџРѕР»РёРјРѕСЂС„РЅР°СЏ РєРѕР»Р»РµРєС†РёСЏ СѓСЃС‚СЂРѕР№СЃС‚РІ Р±РµР· СЃР»Р°Р№СЃРёРЅРіР°.
  */
 
 #include <memory>
@@ -13,16 +13,16 @@
 
  /**
   * @class DeviceCollection
-  * @brief Хранилище устройств по указателям владения
+  * @brief РҐСЂР°РЅРёР»РёС‰Рµ СѓСЃС‚СЂРѕР№СЃС‚РІ РїРѕ СѓРєР°Р·Р°С‚РµР»СЏРј РІР»Р°РґРµРЅРёСЏ
   */
 class DeviceCollection {
 public:
     using Ptr = std::unique_ptr<Device>;
 
-    /// @brief Добавить готовый объект
+    /// @brief Р”РѕР±Р°РІРёС‚СЊ РіРѕС‚РѕРІС‹Р№ РѕР±СЉРµРєС‚
     void add(Ptr d) { devices_.emplace_back(std::move(d)); }
 
-    /// @brief Создать устройство на месте и вернуть ссылку
+    /// @brief РЎРѕР·РґР°С‚СЊ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ РЅР° РјРµСЃС‚Рµ Рё РІРµСЂРЅСѓС‚СЊ СЃСЃС‹Р»РєСѓ
     template <class T, class... Args>
     T& emplace(Args&&... args) {
         auto p = std::make_unique<T>(std::forward<Args>(args)...);
@@ -31,10 +31,10 @@ public:
         return ref;
     }
 
-    /// @brief Количество устройств
+    /// @brief РљРѕР»РёС‡РµСЃС‚РІРѕ СѓСЃС‚СЂРѕР№СЃС‚РІ
     std::size_t size() const noexcept { return devices_.size(); }
 
-    /// @brief Найти по адресу
+    /// @brief РќР°Р№С‚Рё РїРѕ Р°РґСЂРµСЃСѓ
     Device* find(Device::Address addr) const noexcept {
         auto it = std::find_if(devices_.begin(), devices_.end(),
             [&](auto const& up) { return up->address() == addr; });
@@ -42,7 +42,7 @@ public:
     }
 
     /**
-     * @brief Отсортировать по убыванию приоритета, затем по имени, затем по адресу
+     * @brief РћС‚СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ СѓР±С‹РІР°РЅРёСЋ РїСЂРёРѕСЂРёС‚РµС‚Р°, Р·Р°С‚РµРј РїРѕ РёРјРµРЅРё, Р·Р°С‚РµРј РїРѕ Р°РґСЂРµСЃСѓ
      */
     void sort_by_priority_desc() {
         std::sort(devices_.begin(), devices_.end(),
@@ -55,7 +55,7 @@ public:
             });
     }
 
-    /// @brief Доступ к контейнеру.
+    /// @brief Р”РѕСЃС‚СѓРї Рє РєРѕРЅС‚РµР№РЅРµСЂСѓ.
     const std::vector<Ptr>& data() const noexcept { return devices_; }
 
 private:

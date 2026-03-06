@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['gtest_5ferror_0',['GTEST_ERROR',['../namespacetesting_1_1internal.html#aa6255ef3b023c5b4e1a2198d887fb977a651e9cd2a904e0c8210536271b875f75',1,'testing::internal']]],
-  ['gtest_5ffatal_1',['GTEST_FATAL',['../namespacetesting_1_1internal.html#aa6255ef3b023c5b4e1a2198d887fb977a75063567740f6bf7da419b1b9197b12e',1,'testing::internal']]],
-  ['gtest_5finfo_2',['GTEST_INFO',['../namespacetesting_1_1internal.html#aa6255ef3b023c5b4e1a2198d887fb977aff315e0913fcda86fe4de882bf5e33e9',1,'testing::internal']]],
-  ['gtest_5fwarning_3',['GTEST_WARNING',['../namespacetesting_1_1internal.html#aa6255ef3b023c5b4e1a2198d887fb977a7a051bc2794f15a4bf0eab40562a304c',1,'testing::internal']]]
+  ['canceled_0',['Canceled',['../_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aa0e22fe7d45f8e5632a4abf369b24e29c',1,'Engine.h']]]
 ];

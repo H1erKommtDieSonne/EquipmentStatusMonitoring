@@ -5,7 +5,7 @@
 
 /**
 * @class ReserveDevice
-* @brief Исправное устройство, находящееся в резерве
+* @brief РСЃРїСЂР°РІРЅРѕРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ, РЅР°С…РѕРґСЏС‰РµРµСЃСЏ РІ СЂРµР·РµСЂРІРµ
 */
 class ReserveDevice : public HealthyDevice {
 public:
@@ -18,15 +18,15 @@ public:
         standbyWaitSec_(standbyWaitSec) {
     }
 
-    /// @brief Полиморфное копирование
+    /// @brief РџРѕР»РёРјРѕСЂС„РЅРѕРµ РєРѕРїРёСЂРѕРІР°РЅРёРµ
     std::unique_ptr<Device> clone() const override {
         return std::unique_ptr<Device>(new ReserveDevice(*this));
     }
 
-    /// @brief Резервное устройство
+    /// @brief Р РµР·РµСЂРІРЅРѕРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ
     bool isReserve() const noexcept override { return true; }
 
-    /// @brief Время ожидания ввода в работу
+    /// @brief Р’СЂРµРјСЏ РѕР¶РёРґР°РЅРёСЏ РІРІРѕРґР° РІ СЂР°Р±РѕС‚Сѓ
     uint64_t standbyWait() const noexcept { return standbyWaitSec_; }
 
     std::string toString() const override;

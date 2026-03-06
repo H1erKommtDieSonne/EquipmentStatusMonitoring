@@ -2,6 +2,7 @@ var class_healthy_device =
 [
     [ "HealthyDevice", "class_healthy_device.html#a58f8cad05ec43dc6c85f56fb2addd222", null ],
     [ "breakDown", "class_healthy_device.html#aa41a06ba46cb2451986ae55264ef2bdb", null ],
+    [ "clone", "class_healthy_device.html#a277b92626a88dfcd72564d0da9676f93", null ],
     [ "isFaulty", "class_healthy_device.html#a15f8a87fd812c6369f9ac64c49d5188d", null ],
     [ "repair", "class_healthy_device.html#a8aae31cc464d2a277f4c73c2ef8ee7d2", null ],
     [ "setPriority", "class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b", null ],

@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: Класс Engine</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">Иерархия устройств</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine.html','','class_engine-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс Engine</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Единая точка входа: миграции, операции и выборки для Python/UI Внутри содержит <a class="el" href="class_sqlite_storage.html" title="обёртка соединения с SQLite Обеспечивает открытие/закрытие БД, транзакции и выполнение SQL">SqliteStorage</a> и использует репозитории  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_engine_8h_source.html">Engine.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a040637fd3423477150fec03d3718eeb3" id="r_a040637fd3423477150fec03d3718eeb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a040637fd3423477150fec03d3718eeb3">Engine</a> (const std::string &amp;db_path)</td></tr>
+<tr class="memdesc:a040637fd3423477150fec03d3718eeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть/создать БД по пути  <br /></td></tr>
+<tr class="memitem:ab2962cf2a995ad113aa31965625093ef" id="r_ab2962cf2a995ad113aa31965625093ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2962cf2a995ad113aa31965625093ef">migrate</a> ()</td></tr>
+<tr class="memdesc:ab2962cf2a995ad113aa31965625093ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применить встроенные миграции (создать таблицы)  <br /></td></tr>
+<tr class="memitem:a67dc55277cb023ec87b94e1619ac1c74" id="r_a67dc55277cb023ec87b94e1619ac1c74"><td class="memItemLeft" align="right" valign="top">std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67dc55277cb023ec87b94e1619ac1c74">add_worker</a> (const std::string &amp;name, int max_jobs, const std::string &amp;skill)</td></tr>
+<tr class="memitem:a01cf7d5d9f73b89ab65aa1f2acb4392b" id="r_a01cf7d5d9f73b89ab65aa1f2acb4392b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="_engine_8h.html#struct_worker_flat">WorkerFlat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01cf7d5d9f73b89ab65aa1f2acb4392b">list_workers</a> () const</td></tr>
+<tr class="memitem:ac42563966594cd720cf94ce9360e289d" id="r_ac42563966594cd720cf94ce9360e289d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac42563966594cd720cf94ce9360e289d">upsert_device</a> (const <a class="el" href="class_device.html">Device</a> &amp;d)</td></tr>
+<tr class="memdesc:ac42563966594cd720cf94ce9360e289d"><td class="mdescLeft">&#160;</td><td class="mdescRight">upsert любого устройства из иерархии <a class="el" href="class_device.html" title="Абстрактная база для всех устройств Содержит общие поля и чисто виртуальные методы для определения со...">Device</a>  <br /></td></tr>
+<tr class="memitem:af109a3bcce34864db5b04296df703613" id="r_af109a3bcce34864db5b04296df703613"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="_engine_8h.html#struct_device_row">DeviceRow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af109a3bcce34864db5b04296df703613">list_devices</a> () const</td></tr>
+<tr class="memdesc:af109a3bcce34864db5b04296df703613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Плоская выборка устройств  <br /></td></tr>
+<tr class="memitem:aaee27b9ef689cfb9e1d6babfc11a5188" id="r_aaee27b9ef689cfb9e1d6babfc11a5188"><td class="memItemLeft" align="right" valign="top">std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaee27b9ef689cfb9e1d6babfc11a5188">breakdown</a> (std::uint32_t address, const std::string &amp;fault)</td></tr>
+<tr class="memdesc:aaee27b9ef689cfb9e1d6babfc11a5188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зафиксировать поломку  <br /></td></tr>
+<tr class="memitem:a3f6326568da93f5b19dc367299a62b50" id="r_a3f6326568da93f5b19dc367299a62b50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6326568da93f5b19dc367299a62b50">start_repair</a> (std::int64_t job_id, std::int64_t worker_id)</td></tr>
+<tr class="memdesc:a3f6326568da93f5b19dc367299a62b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начать ремонт  <br /></td></tr>
+<tr class="memitem:aa08dc778e7caa767b677872f667700b6" id="r_aa08dc778e7caa767b677872f667700b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa08dc778e7caa767b677872f667700b6">finish_repair</a> (std::int64_t job_id, std::uint64_t uptime_after_sec)</td></tr>
+<tr class="memdesc:aa08dc778e7caa767b677872f667700b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Завершить ремонт  <br /></td></tr>
+<tr class="memitem:acdd8b4e8fb19bbd25fd130b2eeff9157" id="r_acdd8b4e8fb19bbd25fd130b2eeff9157"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="_engine_8h.html#struct_job_row">JobRow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdd8b4e8fb19bbd25fd130b2eeff9157">list_jobs</a> (std::optional&lt; <a class="el" href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5a">JobStatus</a> &gt; status=std::nullopt) const</td></tr>
+<tr class="memdesc:acdd8b4e8fb19bbd25fd130b2eeff9157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выборка задач.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Единая точка входа: миграции, операции и выборки для Python/UI Внутри содержит <a class="el" href="class_sqlite_storage.html" title="обёртка соединения с SQLite Обеспечивает открытие/закрытие БД, транзакции и выполнение SQL">SqliteStorage</a> и использует репозитории </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8h_source.html">Engine.h</a> строка <a class="el" href="_engine_8h_source.html#l00070">70</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a040637fd3423477150fec03d3718eeb3" name="a040637fd3423477150fec03d3718eeb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040637fd3423477150fec03d3718eeb3">&#9670;&#160;</a></span>Engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine::Engine </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>db_path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Открыть/создать БД по пути </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00012">12</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a67dc55277cb023ec87b94e1619ac1c74" name="a67dc55277cb023ec87b94e1619ac1c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67dc55277cb023ec87b94e1619ac1c74">&#9670;&#160;</a></span>add_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::int64_t Engine::add_worker </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>max_jobs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>skill</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00048">48</a></p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="aaee27b9ef689cfb9e1d6babfc11a5188" name="aaee27b9ef689cfb9e1d6babfc11a5188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee27b9ef689cfb9e1d6babfc11a5188">&#9670;&#160;</a></span>breakdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::int64_t Engine::breakdown </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>fault</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Зафиксировать поломку </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00094">94</a></p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="aa08dc778e7caa767b677872f667700b6" name="aa08dc778e7caa767b677872f667700b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08dc778e7caa767b677872f667700b6">&#9670;&#160;</a></span>finish_repair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine::finish_repair </td>
+          <td>(</td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>job_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint64_t</td>          <td class="paramname"><span class="paramname"><em>uptime_after_sec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Завершить ремонт </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00152">152</a></p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="af109a3bcce34864db5b04296df703613" name="af109a3bcce34864db5b04296df703613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af109a3bcce34864db5b04296df703613">&#9670;&#160;</a></span>list_devices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="_engine_8h.html#struct_device_row">DeviceRow</a> &gt; Engine::list_devices </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Плоская выборка устройств </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00063">63</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_engine_8h_source.html#l00031">DeviceRow::address</a>, <a class="el" href="_engine_8h_source.html#l00034">DeviceRow::is_faulty</a>, <a class="el" href="_engine_8h_source.html#l00035">DeviceRow::is_reserve</a>, <a class="el" href="_engine_8h_source.html#l00032">DeviceRow::name</a> и <a class="el" href="_engine_8h_source.html#l00033">DeviceRow::priority</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00066">engine_list_devices()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="acdd8b4e8fb19bbd25fd130b2eeff9157" name="acdd8b4e8fb19bbd25fd130b2eeff9157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd8b4e8fb19bbd25fd130b2eeff9157">&#9670;&#160;</a></span>list_jobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="_engine_8h.html#struct_job_row">JobRow</a> &gt; Engine::list_jobs </td>
+          <td>(</td>
+          <td class="paramtype">std::optional&lt; <a class="el" href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5a">JobStatus</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>status</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::nullopt</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выборка задач. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00198">198</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_engine_8h_source.html#l00060">JobRow::created_at</a>, <a class="el" href="_engine_8h_source.html#l00056">JobRow::device_address</a>, <a class="el" href="_engine_8h_source.html#l00058">JobRow::fault</a>, <a class="el" href="_engine_8h_source.html#l00062">JobRow::finished_at</a>, <a class="el" href="_engine_8h_source.html#l00055">JobRow::id</a>, <a class="el" href="_engine_8h_source.html#l00061">JobRow::started_at</a>, <a class="el" href="_engine_8h_source.html#l00059">JobRow::status</a> и <a class="el" href="_engine_8h_source.html#l00057">JobRow::worker_id</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00084">engine_list_jobs()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="a01cf7d5d9f73b89ab65aa1f2acb4392b" name="a01cf7d5d9f73b89ab65aa1f2acb4392b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01cf7d5d9f73b89ab65aa1f2acb4392b">&#9670;&#160;</a></span>list_workers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="_engine_8h.html#struct_worker_flat">WorkerFlat</a> &gt; Engine::list_workers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00051">51</a></p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00049">engine_list_workers()</a> и <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a>.</p>
+
+</div>
+</div>
+<a id="ab2962cf2a995ad113aa31965625093ef" name="ab2962cf2a995ad113aa31965625093ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2962cf2a995ad113aa31965625093ef">&#9670;&#160;</a></span>migrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine::migrate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Применить встроенные миграции (создать таблицы) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00016">16</a></p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="a3f6326568da93f5b19dc367299a62b50" name="a3f6326568da93f5b19dc367299a62b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6326568da93f5b19dc367299a62b50">&#9670;&#160;</a></span>start_repair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine::start_repair </td>
+          <td>(</td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>job_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::int64_t</td>          <td class="paramname"><span class="paramname"><em>worker_id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Начать ремонт </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00135">135</a></p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="ac42563966594cd720cf94ce9360e289d" name="ac42563966594cd720cf94ce9360e289d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42563966594cd720cf94ce9360e289d">&#9670;&#160;</a></span>upsert_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine::upsert_device </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_device.html">Device</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>upsert любого устройства из иерархии <a class="el" href="class_device.html" title="Абстрактная база для всех устройств Содержит общие поля и чисто виртуальные методы для определения со...">Device</a> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_engine_8cpp_source.html">Engine.cpp</a> строка <a class="el" href="_engine_8cpp_source.html#l00059">59</a></p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00037">engine_upsert_device()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="main_8cpp_source.html#l00280">TEST()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>esm/<a class="el" href="_engine_8h_source.html">Engine.h</a></li>
+<li>esm/<a class="el" href="_engine_8cpp_source.html">Engine.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_engine.html">Engine</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

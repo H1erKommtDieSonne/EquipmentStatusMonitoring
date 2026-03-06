@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file ServicePriority.h
- * @brief Приоритет обслуживания устройств
+ * @brief РџСЂРёРѕСЂРёС‚РµС‚ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ СѓСЃС‚СЂРѕР№СЃС‚РІ
  */
 
 #include <cstdint>
@@ -10,19 +10,19 @@
 
  /**
   * @enum ServicePriority
-  * @brief Приоритеты обслуживания
+  * @brief РџСЂРёРѕСЂРёС‚РµС‚С‹ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ
   *
-  * Порядок важности High > Low > None
+  * РџРѕСЂСЏРґРѕРє РІР°Р¶РЅРѕСЃС‚Рё High > Low > None
   */
 enum class ServicePriority : std::uint8_t {
-    None = 0,  ///< Обслуживание не требуется
-    Low = 1,  ///< Низкий приоритет
-    High = 2   ///< Высокий приоритет
+    None = 0,  ///< РћР±СЃР»СѓР¶РёРІР°РЅРёРµ РЅРµ С‚СЂРµР±СѓРµС‚СЃСЏ
+    Low = 1,  ///< РќРёР·РєРёР№ РїСЂРёРѕСЂРёС‚РµС‚
+    High = 2   ///< Р’С‹СЃРѕРєРёР№ РїСЂРёРѕСЂРёС‚РµС‚
 };
 
 /**
- * @brief Численный порядок для сравнения и сортировки
- * @return 3 для High, 2 для Low, 1 для None
+ * @brief Р§РёСЃР»РµРЅРЅС‹Р№ РїРѕСЂСЏРґРѕРє РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ Рё СЃРѕСЂС‚РёСЂРѕРІРєРё
+ * @return 3 РґР»СЏ High, 2 РґР»СЏ Low, 1 РґР»СЏ None
  */
 constexpr int priority_order(ServicePriority p) noexcept {
     switch (p) {
@@ -34,7 +34,7 @@ constexpr int priority_order(ServicePriority p) noexcept {
 }
 
 /**
- * @brief Человекочитаемая строка для приоритета
+ * @brief Р§РµР»РѕРІРµРєРѕС‡РёС‚Р°РµРјР°СЏ СЃС‚СЂРѕРєР° РґР»СЏ РїСЂРёРѕСЂРёС‚РµС‚Р°
  */
 inline std::string to_string(ServicePriority p) {
     switch (p) {
@@ -46,7 +46,7 @@ inline std::string to_string(ServicePriority p) {
 }
 
 /**
- * @brief Сравнение приоритетов: High > Low > None
+ * @brief РЎСЂР°РІРЅРµРЅРёРµ РїСЂРёРѕСЂРёС‚РµС‚РѕРІ: High > Low > None
  */
 inline std::strong_ordering operator<=>(ServicePriority lhs, ServicePriority rhs) noexcept {
     const int a = priority_order(lhs);

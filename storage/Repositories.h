@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file Repositories.h
- * @brief Интерфейсы репозиториев поверх SqliteStorage
+ * @brief РРЅС‚РµСЂС„РµР№СЃС‹ СЂРµРїРѕР·РёС‚РѕСЂРёРµРІ РїРѕРІРµСЂС… SqliteStorage
  */
 
 
@@ -20,16 +20,16 @@
 
 /**
  * @class DeviceRepository
- * @brief CRUD-операции для таблицы devices
+ * @brief CRUD-РѕРїРµСЂР°С†РёРё РґР»СЏ С‚Р°Р±Р»РёС†С‹ devices
  */
 class DeviceRepository {
 public:
     explicit DeviceRepository(SqliteStorage& s) : st_(s) {}
 
-    /// @brief Вставка/обновление устройства
+    /// @brief Р’СЃС‚Р°РІРєР°/РѕР±РЅРѕРІР»РµРЅРёРµ СѓСЃС‚СЂРѕР№СЃС‚РІР°
     void upsert(const Device& d);
 
-    /// @brief Загрузка всех адресов устройств
+    /// @brief Р—Р°РіСЂСѓР·РєР° РІСЃРµС… Р°РґСЂРµСЃРѕРІ СѓСЃС‚СЂРѕР№СЃС‚РІ
     std::vector<Device::Address> listAddresses() const;
 
 private:

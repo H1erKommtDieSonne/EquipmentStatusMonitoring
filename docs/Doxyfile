@@ -5,11 +5,14 @@ PROJECT_BRIEF          = "Иерархия устройств"
 OUTPUT_DIRECTORY       = docs
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = Russian
-INPUT                  = . ./README.md
-FILE_PATTERNS          = *.h *.hpp *.cpp *.md
+INPUT                  = include src docs/pages README.md
+FILE_PATTERNS          = *.h *.hpp *.c *.cpp *.md
 RECURSIVE              = YES
 INPUT_ENCODING         = UTF-8
-EXCLUDE_PATTERNS       = */build/* */out/* */.git/*
+MARKDOWN_SUPPORT       = YES
+EXCLUDE                = packages build out .git dist docs/html sqlite storage migrations tests
+SEARCH_INCLUDES        = NO
+EXCLUDE_PATTERNS       = */build/* */out/* */.git/* */dist/* */docs/html/* */sqlite/* */storage/* */migrations/* */packages/* */tests/*
 
 EXTRACT_ALL            = YES
 EXTRACT_PRIVATE        = NO
@@ -27,13 +30,14 @@ SOURCE_BROWSER         = YES
 INLINE_SOURCES         = NO
 REFERENCES_RELATION    = YES
 REFERENCED_BY_RELATION = YES
-CALL_GRAPH             = NO
-CALLER_GRAPH           = NO
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
 
 
 HAVE_DOT               = YES
 DOT_NUM_THREADS        = 2
 CLASS_GRAPH            = YES
+CLASS_DIAGRAMS         = YES
 COLLABORATION_GRAPH    = NO
 GROUP_GRAPHS           = YES
 UML_LOOK               = YES
@@ -54,4 +58,4 @@ WARN_IF_UNDOCUMENTED   = NO
 WARN_IF_DOC_ERROR      = YES
 
 
-USE_MDFILE_AS_MAINPAGE = README.md
+USE_MDFILE_AS_MAINPAGE = docs/pages/index.md

@@ -1,7 +1,7 @@
 #pragma once
 /**
  * @file WorkerRepository.h
- * @brief CRUD для таблицы workers
+ * @brief CRUD РґР»СЏ С‚Р°Р±Р»РёС†С‹ workers
  */
 
 #include "SqliteStorage.h"
@@ -11,7 +11,7 @@
 #include <vector>
 #include <cstdint>
 
- /// @brief Модель работника
+ /// @brief РњРѕРґРµР»СЊ СЂР°Р±РѕС‚РЅРёРєР°
 struct WorkerRow {
     std::int64_t id{};
     std::string  name;
@@ -21,16 +21,16 @@ struct WorkerRow {
 
 /**
  * @class WorkerRepository
- * @brief Добавление и выборка работников.
+ * @brief Р”РѕР±Р°РІР»РµРЅРёРµ Рё РІС‹Р±РѕСЂРєР° СЂР°Р±РѕС‚РЅРёРєРѕРІ.
  */
 class WorkerRepository {
 public:
     explicit WorkerRepository(SqliteStorage& s) : st_(s) {}
 
-    /// @brief Вставить работника и вернуть его id
+    /// @brief Р’СЃС‚Р°РІРёС‚СЊ СЂР°Р±РѕС‚РЅРёРєР° Рё РІРµСЂРЅСѓС‚СЊ РµРіРѕ id
     std::int64_t insert(const std::string& name, int max_jobs, const std::string& skill);
 
-    /// @brief Получить всех работников
+    /// @brief РџРѕР»СѓС‡РёС‚СЊ РІСЃРµС… СЂР°Р±РѕС‚РЅРёРєРѕРІ
     std::vector<WorkerRow> list() const;
 
 private:

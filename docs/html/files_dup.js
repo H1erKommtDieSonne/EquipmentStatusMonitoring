@@ -1,7 +1,10 @@
 var files_dup =
 [
-    [ "fix", "dir_b4d3f8626c96dc550d2abab171042708.html", "dir_b4d3f8626c96dc550d2abab171042708" ],
-    [ "tests", "dir_59425e443f801f1f2fd8bbe4959a3ccf.html", "dir_59425e443f801f1f2fd8bbe4959a3ccf" ],
+    [ "bindings", "dir_00240dc4a1a4845ae58be68fbad02d02.html", "dir_00240dc4a1a4845ae58be68fbad02d02" ],
+    [ "docs", "dir_49e56c817e5e54854c35e136979f97ca.html", "dir_49e56c817e5e54854c35e136979f97ca" ],
+    [ "esm", "dir_e6e4617caf204a700b48ba71ad841fd7.html", "dir_e6e4617caf204a700b48ba71ad841fd7" ],
+    [ "python", "dir_7837fde3ab9c1fb2fc5be7b717af8d79.html", "dir_7837fde3ab9c1fb2fc5be7b717af8d79" ],
+    [ "storage", "dir_70f20ecf11358dff00a0daf546d3147e.html", "dir_70f20ecf11358dff00a0daf546d3147e" ],
     [ "Device.cpp", "_device_8cpp.html", null ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
     [ "DeviceCollection.h", "_device_collection_8h.html", "_device_collection_8h" ],

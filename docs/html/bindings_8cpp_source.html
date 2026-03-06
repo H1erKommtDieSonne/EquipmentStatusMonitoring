@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EquipmentStatusMonitoring: Исходный файл bindings/bindings.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EquipmentStatusMonitoring
+   </div>
+   <div id="projectbrief">Иерархия устройств</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('bindings_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bindings.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bindings_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;pybind11/pybind11.h&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;pybind11/stl.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_engine_8h.html">../esm/Engine.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_faulty_device_8h.html">../FaultyDevice.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_healthy_device_8h.html">../HealthyDevice.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_reserve_device_8h.html">../ReserveDevice.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_faulty_device_ex_8h.html">../FaultyDeviceEx.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_device_8h.html">../Device.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_service_priority_8h.html">../ServicePriority.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>py = pybind11;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="bindings_8cpp.html#a369c24ece84c7ac6c6b276c7be81bb13">   14</a></span><a class="code hl_function" href="bindings_8cpp.html#a369c24ece84c7ac6c6b276c7be81bb13">PYBIND11_MODULE</a>(equipment_status_monitoring, m) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    m.def(<span class="stringliteral">&quot;version&quot;</span>, []() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;0.1.0&quot;</span>; });</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    m.doc() = <span class="stringliteral">&quot;Equipment Status Monitoring bindings&quot;</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">// ===== Enums =====</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    py::enum_&lt;ServicePriority&gt;(m, <span class="stringliteral">&quot;ServicePriority&quot;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        .value(<span class="stringliteral">&quot;None&quot;</span>, <a class="code hl_enumvalue" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514cea6adf97f83acf6453d4a6a4b1070f3754">ServicePriority::None</a>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        .value(<span class="stringliteral">&quot;Low&quot;</span>, <a class="code hl_enumvalue" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514cea28d0edd045e05cf5af64e35ae0c4c6ef">ServicePriority::Low</a>)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        .value(<span class="stringliteral">&quot;High&quot;</span>, <a class="code hl_enumvalue" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514cea655d20c1ca69519ca647684edbb2db35">ServicePriority::High</a>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        .export_values();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    py::enum_&lt;JobStatus&gt;(m, <span class="stringliteral">&quot;JobStatus&quot;</span>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        .value(<span class="stringliteral">&quot;Open&quot;</span>, <a class="code hl_enumvalue" href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aac3bf447eabe632720a3aa1a7ce401274">JobStatus::Open</a>)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        .value(<span class="stringliteral">&quot;InProgress&quot;</span>, <a class="code hl_enumvalue" href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aa12d868c18cb29bf58f02b504be9033fd">JobStatus::InProgress</a>)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        .value(<span class="stringliteral">&quot;Done&quot;</span>, <a class="code hl_enumvalue" href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aaf92965e2c8a7afb3c1b9a5c09a263636">JobStatus::Done</a>)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        .value(<span class="stringliteral">&quot;Canceled&quot;</span>, <a class="code hl_enumvalue" href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aa0e22fe7d45f8e5632a4abf369b24e29c">JobStatus::Canceled</a>)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        .export_values();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// ===== Device base =====</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    py::class_&lt;Device&gt;(m, <span class="stringliteral">&quot;Device&quot;</span>)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        .def_property_readonly(<span class="stringliteral">&quot;name&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">Device::name</a>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        .def_property_readonly(<span class="stringliteral">&quot;address&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#a2759d53349562eae5db62db65be0d3de">Device::address</a>)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        .def_property_readonly(<span class="stringliteral">&quot;priority&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#a800f235ab9c35a46c73b3ed9c795f72f">Device::priority</a>)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        .def(<span class="stringliteral">&quot;set_priority&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#a5b07f51b3ff02aca1d62dd343fad895a">Device::setPriority</a>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        .def(<span class="stringliteral">&quot;is_faulty&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#a4248c8fb651061680b0a3625d0ab938c">Device::isFaulty</a>)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        .def(<span class="stringliteral">&quot;is_reserve&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#a30033f9b2b3ae28b5bc96f2213333071">Device::isReserve</a>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        .def(<span class="stringliteral">&quot;requires_service&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#ab7ee8c2ffdaa8f564fbfd9fdd164b6cf">Device::requiresService</a>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        .def(<span class="stringliteral">&quot;__str__&quot;</span>, &amp;<a class="code hl_function" href="class_device.html#a8c80a5f0c068a595639a06a4aa76bc51">Device::toString</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// ===== HealthyDevice =====</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    py::class_&lt;HealthyDevice, Device&gt;(m, <span class="stringliteral">&quot;HealthyDevice&quot;</span>)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        .def(py::init&lt;std::string, Device::Address, ServicePriority, uint64_t&gt;(),</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;address&quot;</span>), py::arg(<span class="stringliteral">&quot;priority&quot;</span>), py::arg(<span class="stringliteral">&quot;uptime_sec&quot;</span>))</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        .def_property_readonly(<span class="stringliteral">&quot;uptime&quot;</span>, &amp;<a class="code hl_function" href="class_healthy_device.html#a01e6a0696dcaccd7bf05dfb4bcacb727">HealthyDevice::uptime</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// ===== ReserveDevice =====</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    py::class_&lt;ReserveDevice, HealthyDevice&gt;(m, <span class="stringliteral">&quot;ReserveDevice&quot;</span>)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        .def(py::init&lt;std::string, Device::Address, ServicePriority, uint64_t, uint64_t&gt;(),</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;address&quot;</span>), py::arg(<span class="stringliteral">&quot;priority&quot;</span>),</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            py::arg(<span class="stringliteral">&quot;uptime_sec&quot;</span>), py::arg(<span class="stringliteral">&quot;standby_wait_sec&quot;</span>))</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        .def_property_readonly(<span class="stringliteral">&quot;standby_wait&quot;</span>, &amp;<a class="code hl_function" href="class_reserve_device.html#a5f89844eec159d18b1248c144476aaf4">ReserveDevice::standbyWait</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// ===== FaultyDeviceEx =====</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    py::class_&lt;FaultyDeviceEx, Device&gt;(m, <span class="stringliteral">&quot;FaultyDeviceEx&quot;</span>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        .def(py::init&lt;std::string, Device::Address, ServicePriority, std::string&gt;(),</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;address&quot;</span>), py::arg(<span class="stringliteral">&quot;priority&quot;</span>), py::arg(<span class="stringliteral">&quot;fault&quot;</span>))</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        .def_property_readonly(<span class="stringliteral">&quot;fault&quot;</span>, &amp;<a class="code hl_function" href="class_faulty_device_ex.html#aa0afc30cceaae0c8bf5428988fc0b545">FaultyDeviceEx::fault_description</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// ===== POD structs =====</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    py::class_&lt;DeviceRow&gt;(m, <span class="stringliteral">&quot;DeviceRow&quot;</span>)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        .def_readonly(<span class="stringliteral">&quot;address&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a4fbc9398d1db14ee977288599043ad0c">DeviceRow::address</a>)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        .def_readonly(<span class="stringliteral">&quot;name&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a8bdb20bec7dbdeb7beb1c1f5137f97d3">DeviceRow::name</a>)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        .def_readonly(<span class="stringliteral">&quot;priority&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#abce4808bdc87aa790d5a68ac65ad16c2">DeviceRow::priority</a>)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        .def_readonly(<span class="stringliteral">&quot;is_faulty&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a8f6c1317e6e080dad04fd8706bbda068">DeviceRow::is_faulty</a>)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        .def_readonly(<span class="stringliteral">&quot;is_reserve&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a9006c24ce7932194e231fc32bbaee9b5">DeviceRow::is_reserve</a>)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        .def_readonly(<span class="stringliteral">&quot;uptime_sec&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a9d9eded91471eaf92c829904149fc5d5">DeviceRow::uptime_sec</a>)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        .def_readonly(<span class="stringliteral">&quot;standby_wait_sec&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#ace1ec70a9e2628449e19ed801ab4b518">DeviceRow::standby_wait_sec</a>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    py::class_&lt;WorkerFlat&gt;(m, <span class="stringliteral">&quot;WorkerFlat&quot;</span>)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        .def_readonly(<span class="stringliteral">&quot;id&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a46d5120946ac7e2e3dad1fdf3c9aa667">WorkerFlat::id</a>)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        .def_readonly(<span class="stringliteral">&quot;name&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#ac32c81f3a1fe6cf70edf843c0f2a425d">WorkerFlat::name</a>)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        .def_readonly(<span class="stringliteral">&quot;max_jobs&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#adbec72506f898cc4015b391c090d18ca">WorkerFlat::max_jobs</a>)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        .def_readonly(<span class="stringliteral">&quot;skill&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a611cdad191ea6df447c7de820ceb8975">WorkerFlat::skill</a>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    py::class_&lt;JobRow&gt;(m, <span class="stringliteral">&quot;JobRow&quot;</span>)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        .def_readonly(<span class="stringliteral">&quot;id&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#aac726387c65516826e4c4bb3ee486ea8">JobRow::id</a>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        .def_readonly(<span class="stringliteral">&quot;device_address&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#aab4f826251adc2f6786c92bf99e839bf">JobRow::device_address</a>)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        .def_readonly(<span class="stringliteral">&quot;worker_id&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#aa48fe99d3ab70cae93c6109b42f265ec">JobRow::worker_id</a>)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        .def_readonly(<span class="stringliteral">&quot;fault&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a2143379dd966b51889f0adb51ecbb14d">JobRow::fault</a>)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        .def_readonly(<span class="stringliteral">&quot;status&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a9e7108c015c74423563a1d1f56fd5caa">JobRow::status</a>)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        .def_readonly(<span class="stringliteral">&quot;created_at&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a23c8276c8d2a6792ce26bb6a4b0367c4">JobRow::created_at</a>)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        .def_readonly(<span class="stringliteral">&quot;started_at&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#a67a57c4961801f1d3b4b8751e77da812">JobRow::started_at</a>)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        .def_readonly(<span class="stringliteral">&quot;finished_at&quot;</span>, &amp;<a class="code hl_variable" href="_engine_8h.html#ab7c4c900d85819b369380151b310d952">JobRow::finished_at</a>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// ===== Engine =====</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    py::class_&lt;Engine&gt;(m, <span class="stringliteral">&quot;Engine&quot;</span>)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        .def(py::init&lt;const std::string&amp;&gt;(), py::arg(<span class="stringliteral">&quot;db_path&quot;</span>))</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        .def(<span class="stringliteral">&quot;migrate&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#ab2962cf2a995ad113aa31965625093ef">Engine::migrate</a>)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="comment">// workers</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        .def(<span class="stringliteral">&quot;add_worker&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#a67dc55277cb023ec87b94e1619ac1c74">Engine::add_worker</a>,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;max_jobs&quot;</span>), py::arg(<span class="stringliteral">&quot;skill&quot;</span>))</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        .def(<span class="stringliteral">&quot;list_workers&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#a01cf7d5d9f73b89ab65aa1f2acb4392b">Engine::list_workers</a>)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">// devices</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        .def(<span class="stringliteral">&quot;upsert_device&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#ac42563966594cd720cf94ce9360e289d">Engine::upsert_device</a>)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        .def(<span class="stringliteral">&quot;list_devices&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#af109a3bcce34864db5b04296df703613">Engine::list_devices</a>)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="comment">// jobs</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        .def(<span class="stringliteral">&quot;breakdown&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#aaee27b9ef689cfb9e1d6babfc11a5188">Engine::breakdown</a>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        .def(<span class="stringliteral">&quot;start_repair&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#a3f6326568da93f5b19dc367299a62b50">Engine::start_repair</a>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        .def(<span class="stringliteral">&quot;finish_repair&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#aa08dc778e7caa767b677872f667700b6">Engine::finish_repair</a>)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        .def(<span class="stringliteral">&quot;list_jobs&quot;</span>, &amp;<a class="code hl_function" href="class_engine.html#acdd8b4e8fb19bbd25fd130b2eeff9157">Engine::list_jobs</a>,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            py::arg(<span class="stringliteral">&quot;status&quot;</span>) = std::nullopt);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+</div>
+<div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div><div class="ttdoc">Абстрактная база для всех устройств</div></div>
+<div class="ttc" id="a_engine_8h_html"><div class="ttname"><a href="_engine_8h.html">Engine.h</a></div><div class="ttdoc">Публичный фасад библиотеки ESM: БД, операции и выборки для UI.</div></div>
+<div class="ttc" id="a_engine_8h_html_a2143379dd966b51889f0adb51ecbb14d"><div class="ttname"><a href="_engine_8h.html#a2143379dd966b51889f0adb51ecbb14d">JobRow::fault</a></div><div class="ttdeci">std::string fault</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00058">Engine.h:58</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a23c8276c8d2a6792ce26bb6a4b0367c4"><div class="ttname"><a href="_engine_8h.html#a23c8276c8d2a6792ce26bb6a4b0367c4">JobRow::created_at</a></div><div class="ttdeci">std::int64_t created_at</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00060">Engine.h:60</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a46d5120946ac7e2e3dad1fdf3c9aa667"><div class="ttname"><a href="_engine_8h.html#a46d5120946ac7e2e3dad1fdf3c9aa667">WorkerFlat::id</a></div><div class="ttdeci">std::int64_t id</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00045">Engine.h:45</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a4fbc9398d1db14ee977288599043ad0c"><div class="ttname"><a href="_engine_8h.html#a4fbc9398d1db14ee977288599043ad0c">DeviceRow::address</a></div><div class="ttdeci">std::uint32_t address</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00031">Engine.h:31</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a611cdad191ea6df447c7de820ceb8975"><div class="ttname"><a href="_engine_8h.html#a611cdad191ea6df447c7de820ceb8975">WorkerFlat::skill</a></div><div class="ttdeci">std::string skill</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00048">Engine.h:48</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a67a57c4961801f1d3b4b8751e77da812"><div class="ttname"><a href="_engine_8h.html#a67a57c4961801f1d3b4b8751e77da812">JobRow::started_at</a></div><div class="ttdeci">std::optional&lt; std::int64_t &gt; started_at</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00061">Engine.h:61</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a85f90fe510b7535284a919aa6b20ef5aa0e22fe7d45f8e5632a4abf369b24e29c"><div class="ttname"><a href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aa0e22fe7d45f8e5632a4abf369b24e29c">JobStatus::Canceled</a></div><div class="ttdeci">@ Canceled</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00025">Engine.h:25</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a85f90fe510b7535284a919aa6b20ef5aa12d868c18cb29bf58f02b504be9033fd"><div class="ttname"><a href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aa12d868c18cb29bf58f02b504be9033fd">JobStatus::InProgress</a></div><div class="ttdeci">@ InProgress</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00025">Engine.h:25</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a85f90fe510b7535284a919aa6b20ef5aac3bf447eabe632720a3aa1a7ce401274"><div class="ttname"><a href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aac3bf447eabe632720a3aa1a7ce401274">JobStatus::Open</a></div><div class="ttdeci">@ Open</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00025">Engine.h:25</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a85f90fe510b7535284a919aa6b20ef5aaf92965e2c8a7afb3c1b9a5c09a263636"><div class="ttname"><a href="_engine_8h.html#a85f90fe510b7535284a919aa6b20ef5aaf92965e2c8a7afb3c1b9a5c09a263636">JobStatus::Done</a></div><div class="ttdeci">@ Done</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00025">Engine.h:25</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a8bdb20bec7dbdeb7beb1c1f5137f97d3"><div class="ttname"><a href="_engine_8h.html#a8bdb20bec7dbdeb7beb1c1f5137f97d3">DeviceRow::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00032">Engine.h:32</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a8f6c1317e6e080dad04fd8706bbda068"><div class="ttname"><a href="_engine_8h.html#a8f6c1317e6e080dad04fd8706bbda068">DeviceRow::is_faulty</a></div><div class="ttdeci">bool is_faulty</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00034">Engine.h:34</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a9006c24ce7932194e231fc32bbaee9b5"><div class="ttname"><a href="_engine_8h.html#a9006c24ce7932194e231fc32bbaee9b5">DeviceRow::is_reserve</a></div><div class="ttdeci">bool is_reserve</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00035">Engine.h:35</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a9d9eded91471eaf92c829904149fc5d5"><div class="ttname"><a href="_engine_8h.html#a9d9eded91471eaf92c829904149fc5d5">DeviceRow::uptime_sec</a></div><div class="ttdeci">std::uint64_t uptime_sec</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00036">Engine.h:36</a></div></div>
+<div class="ttc" id="a_engine_8h_html_a9e7108c015c74423563a1d1f56fd5caa"><div class="ttname"><a href="_engine_8h.html#a9e7108c015c74423563a1d1f56fd5caa">JobRow::status</a></div><div class="ttdeci">JobStatus status</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00059">Engine.h:59</a></div></div>
+<div class="ttc" id="a_engine_8h_html_aa48fe99d3ab70cae93c6109b42f265ec"><div class="ttname"><a href="_engine_8h.html#aa48fe99d3ab70cae93c6109b42f265ec">JobRow::worker_id</a></div><div class="ttdeci">std::optional&lt; std::int64_t &gt; worker_id</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00057">Engine.h:57</a></div></div>
+<div class="ttc" id="a_engine_8h_html_aab4f826251adc2f6786c92bf99e839bf"><div class="ttname"><a href="_engine_8h.html#aab4f826251adc2f6786c92bf99e839bf">JobRow::device_address</a></div><div class="ttdeci">std::uint32_t device_address</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00056">Engine.h:56</a></div></div>
+<div class="ttc" id="a_engine_8h_html_aac726387c65516826e4c4bb3ee486ea8"><div class="ttname"><a href="_engine_8h.html#aac726387c65516826e4c4bb3ee486ea8">JobRow::id</a></div><div class="ttdeci">std::int64_t id</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00055">Engine.h:55</a></div></div>
+<div class="ttc" id="a_engine_8h_html_ab7c4c900d85819b369380151b310d952"><div class="ttname"><a href="_engine_8h.html#ab7c4c900d85819b369380151b310d952">JobRow::finished_at</a></div><div class="ttdeci">std::optional&lt; std::int64_t &gt; finished_at</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00062">Engine.h:62</a></div></div>
+<div class="ttc" id="a_engine_8h_html_abce4808bdc87aa790d5a68ac65ad16c2"><div class="ttname"><a href="_engine_8h.html#abce4808bdc87aa790d5a68ac65ad16c2">DeviceRow::priority</a></div><div class="ttdeci">ServicePriority priority</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00033">Engine.h:33</a></div></div>
+<div class="ttc" id="a_engine_8h_html_ac32c81f3a1fe6cf70edf843c0f2a425d"><div class="ttname"><a href="_engine_8h.html#ac32c81f3a1fe6cf70edf843c0f2a425d">WorkerFlat::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00046">Engine.h:46</a></div></div>
+<div class="ttc" id="a_engine_8h_html_ace1ec70a9e2628449e19ed801ab4b518"><div class="ttname"><a href="_engine_8h.html#ace1ec70a9e2628449e19ed801ab4b518">DeviceRow::standby_wait_sec</a></div><div class="ttdeci">std::uint64_t standby_wait_sec</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00037">Engine.h:37</a></div></div>
+<div class="ttc" id="a_engine_8h_html_adbec72506f898cc4015b391c090d18ca"><div class="ttname"><a href="_engine_8h.html#adbec72506f898cc4015b391c090d18ca">WorkerFlat::max_jobs</a></div><div class="ttdeci">int max_jobs</div><div class="ttdef"><b>Определения</b> <a href="_engine_8h_source.html#l00047">Engine.h:47</a></div></div>
+<div class="ttc" id="a_faulty_device_8h_html"><div class="ttname"><a href="_faulty_device_8h.html">FaultyDevice.h</a></div></div>
+<div class="ttc" id="a_faulty_device_ex_8h_html"><div class="ttname"><a href="_faulty_device_ex_8h.html">FaultyDeviceEx.h</a></div></div>
+<div class="ttc" id="a_healthy_device_8h_html"><div class="ttname"><a href="_healthy_device_8h.html">HealthyDevice.h</a></div></div>
+<div class="ttc" id="a_reserve_device_8h_html"><div class="ttname"><a href="_reserve_device_8h.html">ReserveDevice.h</a></div></div>
+<div class="ttc" id="a_service_priority_8h_html"><div class="ttname"><a href="_service_priority_8h.html">ServicePriority.h</a></div><div class="ttdoc">Приоритет обслуживания устройств</div></div>
+<div class="ttc" id="a_service_priority_8h_html_a548f9050d3c9b5dc36970be0f98514cea28d0edd045e05cf5af64e35ae0c4c6ef"><div class="ttname"><a href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514cea28d0edd045e05cf5af64e35ae0c4c6ef">ServicePriority::Low</a></div><div class="ttdeci">@ Low</div><div class="ttdoc">Низкий приоритет</div><div class="ttdef"><b>Определения</b> <a href="_service_priority_8h_source.html#l00019">ServicePriority.h:19</a></div></div>
+<div class="ttc" id="a_service_priority_8h_html_a548f9050d3c9b5dc36970be0f98514cea655d20c1ca69519ca647684edbb2db35"><div class="ttname"><a href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514cea655d20c1ca69519ca647684edbb2db35">ServicePriority::High</a></div><div class="ttdeci">@ High</div><div class="ttdoc">Высокий приоритет</div><div class="ttdef"><b>Определения</b> <a href="_service_priority_8h_source.html#l00020">ServicePriority.h:20</a></div></div>
+<div class="ttc" id="a_service_priority_8h_html_a548f9050d3c9b5dc36970be0f98514cea6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514cea6adf97f83acf6453d4a6a4b1070f3754">ServicePriority::None</a></div><div class="ttdeci">@ None</div><div class="ttdoc">Обслуживание не требуется</div><div class="ttdef"><b>Определения</b> <a href="_service_priority_8h_source.html#l00018">ServicePriority.h:18</a></div></div>
+<div class="ttc" id="abindings_8cpp_html_a369c24ece84c7ac6c6b276c7be81bb13"><div class="ttname"><a href="bindings_8cpp.html#a369c24ece84c7ac6c6b276c7be81bb13">PYBIND11_MODULE</a></div><div class="ttdeci">PYBIND11_MODULE(equipment_status_monitoring, m)</div><div class="ttdef"><b>Определения</b> <a href="#l00014">bindings.cpp:14</a></div></div>
+<div class="ttc" id="aclass_device_html_a2759d53349562eae5db62db65be0d3de"><div class="ttname"><a href="class_device.html#a2759d53349562eae5db62db65be0d3de">Device::address</a></div><div class="ttdeci">Address address() const noexcept</div><div class="ttdoc">Адрес</div><div class="ttdef"><b>Определения</b> <a href="_device_8h_source.html#l00049">Device.h:49</a></div></div>
+<div class="ttc" id="aclass_device_html_a30033f9b2b3ae28b5bc96f2213333071"><div class="ttname"><a href="class_device.html#a30033f9b2b3ae28b5bc96f2213333071">Device::isReserve</a></div><div class="ttdeci">virtual bool isReserve() const noexcept</div><div class="ttdoc">Признак резервного устройства</div><div class="ttdef"><b>Определения</b> <a href="_device_8h_source.html#l00063">Device.h:63</a></div></div>
+<div class="ttc" id="aclass_device_html_a4248c8fb651061680b0a3625d0ab938c"><div class="ttname"><a href="class_device.html#a4248c8fb651061680b0a3625d0ab938c">Device::isFaulty</a></div><div class="ttdeci">virtual bool isFaulty() const noexcept=0</div><div class="ttdoc">Признак неисправности устройства</div></div>
+<div class="ttc" id="aclass_device_html_a4fb86f0953605583fcc64d8a22b441fd"><div class="ttname"><a href="class_device.html#a4fb86f0953605583fcc64d8a22b441fd">Device::name</a></div><div class="ttdeci">const std::string &amp; name() const noexcept</div><div class="ttdoc">Имя устройства</div><div class="ttdef"><b>Определения</b> <a href="_device_8h_source.html#l00047">Device.h:47</a></div></div>
+<div class="ttc" id="aclass_device_html_a5b07f51b3ff02aca1d62dd343fad895a"><div class="ttname"><a href="class_device.html#a5b07f51b3ff02aca1d62dd343fad895a">Device::setPriority</a></div><div class="ttdeci">virtual void setPriority(ServicePriority p)</div><div class="ttdoc">Установить приоритет обслуживания</div><div class="ttdef"><b>Определения</b> <a href="_device_8h_source.html#l00057">Device.h:57</a></div></div>
+<div class="ttc" id="aclass_device_html_a800f235ab9c35a46c73b3ed9c795f72f"><div class="ttname"><a href="class_device.html#a800f235ab9c35a46c73b3ed9c795f72f">Device::priority</a></div><div class="ttdeci">ServicePriority priority() const noexcept</div><div class="ttdoc">Текущий приоритет</div><div class="ttdef"><b>Определения</b> <a href="_device_8h_source.html#l00051">Device.h:51</a></div></div>
+<div class="ttc" id="aclass_device_html_a8c80a5f0c068a595639a06a4aa76bc51"><div class="ttname"><a href="class_device.html#a8c80a5f0c068a595639a06a4aa76bc51">Device::toString</a></div><div class="ttdeci">virtual std::string toString() const</div><div class="ttdef"><b>Определения</b> <a href="_device_8cpp_source.html#l00004">Device.cpp:4</a></div></div>
+<div class="ttc" id="aclass_device_html_ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"><div class="ttname"><a href="class_device.html#ab7ee8c2ffdaa8f564fbfd9fdd164b6cf">Device::requiresService</a></div><div class="ttdeci">bool requiresService() const noexcept</div><div class="ttdoc">Требуется ли обслуживание</div><div class="ttdef"><b>Определения</b> <a href="_device_8h_source.html#l00081">Device.h:81</a></div></div>
+<div class="ttc" id="aclass_engine_html_a01cf7d5d9f73b89ab65aa1f2acb4392b"><div class="ttname"><a href="class_engine.html#a01cf7d5d9f73b89ab65aa1f2acb4392b">Engine::list_workers</a></div><div class="ttdeci">std::vector&lt; WorkerFlat &gt; list_workers() const</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00051">Engine.cpp:51</a></div></div>
+<div class="ttc" id="aclass_engine_html_a3f6326568da93f5b19dc367299a62b50"><div class="ttname"><a href="class_engine.html#a3f6326568da93f5b19dc367299a62b50">Engine::start_repair</a></div><div class="ttdeci">void start_repair(std::int64_t job_id, std::int64_t worker_id)</div><div class="ttdoc">Начать ремонт</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00135">Engine.cpp:135</a></div></div>
+<div class="ttc" id="aclass_engine_html_a67dc55277cb023ec87b94e1619ac1c74"><div class="ttname"><a href="class_engine.html#a67dc55277cb023ec87b94e1619ac1c74">Engine::add_worker</a></div><div class="ttdeci">std::int64_t add_worker(const std::string &amp;name, int max_jobs, const std::string &amp;skill)</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00048">Engine.cpp:48</a></div></div>
+<div class="ttc" id="aclass_engine_html_aa08dc778e7caa767b677872f667700b6"><div class="ttname"><a href="class_engine.html#aa08dc778e7caa767b677872f667700b6">Engine::finish_repair</a></div><div class="ttdeci">void finish_repair(std::int64_t job_id, std::uint64_t uptime_after_sec)</div><div class="ttdoc">Завершить ремонт</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00152">Engine.cpp:152</a></div></div>
+<div class="ttc" id="aclass_engine_html_aaee27b9ef689cfb9e1d6babfc11a5188"><div class="ttname"><a href="class_engine.html#aaee27b9ef689cfb9e1d6babfc11a5188">Engine::breakdown</a></div><div class="ttdeci">std::int64_t breakdown(std::uint32_t address, const std::string &amp;fault)</div><div class="ttdoc">Зафиксировать поломку</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00094">Engine.cpp:94</a></div></div>
+<div class="ttc" id="aclass_engine_html_ab2962cf2a995ad113aa31965625093ef"><div class="ttname"><a href="class_engine.html#ab2962cf2a995ad113aa31965625093ef">Engine::migrate</a></div><div class="ttdeci">void migrate()</div><div class="ttdoc">Применить встроенные миграции (создать таблицы)</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00016">Engine.cpp:16</a></div></div>
+<div class="ttc" id="aclass_engine_html_ac42563966594cd720cf94ce9360e289d"><div class="ttname"><a href="class_engine.html#ac42563966594cd720cf94ce9360e289d">Engine::upsert_device</a></div><div class="ttdeci">void upsert_device(const Device &amp;d)</div><div class="ttdoc">upsert любого устройства из иерархии Device</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00059">Engine.cpp:59</a></div></div>
+<div class="ttc" id="aclass_engine_html_acdd8b4e8fb19bbd25fd130b2eeff9157"><div class="ttname"><a href="class_engine.html#acdd8b4e8fb19bbd25fd130b2eeff9157">Engine::list_jobs</a></div><div class="ttdeci">std::vector&lt; JobRow &gt; list_jobs(std::optional&lt; JobStatus &gt; status=std::nullopt) const</div><div class="ttdoc">Выборка задач.</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00198">Engine.cpp:198</a></div></div>
+<div class="ttc" id="aclass_engine_html_af109a3bcce34864db5b04296df703613"><div class="ttname"><a href="class_engine.html#af109a3bcce34864db5b04296df703613">Engine::list_devices</a></div><div class="ttdeci">std::vector&lt; DeviceRow &gt; list_devices() const</div><div class="ttdoc">Плоская выборка устройств</div><div class="ttdef"><b>Определения</b> <a href="_engine_8cpp_source.html#l00063">Engine.cpp:63</a></div></div>
+<div class="ttc" id="aclass_faulty_device_ex_html_aa0afc30cceaae0c8bf5428988fc0b545"><div class="ttname"><a href="class_faulty_device_ex.html#aa0afc30cceaae0c8bf5428988fc0b545">FaultyDeviceEx::fault_description</a></div><div class="ttdeci">const std::string &amp; fault_description() const noexcept</div><div class="ttdoc">Описание неисправности</div><div class="ttdef"><b>Определения</b> <a href="_faulty_device_ex_8h_source.html#l00040">FaultyDeviceEx.h:40</a></div></div>
+<div class="ttc" id="aclass_healthy_device_html_a01e6a0696dcaccd7bf05dfb4bcacb727"><div class="ttname"><a href="class_healthy_device.html#a01e6a0696dcaccd7bf05dfb4bcacb727">HealthyDevice::uptime</a></div><div class="ttdeci">uint64_t uptime() const noexcept</div><div class="ttdoc">Наработка</div><div class="ttdef"><b>Определения</b> <a href="_healthy_device_8h_source.html#l00027">HealthyDevice.h:27</a></div></div>
+<div class="ttc" id="aclass_reserve_device_html_a5f89844eec159d18b1248c144476aaf4"><div class="ttname"><a href="class_reserve_device.html#a5f89844eec159d18b1248c144476aaf4">ReserveDevice::standbyWait</a></div><div class="ttdeci">uint64_t standbyWait() const noexcept</div><div class="ttdoc">Время ожидания ввода в работу</div><div class="ttdef"><b>Определения</b> <a href="_reserve_device_8h_source.html#l00030">ReserveDevice.h:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_00240dc4a1a4845ae58be68fbad02d02.html">bindings</a></li><li class="navelem"><a href="bindings_8cpp.html">bindings.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

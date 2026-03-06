@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['equipmentstatusmonitoring_0',['EquipmentStatusMonitoring',['../index.html',1,'']]],
-  ['exporting_20api_20symbols_3a_1',['Exporting API symbols:',['../D:/vsproj/sorokoumov/EquipmentStatusMonitoring/fix/include/gtest/internal/custom/README.md#autotoc_md7',1,'']]]
+  ['python_20уровень_0',['Python уровень',['../md_docs_2pages_2architecture.html#autotoc_md2',1,'']]],
+  ['python_20api_1',['Python API',['../index.html#autotoc_md8',1,'']]]
 ];

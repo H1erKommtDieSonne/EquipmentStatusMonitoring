@@ -92,20 +92,35 @@ $(function(){initNavTree('main_8cpp.html','',''); });
   <div class="headertitle"><div class="title">Файл main.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="gtest_8h_source.html">gtest/gtest.h</a>&gt;</code><br />
+
+<p>����� ������  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;unordered_set&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="_sqlite_storage_8h_source.html">storage/SqliteStorage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_worker_repository_8h_source.html">storage/WorkerRepository.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_repositories_8h_source.html">storage/Repositories.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_faulty_device_8h_source.html">FaultyDevice.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для main.cpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" loading="lazy" alt=""/></div>
-</div>
+<code>#include &quot;<a class="el" href="_faulty_device_ex_8h_source.html">FaultyDeviceEx.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_reserve_device_8h_source.html">ReserveDevice.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_healthy_device_8h_source.html">HealthyDevice.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_device_8h_source.html">Device.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_service_priority_8h_source.html">ServicePriority.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_engine_8h_source.html">esm/Engine.h</a>&quot;</code><br />
+<code>#include &lt;sqlite3.h&gt;</code><br />
 </div>
 <p><a href="main_8cpp_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:afac839e5a764ec6b4e4535a22e79ac25" id="r_afac839e5a764ec6b4e4535a22e79ac25"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afac839e5a764ec6b4e4535a22e79ac25">FD</a> = <a class="el" href="class_faulty_device.html">FaultyDevice</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:a06a3b929c433b72db3446095f9584882" id="r_a06a3b929c433b72db3446095f9584882"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06a3b929c433b72db3446095f9584882">TEST</a> (FaultyDevice_Ip, RoundTripBasic)</td></tr>
@@ -116,10 +131,73 @@ $(function(){initNavTree('main_8cpp.html','',''); });
 <tr class="memitem:ac39af766a217b494e212de3bb92e6036" id="r_ac39af766a217b494e212de3bb92e6036"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac39af766a217b494e212de3bb92e6036">TEST</a> (FaultyDevice_Order, PriorityAndTies)</td></tr>
 <tr class="memitem:a5d3c08a51002f8ee1b7025ef87345dbb" id="r_a5d3c08a51002f8ee1b7025ef87345dbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d3c08a51002f8ee1b7025ef87345dbb">TEST</a> (FaultyDevice_Order, SortByPriorityDesc)</td></tr>
 <tr class="memitem:a23d2645188ab8ddede0f3838efa6a09c" id="r_a23d2645188ab8ddede0f3838efa6a09c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23d2645188ab8ddede0f3838efa6a09c">TEST</a> (FaultyDevice_Address, StoredAndUnique)</td></tr>
-<tr class="memitem:acbe45519ab6e71c9efaad2ba7e59bc44" id="r_acbe45519ab6e71c9efaad2ba7e59bc44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbe45519ab6e71c9efaad2ba7e59bc44">TEST</a> (FaultyDevice_Mutators, PriorityAndFault)</td></tr>
+<tr class="memitem:a0dbe480fbf876ad1760d506ec2f4ff1b" id="r_a0dbe480fbf876ad1760d506ec2f4ff1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dbe480fbf876ad1760d506ec2f4ff1b">TEST</a> (HealthyDevice_Basics, StoresFieldsAndAllowsNonePriority)</td></tr>
+<tr class="memitem:aa30bcbeb01342bc689dd7ecc73b67109" id="r_aa30bcbeb01342bc689dd7ecc73b67109"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa30bcbeb01342bc689dd7ecc73b67109">TEST</a> (ReserveDevice_Basics, StandbyAndUptimeTracked)</td></tr>
+<tr class="memitem:a0221508e08dcde3eff820511b3f58ed2" id="r_a0221508e08dcde3eff820511b3f58ed2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0221508e08dcde3eff820511b3f58ed2">TEST</a> (FaultyDevice_Compare, StrictWeakOrderingConsistentWithSort)</td></tr>
+<tr class="memitem:acbcf2a1e9eb73521d5622d6345355907" id="r_acbcf2a1e9eb73521d5622d6345355907"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbcf2a1e9eb73521d5622d6345355907">create_schema</a> (<a class="el" href="class_sqlite_storage.html">SqliteStorage</a> &amp;st)</td></tr>
+<tr class="memdesc:acbcf2a1e9eb73521d5622d6345355907"><td class="mdescLeft">&#160;</td><td class="mdescRight">������� ������� devices � workers.  <br /></td></tr>
+<tr class="memitem:abdc6ba91cdf6c1e1b036c5180009f6b7" id="r_abdc6ba91cdf6c1e1b036c5180009f6b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdc6ba91cdf6c1e1b036c5180009f6b7">TEST</a> (Sqlite_Schema, CreateTables)</td></tr>
+<tr class="memitem:a29b94d25ce4464afa43c9d13c2823a22" id="r_a29b94d25ce4464afa43c9d13c2823a22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29b94d25ce4464afa43c9d13c2823a22">TEST</a> (Repository_Seed_DevicesAndWorkers, UpsertAndList)</td></tr>
+<tr class="memitem:abb8244a4e9a9f963590363247e15b06a" id="r_abb8244a4e9a9f963590363247e15b06a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb8244a4e9a9f963590363247e15b06a">TEST</a> (Repository_IsReserveFlag, SetByDynamicCast)</td></tr>
+<tr class="memitem:a4a513cf096276198e63db2d7292ebe4f" id="r_a4a513cf096276198e63db2d7292ebe4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a513cf096276198e63db2d7292ebe4f">TEST</a> (Repository_UpsertUpdate, ChangesPersist)</td></tr>
+<tr class="memitem:a5fd171651f1117efdf9452cd96b67582" id="r_a5fd171651f1117efdf9452cd96b67582"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fd171651f1117efdf9452cd96b67582">TEST</a> (Engine_EndToEnd, Breakdown_Assign_Finish)</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>����� ������ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a></p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Типы</h2>
+<a id="afac839e5a764ec6b4e4535a22e79ac25" name="afac839e5a764ec6b4e4535a22e79ac25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac839e5a764ec6b4e4535a22e79ac25">&#9670;&#160;</a></span>FD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#afac839e5a764ec6b4e4535a22e79ac25">FD</a> = <a class="el" href="class_faulty_device.html">FaultyDevice</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00032">32</a></p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="acbcf2a1e9eb73521d5622d6345355907" name="acbcf2a1e9eb73521d5622d6345355907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcf2a1e9eb73521d5622d6345355907">&#9670;&#160;</a></span>create_schema()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_schema </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_sqlite_storage.html">SqliteStorage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>st</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>������� ������� devices � workers. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00167">167</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_sqlite_storage_8cpp_source.html#l00016">SqliteStorage::exec()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00239">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00205">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00257">TEST()</a> и <a class="el" href="main_8cpp_source.html#l00187">TEST()</a>.</p>
+
+</div>
+</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
 
@@ -139,14 +217,37 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00110">110</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00317">317</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="namespacetesting.html#a2201e3fba11205a7edc2418fae82523e">testing::InitGoogleTest()</a> и <a class="el" href="gtest_8h_source.html#l02334">RUN_ALL_TESTS()</a>.</p>
+</div>
+</div>
+<a id="a5fd171651f1117efdf9452cd96b67582" name="a5fd171651f1117efdf9452cd96b67582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd171651f1117efdf9452cd96b67582">&#9670;&#160;</a></span>TEST() <span class="overload">[1/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Engine_EndToEnd</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Breakdown_Assign_Finish</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00280">280</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_engine_8cpp_source.html#l00048">Engine::add_worker()</a>, <a class="el" href="_engine_8cpp_source.html#l00094">Engine::breakdown()</a>, <a class="el" href="_engine_8h_source.html#l00025">Done</a>, <a class="el" href="_engine_8cpp_source.html#l00152">Engine::finish_repair()</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_engine_8cpp_source.html#l00063">Engine::list_devices()</a>, <a class="el" href="_engine_8cpp_source.html#l00198">Engine::list_jobs()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a>, <a class="el" href="_engine_8cpp_source.html#l00016">Engine::migrate()</a>, <a class="el" href="_engine_8cpp_source.html#l00135">Engine::start_repair()</a> и <a class="el" href="_engine_8cpp_source.html#l00059">Engine::upsert_device()</a>.</p>
 
 </div>
 </div>
 <a id="a23d2645188ab8ddede0f3838efa6a09c" name="a23d2645188ab8ddede0f3838efa6a09c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23d2645188ab8ddede0f3838efa6a09c">&#9670;&#160;</a></span>TEST() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d2645188ab8ddede0f3838efa6a09c">&#9670;&#160;</a></span>TEST() <span class="overload">[2/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,14 +265,39 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00076">76</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00104">104</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="gtest_8h_source.html#l01823">EXPECT_TRUE</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00011">Low</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+
+</div>
+</div>
+<a id="a0221508e08dcde3eff820511b3f58ed2" name="a0221508e08dcde3eff820511b3f58ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0221508e08dcde3eff820511b3f58ed2">&#9670;&#160;</a></span>TEST() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FaultyDevice_Compare</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StrictWeakOrderingConsistentWithSort</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00147">147</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_service_priority_8h_source.html#l00020">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a> и <a class="el" href="_service_priority_8h_source.html#l00018">None</a>.</p>
 
 </div>
 </div>
 <a id="a2163045350540414c00c4c77cadfd501" name="a2163045350540414c00c4c77cadfd501"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2163045350540414c00c4c77cadfd501">&#9670;&#160;</a></span>TEST() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2163045350540414c00c4c77cadfd501">&#9670;&#160;</a></span>TEST() <span class="overload">[4/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,14 +315,14 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00031">31</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00057">57</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01791">EXPECT_THROW</a> и <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>.</p>
 
 </div>
 </div>
 <a id="a54ef086e14d1721abfd1b1f4c0f41157" name="a54ef086e14d1721abfd1b1f4c0f41157"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54ef086e14d1721abfd1b1f4c0f41157">&#9670;&#160;</a></span>TEST() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ef086e14d1721abfd1b1f4c0f41157">&#9670;&#160;</a></span>TEST() <span class="overload">[5/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,14 +340,14 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00044">44</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00070">70</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01791">EXPECT_THROW</a> и <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>.</p>
 
 </div>
 </div>
 <a id="a06a3b929c433b72db3446095f9584882" name="a06a3b929c433b72db3446095f9584882"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06a3b929c433b72db3446095f9584882">&#9670;&#160;</a></span>TEST() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a3b929c433b72db3446095f9584882">&#9670;&#160;</a></span>TEST() <span class="overload">[6/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,14 +365,14 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00009">9</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00036">36</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
 
 </div>
 </div>
 <a id="a3ca785db1ade562cd6de934ef35affd0" name="a3ca785db1ade562cd6de934ef35affd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ca785db1ade562cd6de934ef35affd0">&#9670;&#160;</a></span>TEST() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca785db1ade562cd6de934ef35affd0">&#9670;&#160;</a></span>TEST() <span class="overload">[7/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,14 +390,14 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00017">17</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00044">44</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
 
 </div>
 </div>
 <a id="a906d55b732ebe434a966e7b0616fe7a6" name="a906d55b732ebe434a966e7b0616fe7a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a906d55b732ebe434a966e7b0616fe7a6">&#9670;&#160;</a></span>TEST() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a906d55b732ebe434a966e7b0616fe7a6">&#9670;&#160;</a></span>TEST() <span class="overload">[8/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,39 +415,14 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00022">22</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00049">49</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
-
-</div>
-</div>
-<a id="acbe45519ab6e71c9efaad2ba7e59bc44" name="acbe45519ab6e71c9efaad2ba7e59bc44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbe45519ab6e71c9efaad2ba7e59bc44">&#9670;&#160;</a></span>TEST() <span class="overload">[7/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST </td>
-          <td>(</td>
-          <td class="paramtype">FaultyDevice_Mutators</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PriorityAndFault</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00100">100</a></p>
-
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="gtest_8h_source.html#l01793">EXPECT_NO_THROW</a>, <a class="el" href="_faulty_device_8h_source.html#l00063">FaultyDevice::fault_description()</a>, <a class="el" href="_service_priority_8h_source.html#l00012">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00010">None</a>, <a class="el" href="_faulty_device_8h_source.html#l00056">FaultyDevice::priority()</a>, <a class="el" href="_faulty_device_8h_source.html#l00081">FaultyDevice::setFault()</a> и <a class="el" href="_faulty_device_8h_source.html#l00074">FaultyDevice::setPriority()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a> и <a class="el" href="faulty_device_8cpp_source.html#l00110">FaultyDevice::u32_to_ipv4()</a>.</p>
 
 </div>
 </div>
 <a id="ac39af766a217b494e212de3bb92e6036" name="ac39af766a217b494e212de3bb92e6036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac39af766a217b494e212de3bb92e6036">&#9670;&#160;</a></span>TEST() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac39af766a217b494e212de3bb92e6036">&#9670;&#160;</a></span>TEST() <span class="overload">[9/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,14 +440,14 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00050">50</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00077">77</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01894">EXPECT_GT</a>, <a class="el" href="gtest_8h_source.html#l01823">EXPECT_TRUE</a>, <a class="el" href="_service_priority_8h_source.html#l00012">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00011">Low</a> и <a class="el" href="_service_priority_8h_source.html#l00010">None</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_service_priority_8h_source.html#l00020">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a> и <a class="el" href="_service_priority_8h_source.html#l00018">None</a>.</p>
 
 </div>
 </div>
 <a id="a5d3c08a51002f8ee1b7025ef87345dbb" name="a5d3c08a51002f8ee1b7025ef87345dbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d3c08a51002f8ee1b7025ef87345dbb">&#9670;&#160;</a></span>TEST() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3c08a51002f8ee1b7025ef87345dbb">&#9670;&#160;</a></span>TEST() <span class="overload">[10/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,9 +465,159 @@ $(function(){initNavTree('main_8cpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00063">63</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00090">90</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="gtest_8h_source.html#l01884">EXPECT_EQ</a>, <a class="el" href="_service_priority_8h_source.html#l00012">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00011">Low</a> и <a class="el" href="_service_priority_8h_source.html#l00010">None</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_service_priority_8h_source.html#l00020">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a> и <a class="el" href="_service_priority_8h_source.html#l00018">None</a>.</p>
+
+</div>
+</div>
+<a id="a0dbe480fbf876ad1760d506ec2f4ff1b" name="a0dbe480fbf876ad1760d506ec2f4ff1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbe480fbf876ad1760d506ec2f4ff1b">&#9670;&#160;</a></span>TEST() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">HealthyDevice_Basics</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StoresFieldsAndAllowsNonePriority</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00129">129</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00049">Device::address()</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_device_8h_source.html#l00047">Device::name()</a>, <a class="el" href="_service_priority_8h_source.html#l00018">None</a> и <a class="el" href="_device_8h_source.html#l00051">Device::priority()</a>.</p>
+
+</div>
+</div>
+<a id="abb8244a4e9a9f963590363247e15b06a" name="abb8244a4e9a9f963590363247e15b06a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8244a4e9a9f963590363247e15b06a">&#9670;&#160;</a></span>TEST() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Repository_IsReserveFlag</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetByDynamicCast</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00239">239</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="main_8cpp_source.html#l00167">create_schema()</a>, <a class="el" href="_sqlite_storage_8h_source.html#l00031">SqliteStorage::handle()</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a> и <a class="el" href="_device_repository_8cpp_source.html#l00018">DeviceRepository::upsert()</a>.</p>
+
+</div>
+</div>
+<a id="a29b94d25ce4464afa43c9d13c2823a22" name="a29b94d25ce4464afa43c9d13c2823a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b94d25ce4464afa43c9d13c2823a22">&#9670;&#160;</a></span>TEST() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Repository_Seed_DevicesAndWorkers</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UpsertAndList</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00205">205</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="main_8cpp_source.html#l00167">create_schema()</a>, <a class="el" href="_service_priority_8h_source.html#l00020">High</a>, <a class="el" href="_worker_repository_8cpp_source.html#l00013">WorkerRepository::insert()</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_worker_repository_8cpp_source.html#l00036">WorkerRepository::list()</a>, <a class="el" href="_device_repository_8cpp_source.html#l00054">DeviceRepository::listAddresses()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a>, <a class="el" href="_service_priority_8h_source.html#l00018">None</a> и <a class="el" href="_device_repository_8cpp_source.html#l00018">DeviceRepository::upsert()</a>.</p>
+
+</div>
+</div>
+<a id="a4a513cf096276198e63db2d7292ebe4f" name="a4a513cf096276198e63db2d7292ebe4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a513cf096276198e63db2d7292ebe4f">&#9670;&#160;</a></span>TEST() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Repository_UpsertUpdate</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ChangesPersist</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00257">257</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="main_8cpp_source.html#l00167">create_schema()</a>, <a class="el" href="_sqlite_storage_8h_source.html#l00031">SqliteStorage::handle()</a>, <a class="el" href="_service_priority_8h_source.html#l00020">High</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a> и <a class="el" href="_device_repository_8cpp_source.html#l00018">DeviceRepository::upsert()</a>.</p>
+
+</div>
+</div>
+<a id="aa30bcbeb01342bc689dd7ecc73b67109" name="aa30bcbeb01342bc689dd7ecc73b67109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa30bcbeb01342bc689dd7ecc73b67109">&#9670;&#160;</a></span>TEST() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">ReserveDevice_Basics</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StandbyAndUptimeTracked</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00138">138</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00049">Device::address()</a>, <a class="el" href="faulty_device_8cpp_source.html#l00030">FaultyDevice::ipv4_to_u32()</a>, <a class="el" href="_service_priority_8h_source.html#l00019">Low</a>, <a class="el" href="_device_8h_source.html#l00047">Device::name()</a> и <a class="el" href="_device_8h_source.html#l00051">Device::priority()</a>.</p>
+
+</div>
+</div>
+<a id="abdc6ba91cdf6c1e1b036c5180009f6b7" name="abdc6ba91cdf6c1e1b036c5180009f6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc6ba91cdf6c1e1b036c5180009f6b7">&#9670;&#160;</a></span>TEST() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Sqlite_Schema</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CreateTables</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00187">187</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="main_8cpp_source.html#l00167">create_schema()</a> и <a class="el" href="_sqlite_storage_8h_source.html#l00031">SqliteStorage::handle()</a>.</p>
 
 </div>
 </div>

@@ -93,7 +93,7 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </div><!--header-->
 <div class="contents">
 
-<p>����������� ���� ��� ���� ��������� �������� ����� ���� (���, �����, ���������) � ����� ����������� ������ ��� ����������� ��������� � ��������� ��������� � ����������� �������  
+<p>Абстрактная база для всех устройств Содержит общие поля и чисто виртуальные методы для определения состояния и переходов состояний в производных классах  
  <a href="#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_device_8h_source.html">Device.h</a>&gt;</code></p>
@@ -109,34 +109,43 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:af7badf268877700082eae61ccc89ef16" id="r_af7badf268877700082eae61ccc89ef16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7badf268877700082eae61ccc89ef16">Device</a> (std::string <a class="el" href="#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> prio)</td></tr>
-<tr class="memdesc:af7badf268877700082eae61ccc89ef16"><td class="mdescLeft">&#160;</td><td class="mdescRight">����������� �������� ����������  <br /></td></tr>
+<tr class="memitem:af7badf268877700082eae61ccc89ef16" id="r_af7badf268877700082eae61ccc89ef16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7badf268877700082eae61ccc89ef16">Device</a> (std::string <a class="el" href="#a4fb86f0953605583fcc64d8a22b441fd">name</a>, <a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a> addr, <a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> prio)</td></tr>
+<tr class="memdesc:af7badf268877700082eae61ccc89ef16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор базового устройства  <br /></td></tr>
 <tr class="memitem:a6fef4f7180512c7517c9696cd95e503a" id="r_a6fef4f7180512c7517c9696cd95e503a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fef4f7180512c7517c9696cd95e503a">~Device</a> ()=default</td></tr>
-<tr class="memitem:a5b07f51b3ff02aca1d62dd343fad895a" id="r_a5b07f51b3ff02aca1d62dd343fad895a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b07f51b3ff02aca1d62dd343fad895a">setPriority</a> (<a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> p)</td></tr>
-<tr class="memdesc:a5b07f51b3ff02aca1d62dd343fad895a"><td class="mdescLeft">&#160;</td><td class="mdescRight">���������� ��������� ������������  <br /></td></tr>
+<tr class="memdesc:a6fef4f7180512c7517c9696cd95e503a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальный деструктор  <br /></td></tr>
+<tr class="memitem:a86e32d3f0feb28ecb5430fd4a28cf4a9" id="r_a86e32d3f0feb28ecb5430fd4a28cf4a9"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86e32d3f0feb28ecb5430fd4a28cf4a9">clone</a> () const =0</td></tr>
+<tr class="memdesc:a86e32d3f0feb28ecb5430fd4a28cf4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Полиморфное копирование  <br /></td></tr>
+<tr class="memitem:a5b07f51b3ff02aca1d62dd343fad895a" id="r_a5b07f51b3ff02aca1d62dd343fad895a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b07f51b3ff02aca1d62dd343fad895a">setPriority</a> (<a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> p)</td></tr>
+<tr class="memdesc:a5b07f51b3ff02aca1d62dd343fad895a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить приоритет обслуживания  <br /></td></tr>
+<tr class="memitem:a30033f9b2b3ae28b5bc96f2213333071" id="r_a30033f9b2b3ae28b5bc96f2213333071"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30033f9b2b3ae28b5bc96f2213333071">isReserve</a> () const noexcept</td></tr>
+<tr class="memdesc:a30033f9b2b3ae28b5bc96f2213333071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак резервного устройства  <br /></td></tr>
 <tr class="memitem:a4248c8fb651061680b0a3625d0ab938c" id="r_a4248c8fb651061680b0a3625d0ab938c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4248c8fb651061680b0a3625d0ab938c">isFaulty</a> () const noexcept=0</td></tr>
-<tr class="memdesc:a4248c8fb651061680b0a3625d0ab938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">������� ����, ��� ���������� ����������  <br /></td></tr>
+<tr class="memdesc:a4248c8fb651061680b0a3625d0ab938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак неисправности устройства  <br /></td></tr>
 <tr class="memitem:a09afb0ca70768075316f836d86694d80" id="r_a09afb0ca70768075316f836d86694d80"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown</a> (std::string fault) const =0</td></tr>
+<tr class="memdesc:a09afb0ca70768075316f836d86694d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевести устройство в состояние неисправно  <br /></td></tr>
 <tr class="memitem:a066cb3b8f9944129b2e9d3826dc9481a" id="r_a066cb3b8f9944129b2e9d3826dc9481a"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair</a> (uint64_t uptimeAfterRepairSec) const =0</td></tr>
+<tr class="memdesc:a066cb3b8f9944129b2e9d3826dc9481a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ремонт устройства (создать новое исправное)  <br /></td></tr>
 <tr class="memitem:a8c80a5f0c068a595639a06a4aa76bc51" id="r_a8c80a5f0c068a595639a06a4aa76bc51"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c80a5f0c068a595639a06a4aa76bc51">toString</a> () const</td></tr>
 <tr class="memitem:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf" id="r_ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7ee8c2ffdaa8f564fbfd9fdd164b6cf">requiresService</a> () const noexcept</td></tr>
-<tr class="memdesc:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">��������� �� ������������ �� ��������� ������� ��� ������������ ��������� ��� ������ ����������, ��������� �� ��������.  <br /></td></tr>
-<tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">������ � ���������</div></td></tr>
+<tr class="memdesc:ab7ee8c2ffdaa8f564fbfd9fdd164b6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Требуется ли обслуживание  <br /></td></tr>
+<tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Доступ к свойствам</div></td></tr>
 <tr class="memitem:a4fb86f0953605583fcc64d8a22b441fd" id="r_a4fb86f0953605583fcc64d8a22b441fd"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fb86f0953605583fcc64d8a22b441fd">name</a> () const noexcept</td></tr>
-<tr class="memdesc:a4fb86f0953605583fcc64d8a22b441fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">��� ����������.  <br /></td></tr>
+<tr class="memdesc:a4fb86f0953605583fcc64d8a22b441fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя устройства  <br /></td></tr>
 <tr class="memitem:a2759d53349562eae5db62db65be0d3de" id="r_a2759d53349562eae5db62db65be0d3de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2759d53349562eae5db62db65be0d3de">address</a> () const noexcept</td></tr>
-<tr class="memitem:a800f235ab9c35a46c73b3ed9c795f72f" id="r_a800f235ab9c35a46c73b3ed9c795f72f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800f235ab9c35a46c73b3ed9c795f72f">priority</a> () const noexcept</td></tr>
+<tr class="memdesc:a2759d53349562eae5db62db65be0d3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адрес  <br /></td></tr>
+<tr class="memitem:a800f235ab9c35a46c73b3ed9c795f72f" id="r_a800f235ab9c35a46c73b3ed9c795f72f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800f235ab9c35a46c73b3ed9c795f72f">priority</a> () const noexcept</td></tr>
+<tr class="memdesc:a800f235ab9c35a46c73b3ed9c795f72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий приоритет  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Защищенные данные</h2></td></tr>
 <tr class="memitem:a5229ed83545bda7b8f220d77a851fc83" id="r_a5229ed83545bda7b8f220d77a851fc83"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5229ed83545bda7b8f220d77a851fc83">name_</a></td></tr>
 <tr class="memitem:ad4a2cd6fbccd3a603014ae033f1d9024" id="r_ad4a2cd6fbccd3a603014ae033f1d9024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a42ac52c0d933dfd8088237ab2f6a99e4">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4a2cd6fbccd3a603014ae033f1d9024">address_</a></td></tr>
-<tr class="memitem:a0a135362acd067995fceae6b8f2a0695" id="r_a0a135362acd067995fceae6b8f2a0695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a135362acd067995fceae6b8f2a0695">priority_</a></td></tr>
+<tr class="memitem:a0a135362acd067995fceae6b8f2a0695" id="r_a0a135362acd067995fceae6b8f2a0695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a135362acd067995fceae6b8f2a0695">priority_</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>����������� ���� ��� ���� ��������� �������� ����� ���� (���, �����, ���������) � ����� ����������� ������ ��� ����������� ��������� � ��������� ��������� � ����������� ������� </p>
+<div class="textblock"><p>Абстрактная база для всех устройств Содержит общие поля и чисто виртуальные методы для определения состояния и переходов состояний в производных классах </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00016">16</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00020">20</a></p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Определения типов</h2>
 <a id="a42ac52c0d933dfd8088237ab2f6a99e4" name="a42ac52c0d933dfd8088237ab2f6a99e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42ac52c0d933dfd8088237ab2f6a99e4">&#9670;&#160;</a></span>Address</h2>
@@ -150,7 +159,7 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00018">18</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00023">23</a></p>
 
 </div>
 </div>
@@ -177,7 +186,7 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>prio</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>prio</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -187,21 +196,21 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p>����������� �������� ���������� </p>
+<p>Конструктор базового устройства </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>��� ���������� </td></tr>
-    <tr><td class="paramname">addr</td><td>IP����� ���������� </td></tr>
-    <tr><td class="paramname">prio</td><td>��������� ������������ </td></tr>
+    <tr><td class="paramname">name</td><td>Имя устройства </td></tr>
+    <tr><td class="paramname">addr</td><td>IPадрес устройства </td></tr>
+    <tr><td class="paramname">prio</td><td>Приоритет обслуживания </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00028">28</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00031">31</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00083">address_</a>, <a class="el" href="_device_8h_source.html#l00041">name()</a>, <a class="el" href="_device_8h_source.html#l00082">name_</a> и <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00085">address_</a>, <a class="el" href="_device_8h_source.html#l00047">name()</a>, <a class="el" href="_device_8h_source.html#l00084">name_</a> и <a class="el" href="_device_8h_source.html#l00086">priority_</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00031">FaultyDeviceEx::FaultyDeviceEx()</a>, <a class="el" href="_healthy_device_8h_source.html#l00026">HealthyDevice::HealthyDevice()</a> и <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
+<p class="reference">Используется в <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00014">FaultyDeviceEx::FaultyDeviceEx()</a>, <a class="el" href="_healthy_device_8h_source.html#l00014">HealthyDevice::HealthyDevice()</a> и <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
 
 </div>
 </div>
@@ -227,6 +236,8 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Виртуальный деструктор </p>
 
 </div>
 </div>
@@ -254,9 +265,13 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00042">42</a></p>
+<p>Адрес </p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00083">address_</a>.</p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00049">49</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00085">address_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a>, <a class="el" href="main_8cpp_source.html#l00129">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00138">TEST()</a> и <a class="el" href="_device_repository_8cpp_source.html#l00018">DeviceRepository::upsert()</a>.</p>
 
 </div>
 </div>
@@ -283,11 +298,43 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
+<p>Перевести устройство в состояние неисправно </p>
+
 <p>Замещается в <a class="el" href="class_faulty_device_ex.html#ade4d58a2dca04ba0191fd692592bdb9b">FaultyDeviceEx</a> и <a class="el" href="class_healthy_device.html#aa41a06ba46cb2451986ae55264ef2bdb">HealthyDevice</a>.</p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a> и <a class="el" href="_device_8h_source.html#l00028">Device()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a> и <a class="el" href="_device_8h_source.html#l00031">Device()</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="#a09afb0ca70768075316f836d86694d80">breakDown()</a>.</p>
+
+</div>
+</div>
+<a id="a86e32d3f0feb28ecb5430fd4a28cf4a9" name="a86e32d3f0feb28ecb5430fd4a28cf4a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e32d3f0feb28ecb5430fd4a28cf4a9">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="class_device.html">Device</a> &gt; Device::clone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Полиморфное копирование </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на копию конкретного объекта-потомка. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_faulty_device_ex.html#a81464c448d5db3a52092062b82c5c641">FaultyDeviceEx</a>, <a class="el" href="class_healthy_device.html#a277b92626a88dfcd72564d0da9676f93">HealthyDevice</a> и <a class="el" href="class_reserve_device.html#a64b0d3f5d28af310492f5b067b9e58e1">ReserveDevice</a>.</p>
 
 </div>
 </div>
@@ -314,10 +361,45 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p>������� ����, ��� ���������� ���������� </p>
-<dl class="section return"><dt>Возвращает</dt><dd>true, ���� ���������� ����������, ����� false </dd></dl>
+<p>Признак неисправности устройства </p>
 
 <p>Замещается в <a class="el" href="class_faulty_device_ex.html#aadd15f55e3e9d3ab946e0da1728285af">FaultyDeviceEx</a> и <a class="el" href="class_healthy_device.html#a15f8a87fd812c6369f9ac64c49d5188d">HealthyDevice</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="_device_repository_8cpp_source.html#l00018">DeviceRepository::upsert()</a>.</p>
+
+</div>
+</div>
+<a id="a30033f9b2b3ae28b5bc96f2213333071" name="a30033f9b2b3ae28b5bc96f2213333071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30033f9b2b3ae28b5bc96f2213333071">&#9670;&#160;</a></span>isReserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Device::isReserve </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак резервного устройства </p>
+<p>По умолчанию не резерв </p>
+
+<p>Переопределяется в <a class="el" href="class_reserve_device.html#ac527333e4a683aa55d1941ef244f6c98">ReserveDevice</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00063">63</a></p>
+
+<p class="reference">Используется в <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a>.</p>
 
 </div>
 </div>
@@ -344,14 +426,13 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p>��� ����������. </p>
-<dl class="section return"><dt>Возвращает</dt><dd>������ �� ������ � ������ </dd></dl>
+<p>Имя устройства </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00041">41</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00047">47</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00082">name_</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00084">name_</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00031">FaultyDeviceEx::FaultyDeviceEx()</a>, <a class="el" href="_healthy_device_8h_source.html#l00026">HealthyDevice::HealthyDevice()</a> и <a class="el" href="_reserve_device_8h_source.html#l00024">ReserveDevice::ReserveDevice()</a>.</p>
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="_device_8h_source.html#l00031">Device()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00014">FaultyDeviceEx::FaultyDeviceEx()</a>, <a class="el" href="_healthy_device_8h_source.html#l00014">HealthyDevice::HealthyDevice()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a>, <a class="el" href="_reserve_device_8h_source.html#l00012">ReserveDevice::ReserveDevice()</a>, <a class="el" href="main_8cpp_source.html#l00129">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00138">TEST()</a> и <a class="el" href="_device_repository_8cpp_source.html#l00018">DeviceRepository::upsert()</a>.</p>
 
 </div>
 </div>
@@ -365,7 +446,7 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> Device::priority </td>
+          <td class="memname"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> Device::priority </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -378,9 +459,13 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00043">43</a></p>
+<p>Текущий приоритет </p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00051">51</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00086">priority_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a>, <a class="el" href="main_8cpp_source.html#l00129">TEST()</a>, <a class="el" href="main_8cpp_source.html#l00138">TEST()</a> и <a class="el" href="_device_repository_8cpp_source.html#l00018">DeviceRepository::upsert()</a>.</p>
 
 </div>
 </div>
@@ -407,9 +492,11 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
+<p>Ремонт устройства (создать новое исправное) </p>
+
 <p>Замещается в <a class="el" href="class_faulty_device_ex.html#ad9acc3a42e10ed78e96930482bfa943f">FaultyDeviceEx</a> и <a class="el" href="class_healthy_device.html#a8aae31cc464d2a277f4c73c2ef8ee7d2">HealthyDevice</a>.</p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a> и <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00031">Device()</a>, <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a> и <a class="el" href="_device_8cpp_source.html#l00004">toString()</a>.</p>
 
 <p class="reference">Используется в <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
 
@@ -438,14 +525,14 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p>��������� �� ������������ �� ��������� ������� ��� ������������ ��������� ��� ������ ����������, ��������� �� ��������. </p>
-<dl class="section return"><dt>Возвращает</dt><dd>true, ���� ��������� �� ����� ���� </dd></dl>
+<p>Требуется ли обслуживание </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true если приоритет не равен нулю </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00079">79</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00081">81</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00084">priority_</a> и <a class="el" href="_device_8h_source.html#l00079">requiresService()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00086">priority_</a> и <a class="el" href="_device_8h_source.html#l00081">requiresService()</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="_device_8h_source.html#l00079">requiresService()</a>.</p>
+<p class="reference">Используется в <a class="el" href="py__esm_8cpp_source.html#l00150">BOOST_PYTHON_MODULE()</a>, <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="_device_8h_source.html#l00081">requiresService()</a>.</p>
 
 </div>
 </div>
@@ -461,7 +548,7 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
         <tr>
           <td class="memname">virtual void Device::setPriority </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -472,20 +559,15 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p>���������� ��������� ������������ </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>����� �������� ���������� </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Заметки</dt><dd>��������� � ����������� ����� ���������� � ����������� ������� </dd></dl>
+<p>Установить приоритет обслуживания </p>
 
 <p>Переопределяется в <a class="el" href="class_healthy_device.html#adcdb37b206905ad90d3242bc3cf6b23b">HealthyDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00054">54</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00057">57</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00086">priority_</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a>.</p>
 
 </div>
 </div>
@@ -514,11 +596,11 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 
 <p>Переопределяется в <a class="el" href="class_faulty_device_ex.html#a0700f225ee117bb6acbc20bdaf3572d1">FaultyDeviceEx</a>, <a class="el" href="class_healthy_device.html#a8e2dc839a7e93ca0232e53573faf25f0">HealthyDevice</a> и <a class="el" href="class_reserve_device.html#a950ee1ac91783b0de30010ee51a0b862">ReserveDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8cpp_source.html">Device.cpp</a> строка <a class="el" href="_device_8cpp_source.html#l00005">5</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8cpp_source.html">Device.cpp</a> строка <a class="el" href="_device_8cpp_source.html#l00004">4</a></p>
 
-<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00083">address_</a>, <a class="el" href="_device_8h_source.html#l00082">name_</a> и <a class="el" href="_device_8h_source.html#l00084">priority_</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="_device_8h_source.html#l00085">address_</a>, <a class="el" href="_device_8h_source.html#l00084">name_</a> и <a class="el" href="_device_8h_source.html#l00086">priority_</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
+<p class="reference">Используется в <a class="el" href="bindings_8cpp_source.html#l00014">PYBIND11_MODULE()</a> и <a class="el" href="#a066cb3b8f9944129b2e9d3826dc9481a">repair()</a>.</p>
 
 </div>
 </div>
@@ -543,9 +625,9 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00083">83</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00085">85</a></p>
 
-<p class="reference">Используется в <a class="el" href="_device_8h_source.html#l00042">address()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00015">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00031">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00039">HealthyDevice::repair()</a>, <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00045">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00064">HealthyDevice::toString()</a> и <a class="el" href="_reserve_device_8cpp_source.html#l00009">ReserveDevice::toString()</a>.</p>
+<p class="reference">Используется в <a class="el" href="_device_8h_source.html#l00049">address()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00007">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00031">Device()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00016">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00020">HealthyDevice::repair()</a>, <a class="el" href="_device_8cpp_source.html#l00004">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00030">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00036">HealthyDevice::toString()</a> и <a class="el" href="_reserve_device_8cpp_source.html#l00007">ReserveDevice::toString()</a>.</p>
 
 </div>
 </div>
@@ -569,9 +651,9 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00082">82</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00084">84</a></p>
 
-<p class="reference">Используется в <a class="el" href="_healthy_device_8cpp_source.html#l00015">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_device_8h_source.html#l00041">name()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00031">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00039">HealthyDevice::repair()</a>, <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00045">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00064">HealthyDevice::toString()</a> и <a class="el" href="_reserve_device_8cpp_source.html#l00009">ReserveDevice::toString()</a>.</p>
+<p class="reference">Используется в <a class="el" href="_healthy_device_8cpp_source.html#l00007">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00031">Device()</a>, <a class="el" href="_device_8h_source.html#l00047">name()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00016">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00020">HealthyDevice::repair()</a>, <a class="el" href="_device_8cpp_source.html#l00004">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00030">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00036">HealthyDevice::toString()</a> и <a class="el" href="_reserve_device_8cpp_source.html#l00007">ReserveDevice::toString()</a>.</p>
 
 </div>
 </div>
@@ -585,7 +667,7 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_service_priority_8h.html#a2aec502bb90b246481f3ed5058af8a17">ServicePriority</a> Device::priority_</td>
+          <td class="memname"><a class="el" href="_service_priority_8h.html#a548f9050d3c9b5dc36970be0f98514ce">ServicePriority</a> Device::priority_</td>
         </tr>
       </table>
   </td>
@@ -595,9 +677,9 @@ $(function(){initNavTree('class_device.html','','class_device-members'); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00084">84</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_device_8h_source.html">Device.h</a> строка <a class="el" href="_device_8h_source.html#l00086">86</a></p>
 
-<p class="reference">Используется в <a class="el" href="_healthy_device_8cpp_source.html#l00015">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00028">Device()</a>, <a class="el" href="_device_8h_source.html#l00043">priority()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00031">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00039">HealthyDevice::repair()</a>, <a class="el" href="_device_8h_source.html#l00079">requiresService()</a>, <a class="el" href="_device_8h_source.html#l00054">setPriority()</a>, <a class="el" href="_healthy_device_8h_source.html#l00061">HealthyDevice::setPriority()</a>, <a class="el" href="_device_8cpp_source.html#l00005">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00045">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00064">HealthyDevice::toString()</a> и <a class="el" href="_reserve_device_8cpp_source.html#l00009">ReserveDevice::toString()</a>.</p>
+<p class="reference">Используется в <a class="el" href="_healthy_device_8cpp_source.html#l00007">HealthyDevice::breakDown()</a>, <a class="el" href="_device_8h_source.html#l00031">Device()</a>, <a class="el" href="_device_8h_source.html#l00051">priority()</a>, <a class="el" href="_faulty_device_ex_8cpp_source.html#l00016">FaultyDeviceEx::repair()</a>, <a class="el" href="_healthy_device_8cpp_source.html#l00020">HealthyDevice::repair()</a>, <a class="el" href="_device_8h_source.html#l00081">requiresService()</a>, <a class="el" href="_device_8h_source.html#l00057">setPriority()</a>, <a class="el" href="_healthy_device_8h_source.html#l00033">HealthyDevice::setPriority()</a>, <a class="el" href="_device_8cpp_source.html#l00004">toString()</a>, <a class="el" href="_faulty_device_ex_8h_source.html#l00030">FaultyDeviceEx::toString()</a>, <a class="el" href="_healthy_device_8h_source.html#l00036">HealthyDevice::toString()</a> и <a class="el" href="_reserve_device_8cpp_source.html#l00007">ReserveDevice::toString()</a>.</p>
 
 </div>
 </div>
