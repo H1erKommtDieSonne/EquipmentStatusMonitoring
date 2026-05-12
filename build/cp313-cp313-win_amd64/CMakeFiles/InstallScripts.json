@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/cmake_install.cmake",
-		"D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/bindings/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

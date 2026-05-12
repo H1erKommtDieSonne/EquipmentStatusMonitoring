@@ -1,8 +1,0 @@
-{
-  "source_dir": "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring",
-  "build_dir": "D:\\vsproj\\sorokoumov\\EquipmentStatusMonitoring\\build\\cp311-cp311-win_amd64",
-  "cmake_path": "C:\\Program Files\\CMake\\bin\\cmake.EXE",
-  "skbuild_path": "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scikit_build_core",
-  "skbuild_version": "0.11.6",
-  "python_executable": "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
-}

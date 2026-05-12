@@ -131,9 +131,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="benchmark_hash_tree.cpp" />
     <ClCompile Include="bindings\bindings.cpp" />
     <ClCompile Include="bindings\py_esm.cpp" />
     <ClCompile Include="Device.cpp" />
+    <ClCompile Include="DeviceHashTree.cpp" />
     <ClCompile Include="esm\Engine.cpp" />
     <ClCompile Include="faultyDevice.cpp" />
     <ClCompile Include="FaultyDeviceEx.cpp" />
@@ -149,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="Device.h" />
     <ClInclude Include="DeviceCollection.h" />
+    <ClInclude Include="DeviceHashTree.h" />
     <ClInclude Include="esm\Engine.h" />
     <ClInclude Include="esm\export.h" />
     <ClInclude Include="FaultyDevice.h" />

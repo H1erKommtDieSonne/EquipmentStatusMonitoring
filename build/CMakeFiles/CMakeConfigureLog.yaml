@@ -1,0 +1,1269 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 12.05.2026 19:03:07.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+        ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+        ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        ╨д╨░╨╣╨╗ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.88
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/4.2.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/7-Zip/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "D:/doxygen/doxygen/bin/"
+      - "D:/git/Git/cmd/"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Wolfram Research/WolframScript/"
+      - "D:/prolog/swipl/bin/"
+      - "D:/matlab/runtime/win64/"
+      - "D:/matlab/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/python/PyCharm 2025.2.1.1/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/"
+    searched_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/7-Zip/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "D:/doxygen/doxygen/bin/"
+      - "D:/git/Git/cmd/"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Wolfram Research/WolframScript/"
+      - "D:/prolog/swipl/bin/"
+      - "D:/matlab/runtime/win64/"
+      - "D:/matlab/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/python/PyCharm 2025.2.1.1/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/"
+    searched_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/7-Zip/lld-link.com"
+      - "C:/Program Files/7-Zip/lld-link.exe"
+      - "C:/Program Files/7-Zip/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
+      - "D:/doxygen/doxygen/bin/lld-link.com"
+      - "D:/doxygen/doxygen/bin/lld-link.exe"
+      - "D:/doxygen/doxygen/bin/lld-link"
+      - "D:/git/Git/cmd/lld-link.com"
+      - "D:/git/Git/cmd/lld-link.exe"
+      - "D:/git/Git/cmd/lld-link"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/Wolfram Research/WolframScript/lld-link.com"
+      - "C:/Program Files/Wolfram Research/WolframScript/lld-link.exe"
+      - "C:/Program Files/Wolfram Research/WolframScript/lld-link"
+      - "D:/prolog/swipl/bin/lld-link.com"
+      - "D:/prolog/swipl/bin/lld-link.exe"
+      - "D:/prolog/swipl/bin/lld-link"
+      - "D:/matlab/runtime/win64/lld-link.com"
+      - "D:/matlab/runtime/win64/lld-link.exe"
+      - "D:/matlab/runtime/win64/lld-link"
+      - "D:/matlab/bin/lld-link.com"
+      - "D:/matlab/bin/lld-link.exe"
+      - "D:/matlab/bin/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "D:/python/PyCharm 2025.2.1.1/bin/lld-link.com"
+      - "D:/python/PyCharm 2025.2.1.1/bin/lld-link.exe"
+      - "D:/python/PyCharm 2025.2.1.1/bin/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/7-Zip/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "D:/doxygen/doxygen/bin/"
+      - "D:/git/Git/cmd/"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Wolfram Research/WolframScript/"
+      - "D:/prolog/swipl/bin/"
+      - "D:/matlab/runtime/win64/"
+      - "D:/matlab/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/python/PyCharm 2025.2.1.1/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/"
+    searched_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/7-Zip/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "D:/doxygen/doxygen/bin/"
+      - "D:/git/Git/cmd/"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Wolfram Research/WolframScript/"
+      - "D:/prolog/swipl/bin/"
+      - "D:/matlab/runtime/win64/"
+      - "D:/matlab/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/python/PyCharm 2025.2.1.1/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/"
+    searched_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/7-Zip/mt.com"
+      - "C:/Program Files/7-Zip/mt.exe"
+      - "C:/Program Files/7-Zip/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/mt"
+      - "D:/doxygen/doxygen/bin/mt.com"
+      - "D:/doxygen/doxygen/bin/mt.exe"
+      - "D:/doxygen/doxygen/bin/mt"
+      - "D:/git/Git/cmd/mt.com"
+      - "D:/git/Git/cmd/mt.exe"
+      - "D:/git/Git/cmd/mt"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Program Files/Wolfram Research/WolframScript/mt.com"
+      - "C:/Program Files/Wolfram Research/WolframScript/mt.exe"
+      - "C:/Program Files/Wolfram Research/WolframScript/mt"
+      - "D:/prolog/swipl/bin/mt.com"
+      - "D:/prolog/swipl/bin/mt.exe"
+      - "D:/prolog/swipl/bin/mt"
+      - "D:/matlab/runtime/win64/mt.com"
+      - "D:/matlab/runtime/win64/mt.exe"
+      - "D:/matlab/runtime/win64/mt"
+      - "D:/matlab/bin/mt.com"
+      - "D:/matlab/bin/mt.exe"
+      - "D:/matlab/bin/mt"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/mt.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/mt.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/mt"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/mt.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/mt.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/mt"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/mt"
+      - "D:/python/PyCharm 2025.2.1.1/bin/mt.com"
+      - "D:/python/PyCharm 2025.2.1.1/bin/mt.exe"
+      - "D:/python/PyCharm 2025.2.1.1/bin/mt"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/mt.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/mt.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/7-Zip/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "D:/doxygen/doxygen/bin/"
+      - "D:/git/Git/cmd/"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Wolfram Research/WolframScript/"
+      - "D:/prolog/swipl/bin/"
+      - "D:/matlab/runtime/win64/"
+      - "D:/matlab/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/python/PyCharm 2025.2.1.1/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/"
+    searched_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 12.05.2026 19:03:08.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+        ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+        ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        ╨д╨░╨╣╨╗ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.85
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/4.2.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/7-Zip/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "D:/doxygen/doxygen/bin/"
+      - "D:/git/Git/cmd/"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Wolfram Research/WolframScript/"
+      - "D:/prolog/swipl/bin/"
+      - "D:/matlab/runtime/win64/"
+      - "D:/matlab/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/python/PyCharm 2025.2.1.1/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/"
+    searched_directories:
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/7-Zip/lld-link.com"
+      - "C:/Program Files/7-Zip/lld-link.exe"
+      - "C:/Program Files/7-Zip/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
+      - "D:/doxygen/doxygen/bin/lld-link.com"
+      - "D:/doxygen/doxygen/bin/lld-link.exe"
+      - "D:/doxygen/doxygen/bin/lld-link"
+      - "D:/git/Git/cmd/lld-link.com"
+      - "D:/git/Git/cmd/lld-link.exe"
+      - "D:/git/Git/cmd/lld-link"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/Wolfram Research/WolframScript/lld-link.com"
+      - "C:/Program Files/Wolfram Research/WolframScript/lld-link.exe"
+      - "C:/Program Files/Wolfram Research/WolframScript/lld-link"
+      - "D:/prolog/swipl/bin/lld-link.com"
+      - "D:/prolog/swipl/bin/lld-link.exe"
+      - "D:/prolog/swipl/bin/lld-link"
+      - "D:/matlab/runtime/win64/lld-link.com"
+      - "D:/matlab/runtime/win64/lld-link.exe"
+      - "D:/matlab/runtime/win64/lld-link"
+      - "D:/matlab/bin/lld-link.com"
+      - "D:/matlab/bin/lld-link.exe"
+      - "D:/matlab/bin/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "D:/python/PyCharm 2025.2.1.1/bin/lld-link.com"
+      - "D:/python/PyCharm 2025.2.1.1/bin/lld-link.exe"
+      - "D:/python/PyCharm 2025.2.1.1/bin/lld-link"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:580 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:553 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/7-Zip/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "D:/doxygen/doxygen/bin/"
+      - "D:/git/Git/cmd/"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Wolfram Research/WolframScript/"
+      - "D:/prolog/swipl/bin/"
+      - "D:/matlab/runtime/win64/"
+      - "D:/matlab/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/python/PyCharm 2025.2.1.1/bin/"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/esm/bin/"
+      - "C:/Program Files (x86)/esm/sbin/"
+      - "C:/Program Files (x86)/esm/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/7-Zip/rc.com"
+      - "C:/Program Files/7-Zip/rc.exe"
+      - "C:/Program Files/7-Zip/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/rc"
+      - "D:/doxygen/doxygen/bin/rc.com"
+      - "D:/doxygen/doxygen/bin/rc.exe"
+      - "D:/doxygen/doxygen/bin/rc"
+      - "D:/git/Git/cmd/rc.com"
+      - "D:/git/Git/cmd/rc.exe"
+      - "D:/git/Git/cmd/rc"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "D:/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/Wolfram Research/WolframScript/rc.com"
+      - "C:/Program Files/Wolfram Research/WolframScript/rc.exe"
+      - "C:/Program Files/Wolfram Research/WolframScript/rc"
+      - "D:/prolog/swipl/bin/rc.com"
+      - "D:/prolog/swipl/bin/rc.exe"
+      - "D:/prolog/swipl/bin/rc"
+      - "D:/matlab/runtime/win64/rc.com"
+      - "D:/matlab/runtime/win64/rc.exe"
+      - "D:/matlab/runtime/win64/rc"
+      - "D:/matlab/bin/rc.com"
+      - "D:/matlab/bin/rc.exe"
+      - "D:/matlab/bin/rc"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/rc.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/rc.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/Scripts/rc"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/rc.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/rc.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python311/rc"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Microsoft/WindowsApps/rc"
+      - "D:/python/PyCharm 2025.2.1.1/bin/rc.com"
+      - "D:/python/PyCharm 2025.2.1.1/bin/rc.exe"
+      - "D:/python/PyCharm 2025.2.1.1/bin/rc"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/rc.com"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/rc.exe"
+      - "C:/Users/\u041c\u0438\u0445\u0430\u0438\u043b/AppData/Local/Programs/Python/Python313/Scripts/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/esm/bin/rc.com"
+      - "C:/Program Files (x86)/esm/bin/rc.exe"
+      - "C:/Program Files (x86)/esm/bin/rc"
+      - "C:/Program Files (x86)/esm/sbin/rc.com"
+      - "C:/Program Files (x86)/esm/sbin/rc.exe"
+      - "C:/Program Files (x86)/esm/sbin/rc"
+      - "C:/Program Files (x86)/esm/rc.com"
+      - "C:/Program Files (x86)/esm/rc.exe"
+      - "C:/Program Files (x86)/esm/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\7-Zip"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "D:\\doxygen\\doxygen\\bin"
+        - "D:\\git\\Git\\cmd"
+        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Wolfram Research\\WolframScript\\"
+        - "D:\\prolog\\swipl\\bin"
+        - "D:\\matlab\\runtime\\win64"
+        - "D:\\matlab\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\python\\PyCharm 2025.2.1.1\\bin"
+        - "C:\\Users\\\u041c\u0438\u0445\u0430\u0438\u043b\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/esm"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/esm"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-nda8ij"
+      binary: "D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-nda8ij"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-nda8ij'
+        
+        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6aae8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 12.05.2026 19:03:09.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\cmTC_6aae8.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_6aae8.dir\\Debug\\\\" /Fd"cmTC_6aae8.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.44.35221 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_6aae8.dir\\Debug\\\\" /Fd"cmTC_6aae8.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\Debug\\cmTC_6aae8.exe" /INCREMENTAL /ILK:"cmTC_6aae8.dir\\Debug\\cmTC_6aae8.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-nda8ij/Debug/cmTC_6aae8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-nda8ij/Debug/cmTC_6aae8.lib" /MACHINE:X64  /machine:x64 cmTC_6aae8.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_6aae8.vcxproj -> D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\Debug\\cmTC_6aae8.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\Debug\\cmTC_6aae8.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\cmTC_6aae8.write.1u.tlog" "cmTC_6aae8.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+          ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\Debug\\cmTC_6aae8.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\cmTC_6aae8.write.1u.tlog" "cmTC_6aae8.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\Debug\\cmTC_6aae8.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\cmTC_6aae8.write.1u.tlog" "cmTC_6aae8.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_6aae8.dir\\Debug\\cmTC_6aae8.tlog\\cmTC_6aae8.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nda8ij\\cmTC_6aae8.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.89
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35221.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-ki2efh"
+      binary: "D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-ki2efh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-ki2efh'
+        
+        Run Build Command(s): D:/visualstudio/proj/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_edeba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.14.23+b0019275e ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 12.05.2026 19:03:10.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\cmTC_edeba.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_edeba.dir\\Debug\\\\" /Fd"cmTC_edeba.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.44.35221 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_edeba.dir\\Debug\\\\" /Fd"cmTC_edeba.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          D:\\visualstudio\\proj\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\Debug\\cmTC_edeba.exe" /INCREMENTAL /ILK:"cmTC_edeba.dir\\Debug\\cmTC_edeba.ilk" /NOLOGO /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-ki2efh/Debug/cmTC_edeba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/proj/esm_89/EquipmentStatusMonitoring/build/CMakeFiles/CMakeScratch/TryCompile-ki2efh/Debug/cmTC_edeba.lib" /MACHINE:X64  /machine:x64 cmTC_edeba.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_edeba.vcxproj -> D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\Debug\\cmTC_edeba.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\Debug\\cmTC_edeba.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\cmTC_edeba.write.1u.tlog" "cmTC_edeba.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+          ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\Debug\\cmTC_edeba.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\cmTC_edeba.write.1u.tlog" "cmTC_edeba.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\Debug\\cmTC_edeba.exe" "D:\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\cmTC_edeba.write.1u.tlog" "cmTC_edeba.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_edeba.dir\\Debug\\cmTC_edeba.tlog\\cmTC_edeba.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "D:\\proj\\esm_89\\EquipmentStatusMonitoring\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ki2efh\\cmTC_edeba.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.89
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "D:/visualstudio/proj/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35221.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...

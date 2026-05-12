@@ -1,6 +1,0 @@
-D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/CMakeFiles/esm_core.dir
-D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/CMakeFiles/INSTALL.dir
-D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/CMakeFiles/ALL_BUILD.dir
-D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/CMakeFiles/ZERO_CHECK.dir
-D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/bindings/CMakeFiles/equipment_status_monitoring.dir
-D:/vsproj/WORK/EquipmentStatusMonitoring/build/cp313-cp313-win_amd64/bindings/CMakeFiles/INSTALL.dir

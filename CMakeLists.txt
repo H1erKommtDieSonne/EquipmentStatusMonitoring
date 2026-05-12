@@ -4,9 +4,9 @@ project(esm LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# -----------------------------
-# 1) Core library (C++ logic)
-# -----------------------------
+
+# 1) Core library
+
 add_library(esm_core STATIC
     esm/Engine.cpp
     storage/SqliteStorage.cpp
@@ -14,16 +14,15 @@ add_library(esm_core STATIC
     storage/WorkerRepository.cpp
     sqlite/sqlite3.c
 
-
     Device.cpp
     HealthyDevice.cpp
     ReserveDevice.cpp
     FaultyDeviceEx.cpp
     faultyDevice.cpp
+    DeviceHashTree.cpp
 )
 
 set_source_files_properties(sqlite/sqlite3.c PROPERTIES LANGUAGE C)
-
 
 target_include_directories(esm_core PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -35,15 +34,16 @@ target_compile_definitions(esm_core PRIVATE
 )
 
 
-# -----------------------------
 # 2) Python module (pybind11)
-# -----------------------------
-# bindings/CMakeLists.txt должен собрать модуль через pybind11_add_module(...)
-add_subdirectory(bindings)
 
-# -----------------------------
-# 3) C++ tests (main.cpp)
-# -----------------------------
+option(ESM_BUILD_PYTHON "Build Python module" ON)
+
+if (ESM_BUILD_PYTHON)
+    add_subdirectory(bindings)
+endif()
+
+# 3) C++ tests
+
 option(ESM_BUILD_TESTS "Build C++ tests" OFF)
 
 if (ESM_BUILD_TESTS)
@@ -55,4 +55,17 @@ if (ESM_BUILD_TESTS)
 
     target_link_libraries(esm_tests PRIVATE esm_core)
     add_test(NAME esm_tests COMMAND esm_tests)
+endif()
+
+
+# 4) Practice 9 benchmark
+
+option(ESM_BUILD_BENCHMARKS "Build practice 9 benchmarks" ON)
+
+if (ESM_BUILD_BENCHMARKS)
+    add_executable(hash_tree_benchmark
+        benchmark_hash_tree.cpp
+    )
+
+    target_link_libraries(hash_tree_benchmark PRIVATE esm_core)
 endif()
