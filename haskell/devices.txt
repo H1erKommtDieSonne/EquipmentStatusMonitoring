@@ -1,0 +1,12 @@
+# type;name;address;priority;extra fields
+# address 3232235777 = 192.168.1.1
+healthy;Pump-1;3232235777;High;1200
+healthy;Pump-2;3232235778;Low;800
+faulty;Sensor-1;3232235779;High;overheat
+faulty;Valve-1;3232235780;Low;pressure drop
+reserve;Pump-Reserve-1;3232235781;No;5000;300
+reserve;Sensor-Reserve-1;3232235782;Low;3000;120
+healthy;Controller-1;3232235783;No;10000
+faulty;Motor-1;3232235784;High;vibration
+healthy;Router-1;3232235785;Low;700
+faulty;Compressor-1;3232235786;High;temperature alarm
